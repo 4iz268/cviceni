@@ -149,7 +149,7 @@ XHTML 1.1
 * canvas
 * lepší formy * email, colorpicker, search form
 * všechny funkce nepodporují všechny browsery, nutno zkusit
-* kniha Dive Into HTML5 
+* kniha Dive Into HTML5
 * http://kniha.html5.cz
 
 ## Základní struktura dokumentu
