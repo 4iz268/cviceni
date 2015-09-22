@@ -89,11 +89,12 @@ Ostatní (minoritní prohlížeče, nebudu kontrolovat funkčnost):
 
 ## Základy syntaxe
 
-HTML
+## HTML
 
+Zdroj: http://www.w3.org/WhatIs.html
+
+<cite>
 What is HyperText
-
-http://www.w3.org/WhatIs.html
 
 Hypertext is text which is not constrained to be linear.
 
@@ -110,6 +111,7 @@ See also:
 * Commercial (and academic) products
 * A newsgroup on hypertext, "alt.hypertext" .
 * WorldWideWeb is a project which uses hypertext concepts.
+</cite>
 
 ## DOCTYPE
 
@@ -188,26 +190,21 @@ HTML5
 
 ### blockquote
 
-* bloková citace * citace z jiného zdroje
+* bloková citace / citace z jiného zdroje
 * do parametru cite se uvádí URL adresa zdroj
-* browser provede default odsazení.
-
-### q * inline element
-
-* quote = řádková citace
-* inline citace, krátká
-* browser neprovede zalomení řádku
+* browser provede default odsazení
 
 ### pre
 
-* preformatted text
+* preformatted text = předformátovaný text
 * zachovává všechny mezery a zalamování řádků
 * typicky ukázka zdrojového kódu nebo kus textu odjinud, ve kterém nechceme ztratit formátování
 
 ### hr
 
-* horizontal rule * horizontální oddělovač
-* nepárová značka <hr /> vykreslí na stránce horizontální čáru
+* horizontal rule = horizontální oddělovač
+* nepárová značka
+* vykreslí na stránce horizontální čáru
 
 ### br
 
@@ -226,7 +223,7 @@ HTML5
 ### form a jeho elementy, label, input, textarea
 
 * formuláře
-* budeme brát na 3. cvičení za 2 týdny
+* budeme brát na 10. cvičení
 
 ## Inline elementy
 
@@ -244,14 +241,14 @@ HTML5
 ### img
 
 * image, obrázek
-* budeme brát na 2. cvičení
+* budeme brát na 2. cvičení za týden
 
 ### span
 
-* =rozpětí
-* jen inline kontejner, jen seskupuje prvky, nereprezentuje nic konkrétního
+* = rozpětí
+* jen inline kontejner, seskupuje prvky, nereprezentuje nic konkrétního
 * jako div, ale řádkový
-* kvůli formátování
+* zejména kvůli formátování
 
 ### cite
 
@@ -260,10 +257,16 @@ HTML5
 * v HTML 4 je to citace, v HTML 5 title of work
 * browsery obyčejně zobrazují kurzívou
 
+### q
+
+* quote = řádková citace
+* inline citace, krátká
+* browser neprovede zalomení řádku
 
 ### sub, sup
 
 * dolní a horní index
+* sub-index, super-index
 * moc se nepoužívá
 
 ### strong
@@ -286,10 +289,10 @@ HTML5
 * osobně s b nemám problém :)
 * fyzický stav
 
-
 #### strong vs b
 
-* https://www.seroundtable.com/google-strong-bold-tag-17552.html * Google inženýr: je to úplně stejný
+* Google inženýr: je to úplně stejný
+* https://www.seroundtable.com/google-strong-bold-tag-17552.html 
 
 ### em
 
@@ -303,15 +306,16 @@ HTML5
 * technický termín, cizí jazyk
 * prostě se to nějak liší od okolního textu
 * podobné jako b, mělo by to být last resort, pokud nejde použít strong, em, atd.
-
-Zdůraznění části text * vykreslováno zpravidla kurzívou.
+* zdůraznění části textu 
+* vykreslováno zpravidla kurzívou.
 
 ### Komentáře
 
 * <!-* text komentare —>
-* Nevýhoda komentářů: je to vidět ve zdrojácích. V praxi jsem viděl, jak programátoři cpali do zdrojáků citlivé nebo hanlivé texty * bacha na to.
+* nevýhoda komentářů: je to vidět ve zdrojácích. V praxi jsem viděl, jak programátoři cpali do zdrojáků citlivé nebo hanlivé texty.
+* pozor na to
 * Ukázat: zobrazení zdrojáku v browseru.
-* Jak schovat komentáře: udělat jako PHP komentář, PHP generuje HTML a PHP komentáře vynechává.
+* Jak schovat komentáře: udělat třeba jako PHP komentář, PHP generuje HTML a PHP komentáře do výsledeného dokumentu vynechává.
 * HTML cesta, jak utajit? Obfuskátory. Zkuste si sami najit, koho to zajímá. Často je to ale jenom komplikace, pokud máte HTML kod, který se musí schovat, tak je něco špatně.
 
 ### Zápis matematických vzorců
