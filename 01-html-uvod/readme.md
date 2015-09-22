@@ -312,11 +312,7 @@ HTML5
 
 ### Komentáře
 
-```
-<!-- text komentáře -->
-
-```
-
+*  &lt;!-- text komentáře --&gt;
 * nevýhoda komentářů: je to vidět ve zdrojácích. V praxi jsem viděl, jak programátoři cpali do zdrojáků citlivé nebo hanlivé texty.
 * pozor na to
 * Ukázat: zobrazení zdrojáku v browseru.
