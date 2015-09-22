@@ -73,14 +73,18 @@ eso.vse.cz
 Stačí, když vaše stránky budou podporovat tyto 3 hlavní prohlížeče:
 
 * MSIE
-* Mozilla Firefox * budeme používat na cvičeních, má firebug plugin (něco podobného má chrome rovnou v sobě)
-* Google Chrome * doporučuji kvůli rychlosti
+* Mozilla Firefox 
+  * budeme používat na cvičeních, má firebug plugin (něco podobného má chrome rovnou v sobě)
+* Google Chrome 
+  * doporučuji kvůli rychlosti
 
 Ostatní (minoritní, nebudu kontrolovat funkčnost):
 
-* Opera * skomírá
-* Safari * na Macu
-* ostatní jsou minor
+* Opera 
+  * skomírá
+* Safari 
+  * na Macu
+* ostatní jsou minor (nedůležité)
 
 
 ## Základy syntaxe
