@@ -2,11 +2,11 @@
 
 ##  Organizační informace
 
-- školní server, přístupy, SFTP, viz http://webovky.vse.cz/php-mysql/22-server-eso-vse-cz
-- http://eso.vse.cz/
-- editor - PSPAD, nebo jakýkoli jiný, který máte rádi
-- je na ucebnach PSPAD?
-- zajistit si redukci na projektor, budu to ukazovat na macu
+* školní server, přístupy, SFTP, viz http://webovky.vse.cz/php-mysql/22-server-eso-vse-cz
+* http://eso.vse.cz/
+* editor * PSPAD, nebo jakýkoli jiný, který máte rádi
+* je na ucebnach PSPAD?
+* zajistit si redukci na projektor, budu to ukazovat na macu
 
 ### Kontakt, konzultační hodiny
 
@@ -42,8 +42,8 @@ Viz sylabus.
 * sémantické značení
 * musí fungovat i při vypnutí CSS, Flashe, JS
 * styly pro tisk
-* layout bez tabulek - nicméně, pokud si přede mnou dokážete obhájit, proč jste MUSELI použít tabulky, tak si je použijte, ale nemusím vám to uznat
-* web bude dostupný na Internetu - libovolný hosting nebo na školním serveru
+* layout bez tabulek * nicméně, pokud si přede mnou dokážete obhájit, proč jste MUSELI použít tabulky, tak si je použijte, ale nemusím vám to uznat
+* web bude dostupný na Internetu * libovolný hosting nebo na školním serveru
 * alespoň 5 stránek,
 * alespoň 2 sloupečky
 * projet W3C validátorem, musí být validní
@@ -77,13 +77,13 @@ Základy HTML
 Stačí, když vaše stránky budou podporovat tyto 3 (MSIE, Firefox, Chrome):
 
 * MSIE
-* Mozilla Firefox - budeme používat na cvičeních, má firebug plugin (něco podobného má chrome rovnou v sobě)
-* Google Chrome - doporučuji kvůli rychlosti
+* Mozilla Firefox * budeme používat na cvičeních, má firebug plugin (něco podobného má chrome rovnou v sobě)
+* Google Chrome * doporučuji kvůli rychlosti
 
 Ostatní (minoritní prohlížeče, nebudu kontrolovat funkčnost):
 
-* Opera - skomírá
-* Safari - na Macu
+* Opera * skomírá
+* Safari * na Macu
 * ostatní jsou minor
 
 
@@ -105,17 +105,17 @@ Hypertext and HyperMedia are concepts, not products.
 
 See also:
 
-- A list of terms used in hypertext litterature.
-- Conferences
-- Commercial (and academic) products
-- A newsgroup on hypertext, "alt.hypertext" .
-- WorldWideWeb is a project which uses hypertext concepts.
+* A list of terms used in hypertext litterature.
+* Conferences
+* Commercial (and academic) products
+* A newsgroup on hypertext, "alt.hypertext" .
+* WorldWideWeb is a project which uses hypertext concepts.
 
-DOCTYPE
+## DOCTYPE
 
-- určuje typ dokumentu, instrukce prohlížeči, jak a co má zobrazit
-- nejedná se o HTML tag
-- musí být jako první v dokumentu
+* určuje typ dokumentu, instrukce prohlížeči, jak a co má zobrazit
+* nejedná se o HTML tag
+* musí být jako první v dokumentu
 
 XHTML 1.0 Strict
 
@@ -137,181 +137,185 @@ HTML5
 
 <!DOCTYPE html>
 
-XHTML
+### XHTML
 
-- tagy jsou ukončené, i jednoduché tagy musí být napsány např. jako <br/>
-- tagy a atributy malými písmeny
-- styly a scripty jsou externí soubory
-- stránka je validní XML
+* tagy jsou ukončené, i jednoduché tagy musí být napsány např. jako <br/>
+* tagy a atributy malými písmeny
+* styly a scripty jsou externí soubory
+* stránka je validní XML
 
-HTML5
+### HTML5
 
-- sémantika
-- canvas
-- lepší formy - email, colorpicker, search form
-- všechny funkce nepodporují všechny browsery, nutno zkusit
-- kniha Dive Into HTML5 - http://kniha.html5.cz
+* sémantika
+* canvas
+* lepší formy * email, colorpicker, search form
+* všechny funkce nepodporují všechny browsery, nutno zkusit
+* kniha Dive Into HTML5 * http://kniha.html5.cz
 
-Základní Struktura dokumentu
+## Základní struktura dokumentu
 
-- DOCTYPE - kvůli jednoduchosti budeme na cvičení používat HTML 5, pokud odevzdáte na cvičení XHTML, je to jedno, vyvarovat se HTML 4
-- html
-- head
-- body
+* DOCTYPE * kvůli jednoduchosti budeme na cvičení používat HTML 5, pokud odevzdáte na cvičení XHTML, je to jedno, vyvarovat se HTML 4
+* html
+* head
+* body
 
-Značky
+## Značky
 
-párové
-jednoduché
+* párové
+* jednoduché
 
-Blokové elementy
+## Blokové elementy
 
-h1, h2, h3, h4, h5, h6
+### h1, h2, h3, h4, h5, h6
 
-- header, hlavička - nadpisy
-- měly by jít po úrovních, každá stránka by měla mít jen 1 h1 a postupně jít dolů
-- podle toho indexují roboti
-- v HTML5 už nemusí být 1 pro celou stránku, ale i pro část stránky (tag article, atd., viz kniha)
+* header, hlavička * nadpisy
+* měly by jít po úrovních, každá stránka by měla mít jen 1 h1 a postupně jít dolů
+* podle toho indexují roboti
+* v HTML5 už nemusí být 1 pro celou stránku, ale i pro část stránky (tag article, atd., viz kniha)
 
-div
+### div
 
-- division = sekce, blok
-- kontejner, seskupuje elementy
-- obdélník, obaluje elementy
-- hlavně kvůli formátování pomocí CSS
-- default se za ním zalomí řádek
+* division = sekce, blok
+* kontejner, seskupuje elementy
+* obdélník, obaluje elementy
+* hlavně kvůli formátování pomocí CSS
+* default se za ním zalomí řádek
 
-p
+### p
 
-- paragraph = odstavec
-- základ formátování pro text
+* paragraph = odstavec
+* základ formátování pro text
 
-blockquote
+### blockquote
 
-- bloková citace - citace z jiného zdroje
-- do parametru cite se uvádí URL adresa zdroj
-- browser provede default odsazení.
+* bloková citace * citace z jiného zdroje
+* do parametru cite se uvádí URL adresa zdroj
+* browser provede default odsazení.
 
-q - inline element
+### q * inline element
 
-- quote = řádková citace
-- inline citace, krátká
-- browser neprovede zalomení řádku
+* quote = řádková citace
+* inline citace, krátká
+* browser neprovede zalomení řádku
 
-pre
+### pre
 
-- preformatted text
-- zachovává všechny mezery a zalamování řádků
-- typicky ukázka zdrojového kódu nebo kus textu odjinud, ve kterém nechceme ztratit formátování
+* preformatted text
+* zachovává všechny mezery a zalamování řádků
+* typicky ukázka zdrojového kódu nebo kus textu odjinud, ve kterém nechceme ztratit formátování
 
-hr
+### hr
 
-- horizontal rule - horizontální oddělovač
-- nepárová značka <hr /> vykreslí na stránce horizontální čáru
+* horizontal rule * horizontální oddělovač
+* nepárová značka <hr /> vykreslí na stránce horizontální čáru
 
-br
+### br
 
-- break = ruční zalomení řádky
-- neměli bychom jich používat víc za sebou, špatně se s tím pak pracuje a je to nepřehledné
-- Používat místo toho div, p a mezery řešit v CSS
+* break = ruční zalomení řádky
+* neměli bychom jich používat víc za sebou, špatně se s tím pak pracuje a je to nepřehledné
+* Používat místo toho div, p a mezery řešit v CSS
 
-table
+### table
 
-- tabulka, budeme brát 2. cvičení za týden
+* tabulka, budeme brát 2. cvičení za týden
 
-ul, ol, li, dl, dt, dd
+### ul, ol, li, dl, dt, dd
 
-- seznamy, budeme brát 2. cvičení za týden
+* seznamy, budeme brát 2. cvičení za týden
 
-form a jeho elementy, label, input, textarea
+### form a jeho elementy, label, input, textarea
 
-- formuláře
-- budeme brát na 3. cvičení za 2 týdny
+* formuláře
+* budeme brát na 3. cvičení za 2 týdny
 
-Inline elementy
+## Inline elementy
 
-a
+### a
 
-- anchor [ˈæŋkə]
-- párová značka
-- uvnitř může být text, obrázek
-- hypertextový odkaz
-- src = odkaz kam, pokud je na začátku #, pak je to odkaz na místo v tom samém dokumentu
-- target _blank, _top, _parent, _self (default)
-- v HTML 4 také name pro quote v documentu, ale v HTML 5 je používáno už jen id
-- default je odkaz podtržený a barevný (modrý), rozlišuje se barva navštíveného a nenavštíveného odkazu, lze změnit pomocí CSS
+* anchor [ˈæŋkə]
+* párová značka
+* uvnitř může být text, obrázek
+* hypertextový odkaz
+* src = odkaz kam, pokud je na začátku #, pak je to odkaz na místo v tom samém dokumentu
+* target _blank, _top, _parent, _self (default)
+* v HTML 4 také name pro quote v documentu, ale v HTML 5 je používáno už jen id
+* default je odkaz podtržený a barevný (modrý), rozlišuje se barva navštíveného a nenavštíveného odkazu, lze změnit pomocí CSS
 
-img
+### img
 
-- image, obrázek
-- budeme brát na 2. cvičení
+* image, obrázek
+* budeme brát na 2. cvičení
 
-span
+### span
 
-- =rozpětí
-- jen inline kontejner, jen seskupuje prvky, nereprezentuje nic konkrétního
-- jako div, ale řádkový
-- kvůli formátování
+* =rozpětí
+* jen inline kontejner, jen seskupuje prvky, nereprezentuje nic konkrétního
+* jako div, ale řádkový
+* kvůli formátování
 
-cite
+### cite
 
-- “title of work” - název knihy, skladby, díla
-- v HTML 4 je to citace, v HTML 5 title of work
-- browsery obyčejně zobrazují kurzívou
+* krátká citace, kterou chceme uvést v textu
+* “title of work” * název knihy, skladby, díla
+* v HTML 4 je to citace, v HTML 5 title of work
+* browsery obyčejně zobrazují kurzívou
 
-Krátká citace, kterou chceme uvést v textu.
 
-sub, sup
+### sub, sup
 
-- dolní a horní index
-- moc se nepoužívá
+* dolní a horní index
+* moc se nepoužívá
 
-strong
+### strong
 
-- strong importance = vysoká důležitost
-- zvýraznění
-- dříve b (bold), teď používat tohle, protože to má i sémantický význam
-- zvýraznění nemusí být tučné, je to default zobrazení browseru
-- lze změnit pomocí CSS
-- logický stav
-- hlavně kvůli spiderům
-- silná sémantická váha
-- https://www.seroundtable.com/google-strong-bold-tag-17552.html - Google inženýr: je to úplně stejný
+* strong importance = vysoká důležitost
+* zvýraznění
+* dříve b (bold), teď používat tohle, protože to má i sémantický význam
+* zvýraznění nemusí být tučné, je to default zobrazení browseru
+* lze změnit pomocí CSS
+* logický stav
+* hlavně kvůli spiderům
+* silná sémantická váha
 
-b
+### b
 
-- bold
-- chápu, proč se může zdát b lepší = je to kratší
-- b se dle HTML5 může používat jako last resort, pokud prostě nevyhovuje h1, h2..h6, ani em, ani strong
-- není to výslovně zakázáno, jen to postrádá sémantický význam
-- osobně s b nemám problém :)
-- fyzický stav
+* bold
+* chápu, proč se může zdát b lepší = je to kratší
+* b se dle HTML5 může používat jako last resort, pokud prostě nevyhovuje h1, h2..h6, ani em, ani strong
+* není to výslovně zakázáno, jen to postrádá sémantický význam
+* osobně s b nemám problém :)
+* fyzický stav
 
-em
 
-- emphasize = zdůraznění
-- browsery to default zobrazují kurzívou
+#### strong vs b
 
-i
+* https://www.seroundtable.com/google-strong-bold-tag-17552.html * Google inženýr: je to úplně stejný
 
-- italic
-- alternate voice or mood
-- technický termín, cizí jazyk
-- prostě se to nějak liší od okolního textu
-- podobné jako b, mělo by to být last resort, pokud nejde použít strong, em, atd.
+### em
 
-Zdůraznění části text - vykreslováno zpravidla kurzívou.
+* emphasize = zdůraznění
+* browsery to default zobrazují kurzívou
 
-Komentáře
+### i
 
-- <!-- text komentare —>
-- Nevýhoda komentářů: je to vidět ve zdrojácích. V praxi jsem viděl, jak programátoři cpali do zdrojáků citlivé nebo hanlivé texty - bacha na to.
-- Ukázat: zobrazení zdrojáku v browseru.
-- Jak schovat komentáře: udělat jako PHP komentář, PHP generuje HTML a PHP komentáře vynechává.
-- HTML cesta, jak utajit? Obfuskátory. Zkuste si sami najit, koho to zajímá. Často je to ale jenom komplikace, pokud máte HTML kod, který se musí schovat, tak je něco špatně.
+* italic
+* alternate voice or mood
+* technický termín, cizí jazyk
+* prostě se to nějak liší od okolního textu
+* podobné jako b, mělo by to být last resort, pokud nejde použít strong, em, atd.
 
-Zápis matematických vzorců
+Zdůraznění části text * vykreslováno zpravidla kurzívou.
+
+### Komentáře
+
+* <!-* text komentare —>
+* Nevýhoda komentářů: je to vidět ve zdrojácích. V praxi jsem viděl, jak programátoři cpali do zdrojáků citlivé nebo hanlivé texty * bacha na to.
+* Ukázat: zobrazení zdrojáku v browseru.
+* Jak schovat komentáře: udělat jako PHP komentář, PHP generuje HTML a PHP komentáře vynechává.
+* HTML cesta, jak utajit? Obfuskátory. Zkuste si sami najit, koho to zajímá. Často je to ale jenom komplikace, pokud máte HTML kod, který se musí schovat, tak je něco špatně.
+
+### Zápis matematických vzorců
 
 Math ML
 
-- není podporován Chrome, viz seznam, kdo to podporuje: http://caniuse.com/#feat=mathml
+* není podporován Chrome, viz seznam, kdo to podporuje: http://caniuse.com/#feat=mathml
