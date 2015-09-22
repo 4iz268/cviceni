@@ -35,8 +35,10 @@ Viz sylabus.
 * sémantické značení
 * musí fungovat i při vypnutí CSS, Flashe, JS
 * styly pro tisk
-* layout bez tabulek * nicméně, pokud si přede mnou dokážete obhájit, proč jste MUSELI použít tabulky, tak si je použijte, ale nemusím vám to uznat
-* web bude dostupný na Internetu * libovolný hosting nebo na školním serveru
+* layout bez tabulek 
+* nicméně, pokud si přede mnou dokážete obhájit, proč jste MUSELI použít tabulky, tak si je použijte, ale nemusím vám to uznat
+* web bude dostupný na Internetu 
+* libovolný hosting nebo na školním serveru eso.vse.cz
 * alespoň 5 stránek,
 * alespoň 2 sloupečky
 * projet W3C validátorem, musí být validní
@@ -50,12 +52,11 @@ eso.vse.cz
 * nahrávání HTML prezentací
 * viz http://eso.vse.cz/
 * dostupné z Internetu pod http://eso.vse.cz/~xname/
-* pomocí programu winscp, instalován na školních počítačích
+* pomocí programu winscp, instalován na učebnách
 
 # 1. cvičení
 
-Základy HTML
-
+* základy HTML
 * základy syntaxe, formátování, odkazy
 * příprava zdrojového kódu v HTML (HTML editory) a prohlížení výsledku v prohlížeči
 
@@ -69,13 +70,13 @@ Základy HTML
 
 ## Prohlížeče
 
-Stačí, když vaše stránky budou podporovat tyto 3 (MSIE, Firefox, Chrome):
+Stačí, když vaše stránky budou podporovat tyto 3 hlavní prohlížeče:
 
 * MSIE
 * Mozilla Firefox * budeme používat na cvičeních, má firebug plugin (něco podobného má chrome rovnou v sobě)
 * Google Chrome * doporučuji kvůli rychlosti
 
-Ostatní (minoritní prohlížeče, nebudu kontrolovat funkčnost):
+Ostatní (minoritní, nebudu kontrolovat funkčnost):
 
 * Opera * skomírá
 * Safari * na Macu
@@ -130,16 +131,17 @@ XHTML 1.1
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN” "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
-HTML5
+**HTML5**
 
 <!DOCTYPE html>
 
 ### XHTML
 
-* tagy jsou ukončené, i jednoduché tagy musí být napsány např. jako <br/>
+* tagy jsou ukončené, i jednoduché tagy musí být napsány např. jako &lt;br/&gt;
 * tagy a atributy malými písmeny
 * styly a scripty jsou externí soubory
 * stránka je validní XML
+* nepoužívat, otrava
 
 ### HTML5
 
@@ -147,7 +149,8 @@ HTML5
 * canvas
 * lepší formy * email, colorpicker, search form
 * všechny funkce nepodporují všechny browsery, nutno zkusit
-* kniha Dive Into HTML5 * http://kniha.html5.cz
+* kniha Dive Into HTML5 
+* http://kniha.html5.cz
 
 ## Základní struktura dokumentu
 
