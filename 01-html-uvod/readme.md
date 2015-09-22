@@ -2,16 +2,9 @@
 
 ##  Organizační informace
 
-* školní server, přístupy, SFTP, viz http://webovky.vse.cz/php-mysql/22-server-eso-vse-cz
-* http://eso.vse.cz/
-* editor * PSPAD, nebo jakýkoli jiný, který máte rádi
-* je na ucebnach PSPAD?
-* zajistit si redukci na projektor, budu to ukazovat na macu
-
 ### Kontakt, konzultační hodiny
 
-* jiri@hradil.cz
-* moje konzultační hodiny NB 413, každý pátek 10:00-11:00
+_Doplní cvičící._
 
 ### Zdroje
 
@@ -53,9 +46,11 @@ Viz sylabus.
 
 eso.vse.cz
 
+* školní server, přístupy, SFTP/SCP, viz http://webovky.vse.cz/php-mysql/22-server-eso-vse-cz
 * nahrávání HTML prezentací
 * viz http://eso.vse.cz/
 * dostupné z Internetu pod http://eso.vse.cz/~xname/
+* pomocí programu winscp, instalován na školních počítačích
 
 # 1. cvičení
 
