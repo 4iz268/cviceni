@@ -147,7 +147,8 @@ XHTML 1.1
 
 * sémantika
 * canvas
-* lepší formy * email, colorpicker, search form
+* lepší formy 
+* email, colorpicker, search form
 * všechny funkce nepodporují všechny browsery, nutno zkusit
 * kniha Dive Into HTML5
 * http://kniha.html5.cz
@@ -168,7 +169,8 @@ XHTML 1.1
 
 ### h1, h2, h3, h4, h5, h6
 
-* header, hlavička * nadpisy
+* header, hlavička 
+* nadpisy
 * měly by jít po úrovních, každá stránka by měla mít jen 1 h1 a postupně jít dolů
 * podle toho indexují roboti
 * v HTML5 už nemusí být 1 pro celou stránku, ale i pro část stránky (tag article, atd., viz kniha)
