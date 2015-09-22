@@ -156,7 +156,7 @@ HTML5
 
 ## Základní struktura dokumentu
 
-* DOCTYPE * kvůli jednoduchosti budeme na cvičení používat HTML 5, pokud odevzdáte na cvičení XHTML, je to jedno, vyvarovat se HTML 4
+* DOCTYPE (na cvičení používáme HTML 5, pokud odevzdáte na cvičení XHTML, je to jedno, vyvarovat se HTML 4)
 * html
 * head
 * body
@@ -253,7 +253,8 @@ HTML5
 ### cite
 
 * krátká citace, kterou chceme uvést v textu
-* “title of work” * název knihy, skladby, díla
+* “title of work” 
+* název knihy, skladby, díla
 * v HTML 4 je to citace, v HTML 5 title of work
 * browsery obyčejně zobrazují kurzívou
 
@@ -311,7 +312,11 @@ HTML5
 
 ### Komentáře
 
-* <!-* text komentare —>
+```
+<!-- text komentáře -->
+
+```
+
 * nevýhoda komentářů: je to vidět ve zdrojácích. V praxi jsem viděl, jak programátoři cpali do zdrojáků citlivé nebo hanlivé texty.
 * pozor na to
 * Ukázat: zobrazení zdrojáku v browseru.
