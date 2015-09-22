@@ -325,6 +325,21 @@ XHTML 1.1
 
 ### Zápis matematických vzorců
 
-Math ML
+#### Math ML
 
 * není podporován Chrome, viz seznam, kdo to podporuje: http://caniuse.com/#feat=mathml
+
+#### MathJax
+
+* http://www.mathjax.org/ 
+* etalon, umí toho nejvíc
+* dost pomalý
+* bere to TeX i MathML
+* majoritní browsery s ním nemají problém
+
+#### KaTex
+
+* https://khan.github.io/KaTeX/
+* umí jen Texovou syntaxi
+* mnohem menší a rychlejší než MathJax
+
