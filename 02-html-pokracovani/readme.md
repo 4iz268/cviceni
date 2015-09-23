@@ -60,11 +60,17 @@
 
 * nepodporuje je HTML5
 * ale je dobré o nich vědět
-* snažte se je nepoužívat
-* příklady z praxe: mapy
+* nepoužívat
 
 ### frameset
 
-* rozložení rámců
+* nastavení rozložení rámců na stránce
 * **pozor, frameset se dává místo body!**
-* iframe, podporuje HTML5
+* nepoužívat
+
+### iframe
+
+* stránka vložená do jiné stránky - internal frame
+* podporuje je HTML5
+* lze používat
+* příklady z praxe: mapy, twitter, facebook, atd.
