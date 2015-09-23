@@ -11,7 +11,6 @@ _Doplní cvičící._
 * **http://4iz268.github.io/cviceni/index.html**
 * **zdrojáky ze cvičení: https://github.com/4iz268/cviceni**
 * **HTML 5 primární zdroj, final verze specifikace z 28.10.2014: http://www.w3.org/TR/html5/**
-
 * Twitter: https://twitter.com/4iz268
 * kniha Dive into HTML5, zdarma, kus přeložený, můžete pomoci s překladem: http://kniha.html5.cz
 * HTML5 tvorba dokonalých webových stránek: http://htmlguru.cz/
@@ -19,7 +18,6 @@ _Doplní cvičící._
 * http://www.w3schools.com/tags/
 * validátor: http://validator.nu/
 * http://validator.w3.org/
-
 * **plus zdroje uvedené v sylabu předmětu**
 
 ### Časový plán na semestr
