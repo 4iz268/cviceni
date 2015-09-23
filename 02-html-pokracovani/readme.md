@@ -31,7 +31,7 @@
   * GIF už od roku 2005 nemá licenční omezení
 * PNG
   * 24 bitů RGB (2^24 = 16 777 216)
-  * nebo 32 bitů RGBA (Alpha), každý pixel může mít Alpha kanál (transparence v hodnotě 0-255)
+  * plus dalších 8 bitů průhlednost = celkem 32 bitů RGBA (Alpha), každý pixel může mít alpha kanál (transparence v hodnotě 0-255)
 * více multimédia v 5. cvičení dle http://4iz268.github.io/cviceni/index.html
 
 ## tabulky
