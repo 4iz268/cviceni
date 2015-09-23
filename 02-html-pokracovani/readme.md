@@ -47,7 +47,7 @@
 * td - table cell
 * th - header cell
 
-## Seznamy
+## seznamy
 
 * ol - ordered list
 * ul - unordered list (typicky používaný)
