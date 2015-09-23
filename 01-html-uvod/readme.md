@@ -8,24 +8,28 @@ _Doplní cvičící._
 
 ### Zdroje
 
-* http://webovky.vse.cz/
-* HTML primární zdroj, final verze specifikace z 28.10.2014: http://www.w3.org/TR/html5/
-* zdrojáky ze cvičení: https://github.com/4iz268/cviceni
+* **http://4iz268.github.io/cviceni/index.html**
+* **zdrojáky ze cvičení: https://github.com/4iz268/cviceni**
+* **HTML 5 primární zdroj, final verze specifikace z 28.10.2014: http://www.w3.org/TR/html5/**
+
+* Twitter: https://twitter.com/4iz268
 * kniha Dive into HTML5, zdarma, kus přeložený, můžete pomoci s překladem: http://kniha.html5.cz
 * HTML5 tvorba dokonalých webových stránek: http://htmlguru.cz/
 * http://www.w3.org/standards/webdesign/htmlcss
 * http://www.w3schools.com/tags/
 * validátor: http://validator.nu/
 * http://validator.w3.org/
-* Plus zdroje uvedené v Sylabu předmětu
+
+* **plus zdroje uvedené v sylabu předmětu**
 
 ### Časový plán na semestr
 
-Viz sylabus.
+* http://4iz268.github.io/cviceni/index.html
+* viz sylabus
 
 ### Požadavky na absolování (cvičení)
 
-* semestrální práce, HTML prezentace, max. 100 bodů, pro absolování nutno min. 50 bodů
+* semestrální práce - HTML prezentace, max. 50 bodů, pro absolování nutno min. 25 bodů
 * na co si dát pozor: musíte to psát sami a být schopni vysvětlit každou část
 * extra body za aktivitu
 
