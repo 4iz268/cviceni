@@ -1,4 +1,4 @@
-# Úvod do HTML
+# 1. Základy HTML
 
 ##  Organizační informace
 

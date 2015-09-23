@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Tables</title>
+	
+	<style>
+	
+	table{
+		width: 100%;
+	}
+	
+	table, th, td {
+	    border: 1px solid black;
+	}
+	
+	td {
+		text-align: right;
+	}
+	
+	th, td {
+	    padding: 10px;
+	}
+	
+	</style>
+	
+</head>
+
+<body>
+	
+	<h1>Tables</h1>
+	
+		
+	<h2>Table with thead, tbody and tfoot</h2>
+	
+	<table>
+	
+		<thead>
+			<tr>
+				<th>Month</th>
+				<th>Expenses</th>
+			</tr>
+		</thead>
+		
+		<tfoot>
+			<tr>
+				<td>Total</td>
+				<td>$180</td>
+			</tr>
+		</tfoot>
+		
+		<tbody>
+			<tr>
+				<td>January</td>
+				<td>$100</td>
+			</tr>
+			<tr>
+				<td>February</td>
+				<td>$80</td>
+			</tr>
+		</tbody>
+ 
+	</table>
+	
+	
+	<h2>Simple Table</h2>
+	
+	<table style="width: 100%;">
+	
+		<tr>
+			<th>Course</th>
+			<th>Student</th>
+		</tr>
+
+		<tr>
+			<td>4IZ228</td>
+			<td>5XY123</td>
+		</tr>
+		
+		<tr>
+			<td>6YY293</td>
+			<td>7EEII</td>
+		</tr>
+
+ 
+	</table>
+	
+	
+	<h2>Table with colspan and rowspan</h2>
+	
+	<table>
+	
+		<tr>
+			<th>Course</th>
+			<th>Student</th>
+		</tr>
+
+		<tr>
+			<td colspan="2">4IZ228</td>
+		</tr>
+		
+		
+		<tr>
+			<td rowspan="2">4IZ228</td>
+			<td>5XY123</td>
+		</tr>
+		
+		<tr>
+			<td>7EEII</td>
+		</tr>
+
+	</table>
+	
+		
+</body>
+
+</html>
