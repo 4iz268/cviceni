@@ -74,16 +74,21 @@ eso.vse.cz
 
 Stačí, když vaše stránky budou podporovat tyto 3 hlavní prohlížeče:
 
-* MSIE
+* Internet Explorer
+  * verze 10 a 11
 * Mozilla Firefox 
   * budeme používat na cvičeních, má firebug plugin (něco podobného má chrome rovnou v sobě)
+  * aktuální verze
 * Google Chrome 
   * doporučuji kvůli rychlosti
+  * aktuální verze
+* Edge
+  * dostupný pouze v MS Windows 10, nové zobrazovací jádro
 
 Ostatní (minoritní, nebudu kontrolovat funkčnost):
 
 * Opera 
-  * skomírá
+  * malý podíl na trhu, stejné zobrazovací jádro jako Chrome
 * Safari 
   * na Macu
 * ostatní jsou minor (nedůležité)
@@ -169,7 +174,7 @@ XHTML 1.1
 ## Značky
 
 * párové
-* jednoduché
+* jednoduché (nepárové)
 
 ## Blokové elementy
 
@@ -274,7 +279,7 @@ XHTML 1.1
 
 * dolní a horní index
 * sub-index, super-index
-* moc se nepoužívá
+* moc se nepoužívá, indexy však nejde zapsat jinak
 
 ### strong
 
@@ -293,8 +298,6 @@ XHTML 1.1
 * chápu, proč se může zdát b lepší = je to kratší
 * b se dle HTML5 může používat jako last resort, pokud prostě nevyhovuje h1, h2..h6, ani em, ani strong
 * není to výslovně zakázáno, jen to postrádá sémantický význam
-* osobně s b nemám problém :)
-* fyzický stav
 
 #### strong vs b
 
