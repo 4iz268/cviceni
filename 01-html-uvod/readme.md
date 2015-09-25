@@ -8,7 +8,8 @@ _Doplní cvičící._
 
 ### Zdroje
 
-* **http://4iz268.github.io/cviceni/index.html**
+* **oficiální stránka předmětu: http://4iz268.github.io/**
+* **plán cvičení: **http://4iz268.github.io/cviceni/index.html**
 * **zdrojáky ze cvičení: https://github.com/4iz268/cviceni**
 * **HTML 5 primární zdroj, final verze specifikace z 28.10.2014: http://www.w3.org/TR/html5/**
 * Twitter: https://twitter.com/4iz268
@@ -18,12 +19,12 @@ _Doplní cvičící._
 * http://www.w3schools.com/tags/
 * validátor: http://validator.nu/
 * http://validator.w3.org/
-* **plus zdroje uvedené v sylabu předmětu**
+* **plus zdroje uvedené v <a href='https://github.com/4iz268/cviceni/blob/master/sylabus.pdf'>sylabu předmětu</a>**
 
 ### Časový plán na semestr
 
 * http://4iz268.github.io/cviceni/index.html
-* viz sylabus
+* viz <a href='https://github.com/4iz268/cviceni/blob/master/sylabus.pdf'>sylabus</a>
 
 ### Požadavky na absolování (cvičení)
 
