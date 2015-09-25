@@ -9,7 +9,7 @@ _Doplní cvičící._
 ### Zdroje
 
 * **oficiální stránka předmětu: http://4iz268.github.io/**
-* **plán cvičení: **http://4iz268.github.io/cviceni/index.html**
+* **plán cvičení: http://4iz268.github.io/cviceni/index.html**
 * **zdrojáky ze cvičení: https://github.com/4iz268/cviceni**
 * **HTML 5 primární zdroj, final verze specifikace z 28.10.2014: http://www.w3.org/TR/html5/**
 * Twitter: https://twitter.com/4iz268
@@ -17,8 +17,8 @@ _Doplní cvičící._
 * HTML5 tvorba dokonalých webových stránek: http://htmlguru.cz/
 * http://www.w3.org/standards/webdesign/htmlcss
 * http://www.w3schools.com/tags/
-* validátor: http://validator.nu/
-* http://validator.w3.org/
+* W3C validátor: http://validator.w3.org/
+* další validátor (používá ho i W3C): http://validator.nu/
 * **plus zdroje uvedené v <a href='https://github.com/4iz268/cviceni/blob/master/sylabus.pdf'>sylabu předmětu</a>**
 
 ### Časový plán na semestr
