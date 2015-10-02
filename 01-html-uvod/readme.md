@@ -320,6 +320,11 @@ XHTML 1.1
 * zdůraznění části textu 
 * vykreslováno zpravidla kurzívou.
 
+### abbr
+ * zápis zkratek, vhodné pro možnost jejich doplňkového vysvětlení
+ * význam zkratky se zapisuje do atributu title
+
+
 ### Komentáře
 
 *  &lt;!-- text komentáře --&gt;
