@@ -1,10 +1,10 @@
 # 3. CSS - úvod
 
-### Proč CSS?
+## Proč CSS?
  * oddělení vzhledu stránky od obsahu - přizpůsobení prezentace pro rozdílná zařízení (displej vs. tisk, velikost zobrazovaíc plochy...)
  * postupná specifikace jednotlivých vlastností, kaskádovost vlastností
 
-### Připojení stylů ke stránce
+## Připojení stylů ke stránce
  * **atribut style**
     * styly definované přímo u konkrétních elementů
     * nejjednodušší, ale postrádáme oddělení stylů od obsahu (se všemi důsledky)
@@ -18,17 +18,117 @@
     * možnost definice atributu *media*
     * ```<link rel="stylesheet" type="text/css" href="/URL adresa" media="screen,projection" />```
 
-### Základní zápis stylů
-TODO
+## Základní zápis stylů
+```css
+selektor {
+ vlastnost1:hodnota1;
+ vlastnost2:hodnota2;
+}
+```
+ * selektorů lze uvádět více najednou (oddělují se čárkou)
+ * stejný selektor lze uvést na více místech
 
-### Selektory
-TODO
+## Selektory
+
+| Druh výběru         | Příklad                  | Komentář                                                                                                       |
+|---------------------|--------------------------|----------------------------------------------------------------------------------------------------------------|
+| na základě značky   | p                        | vybere všechny elementy <p></p>                                                                                |
+| na základě třídy    | .trida                   | vybere všechny elementy, které mají v atributu class hodotu trida                                              |
+| dle ID              | #prvni                   | "vybere pouze prvek, který má id=""prvni"""                                                                    |
+| selektor následníka | p img                    | vybere všechny elementy , které jsou zároveň v elementu  (či v některém z elementů, které jsou do něj vnořené) |
+| pseudotřída         | :hover                   | výběr na základě pseudotřídy umožňuje ovlivnit CSS dle aktivity či pozice na stránce                           |
+| všechny elementy    | *                        |                                                                                                                |
+| selektor dítěte     | p>a                      | vybere všechny elementy, které jsou přímo vnořené do daného elementu                                           |
+| selektor sourozence | A + B                    | vybere všechny elementy B, které mají stejného rodiče jako A a zároveň po něm přímo následují                  |
+| výběr dle atributu  | A[attr=hodnota], A[attr] | vybere elementy, které odpovídají nastavení daného atributu                                                    |
+
+
+ * atributy **class** a **id**
+ * pseudotřídy: **:hover**, **link**, **:active**, **:visited**, **:first-child**, **:nth-child(n)**, **:not(selector)**
+ * pseudoelementy: **::first-letter**, **::first-line**, **::before**, **::after**, **::selection**
+ * viz <http://www.w3schools.com/css/css_pseudo_elements.asp>
+
+## Formátování textu
+### Barva textu
+ * vlastnost **color** - např.:
+   ```css
+   p { color: red; }
+   ```
+ * způsoby určení barvy v rámci stylů:
+    * **pojmenované barvy** - např. *black*, *red*, *blue*, *white*...
+    * zápis **hexa kódem** - např. *#000000*, *#0000ff*
+        * při opakování stejných hodnot lze použít zkrácený zápis: *#00ff11* = *#0f1*
+    * **rgb** zápisem - např. *rgb(0,0,0)*, *rgb(0,0,255)*
+    * **rgba** zápisem - např. *rgba(0,0,0,0.8)*, *rgba(0,0,255,0.2)*
+
+### Řez písma (font)
+ * **font-family**
+    * typ písma, více hodnot oddělujeme čárkou, použije se první nalezené písmo
+    * lze použít také písmo načtené z webu
+    * ``` p{font-family:"Times New Roman", Times, serif;} ```
+    * písma vhodná pro použití na webu... (patková vs. bezpatková, rozšířené typy písem)
+ * **font-size**
+    * ``` p{font-size:14px;} ```
+    * absolutní (*px*, *pt*) či relativní jednotky (*em*, *%*)
+    * při stejné velikosti nejsou všechny typy písem stejně velké! (např. Verdana vs. Calibri)
+ * **font-style**
+    * sklon písma
+    * *normal* | *italic* | *oblique*
+ * **font-weight**
+    * tučnost písma
+    * *normal* | *bold* | (*bolder* | *lighter* | číslo z množiny {100, 200, 300, 400 ... 900})
+ * **font-variant**
+    * *normal* | *small-caps*
+    * Co jsou to kapitálky?
 
 ### Formátování textu
-TODO
+ * **text-align**
+    * zarovnání textu
+    * *left* | *center* | *right* | *justify*
+    * Jak zarovnávat text na webu?
+ * **text-decoration**
+    * "dekorace" textu
+    * *none* | *underline* | *overline* | *line-through*
+    * Jde zařídit, aby byl text najednou podtržený i přeškrtnutý?
+ * **text-transform**
+    * transformace velikosti písmen (vhodnější, než např. psát nadpisy rovnou velkými písmeny)
+    * *none* | *uppercase* | *lowercase* | *capitalize*
+ * **text-indent**
+    * odsazení prvního řádku textu
+ * **text-shadow**
+    * ```css
+      text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
+      ```
+ * **letter-spacing**
+    * "prostrkávání" textu (mezery mezi písmeny)
+    * dříve používané u psacích strojů, nelze psát do obsahu stránek přímo mezery!
+ * **line-height**
+    * výška řádků
+
+Ačkoliv dílčí vlastnosti začínají na "text-", nelze použít souhrnnou vlastnost "text".
 
 ### Pozadí
-TODO
+Pozadí určujeme pomocí CSS vlastnosti **background**, instrukce lze zapsat buď hromadně, či v rámci jednotlivých dílčích vlastností.
+ * **background-color**
+    * barva pozadí (všechny podporované formy zápisu)
+ * **background-image**
+    * zápis pomocí funkce *url()*
+    * ```css
+      body{ background-image:url('paper.gif'); }
+      ```
+ * **background-repeat**
+    * opakování obrázku na pozadí
+    * *no-repeat* | *repeat* | *repeat-x* | *repeat-y*
+ * **background-position**
+    * umístění obrázku na pozadí
+    * pozice určena pomocí klíčových slov (top,bottom,left,right,center), či pomocí "souřadnic"
+    * lze určit pouze jednu, či obě dvě souřadnice (např. "top center")
+ * **background-attachment**
+    * fixace obrázku na pozadí (bez posouvání při rolování daného elementu)
+    * *scroll* | *fixed*
+ * CSS3 podporuje pozadí v podobě barevného přechodu - [Gradient generator](http://www.colorzilla.com/gradient-editor/)
+ * jednoduché barevné pozadí neřešíme obrázkem!
+ * dle specifikace lze zapsat více pozadí najednou (specifikace oddělujeme čárkami) - pozor na podporu v prohlížečích
 
 ### Rámečky a okraje
 TODO
