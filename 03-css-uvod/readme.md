@@ -2,7 +2,7 @@
 
 ## Proč CSS?
  * oddělení vzhledu stránky od obsahu - přizpůsobení prezentace pro rozdílná zařízení (displej vs. tisk, velikost zobrazovací plochy...)
- * postupná specifikace jednotlivých vlastností, kaskádovost vlastností
+ * postupná specifikace jednotlivých vlastností, kaskádovost specifikací
 
 ## Připojení stylů ke stránce
  * **atribut style**
@@ -54,8 +54,8 @@ selektor {
 | selektor sourozence | A + B                    | vybere všechny elementy B, které mají stejného rodiče jako A a zároveň po něm přímo následují                  |
 | výběr dle atributu  | A[attr=hodnota], A[attr] | vybere elementy, které odpovídají nastavení daného atributu                                                    |
 
-
  * atributy **class** a **id**
+ * preferovány vlastnosti "přesnějších" selektorů (výjimku tvoří použití direktivy **!important**)
  * pseudotřídy: **:hover**, **link**, **:active**, **:visited**, **:first-child**, **:nth-child(n)**, **:not(selector)**
  * pseudoelementy: **::first-letter**, **::first-line**, **::before**, **::after**, **::selection**
  * viz <http://www.w3schools.com/css/css_pseudo_elements.asp>
@@ -191,6 +191,12 @@ Pozadí určujeme pomocí CSS vlastnosti **background**, instrukce lze zapsat bu
  * **margin**
     * volný prostor mezi viditelným rámečkem a vykreslením dalších elementů
     * zápis stejným způsobem, jako padding
+    * při nastavení marginu zleva i zprava na *auto* dojde k vycentrování obsahu
+    ```css
+    div {
+        margin: 0 auto;
+    }
+    ```
 
 ## Media
  * Měla by stránka vypadat při všech způsobech zobrazení stejně? Jak by měla vypadat stránka při tisku?
