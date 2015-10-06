@@ -211,12 +211,13 @@ Pozadí určujeme pomocí CSS vlastnosti **background**, instrukce lze zapsat bu
 
    ```
  * typ média: *all* | *screen* | *print* | *speech*
- ```css
 
- @media screen and (min-width: 480px) {
-     body {
-         background-color: lightgreen;
-     }
- }
+```css
 
- ```
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+```
