@@ -8,22 +8,34 @@
  * **atribut style**
     * styly definované přímo u konkrétních elementů
     * nejjednodušší, ale postrádáme oddělení stylů od obsahu (se všemi důsledky)
-    * ```<span style="color:red">červený text</span>```
+    ```html
+
+    <span style="color:red">červený text</span>
+
+    ```
  * **element style**
     * začlenění stylů přímo do obsahu stránky (na "jednom" místě)
     * možnost využití direktivy *@import*
-    * ``` <style type="text/css"> @import url("adresa");</style>```
+    ```html
+    <style type="text/css"> @import url("adresa");</style>
+    ```
  * **element link**
     * připojení externích zdrojů ke stránce (nejen styly, ale také favicon, RSS atd.)
     * možnost definice atributu *media*
-    * ```<link rel="stylesheet" type="text/css" href="/URL adresa" media="screen,projection" />```
+    ```html
+
+    <link rel="stylesheet" type="text/css" href="/URL adresa" media="screen,projection" />
+
+    ```
 
 ## Základní zápis stylů
 ```css
+
 selektor {
  vlastnost1:hodnota1;
  vlastnost2:hodnota2;
 }
+
 ```
  * selektorů lze uvádět více najednou (oddělují se čárkou)
  * stejný selektor lze uvést na více místech
@@ -50,27 +62,36 @@ selektor {
 
 ## Formátování textu
 ### Barva textu
- * vlastnost **color** - např.:
-   ```css
-   p { color: red; }
-   ```
+ * vlastnost **color**
  * způsoby určení barvy v rámci stylů:
     * **pojmenované barvy** - např. *black*, *red*, *blue*, *white*...
     * zápis **hexa kódem** - např. *#000000*, *#0000ff*
         * při opakování stejných hodnot lze použít zkrácený zápis: *#00ff11* = *#0f1*
     * **rgb** zápisem - např. *rgb(0,0,0)*, *rgb(0,0,255)*
     * **rgba** zápisem - např. *rgba(0,0,0,0.8)*, *rgba(0,0,255,0.2)*
+ ```css
 
+ p { color: red; }
+
+ ```
 ### Řez písma (font)
  * **font-family**
     * typ písma, více hodnot oddělujeme čárkou, použije se první nalezené písmo
     * lze použít také písmo načtené z webu
-    * ``` p{font-family:"Times New Roman", Times, serif;} ```
     * písma vhodná pro použití na webu... (patková vs. bezpatková, rozšířené typy písem)
+    ```css
+
+    p{font-family:"Times New Roman", Times, serif;}
+
+    ```
  * **font-size**
-    * ``` p{font-size:14px;} ```
     * absolutní (*px*, *pt*) či relativní jednotky (*em*, *%*)
     * při stejné velikosti nejsou všechny typy písem stejně velké! (např. Verdana vs. Calibri)
+    ```css
+
+    p{font-size:14px;}
+
+    ```
  * **font-style**
     * sklon písma
     * *normal* | *italic* | *oblique*
@@ -96,9 +117,11 @@ selektor {
  * **text-indent**
     * odsazení prvního řádku textu
  * **text-shadow**
-    * ```css
-      text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
-      ```
+   ```css
+
+   text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
+
+   ```
  * **letter-spacing**
     * "prostrkávání" textu (mezery mezi písmeny)
     * dříve používané u psacích strojů, nelze psát do obsahu stránek přímo mezery!
@@ -113,9 +136,11 @@ Pozadí určujeme pomocí CSS vlastnosti **background**, instrukce lze zapsat bu
     * barva pozadí (všechny podporované formy zápisu)
  * **background-image**
     * zápis pomocí funkce *url()*
-    * ```css
-      body{ background-image:url('paper.gif'); }
-      ```
+    ```css
+
+    body{ background-image:url('paper.gif'); }
+
+    ```
  * **background-repeat**
     * opakování obrázku na pozadí
     * *no-repeat* | *repeat* | *repeat-x* | *repeat-y*
