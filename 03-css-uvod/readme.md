@@ -135,7 +135,6 @@ Pozadí určujeme pomocí CSS vlastnosti **background**, instrukce lze zapsat bu
  * **background-color**
     * barva pozadí (všechny podporované formy zápisu)
  * **background-image**
-    * zápis pomocí funkce *url()*
     ```css
 
     body{ background-image:url('paper.gif'); }
@@ -156,4 +155,38 @@ Pozadí určujeme pomocí CSS vlastnosti **background**, instrukce lze zapsat bu
  * dle specifikace lze zapsat více pozadí najednou (specifikace oddělujeme čárkami) - pozor na podporu v prohlížečích
 
 ### Rámečky a okraje
-TODO
+ * každý blokový element na webu má 3 rámečky: padding, border a margin
+ * **border**
+    * viditelný rámeček (použitelný u blokových i inline elementů)
+    * **border-style**
+        * *none* | *solid* | *dotted* | *dashed* | *double* | *groove* | *ridge* | *inset* | *outset*
+    * **border-width**
+    * **border-color**
+    ```css
+
+    h1{ border: 1px solid red; }
+
+    ```
+    * viditelný rámeček a jeho dílčí vlastnosti lze určovat také jen pro některé strany
+        * **border-top**, **border-right**, **border-bottom**, **border-left**
+        * **border-left-color**,...
+        * možnost určení vlastností pro dílčí strany vícenásobným zápisem (ale nepříliš přehledně) - např.:
+          ```css
+
+          p{ border-style: dotted solid double dashed;}
+
+          ```
+
+ * **padding**
+    * volný prostor mezi viditelným rámečkem a obsahem
+    * lze určovat pro všechny strany najednou, či pro jednotlivé strany zvlášť (vícenásobným zápisem či dílčími vlastnostmi)
+    ```
+    padding: 10px;
+    padding: 20px 10px 20px 10px;
+    padding: 20px 10px;
+    padding-top: 20px;
+    ```
+
+ * **margin**
+    * volný prostor mezi viditelným rámečkem a vykreslením dalších elementů
+    * zápis stejným způsobem, jako padding
