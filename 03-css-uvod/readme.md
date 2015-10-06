@@ -1,7 +1,7 @@
 # 3. CSS - úvod
 
 ## Proč CSS?
- * oddělení vzhledu stránky od obsahu - přizpůsobení prezentace pro rozdílná zařízení (displej vs. tisk, velikost zobrazovaíc plochy...)
+ * oddělení vzhledu stránky od obsahu - přizpůsobení prezentace pro rozdílná zařízení (displej vs. tisk, velikost zobrazovací plochy...)
  * postupná specifikace jednotlivých vlastností, kaskádovost vlastností
 
 ## Připojení stylů ke stránce
@@ -74,6 +74,7 @@ selektor {
  p { color: red; }
 
  ```
+
 ### Řez písma (font)
  * **font-family**
     * typ písma, více hodnot oddělujeme čárkou, použije se první nalezené písmo
@@ -130,7 +131,7 @@ selektor {
 
 Ačkoliv dílčí vlastnosti začínají na "text-", nelze použít souhrnnou vlastnost "text".
 
-### Pozadí
+## Pozadí
 Pozadí určujeme pomocí CSS vlastnosti **background**, instrukce lze zapsat buď hromadně, či v rámci jednotlivých dílčích vlastností.
  * **background-color**
     * barva pozadí (všechny podporované formy zápisu)
@@ -154,7 +155,7 @@ Pozadí určujeme pomocí CSS vlastnosti **background**, instrukce lze zapsat bu
  * jednoduché barevné pozadí neřešíme obrázkem!
  * dle specifikace lze zapsat více pozadí najednou (specifikace oddělujeme čárkami) - pozor na podporu v prohlížečích
 
-### Rámečky a okraje
+## Rámečky a okraje
  * každý blokový element na webu má 3 rámečky: padding, border a margin
  * **border**
     * viditelný rámeček (použitelný u blokových i inline elementů)
@@ -190,3 +191,32 @@ Pozadí určujeme pomocí CSS vlastnosti **background**, instrukce lze zapsat bu
  * **margin**
     * volný prostor mezi viditelným rámečkem a vykreslením dalších elementů
     * zápis stejným způsobem, jako padding
+
+## Media
+ * Měla by stránka vypadat při všech způsobech zobrazení stejně? Jak by měla vypadat stránka při tisku?
+ * pomocí stylů lze jednoduše zařídit, že se budou používat jiné instrukce v rámci zobrazení na počítači, jiné na mobilu a jiné při tisku
+ * v rámci CSS3 lze používat také dotazy na velikost
+ * volba pomocí atributu **media** při připojení stylů pomocí elementu **link**
+   ```html
+
+    <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css" />
+
+   ```
+ * volba pomocí media query přímo v rámci CSS zápisu
+   ```css
+
+   @media not|only mediatype and (expressions) {
+       CSS-Code;
+   }
+
+   ```
+ * typ média: *all* | *screen* | *print* | *speech*
+ ```css
+
+ @media screen and (min-width: 480px) {
+     body {
+         background-color: lightgreen;
+     }
+ }
+
+ ```
