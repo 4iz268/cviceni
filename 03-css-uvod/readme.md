@@ -10,7 +10,7 @@
     * nejjednodušší, ale postrádáme oddělení stylů od obsahu (se všemi důsledky)
     ```html
 
-    <span style="color:red">červený text</span>
+    <span style="color:red;">červený text</span>
 
     ```
  * **element style**
@@ -56,7 +56,7 @@ selektor {
 
  * atributy **class** a **id**
  * preferovány vlastnosti "přesnějších" selektorů (výjimku tvoří použití direktivy **!important**)
- * pseudotřídy: **:hover**, **link**, **:active**, **:visited**, **:first-child**, **:nth-child(n)**, **:not(selector)**
+ * pseudotřídy: **:hover**, **:link**, **:active**, **:visited**, **:first-child**, **:nth-child(n)**, **:not(selector)**
  * pseudoelementy: **::first-letter**, **::first-line**, **::before**, **::after**, **::selection**
  * viz <http://www.w3schools.com/css/css_pseudo_elements.asp>
 
