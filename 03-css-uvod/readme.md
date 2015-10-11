@@ -79,7 +79,8 @@ selektor {
  * **font-family**
     * typ písma, více hodnot oddělujeme čárkou, použije se první nalezené písmo
     * lze použít také písmo načtené z webu
-    * písma vhodná pro použití na webu... (patková vs. bezpatková, rozšířené typy písem)
+    * písma vhodná pro použití na webu... (patková vs. bezpatková, rozšířené typy písem), [web safe fonts](http://www.w3schools.com/cssref/css_websafe_fonts.asp)
+
     ```css
 
     p{font-family:"Times New Roman", Times, serif;}
