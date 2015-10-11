@@ -105,6 +105,54 @@
 
 ### Flex layout
  * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ * zapnutí pomocí direktivy:
+
+ ``` display: flex;```
+
+#### CSS vlastnosti flexbox kontejneru
+ * **flex-direction**
+    * skládání jednotlivých vložených položek
+    * *row* | *row-reverse* | *column* | *column-reverse*
+ * **flex-wrap**
+    * povolení zalamování položek do většího množství řádků
+    * *nowrap* | *wrap* | *wrap-reverse*
+ * **justify-content**
+    * zarovnání položek umístěných do flex boxu dle osy jejich skládání (ke straně, na střed, rozmístění mezer...)
+    * *flex-start* | *flex-end* | *center* | *space-between* (krajní položky budou u okrajů flexboxu) | *space-around* (rozdělení mezer mezi všechen volný prostor)
+ * **align-items**
+    * zarovnání položek umístěných do flex boxu dle druhé osy, než podle které jsou skládány
+    * *flex-start* | *flex-end* | *center* | *stretch* (roztáhnutí) | *baseline* (zarovnání dle textu)
+ * **align-content**
+    * zarovnání řádků v rámci flexboxu (obdobně, jako jsou pomocí justify-content zarovnávány jednotlivé položky)
+    * *flex-start* | *flex-end* | *center* | *stretch* | *space-between* | *space-around*
+
+#### CSS vlastnosti jednotlivých položek
+ * **order**
+    * určení pořadí položek (hodnotou jsou celá čísla)
+ * **flex**
+    * zkrácená vlastnost pro nastavení flexibilního vykreslení položky
+
+```css
+ .item {
+   flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+ }
+
+ .item{
+   flex: 0 1 auto;
+ }
+```
+
+ * **flex-grow**
+    * povolení zvětšování jednotlivých položek
+    * hodnotou jsou celá čísla určující poměr mezi jednotlivými položkami
+ * **flex-shrink**
+    * povolení zmenšování dané položky
+ * **flex-basis**
+    * povolení přerozdělení extra prostoru
+    * hodnoty *0* a *auto*
+ * **align-self**
+    * změna zarovnání pro konkrétní položku (oproti hodnotě definované v rámci vlastnosti *align-items* u kontejneru)
+    * *auto* | *flex-start* | *flex-end* | *center* | *baseline* | *stretch*
 
 ### Grid layout
  * stránky se obvykle skládají z většího množství sloupců, do kterých umisťujeme obsah

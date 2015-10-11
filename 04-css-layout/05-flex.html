@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ukázková stránka s použitím flexboxu</title>
+
+    <style type="text/css">
+        .wrapper {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .wrapper > * {
+            padding: 10px;
+            flex: 1 100%;
+        }
+
+        header {
+            background: tomato;
+        }
+
+        footer {
+            background: lightgreen;
+        }
+
+        #main {
+            text-align: left;
+            background: deepskyblue;
+        }
+
+        #aside1 {
+            background: gold;
+        }
+
+        #aside2 {
+            background: hotpink;
+        }
+
+        @media all and (min-width: 600px) {
+            .aside {
+                flex: 1 auto;
+            }
+        }
+        @media all and (min-width: 800px) {
+            #main {
+                flex: 3 0px;
+                order: 2;
+            }
+
+            #aside1 {
+                order: 1;
+            }
+
+            #aside2 {
+                order: 3;
+            }
+
+            #footer {
+                order: 4;
+            }
+        }
+        body {
+            padding: 2em;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <header>Header</header>
+    <article id="main">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla, arcu congue iaculis laoreet, felis dui lacinia ex, quis semper elit libero sit amet felis. Quisque sit amet lacus vitae lectus cursus elementum aliquam in nulla. Suspendisse rhoncus condimentum mi, nec suscipit risus sodales id. Duis at interdum lorem. Praesent iaculis enim at sapien pharetra viverra. Nullam condimentum accumsan auctor. Etiam sit amet felis sed eros fringilla aliquet. Donec semper purus a mi blandit iaculis. Proin facilisis nisl ligula, porta porttitor nunc elementum a. Sed luctus nisi neque, sit amet fringilla augue tincidunt sed. Fusce sed risus scelerisque, semper elit vel, aliquam arcu. Donec tempus volutpat justo, vel congue nisi placerat ac. Etiam luctus sapien ipsum, at vestibulum libero volutpat at.</p>
+    </article>
+    <aside id="aside1" class="aside">Aside 1</aside>
+    <aside id="aside2" class="aside">Aside 2</aside>
+    <footer id="footer">Footer</footer>
+</div>
+
+</body>
+</html>
