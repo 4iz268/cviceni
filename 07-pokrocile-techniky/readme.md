@@ -30,7 +30,7 @@ Ukázka kódu ve Stylusu:
 ```
 
 ## Responsivní weby
- * media queries - viz [3. cvičení](../03-css-uvod)
+ * media queries - viz [3. cvičení](../03-css-uvod#media)
  * mobile first vs. desktop first přístup
  * tvorba speciální mobilní verze webu vs. responsivní styly (výhody a nevýhody)
 
