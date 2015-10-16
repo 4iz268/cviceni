@@ -27,6 +27,12 @@
  <meta http-equiv="refresh" content="120" />
 ```
 
+Pro vynucení poslední verze Internet Exploreru na stránkách v xHTML:
+
+```html
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+```
+
 ### Doplňkové zdroje
  * element ```<link>``` neslouží jen pro připojení kaskádových stylů
  * RSS, ATOM
