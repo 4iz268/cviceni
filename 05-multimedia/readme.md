@@ -117,7 +117,7 @@ div {
  * **opacity**
  * definice průhlednosti objektu v intervalu &lt;0-1&gt; (stejně, jako definice průhlednosti v RGBA)
 
- ### Filtry
+ ### Filtry, transformace, rotace
  * http://davidwalsh.name/demo/css-filters.php
  * transformace, rotace
     * http://www.w3schools.com/css/css3_2dtransforms.asp
