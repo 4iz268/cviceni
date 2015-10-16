@@ -34,6 +34,7 @@ Ukázka kódu ve Stylusu:
  * mobile first vs. desktop first přístup
  * tvorba speciální mobilní verze webu vs. responsivní styly (výhody a nevýhody)
 
+ * http://www.w3schools.com/css/css_rwd_images.asp
 TODO
 
 ## Bootstrap
