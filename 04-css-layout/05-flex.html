@@ -19,7 +19,7 @@
 
         .wrapper > * {
             padding: 10px;
-            flex: 1 100%;
+            flex: 1 100%; /*stejny jako flex-grow: 1; flex-shrink: 1; flex-basis: 100%;*/
         }
 
         header {
@@ -45,25 +45,25 @@
 
         @media all and (min-width: 600px) {
             .aside {
-                flex: 1 auto;
+                flex: 1; /* prepise flex: 1 100% z wrapperu, proto nema sirku 100% */
             }
         }
         @media all and (min-width: 800px) {
             #main {
-                flex: 3 0px;
+                flex: 2; /* zabira 2x vic mista, nez ostatni elementy na stejnem radku */
                 order: 2;
             }
 
             #aside1 {
-                order: 1;
+                order: 1; /* dedi flex: 1 z aside */
             }
 
             #aside2 {
-                order: 3;
+                order: 3; /* dedi flex: 1 z aside */
             }
 
             #footer {
-                order: 4;
+                order: 4; /* dedi flex: 1 100% z wrapper, proto je na samostatnem radku */
             }
         }
         body {
