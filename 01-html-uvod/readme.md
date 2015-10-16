@@ -1,79 +1,16 @@
 # 1. Základy HTML
 
-##  Organizační informace
-
-### Kontakt, konzultační hodiny
-
-_Doplní cvičící._
-
-### Zdroje
-
-* **oficiální stránka předmětu: http://4iz268.github.io/**
-* **plán cvičení: http://4iz268.github.io/cviceni/index.html**
-* **zdrojáky ze cvičení: https://github.com/4iz268/cviceni**
-* **HTML 5 primární zdroj, final verze specifikace z 28.10.2014: http://www.w3.org/TR/html5/**
-* Twitter: https://twitter.com/4iz268
-* kniha Dive into HTML5, zdarma, kus přeložený, můžete pomoci s překladem: http://kniha.html5.cz
-* HTML5 tvorba dokonalých webových stránek: http://htmlguru.cz/
-* http://www.w3.org/standards/webdesign/htmlcss
-* http://www.w3schools.com/tags/
-* W3C validátor: http://validator.w3.org/
-* další validátor (používá ho i W3C): http://validator.nu/
-* **plus zdroje uvedené v <a href='https://github.com/4iz268/cviceni/blob/master/sylabus.pdf'>sylabu předmětu</a>**
-
-### Časový plán na semestr
-
-* http://4iz268.github.io/cviceni/index.html
-* viz <a href='https://github.com/4iz268/cviceni/blob/master/sylabus.pdf'>sylabus</a>
-
-### Požadavky na absolování (cvičení)
-
-* semestrální práce - HTML prezentace, max. 50 bodů, pro absolování nutno min. 25 bodů
-* na co si dát pozor: musíte to psát sami a být schopni vysvětlit každou část
-* extra body za aktivitu
-
-### HTML prezentace
-
-* viz http://webovky.vse.cz/pozadavky-hodnoceni/staticka-prezentace
-* sémantické značení
-* musí fungovat i při vypnutí CSS, Flashe, JS
-* styly pro tisk
-* layout bez tabulek 
-* nicméně, pokud si přede mnou dokážete obhájit, proč jste MUSELI použít tabulky, tak si je použijte, ale nemusím vám to uznat
-* web bude dostupný na Internetu 
-* libovolný hosting nebo na školním serveru eso.vse.cz
-* alespoň 5 stránek,
-* alespoň 2 sloupečky
-* projet W3C validátorem, musí být validní
-* někdy se validátor plete, pak musíte ale dokázat, že máte pravdu :)
-
-### Školní server eso
-
-eso.vse.cz
-
-* školní server, přístupy, SFTP/SCP, viz http://webovky.vse.cz/php-mysql/22-server-eso-vse-cz
-* nahrávání HTML prezentací
-* viz http://eso.vse.cz/
-* dostupné z Internetu pod http://eso.vse.cz/~xname/
-* pomocí programu winscp, instalován na učebnách
-
-# 1. cvičení
-
-* základy HTML
-* základy syntaxe, formátování, odkazy
-* příprava zdrojového kódu v HTML (HTML editory) a prohlížení výsledku v prohlížeči
-
 ## Editory
 
-* PSPAD (instalován na učebnách)
-* Notepad.exe
+* PSPad
+* Notepad++
 * Textmate (OSX)
 * Sublime Text
 * nebo jakýkoli jiný, který máte rádi
 
 ## Prohlížeče
 
-Stačí, když vaše stránky budou podporovat tyto 3 hlavní prohlížeče:
+Stačí, když vaše stránky budou podporovat tyto hlavní prohlížeče:
 
 * Internet Explorer
   * verze 10 a 11
