@@ -4,12 +4,15 @@
  * **uživatelské úèty jsou obvykle platné jen do konce pøíslušného zkouškového období**
 
 ## Pøipojení
- * k serveru je možný pøístup pouze prostøednictvím protokolu **SFTP**
-    * protokol odvozený od SSH
+ * k serveru je možný pøístup pouze prostøednictvím protokolu **SCP**
+    * Secure Copy
+    * protokol odvozený od SSH (Secure Shell)
     * nejedná se ani o bìžné FTP, ani o FTPS
  * vaše soubory jsou dostupné na adrese **http://eso.vse.cz/~xname/**
 
 ### Pøístupové údaje
+ * protokol: **SCP**
+ * port: 22
  * server: **eso.vse.cz**
  * login: **xname**
  * heslo: **jako do školní sítì**
