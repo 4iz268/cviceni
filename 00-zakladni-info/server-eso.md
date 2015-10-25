@@ -12,7 +12,7 @@
 
 ### Pøístupové údaje
  * protokol: **SCP**
- * port: 22
+ * port: **22**
  * server: **eso.vse.cz**
  * login: **xname**
  * heslo: **jako do školní sítì**
