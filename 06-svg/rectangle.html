@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Rectangle in SVG</title>
+</head>
+
+<body>
+
+	<h1>Rectangle in SVG</h1>
+
+	<!-- 
+	http://www.w3schools.com/svg/svg_rect.asp
+
+	The width and height attributes of the <rect> element define the height and the width of the rectangle
+	The style attribute is used to define CSS properties for the rectangle
+	The CSS fill property defines the fill color of the rectangle
+	The CSS stroke-width property defines the width of the border of the rectangle
+	The CSS stroke property defines the color of the border of the rectangle
+	-->
+
+	<!-- Otazka: proc je spodni a pravy okraj sirsi nez levy a horni? -->
+	<!-- Napoveda: x=2, y=2 to vyresi, proc? -->
+	<!-- Okraj se 1 pixelem zanoruje do obrazku, zbytek je vne obrazku -->
+
+	<svg width="400" height="110">
+		<rect x="2" y="2" width="300" height="100" style="fill: dodgerblue; stroke: black; stroke-width:3;" />
+	</svg>
+
+
+
+	<!--
+	http://www.w3schools.com/svg/svg_rect.asp
+
+	The x attribute defines the left position of the rectangle (e.g. x="50" places the rectangle 50 px from the left margin)
+	The y attribute defines the top position of the rectangle (e.g. y="20" places the rectangle 20 px from the top margin)
+	The CSS fill-opacity property defines the opacity of the fill color (legal range: 0 to 1)
+	The CSS stroke-opacity property defines the opacity of the stroke color (legal range: 0 to 1) 
+	-->
+
+	<svg width="400" height="180">
+		<rect x="50" y="20" width="150" height="150"
+		style="fill:blue; stroke:pink; fill-opacity:0.1; stroke-opacity:0.9; stroke-width:3" />
+	</svg>
+
+
+
+	<!--
+	http://www.w3schools.com/svg/svg_rect.asp
+
+	The rx and the ry attributes rounds the corners of the rectangle
+	-->
+
+	<svg width="400" height="180">
+		<rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+		style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+	</svg>
+
+
+
+
+
+</body>
+
+</html>
+

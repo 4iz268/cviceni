@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Circle in SVG</title>
+</head>
+
+<body>
+
+	<h1>Circle in SVG</h1>
+
+	<!-- 
+	http://www.w3schools.com/svg/svg_inhtml.asp
+
+	An SVG image begins with an <svg> element
+	The width and height attributes of the <svg> element define the width and height of the SVG image
+	The <circle> element is used to draw a circle
+	The cx and cy attributes define the x and y coordinates of the center of the circle. If cx and cy are omitted, the circle's center is set to (0, 0)
+	The r attribute defines the radius of the circle
+	The stroke and stroke-width attributes control how the outline of a shape appears. We set the outline of the circle to a 4px green "border"
+	The fill attribute refers to the color inside the circle. We set the fill color to yellow
+	The closing </svg> tag closes the SVG image 
+	-->
+
+	<svg width="100" height="100">
+		<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+		Sorry, your browser does not support inline SVG.
+	</svg>
+
+
+	<!-- svg je inline element, nikoli blokový -->
+
+	<svg width="200" height="200">
+		<circle r="100" stroke="yellow" stroke-width="10" fill="dodgerblue" />
+		Sorry, your browser does not support inline SVG.
+	</svg> 
+	
+</body>
+
+</html>
+
