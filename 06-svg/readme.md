@@ -7,7 +7,7 @@
 * doporučení W3C
 * každý element v SVG obrázku může být animován
 * **obrázky jsou text**
-* nástroj pro tvorbu obrázků - jakýkoli textový editor nebo např. https://inkscape.org
+* nástroj pro tvorbu obrázků - jakýkoli textový editor
 * obrázky lze prohledávat fulltextem, lze je komprimovat (velmi efektivně, protože je to text)
 * pro složitější obrázky (třeba Path) je vhodné používat grafické editory, např. https://inkscape.org
 
