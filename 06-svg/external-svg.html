@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>External reference in SVG</title>
+</head>
+
+<body>
+
+	<h1>External SVG reference</h1>
+
+	<!--
+		https://css-tricks.com/svg-use-with-external-reference-take-2/
+		POZOR: nefunguje v Chrome na localhost, je treba nahrat na server, jinak chyba:
+		Unsafe attempt to load URL circle.svg#one from frame with URL external-svg.html. Domains, protocols and ports must match.
+		-->
+
+		<svg>
+			<use xlink:href="circle.svg#one"></use>
+		</svg>
+	
+	</body>
+
+	</html>

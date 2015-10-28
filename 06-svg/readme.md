@@ -67,6 +67,11 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text
 http://www.w3schools.com/svg/svg_text.asp
 https://developer.mozilla.org/en/docs/Web/SVG/Attribute/transform
 
+## Externí SVG
+
+* viz external-svg.html
+* v Chrome nefunguje v lokálním prohlížeči kvůli bezpečnosti, je třeba nahrát na server (třeba eso.vse.cz)
+
 
 ## SVG komprese
 
