@@ -12,34 +12,34 @@
 * pro složitější obrázky (třeba Path) je vhodné používat grafické editory, např. https://inkscape.org
 
 
-# Verze dle W3C
+## Verze dle W3C
 
 * SVG 1.0 became a W3C Recommendation on 4 September 2001.
 * SVG 1.1 became a W3C Recommendation on 14 January 2003.
 * SVG 1.1 (Second Edition) became a W3C Recommendation on 16 August 2011.
 
 
-# Zdroje
+## Zdroje
 
 * **W3C - primární zdroj: http://www.w3.org/TR/SVG11/**
 * https://developer.mozilla.org/en-US/docs/Web/SVG
 * http://www.w3schools.com/svg/
 * http://www.adobe.com/devnet/svg.html
 
-# Kruh
+## Kruh
 
 * **https://github.com/4iz268/cviceni/tree/master/06-svg/circle.html**
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle
 * http://www.w3schools.com/svg/svg_inhtml.asp
 
 
-# Elipsa
+## Elipsa
 
 * **https://github.com/4iz268/cviceni/tree/master/06-svg/ellipse.html**
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse
 * http://www.w3schools.com/svg/svg_ellipse.asp
 
-# Cesta
+## Cesta
 
 * **https://github.com/4iz268/cviceni/tree/master/06-svg/path.html**
 * http://www.w3schools.com/svg/svg_path.asp
@@ -82,8 +82,14 @@
 * **https://github.com/4iz268/cviceni/tree/master/06-svg/external-svg.html**
 * v Chrome nefunguje v lokálním prohlížeči kvůli bezpečnosti, je třeba nahrát na server (třeba eso.vse.cz)
 
-
 ## Filtry
 
 * **https://github.com/4iz268/cviceni/tree/master/06-svg/filters.html**
 * http://www.w3schools.com/svg/svg_filters_intro.asp
+
+## Animace
+
+* **https://github.com/4iz268/cviceni/tree/master/06-svg/animation.html**
+* http://www.w3.org/TR/SVG/animate.html#AnimateMotionElement
+* https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateMotion
+* ...a další...
