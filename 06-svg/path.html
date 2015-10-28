@@ -12,9 +12,22 @@
 	<h1>Paths in SVG</h1>
 	
 	<!--
-	http://www.w3schools.com/svg/svg_path.asp
-	https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path
-	-->
+		http://www.w3schools.com/svg/svg_path.asp
+		https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path
+		
+		M = moveto
+		L = lineto
+		H = horizontal lineto
+		V = vertical lineto
+		C = curveto
+		S = smooth curveto
+		Q = quadratic Bézier curve
+		T = smooth quadratic Bézier curveto
+		A = elliptical Arc
+		Z = closepath
+		
+		All of the commands above can also be expressed with lower letters. Capital letters means absolutely positioned, lower cases means relatively positioned.
+		-->
 	
 	<svg height="640" width="480">
 		<path d="M0 0 L200 0 200 200 q200 0 100 100" stroke="yellow" stroke-width="3" fill="dodgerblue"/>

@@ -28,51 +28,66 @@
 
 # Kruh
 
+* circle.html
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle
 * http://www.w3schools.com/svg/svg_inhtml.asp
 
 
 # Elipsa
 
+* ellipse.html
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse
 * http://www.w3schools.com/svg/svg_ellipse.asp
 
 # Cesta
 
+* path.html
 * http://www.w3schools.com/svg/svg_path.asp
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path
 		
 ## Polygon
+
+* polygon.html
 * http://www.w3schools.com/svg/svg_polygon.asp
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polygon
 
 
 ## Linka
+
+* line.html
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/line
 * http://www.w3schools.com/svg/svg_line.asp
 
 ## Více linek
 
+* polyline.html
 * http://www.w3schools.com/svg/svg_polyline.asp
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polyline
 
 ## Obdélník
 
+* rectangle.html
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect
 * http://www.w3schools.com/svg/svg_rect.asp
 	
 ## Text
-	
-https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text
-http://www.w3schools.com/svg/svg_text.asp
-https://developer.mozilla.org/en/docs/Web/SVG/Attribute/transform
+
+* text.html
+* https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text
+* http://www.w3schools.com/svg/svg_text.asp
+* https://developer.mozilla.org/en/docs/Web/SVG/Attribute/transform
 
 ## Externí SVG
 
-* viz external-svg.html
+* external-svg.html
 * v Chrome nefunguje v lokálním prohlížeči kvůli bezpečnosti, je třeba nahrát na server (třeba eso.vse.cz)
 
 
-## SVG komprese
+## Filtry
 
-* gzip - do souboru svgz, browsery podporující SVG 1.1 rozbalí a zobrazí. Úspora 20%-50% (Wikipedie - přidat primární zdroj - http://www.adobe.com/devnet/svg.html)
+* filters.html
+* http://www.w3schools.com/svg/svg_filters_intro.asp
+
+
+
+
