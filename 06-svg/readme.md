@@ -108,3 +108,4 @@
 * teoreticky je možné používat ořezávání i v CSS, ale chybí podpora v prohlížečích
 * [**Ukázka imageClipPath.html**](./imageClipPath.html)
 * https://coderwall.com/p/blx8kw/svg-clippath-images
+* http://sarasoueidan.com/blog/css-svg-clipping/
