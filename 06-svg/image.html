@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Bitmapový obrázek v SVG</title>
+	</head>
+	<body>
+
+		<h1>Image in SVG</h1>
+
+		<svg height="400" width="600" style="border: 1px solid red;">
+			<!--
+				vložení bitmapového obrázku do SVG
+				 - je nutné uvádět pozici i rozměry (nenulové, jinak se obrázek vůbec nevykreslí
+			-->
+			<image xlink:href="img.jpg" x="50" y="30" height="300px" width="300px" />
+			<polygon points="160,160 70,50 123,50" style="fill:lime;stroke:purple;stroke-width:1" />
+		</svg>
+
+	</body>
+</html>

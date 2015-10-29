@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Bitmapový obrázek v SVG</title>
+	</head>
+	<body>
+
+		<h1>Image in SVG</h1>
+
+		<svg height="400" width="600" style="border: 1px solid red;">
+
+			<clipPath id="hexagonal-mask">
+				<polygon points="100,10 40,198 190,78 10,78 160,198" />
+			</clipPath>
+			<!--
+				pomocí clip path je možné definovat ořezovou masku pro vykreslení jak vektorových tvarů, tak bitmapy
+				zároveň je možné kombinovat obrázek s dalšími tvary...
+			-->
+
+			<polygon points="200,60 140,248 290,128 110,128 260,248" style="fill:yellow;stroke-width:0;"  />
+
+			<image  height="210px" width="400px" clip-path="url(#hexagonal-mask)" xlink:href="img.jpg" />
+
+
+
+		</svg>
+
+	</body>
+</html>

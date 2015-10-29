@@ -7,9 +7,14 @@
 * doporučení W3C
 * každý element v SVG obrázku může být animován
 * **obrázky jsou text**
-* nástroj pro tvorbu obrázků - jakýkoli textový editor
+* nástroj pro tvorbu obrázků
+    * jakýkoli textový editor
+    * vektorový grafický editor s exportem do SVG (Inkscape, Corel Draw, Adobe Illustrator)
 * obrázky lze prohledávat fulltextem, lze je komprimovat (velmi efektivně, protože je to text)
-* pro složitější obrázky (třeba Path) je vhodné používat grafické editory, např. https://inkscape.org
+* pro složitější obrázky (třeba Path) je vhodné používat grafické editory
+* nejde jen o možnost kreslit jednoduché, ale také komplexnější obrázky - viz:
+    * [v SVG souboru](./exportExample1.html)
+    * [v HTML](exportExample2.html)
 
 
 ## Verze dle W3C
@@ -28,68 +33,78 @@
 
 ## Kruh
 
-* **https://github.com/4iz268/cviceni/tree/master/06-svg/circle.html**
+* [**Ukázka circle.html**](./circle.html)
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle
 * http://www.w3schools.com/svg/svg_inhtml.asp
 
 
 ## Elipsa
 
-* **https://github.com/4iz268/cviceni/tree/master/06-svg/ellipse.html**
+* [**Ukázka ellipse.html**](./ellipse.html)
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse
 * http://www.w3schools.com/svg/svg_ellipse.asp
 
 ## Cesta
 
-* **https://github.com/4iz268/cviceni/tree/master/06-svg/path.html**
+* [**Ukázka path.html**](./path.html)
 * http://www.w3schools.com/svg/svg_path.asp
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path
 		
 ## Polygon
 
-* **https://github.com/4iz268/cviceni/tree/master/06-svg/polygon.html**
+* [**Ukázka polygon.html**](./polygon.html)
 * http://www.w3schools.com/svg/svg_polygon.asp
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polygon
 
 
 ## Linka
 
-* **https://github.com/4iz268/cviceni/tree/master/06-svg/line.html**
+* [**Ukázka line.html**](./line.html)
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/line
 * http://www.w3schools.com/svg/svg_line.asp
 
 ## Více linek
 
-* **https://github.com/4iz268/cviceni/tree/master/06-svg/polyline.html**
+* [**Ukázka polyline.html**](./polyline.html)
 * http://www.w3schools.com/svg/svg_polyline.asp
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polyline
 
 ## Obdélník
 
-* **https://github.com/4iz268/cviceni/tree/master/06-svg/rectangle.html**
+* [**Ukázka rectangle.html**](./rectangle.html)
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect
 * http://www.w3schools.com/svg/svg_rect.asp
-	
+
+## Vložení bitmapového obrázku
+
+* [**Ukázka image.html**](./image.html)
+
 ## Text
 
-* **https://github.com/4iz268/cviceni/tree/master/06-svg/text.html**
+* [**Ukázka text.html**](./text.html)
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text
 * http://www.w3schools.com/svg/svg_text.asp
 * https://developer.mozilla.org/en/docs/Web/SVG/Attribute/transform
 
 ## Externí SVG
 
-* **https://github.com/4iz268/cviceni/tree/master/06-svg/external-svg.html**
+* [**Ukázka external-svg.html**](./external-svg.html)
+* [**Ukázka exportExample1.html**](./exportExample1.html)
 * v Chrome nefunguje v lokálním prohlížeči kvůli bezpečnosti, je třeba nahrát na server (třeba eso.vse.cz)
 
 ## Filtry
 
-* **https://github.com/4iz268/cviceni/tree/master/06-svg/filters.html**
+* [**Ukázka filters.html**](./filters.html)
 * http://www.w3schools.com/svg/svg_filters_intro.asp
 
 ## Animace
 
-* **https://github.com/4iz268/cviceni/tree/master/06-svg/animation.html**
+* [**Ukázka animation.html**](./animation.html)
 * http://www.w3.org/TR/SVG/animate.html#AnimateMotionElement
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateMotion
-* ...a další...
+
+## Clip-path
+* možnost ořezávat SVG objekty i bitmapy
+* teoreticky je možné používat ořezávání i v CSS, ale chybí podpora v prohlížečích
+* [**Ukázka imageClipPath.html**](./imageClipPath.html)
+* https://coderwall.com/p/blx8kw/svg-clippath-images
