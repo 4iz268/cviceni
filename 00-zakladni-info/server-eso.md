@@ -1,28 +1,29 @@
 # Server eso.vse.cz
- * jedná se o vıukovı server, na kterı máte automaticky zøízen pøístup v rámci absolvence tohoto pøedmìtu
- * jedná se o linuxovı server s Apachem, PHP a MySQL
- * **uivatelské úèty jsou obvykle platné jen do konce pøíslušného zkouškového období**
+ * jednÃ¡ se o vÃ½ukovÃ½ server, na kterÃ½ mÃ¡te automaticky zÅ™Ã­zen pÅ™Ã­stup v rÃ¡mci absolvence tohoto pÅ™edmÄ›tu
+ * jednÃ¡ se o linuxovÃ½ server s Apachem, PHP a MySQL
+ * **uÅ¾ivatelskÃ© ÃºÄty jsou obvykle platnÃ© jen do konce pÅ™Ã­sluÅ¡nÃ©ho zkouÅ¡kovÃ©ho obdobÃ­**
 
-## Pøipojení
- * k serveru je monı pøístup pouze prostøednictvím protokolu **SCP**
+## PÅ™ipojenÃ­
+ * k serveru je moÅ¾nÃ½ pÅ™Ã­stup pouze prostÅ™ednictvÃ­m protokolu **SCP** Äi **SFTP**
     * Secure Copy
-    * protokol odvozenı od SSH (Secure Shell)
-    * nejedná se ani o bìné FTP, ani o FTPS
- * vaše soubory jsou dostupné na adrese **http://eso.vse.cz/~xname/**
+    * protokoly odvozenÃ© od SSH (Secure Shell)
+    * nejednÃ¡ se ani o bÄ›Å¾nÃ© FTP, ani o FTPS
+    * na serveru eso je povolenÃ© i pÅ™Ã­mÃ© pÅ™ipojenÃ­ prostÅ™ednictvÃ­m protokolu *SSH* (napÅ™. pomocÃ­ [Putty](http://putty.org))
+ * vaÅ¡e soubory jsou dostupnÃ© na adrese **http://eso.vse.cz/~xname/**
 
-### Pøístupové údaje
+### PÅ™Ã­stupovÃ© Ãºdaje
  * protokol: **SCP**
  * port: **22**
  * server: **eso.vse.cz**
  * login: **xname**
- * heslo: **jako do školní sítì**
+ * heslo: **jako do Å¡kolnÃ­ sÃ­tÄ›**
 
-### Vhodnı software
+### VhodnÃ½ software
  * [WinSCP](http://winscp.net/)
-    * k dispozici i na školních poèítaèích
+    * k dispozici i na Å¡kolnÃ­ch poÄÃ­taÄÃ­ch
  * [SFTP plugin pro Total Commander](http://www.ghisler.com/plugins.htm)
-    * po nainstalování jej naleznete v poloce "Sí"
-    * je nutné dokopírovat DLL soubory
+    * po nainstalovÃ¡nÃ­ jej naleznete v poloÅ¾ce "SÃ­Å¥"
+    * je nutnÃ© dokopÃ­rovat DLL soubory
 
-### Pøístup k MySQL
- * pro pøístup k databázi je potøebné speciální heslo, které naleznete po pøihlášení k serveru v souboru *mysql-heslo.txt*
+### PÅ™Ã­stup k MySQL
+ * pro pÅ™Ã­stup k databÃ¡zi je potÅ™ebnÃ© speciÃ¡lnÃ­ heslo, kterÃ© naleznete po pÅ™ihlÃ¡Å¡enÃ­ k serveru v souboru *mysql-heslo.txt*
