@@ -1,54 +1,54 @@
-# Poadavky - Statická HTML prezentace
+# PoÅ¾adavky - StatickÃ¡ HTML prezentace
 
-## Termín a forma odevzdání
- * vaše statická HTML prezentace musí bıt volnì dostupná na internetu
- * odevzdání do konce 7. tıdne vıuky dle pokynù v odevzdávárnì v systému ISIS
- * maximálnì lze získat 25 bodù
+## TermÃ­n a forma odevzdÃ¡nÃ­
+ * vaÅ¡e statickÃ¡ HTML prezentace musÃ­ bÃ½t volnÄ› dostupnÃ¡ na internetu
+ * odevzdÃ¡nÃ­ do konce 7. tÃ½dne vÃ½uky dle pokynÅ¯ v odevzdÃ¡vÃ¡rnÄ› v systÃ©mu ISIS
+ * maximÃ¡lnÄ› lze zÃ­skat 25 bodÅ¯
 
-### Základní zadání
- * web bude vìnován smysluplnému obsahu
-    * téma je libovolné (tj. mùete vytváøet osobní stránky, prezentaci spolku, firmy atd.), ale bude vìnován reálné entitì - tj. ne fiktivní spoleènosti atp.
- * web bude dostupnı na internetu
-    * na libovolném hostingu èi na serveru [eso.vse.cz](./server-eso.md)
-    * nestaèí umístìní stránek do dropboxu
+### ZÃ¡kladnÃ­ zadÃ¡nÃ­
+ * web bude vÄ›novÃ¡n smysluplnÃ©mu obsahu
+    * tÃ©ma je libovolnÃ© (tj. mÅ¯Å¾ete vytvÃ¡Å™et osobnÃ­ strÃ¡nky, prezentaci spolku, firmy atd.), ale **bude vÄ›novÃ¡n reÃ¡lnÃ© entitÄ›** - tj. ne fiktivnÃ­ spoleÄnosti, pouze zkopÃ­rovanÃ©mu obsahu z jinÃ©ho webu atp.
+ * web bude dostupnÃ½ na internetu
+    * na libovolnÃ©m hostingu Äi na serveru [eso.vse.cz](./server-eso.md)
+    * nestaÄÃ­ umÃ­stÄ›nÃ­ strÃ¡nek do dropboxu
  * jste autory obsahu i vzhledu webu
-    * nelze pouít ádné existující CMS, ani staenou šablonu
-    * nelze pouít vıchozí šablony bootstrapu!
- * web bude tvoøen minimálnì 5 stránkami provázanımi smysluplnou navigací
-    * ve vıjimeèném pøípadì lze vytvoøit i one-page prezentaci, ale budete si ji muset obhájit
- * web musí fungovat i pøi vypnutí CSS, Flashe a JavaScriptu
-    * prezentace bude samozøejmì vypadat pøi vypnutıch kaskádovıch stylech jinak, ale pøesto by mìl bıt uivatel schopen najít potøebnı obsah
- * web musí fungovat ve všech bìnıch prohlíeèích
-    * ve starších prohlíeèích samozøejmì nebudou fungovat napø. nové vlastnosti z CSS 3, ale web musí bıt pouitelnı!
+    * nelze pouÅ¾Ã­t Å¾Ã¡dnÃ© existujÃ­cÃ­ CMS, ani staÅ¾enou Å¡ablonu
+    * nelze pouÅ¾Ã­t vÃ½chozÃ­ Å¡ablony bootstrapu!
+ * web bude tvoÅ™en minimÃ¡lnÄ› 5 strÃ¡nkami provÃ¡zanÃ½mi smysluplnou navigacÃ­
+    * ve vÃ½jimeÄnÃ©m pÅ™Ã­padÄ› lze vytvoÅ™it i one-page prezentaci, ale budete si ji muset obhÃ¡jit
+ * web musÃ­ fungovat i pÅ™i vypnutÃ­ CSS, Flashe a JavaScriptu
+    * prezentace bude samozÅ™ejmÄ› vypadat pÅ™i vypnutÃ½ch kaskÃ¡dovÃ½ch stylech jinak, ale pÅ™esto by mÄ›l bÃ½t uÅ¾ivatel schopen najÃ­t potÅ™ebnÃ½ obsah
+ * web musÃ­ fungovat ve vÅ¡ech bÄ›Å¾nÃ½ch prohlÃ­Å¾eÄÃ­ch
+    * ve starÅ¡Ã­ch prohlÃ­Å¾eÄÃ­ch samozÅ™ejmÄ› nebudou fungovat napÅ™. novÃ© vlastnosti z CSS 3, ale web musÃ­ bÃ½t pouÅ¾itelnÃ½!
 
-### Souhrn hodnocenıch poadavkù
-Paklie splníte podmínky základního zadání, bude v rámci vaší prezentace hodnoceno splnìní zejména tìchto podmínek:
+### Souhrn hodnocenÃ½ch poÅ¾adavkÅ¯
+PakliÅ¾e splnÃ­te podmÃ­nky zÃ¡kladnÃ­ho zadÃ¡nÃ­, bude v rÃ¡mci vaÅ¡Ã­ prezentace hodnoceno splnÄ›nÃ­ zejmÃ©na tÄ›chto podmÃ­nek:
 
- * web je *validní* dle specifikace HTML 5 èi xHTML
-    * v rámci validátoru je nutné ovìøit všechny stránky webu (nejen homepage)
-    * nìkdy se validátor plete - pak ale musíte dokázat, e máte pravdu...
-    * v pøípadì xHTML bude pouita norma Strict
- * je vyuito sémantické znaèkování dle pouité specifikace (v HTML 5 je nutné vyuívat nové sémantické znaèky)
- * CSS a pøípadnı JavaScript jsou oddìleny od obsahu stránek
- * vícesloupcovı, beztabulkovı layout
-    * tabulky pouívejte jen k tomu, k èemu jsou urèeny! (ne k rozloení webu)
-    * alespoò jedna ze stránek obsahuje 2 èi více sloupcù (nepoèítá se reklamní banner v pravém horním rohu...)
- * pøizpùsobená verze pro tisk
-    * tiskneme jen to, co má smysl tisknout (a ve vhodné formì), zároveò nechybí podstatné informace
- * jasná a srozumitelná identifikace webu na všech stránkách (i pøi tisku)
-    * i pøi vypnutıch obrázcích
- * neduplikování URL (stejnı obsah nebude dostupnı pod rùznımi adresami)
- * podtrené èi jinak vhodnì (a zároveò jednoznaènì) odlišené odkazy
- * zvıraznìní aktivní poloky menu
- * kadá stránka má vlastní nadpis H1
- * kadá stránka má vlastní title, title obsahuje kromì názvu konkrétní stránky také název celého webu
- * vhodnì zvolené písmo a jeho velikost
- * vhodnì zvolené barvy stránek, dostateènı barevnı odstup písma od pozadí
- * všechny vıznamové obrázky mají atribut alt s odpovídající hodnotou, vhodné pouití obrázkù, optimalizace velikosti obrázkù
-    * pro splnìní tohoto bodu musí web obsahovat alespoò nìjaké obrázky
- * stránky mají uvedeny nezbytné meta informace a favicon
- * web je zobrazitelnı i pøi rozlišení 800x600, všechny dùleité informace nad pøehybem (tj. v celém tomto prostoru nebude jen fotka...)
- * web neobsahuje jiné chyby
+ * web je *validnÃ­* dle specifikace HTML 5 Äi xHTML
+    * v rÃ¡mci validÃ¡toru je nutnÃ© ovÄ›Å™it vÅ¡echny strÃ¡nky webu (nejen homepage)
+    * nÄ›kdy se validÃ¡tor plete - pak ale musÃ­te dokÃ¡zat, Å¾e mÃ¡te pravdu...
+    * v pÅ™Ã­padÄ› xHTML bude pouÅ¾ita norma Strict
+ * je vyuÅ¾ito sÃ©mantickÃ© znaÄkovÃ¡nÃ­ dle pouÅ¾itÃ© specifikace (v HTML 5 je nutnÃ© vyuÅ¾Ã­vat novÃ© sÃ©mantickÃ© znaÄky)
+ * CSS a pÅ™Ã­padnÃ½ JavaScript jsou oddÄ›leny od obsahu strÃ¡nek
+ * vÃ­cesloupcovÃ½, beztabulkovÃ½ layout
+    * tabulky pouÅ¾Ã­vejte jen k tomu, k Äemu jsou urÄeny! (ne k rozloÅ¾enÃ­ webu)
+    * alespoÅˆ jedna ze strÃ¡nek obsahuje 2 Äi vÃ­ce sloupcÅ¯ (nepoÄÃ­tÃ¡ se reklamnÃ­ banner v pravÃ©m hornÃ­m rohu...)
+ * pÅ™izpÅ¯sobenÃ¡ verze pro tisk
+    * tiskneme jen to, co mÃ¡ smysl tisknout (a ve vhodnÃ© formÄ›), zÃ¡roveÅˆ nechybÃ­ podstatnÃ© informace
+ * jasnÃ¡ a srozumitelnÃ¡ identifikace webu na vÅ¡ech strÃ¡nkÃ¡ch (i pÅ™i tisku)
+    * i pÅ™i vypnutÃ½ch obrÃ¡zcÃ­ch
+ * neduplikovÃ¡nÃ­ URL (stejnÃ½ obsah nebude dostupnÃ½ pod rÅ¯znÃ½mi adresami)
+ * podtrÅ¾enÃ© Äi jinak vhodnÄ› (a zÃ¡roveÅˆ jednoznaÄnÄ›) odliÅ¡enÃ© odkazy
+ * zvÃ½raznÄ›nÃ­ aktivnÃ­ poloÅ¾ky menu
+ * kaÅ¾dÃ¡ strÃ¡nka mÃ¡ vlastnÃ­ nadpis H1
+ * kaÅ¾dÃ¡ strÃ¡nka mÃ¡ vlastnÃ­ title, title obsahuje kromÄ› nÃ¡zvu konkrÃ©tnÃ­ strÃ¡nky takÃ© nÃ¡zev celÃ©ho webu
+ * vhodnÄ› zvolenÃ© pÃ­smo a jeho velikost
+ * vhodnÄ› zvolenÃ© barvy strÃ¡nek, dostateÄnÃ½ barevnÃ½ odstup pÃ­sma od pozadÃ­
+ * vÅ¡echny vÃ½znamovÃ© obrÃ¡zky majÃ­ atribut alt s odpovÃ­dajÃ­cÃ­ hodnotou, vhodnÃ© pouÅ¾itÃ­ obrÃ¡zkÅ¯, optimalizace velikosti obrÃ¡zkÅ¯
+    * pro splnÄ›nÃ­ tohoto bodu musÃ­ web obsahovat alespoÅˆ nÄ›jakÃ© obrÃ¡zky
+ * strÃ¡nky majÃ­ uvedeny nezbytnÃ© meta informace a favicon
+ * web je zobrazitelnÃ½ i pÅ™i rozliÅ¡enÃ­ 800x600, vÅ¡echny dÅ¯leÅ¾itÃ© informace nad pÅ™ehybem (tj. v celÃ©m tomto prostoru nebude jen fotka...)
+ * web neobsahuje jinÃ© chyby
 
-### Monost opravy
-Pokud máte zájem, je moné si vısledné hodnocení statické prezentace vylepšit odstranìním nedostatkù - podrobnosti budou sdìleny na cvièeních...
+### MoÅ¾nost opravy
+Pokud mÃ¡te zÃ¡jem, je moÅ¾nÃ© si vÃ½slednÃ© hodnocenÃ­ statickÃ© prezentace vylepÅ¡it odstranÄ›nÃ­m nedostatkÅ¯ - podrobnosti budou sdÄ›leny na cviÄenÃ­ch...
