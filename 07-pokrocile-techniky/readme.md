@@ -39,11 +39,23 @@ Ukázka kódu ve Stylusu:
 
 ## Responsivní obrázky
 
+* [responsive-images.html](./responsive-images.html)
 * http://www.w3schools.com/css/css_rwd_images.asp
 * velikost obrázku se mění dle velikosti okna
 * **width: 100%** - šířka obrázku = šířka okna. Nevýhoda: zvětšuje obrázek i přes jeho původní velikost.
 * **max-width: 100%** - šířka obrázku = šířka okna. Nezvětšuje obrázek přes jeho původní šířku.
-* [responsive-images.html](./responsive-images.html)
+
+
+## Pozadí
+
+* [backgrounds.html](./backgrounds.html)
+* http://www.w3schools.com/css/css_rwd_images.asp
+* pozadí elementu přes background-image: url('NĚJAKÉ URL');
+* background-size: contain - obrázek vyplní pozadí, ale zachová původní velikost
+* background-size: 100% 100% - obrázek vyplní pozadí, úplně, nezachová původní velikost
+* background-repeat: no-repeat - obrázek se nebude opakovat, pokud jeho velikost nestačí na výplň pozadí
+* background-size: cover - obrázek se v pozadí přiblíží tak, aby zakryl celou plochu, udělá si výřez, pokud je to nutné.
+
 
 ## Bootstrap
  * http://getbootstrap.com/getting-started/
