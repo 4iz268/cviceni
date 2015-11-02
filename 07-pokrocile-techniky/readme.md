@@ -1,4 +1,4 @@
-# 7. Pokročilá témata
+# 7. Pokročilé techniky
 
 ## CSS preprocesory
  * zjednodušují tvorbu komplexních stylů a jejich zápis v textové podobě
@@ -30,17 +30,27 @@ Ukázka kódu ve Stylusu:
 ```
 
 ## Responsivní weby
- * media queries - viz [3. cvičení](../03-css-uvod#media)
- * mobile first vs. desktop first přístup
- * tvorba speciální mobilní verze webu vs. responsivní styly (výhody a nevýhody)
+* stránky reagují na různou velikost okna
+* v ideálním případě jde web zobrazit na všech možných zařízeních s různou velikostí okna prohlížeče
+* media queries - viz [3. cvičení](../03-css-uvod#media)
+* mobile first vs. desktop first přístup - dnes je populární mobile first (nejdřív uděláme web pro mobily, teprve pak pro desktop)
+* tvorba speciální mobilní verze webu vs. responsivní styly (výhody a nevýhody)
 
- * http://www.w3schools.com/css/css_rwd_images.asp
-TODO
+
+## Responsivní obrázky
+
+* http://www.w3schools.com/css/css_rwd_images.asp
+* velikost obrázku se mění dle velikosti okna
+* **width: 100%** - šířka obrázku = šířka okna. Nevýhoda: zvětšuje obrázek i přes jeho původní velikost.
+* **max-width: 100%** - šířka obrázku = šířka okna. Nezvětšuje obrázek přes jeho původní šířku.
+* (./responsive-images.html)
 
 ## Bootstrap
  * http://getbootstrap.com/getting-started/
 TODO
 
+
 ## Animace a transformace pomocí CSS
 TODO
+
 
