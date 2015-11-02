@@ -39,7 +39,7 @@ Ukázka kódu ve Stylusu:
 
 ## Responsivní obrázky
 
-* [responsive-images.html](./responsive-images.html)
+* **[responsive-images.html](./responsive-images.html)**
 * http://www.w3schools.com/css/css_rwd_images.asp
 * velikost obrázku se mění dle velikosti okna
 * **width: 100%** - šířka obrázku = šířka okna. Nevýhoda: zvětšuje obrázek i přes jeho původní velikost.
@@ -48,7 +48,7 @@ Ukázka kódu ve Stylusu:
 
 ## Pozadí
 
-* [backgrounds.html](./backgrounds.html)
+* **[backgrounds.html](./backgrounds.html)**
 * http://www.w3schools.com/css/css_rwd_images.asp
 * pozadí elementu přes background-image: url('NĚJAKÉ URL');
 * background-size: contain - obrázek vyplní pozadí, ale zachová původní velikost
