@@ -43,7 +43,7 @@ Ukázka kódu ve Stylusu:
 * velikost obrázku se mění dle velikosti okna
 * **width: 100%** - šířka obrázku = šířka okna. Nevýhoda: zvětšuje obrázek i přes jeho původní velikost.
 * **max-width: 100%** - šířka obrázku = šířka okna. Nezvětšuje obrázek přes jeho původní šířku.
-* (./responsive-images.html)
+* [responsive-images.html](./responsive-images.html)
 
 ## Bootstrap
  * http://getbootstrap.com/getting-started/
