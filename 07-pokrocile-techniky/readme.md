@@ -30,6 +30,7 @@ Ukázka kódu ve Stylusu:
 ```
 
 ## Responsivní weby
+
 * stránky reagují na různou velikost okna
 * v ideálním případě jde web zobrazit na všech možných zařízeních s různou velikostí okna prohlížeče
 * media queries - viz [3. cvičení](../03-css-uvod#media)
@@ -58,8 +59,14 @@ Ukázka kódu ve Stylusu:
 
 
 ## Bootstrap
- * http://getbootstrap.com/getting-started/
-TODO
+
+* **[bootstrap-grid.html](./bootstrap-grid.html)**
+* **[bootstrap-components.html](./bootstrap-components.html)**
+* **[bootstrap-responsive.html](./bootstrap-responsive.html)**
+* web framework
+* CSS, jQuery
+* http://getbootstrap.com/getting-started/
+* http://getbootstrap.com/css/
 
 
 ## Animace a transformace pomocí CSS
