@@ -65,6 +65,7 @@ Ukázka kódu ve Stylusu:
 * **[bootstrap-components.html](./bootstrap-components.html)**
 * **[bootstrap-responsive.html](./bootstrap-responsive.html)**
 * **[bootstrap-forms.html](./bootstrap-forms.html)**
+* **[bootstrap-js.html](./bootstrap-js.html)**
 * web framework
 * CSS, jQuery
 * http://getbootstrap.com/getting-started/
