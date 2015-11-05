@@ -4,106 +4,225 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Bootstrap components</title>
-	
+	<title>Bootstrap Components</title>
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-	
-	<style type="text/css">
-	
-	p {
-		padding: 15px;
-	}
-	
-	</style>
-	
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
 </head>
 
 
+
+
 <body>
-	
+
 	<div class="container">
-		
+	
 		<!-- http://getbootstrap.com/css/	-->
 
 		<h1>Bootstrap components</h1>
-
-		<h1>h1 heading</h1>
-		
-		<h2>h2 heading</h2>
-		
-		<h3>h3 heading</h3>
-		
-		<h2>Alignments</h2>
-		
-		<p class="text-left">Left aligned text.</p>
-		
-		<p class="text-center">Center aligned text.</p>
-		
-		<p class="text-right">Right aligned text.</p>
-		
-		
-		<h2>Text</h2>
-		
-		<p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-		<p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-		<p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-		<p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-		<p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-		<p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-		
-		
-		<p class="bg-primary">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-		<p class="bg-success">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-		<p class="bg-info">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-		<p class="bg-warning">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-		<p class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-		
-		<h2>Tables</h2>
-		
-		<table class="table table-bordered table-striped">
-			
-			<thead>
-				<tr>
-					<th>one</th>
-					<th>two</th>
-					<th>three</th>
-				</tr>
-			</thead>
-			
-			<tbody>
-				
-				<tr>
-					<td>Slash</td>
-					<td>Hendrix</td>
-					<td>King</td>
-				</tr>
-				
-				<tr>
-					<td>Blackmore</td>
-					<td>Frusciante</td>
-					<td>Richards</td>
-				</tr>
-				
-			</tbody>
-			
-		</table>
-		
-		
-		<h2>Images</h2>
-		
-		<img class="img-rounded" src="mustang-gt350-small.jpg" alt="Ford Mustang GT350" width="440" height="330"/>
-		<br>
-		<br>
-		<img class="img-circle" src="mustang-gt350-small.jpg" alt="Ford Mustang GT350" width="440" height="330"/>
-		<br>
-		<br>
-		<img class="img-thumbnail" src="mustang-gt350-small.jpg" alt="Ford Mustang GT350" width="440" height="330"/>
-		
-	</div>
 	
+		<h2>Dropdown</h2>
+
+		<div class="dropdown">
+			<button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				Dropdown
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else here</a></li>
+				<li><a href="#">Separated link</a></li>
+			</ul>
+		</div>
+	
+		<h2>Split dropdowns</h2>
+	
+		<!-- Split button -->
+		<div class="btn-group">
+			<button type="button" class="btn btn-danger">Action</button>
+			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="caret"></span>
+				<span class="sr-only">Toggle Dropdown</span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else here</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li>
+			</ul>
+		</div>
+
+
+		<h2>Forms</h2>
+
+		<div class="input-group">
+			<span class="input-group-addon" id="basic-addon1">@</span>
+			<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+		</div>
+
+		<h2>Tabs</h2>
+
+		<ul class="nav nav-tabs">
+			<li role="presentation" class="active"><a href="#">Home</a></li>
+			<li role="presentation"><a href="#">Profile</a></li>
+			<li role="presentation"><a href="#">Messages</a></li>
+		</ul>
+
+		<h2>Pills</h2>
+
+		<ul class="nav nav-pills">
+			<li role="presentation" class="active"><a href="#">Home</a></li>
+			<li role="presentation"><a href="#">Profile</a></li>
+			<li role="presentation"><a href="#">Messages</a></li>
+		</ul>
+	
+	
+		<h2>Navbar</h2>
+	
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Brand</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Link</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Link</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		
+		
+		<h2>Breadcrumbs</h2>
+		
+		<ol class="breadcrumb">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Library</a></li>
+			<li class="active">Data</li>
+		</ol>
+		
+		<h2>Paging</h2>
+		
+		<nav>
+			<ul class="pagination">
+				<li>
+					<a href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</a>
+				</li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li>
+					<a href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	
+	
+		<h2>Labels</h2>
+	
+		<span class="label label-default">Default</span>
+		<span class="label label-primary">Primary</span>
+		<span class="label label-success">Success</span>
+		<span class="label label-info">Info</span>
+		<span class="label label-warning">Warning</span>
+		<span class="label label-danger">Danger</span>
+	
+
+		<h2>Progress bars</h2>
+	
+		<div class="progress">
+			<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+				<span class="sr-only">40% Complete (success)</span>
+			</div>
+		</div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+				<span class="sr-only">20% Complete</span>
+			</div>
+		</div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+				<span class="sr-only">60% Complete (warning)</span>
+			</div>
+		</div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+				<span class="sr-only">80% Complete (danger)</span>
+			</div>
+		</div>
+
+		<h2>List groups</h2>
+
+		<div class="list-group">
+			<a href="#" class="list-group-item active">
+				Cras justo odio
+			</a>
+			<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+			<a href="#" class="list-group-item">Morbi leo risus</a>
+			<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+			<a href="#" class="list-group-item">Vestibulum at eros</a>
+		</div>
+
+
+	</div>
 
 </body>
-	
+
 </html>
 
