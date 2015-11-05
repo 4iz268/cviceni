@@ -60,18 +60,16 @@ Ukázka kódu ve Stylusu:
 
 ## Bootstrap
 
-* **[bootstrap-grid.html](./bootstrap-grid.html)**
-* **[bootstrap-css.html](./bootstrap-css.html)**
-* **[bootstrap-components.html](./bootstrap-components.html)**
-* **[bootstrap-responsive.html](./bootstrap-responsive.html)**
-* **[bootstrap-forms.html](./bootstrap-forms.html)**
-* **[bootstrap-js.html](./bootstrap-js.html)**
 * web framework
 * CSS, jQuery
 * http://getbootstrap.com/getting-started/
 * http://getbootstrap.com/css/
 * http://getbootstrap.com/components/
-
+* **[bootstrap-grid.html](./bootstrap-grid.html)**
+* **[bootstrap-responsive.html](./bootstrap-responsive.html)**
+* **[bootstrap-css.html](./bootstrap-css.html)**
+* **[bootstrap-components.html](./bootstrap-components.html)**
+* **[bootstrap-js.html](./bootstrap-js.html)**
 
 ## Animace a transformace pomocí CSS
 TODO
