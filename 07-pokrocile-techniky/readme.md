@@ -63,6 +63,11 @@ Ukázka kódu ve Stylusu:
 * web framework
 * de-facto standard při vývoji web aplikací
 * CSS, komponenty, JavaScript přes jQuery
+* responsivní layout, grid model
+* mobile-first přístup
+* kompatibilní se všemi moderními prohlížeči
+* **razantně** urychluje vývoj
+* **velmi doporučujeme používat**
 * http://getbootstrap.com/getting-started/
 * http://getbootstrap.com/css/
 * http://getbootstrap.com/components/
