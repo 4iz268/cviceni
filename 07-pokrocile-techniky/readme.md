@@ -61,7 +61,8 @@ Ukázka kódu ve Stylusu:
 ## Bootstrap
 
 * web framework
-* CSS, jQuery
+* de-facto standard při vývoji web aplikací
+* CSS, komponenty, JavaScript přes jQuery
 * http://getbootstrap.com/getting-started/
 * http://getbootstrap.com/css/
 * http://getbootstrap.com/components/
