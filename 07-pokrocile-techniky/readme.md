@@ -82,6 +82,7 @@ Ukázka kódu ve Stylusu:
 
 * animace v CSS - změna jednoho stylu v jiný
 * pro animaci je třeba nastavit keyframes - konkrétní stavy v čase pro animaci
+* **[css-animations.html](./css-animations.html)**
 
 
 
