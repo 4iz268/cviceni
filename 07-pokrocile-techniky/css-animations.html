@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Backgrounds</title>
+	
+	<style type="text/css">
+	
+	/* The animation code */
+	
+	@keyframes example1 {
+		from {background-color: darkblue;} /* stejne jako 0% */
+		to {background-color: lightskyblue;} /* stejne jako 100% */
+	}
+	
+	
+	@keyframes example2 {
+		0% {background-color: black;}
+		25% {background-color: darkblue;}
+		50% {background-color: blue;}
+		75% {background-color: lightskyblue;}
+		100% {background-color: white;}
+	}
+	
+	
+	
+
+	/* The element to apply the animation to */
+	
+	div.one {
+		width: 100px;
+		height: 100px;
+		background-color: lightskyblue; /* pocatecni a konecny stav pozadi */
+		animation-name: example1;
+		animation-duration: 3s;
+	}
+	
+	
+	div.two {
+		width: 100px;
+		height: 100px;
+		background-color: black; /* pocatecni a konecny stav pozadi */
+		border: 3px solid black;
+		animation-name: example2;
+		animation-duration: 3s;
+		animation-delay: 3s;
+		animation-iteration-count: 3;
+		/* animation-iteration-count: infinite; */ /* nekonecne opakovani */
+		/* animation-direction: reverse; */ /* dozadu */
+		/* animation-direction: alternate; */ /* stridani - dopredu-dozadu-dopredu */
+	}
+	
+	</style>
+	
+</head>
+
+
+<body>
+	
+	<div class="one"></div>
+	
+	<br>
+	
+	<div class="two"></div>
+
+
+</body>
+	
+</html>

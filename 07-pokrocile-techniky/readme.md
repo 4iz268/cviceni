@@ -79,6 +79,9 @@ Ukázka kódu ve Stylusu:
 * **[bootstrap-js.html](./bootstrap-js.html)**
 
 ## Animace a transformace pomocí CSS
-TODO
+
+* animace v CSS - změna jednoho stylu v jiný
+* pro animaci je třeba nastavit keyframes - konkrétní stavy v čase pro animaci
+
 
 
