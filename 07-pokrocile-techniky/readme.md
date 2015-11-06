@@ -92,12 +92,13 @@ Ukázka kódu ve Stylusu:
 * animace v CSS - změna jednoho stylu v jiný
 * pro animaci je třeba nastavit keyframes - konkrétní stavy v čase pro animaci
 * https://developer.mozilla.org/en-US/docs/Web/CSS/animation
-* **[css-animations.html](./css-animations.html)**
+* **[css-animation.html](./css-animation.html)**
 
 ## Transformace pomocí CSS
 
 * transformace v CSS - změna objektu - posunutí, rotace, atd.
 * https://developer.mozilla.org/en-US/docs/Web/CSS/transform
 * http://meyerweb.com/eric/tools/matrix/
+* **[css-transform.html](./css-transform.html)**
 
 
