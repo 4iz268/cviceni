@@ -78,11 +78,17 @@ Ukázka kódu ve Stylusu:
 * **[bootstrap-components.html](./bootstrap-components.html)**
 * **[bootstrap-js.html](./bootstrap-js.html)**
 
-## Animace a transformace pomocí CSS
+## Animace pomocí CSS
 
 * animace v CSS - změna jednoho stylu v jiný
 * pro animaci je třeba nastavit keyframes - konkrétní stavy v čase pro animaci
+* https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 * **[css-animations.html](./css-animations.html)**
 
+## Transformace pomocí CSS
+
+* transformace v CSS - zmena objektu - posunutí, rotace, atd.
+* https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+* http://meyerweb.com/eric/tools/matrix/
 
 
