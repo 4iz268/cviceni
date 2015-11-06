@@ -96,7 +96,7 @@ Ukázka kódu ve Stylusu:
 
 ## Transformace pomocí CSS
 
-* transformace v CSS - zmena objektu - posunutí, rotace, atd.
+* transformace v CSS - změna objektu - posunutí, rotace, atd.
 * https://developer.mozilla.org/en-US/docs/Web/CSS/transform
 * http://meyerweb.com/eric/tools/matrix/
 
