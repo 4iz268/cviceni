@@ -45,6 +45,15 @@ Ukázka kódu ve Stylusu:
 * velikost obrázku se mění dle velikosti okna
 * **width: 100%** - šířka obrázku = šířka okna. Nevýhoda: zvětšuje obrázek i přes jeho původní velikost.
 * **max-width: 100%** - šířka obrázku = šířka okna. Nezvětšuje obrázek přes jeho původní šířku.
+* nový HTML5 tag picture
+```html
+ <picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 400px)">
+  <source srcset="img_flowers.jpg">
+  <img src="img_flowers.jpg" alt="Flowers">
+</picture>
+``` 
+
 
 
 ## Pozadí
