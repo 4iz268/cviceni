@@ -8,22 +8,32 @@
 	
 	<style type="text/css">
 	
-	body{
+	body {
 		margin: 50px;
 	}
 	
-	/* otoceni o stupne */
-	div.rotate {
-	    -ms-transform: rotate(19deg); /* IE 9 */
-	    -webkit-transform: rotate(19deg); /* Chrome, Safari, Opera */
-	    transform: rotate(19deg);
+	div {
+		width: 100px; 
+		height: 100px;
+		border: 1px solid black;
 	}
 	
-	/* zmena velikosti, nasobky */
-	div.scale{
-    -ms-transform: scale(1.3, 1.3); /* IE 9 */
-    -webkit-transform: scale(1.3, 1.3); /* Chrome, Safari, Opera */
-    transform: scale(1.3, 1.3);
+	h2 {
+		margin-top: 50px;
+	}
+	
+	/* rotate = otoceni o stupne */
+	div.rotate {
+		-ms-transform: rotate(19deg); /* IE 9 */
+		-webkit-transform: rotate(19deg); /* Chrome, Safari, Opera */
+		transform: rotate(19deg);
+	}
+	
+	/* scale = skalovani = zmena velikosti, nasobky, 1 = skutecna velikost, osa X (1.3), Y (0.7) */
+	div.scale {
+		-ms-transform: scale(1.3, 0.7); /* IE 9 */
+		-webkit-transform: scale(1.3, 0.7); /* Chrome, Safari, Opera */
+		transform: scale(1.3, 0.7);
 		
 	}
 
@@ -32,17 +42,51 @@
 		transform: matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0); /* prevedena rotate (45deg) */
 	}
 	
-	.red {
+	
+	/* translate = posunuti, osa X, osa Y */
+	div.translate {
+		-ms-transform: translate(50px, 50px); /* IE 9 */
+		-webkit-transform: translate(50px, 50px); /* Chrome, Safari, Opera */
+		transform: translate(50px, 50px);
+	}
+
+
+	/* skew = zesikmeni */
+	div.skew {
+		-ms-transform: skew(40deg, 30deg);
+		-webkit-transform: skew(40deg, 30deg);
+		transform: skew(40deg, 30deg);
+	}
+	
+	
+	/* kombinace nekolik transformaci v 1 css vlastnosti */
+	div.combined {
+		-ms-transform: translateX(10px) rotate(10deg) translateY(5px);
+		-webkit-transform: translateX(10px) rotate(10deg) translateY(5px);
+		transform: translateX(10px) rotate(10deg) translateY(5px);
+	}
+	
+	
+	/* perspective = z jake dalky se budeme divat na 3D objekt */
+	div.perspective1 {
+		position: relative;
+		height: 150px;
+		width: 150px;
+		margin: 50px;
+		padding: 10px;
+		border: 1px solid black;
+		-webkit-perspective: 150px; /* Chrome, Safari, Opera  */
+		perspective: 150px;
+	}
+
+	div.perspective2 {
+		padding: 20px;
+		border: 1px solid black;
 		background-color: red;
+		-webkit-transform: rotateX(45deg); /* Chrome, Safari, Opera  */
+		transform: rotateX(45deg);
 	}
-	
-	.green {
-		background-color: green;
-	}
-	
-	.blue {
-		background-color: lightblue;
-	}
+
 	
 	</style>
 	
@@ -56,19 +100,41 @@
 
 	<h2>Rotate</h2>
 	
-	<div class="rotate red" style="width: 100px; height: 100px;"></div>
+	<div class="rotate" style="background-color: red"></div>
 
 
 	<h2>Scale</h2>
 	
-	<div class="scale green" style="width: 100px; height: 100px;"></div>
+	<div class="scale" style="background-color: green"></div>
 
 
 	<h2>Matrix</h2>
 	
-	<div class="matrix blue" style="width: 100px; height: 100px;"></div>
+	<div class="matrix" style="background-color: lightblue"></div>
 
-	TODO
+
+	<h2>Translate</h2>
+	
+	<div class="translate" style="background-color: purple"></div>
+	
+	
+	<h2>Skew</h2>
+	
+	<div class="skew" style="background-color: gold"></div>
+	
+	
+	<h2>Transform combined</h2>
+	
+	<div class="combined" style="background-color: orange"></div>
+	
+	
+	<h2>Perspective</h2>
+	
+	<div class="perspective1">
+		<div class="perspective2"></div>
+	</div>
+	
+	
 
 </body>
 	
