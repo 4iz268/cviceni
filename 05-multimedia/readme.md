@@ -57,7 +57,7 @@ div {
  * https://www.google.com/fonts
  * načtení pomocí CSS (@import, link) nebo javascriptu
  * načítejte jen nezbytně nutné části písem (řezy písma, znaky lokálních abeced)
- * vyzkoušejte si české znaky (zejména *ř* a *ž*)
+ * **vyzkoušejte si české znaky** (zejména *ř* a *ž*) - je nutné je otestovat i v jiném prohlížeči, než jen v Google Chrome
  
 ### Font Awesome - ikonkový font
  * http://fortawesome.github.io/Font-Awesome/icons/
