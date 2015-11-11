@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>CSS</title>
+</head>
+
+
+<body>
+	
+	
+	<input type="button" onclick="fillForm()" value="Fill the form!">
+	
+	<p/>
+	
+	
+	<form id="myForm">
+
+		<label for='first'>First Name</label>
+		<input type="input" id="first">
+		
+		<br/><br/>
+
+
+		<label for='last'>Last Name</label>
+		<input type="input" id="last">
+
+		<br/><br/>
+
+		<label for='rock'>Wanna rock?</label>
+		<input type="checkbox" id="rock">
+		
+		<br/><br/>
+		
+		<input type="submit">
+		
+		<input type="reset" onclick="return confirmReset()">
+
+		
+	</form>
+	
+
+
+	<script>
+	
+	function fillForm() {
+		
+		form = document.getElementById('myForm').elements;
+		
+		form.namedItem('first').value = 'John';
+		
+		form.namedItem('last').value = 'Doe';
+		
+		form.namedItem('rock').checked = true;
+		
+		
+	}
+	
+	
+	function confirmReset(){
+		return confirm('Do you want to reset the form?');
+	}
+	
+	
+	
+	
+
+	</script>
+	
+	
+		
+</body>
+
+</html>

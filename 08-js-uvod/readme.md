@@ -1,1 +1,2 @@
-Tento adresář obsahuje příklady ke cvičení http://..../...
+# JavaScript – úvod
+
