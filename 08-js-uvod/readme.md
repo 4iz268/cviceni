@@ -40,6 +40,8 @@
 | onkeydown           | Uživatel stisknul klávesu                                           |
 | onload              | Prohlížeč dokončil načítání stránky                                 |
 
+
+### Příklady událostí
 * [onclick](./08-js-event-onclick.html) 
 * [onchange](./08-js-event-onchange.html)
 * [onmouseover onmouseout](./08-js-event-mouse.html)
