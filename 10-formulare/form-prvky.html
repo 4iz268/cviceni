@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Základní formulářové prvky</title>
+    <style type="text/css">/*styly pro přehlednější zobrazení, zároveň ukázka nastylování seznamu v DL*/
+        /* <![CDATA[ */
+        table.listTable td{
+            padding: 5px 10px;
+        }
+        table.listTable tr:nth-child(odd){
+            background: rgb(228, 238, 240);
+        }
+        form dl{
+            position: relative;
+            overflow: auto;
+        }
+        form dl *{
+            float: left;
+            margin-bottom: 5px;
+        }
+        form dl dt{
+            clear: both;
+            width: 70px;
+        }
+        form dl dd{
+            margin-left: 0;
+        }
+        /* ]]> */
+    </style>
+</head>
+<body>
+
+    <h1>Základní formulářové prvky</h1>
+
+    <h2>Jednoduchý formulář v tabulce</h2>
+    <form>
+        <table>
+            <tr>
+                <td><label for="jmeno">Jméno:</label></td>
+                <td><input type="text" name="jmeno" id="jmeno" value=""/></td>
+            </tr>
+            <tr>
+                <td><label for="heslo">Heslo:</label></td>
+                <td><input type="password" name="heslo" id="heslo" value=""/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Přihlásit se..."/></td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Jednoduchý formulář v DL</h2>
+    <form>
+        <dl><!--tímto způsobem skládají ve výchozím stavu formuláře některé frameworky (např. Zend)-->
+            <dt><label for="jmeno2">Jméno:</label></dt>
+            <dd><input type="text" name="jmeno" id="jmeno2" value=""/></dd>
+            <dt><label for="heslo2">Heslo:</label></dt>
+            <dd><input type="password" name="heslo" id="heslo2" value=""/></dd>
+            <dt></dt>
+            <dd><input type="submit" value="Přihlásit se..."/></dd>
+        </dl>
+    </form>
+
+    <h2>Ukázka základních formulářových prvků</h2>
+    <form>
+        <table class="listTable">
+            <tr>
+                <td>Input type="text"</td>
+                <td>
+                    <input type="text" name="input1" value="hodnota" />
+                </td>
+            </tr>
+            <tr>
+                <td>Input type="password"</td>
+                <td>
+                    <input type="password" name="input2" value="hodnota" />
+                </td>
+            </tr>
+            <tr>
+                <td>Input type="hidden"</td>
+                <td>
+                    <input type="hidden" name="input3" value="hodnota" />
+                </td>
+            </tr>
+            <tr>
+                <td>Input type="checkbox"</td>
+                <td>
+                    <label for="checkbox1"><input type="checkbox" name="checkbox1" id="checkbox1" value="hodnota" />Checkbox s labelem</label>
+                    <br />
+                    <label for="checkbox2"><input type="checkbox" name="checkbox2" id="checkbox2" value="hodnota" checked />Checkbox s labelem, zaškrtnutý</label>
+                    <br />
+                    <input type="checkbox" name="checkbox3" value="hodnota" /><!--input bez labelu = jen čtvereček-->
+                </td>
+            </tr>
+            <tr>
+                <td>Input type="radio"</td>
+                <td>
+                    <!--label může obalovat i daný input, nebo být kdekoliv jinde (ani nemusí být napsané za sebou)-->
+                    <input type="radio" name="radio" id="radioA" value="hodnotaA" checked /><label for="radioA">A</label>
+                    <input type="radio" name="radio" id="radioB" value="hodnotaB" /><label for="radioB">B</label>
+                    <input type="radio" name="radio" id="radioC" value="hodnotaC" /><label for="radioC">C</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Input type="submit"</td>
+                <td>
+                    <input type="submit" value="Odeslat..." /><!--submit nemusí mít name (pokud ho ale má, tak se odešle na server); value představuje hodnotu a zároveň zobrazený popisek-->
+                </td>
+            </tr>
+            <tr>
+                <td>Input type="reset"</td>
+                <td>
+                    <input type="reset" /><!--reset nemusí mít name (pokud ho ale má, tak se odešle na server); value představuje hodnotu a zároveň zobrazený popisek-->
+                </td>
+            </tr>
+            <tr>
+                <td>Input type="button"</td>
+                <td>
+                    <input type="button" value="popisek" /><!--reset nemusí mít name (pokud ho ale má, tak se odešle na server); value představuje hodnotu a zároveň zobrazený popisek-->
+                </td>
+            </tr>
+            <tr>
+                <td>Input type="file"</td>
+                <td>
+                    <input type="file" name="soubory"/><!--reset nemusí mít name (pokud ho ale má, tak se odešle na server); value představuje hodnotu a zároveň zobrazený popisek-->
+                </td>
+            </tr>
+            <tr>
+                <td>Button</td>
+                <td>
+                    <button>xxx</button><!--button je možnost vytvořit tlačítko se složitějším obsahem-->
+                </td>
+            </tr>
+            <tr>
+                <td>Textarea</td>
+                <td>
+                    <textarea name="textarea1" rows="5" cols="40">Obsah velkého textového pole</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="barva">
+                        <option value="red">Červená</option>
+                        <option value="modra">Modrá</option>
+                    </select>
+
+                    <select>
+                        <optgroup label="Swedish Cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                        </optgroup>
+                        <optgroup label="German Cars">
+                            <option value="mercedes" selected>Mercedes</option><!--atribut selected označuje vybranou položku-->
+                            <option value="audi">Audi</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Fieldset</td>
+                <td>
+                    <fieldset>
+                        <legend>Nadpis fieldsetu</legend> <!--legend = popisek oblasti (lze vynechat)-->
+                        <label for="name">Jméno:</label>
+                        <input type="text" id="name" />
+                        <label for="password">Heslo:</label>
+                        <input type="password" id="password" />
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+
+
+    </form>
+
+
+</body>
+</html>

@@ -134,6 +134,13 @@
   - **placeholder** - textová nápověda zobrazovaná v daném prvku, pokud není zadaná žádná hodnota
   - **tabindex** - definování posloupnosti prvků při použití klávesy Tab
     - vhodné například u objednávkového formuláře zobrazeném ve dvou sloupcích
+  - **autocomplete** - atribut obvykle využívaný k vypnutí automatického doplňování v prohlížeči; zápis: ``` autocomplete="off" ```
+  - **autofocus** - pokud uvedete u zvoleného prvku tento atribut, bude daný prvek aktivní (bude v něm kurzor) již při načtení stránky
+  - **required** - atribut vynucující vyplnění daného pole
+
+- rozdíly xHTML vs. HTML 5:
+  - nové značky... (ale prohlížeče je zobrazují, i když máte doctype xHTML)
+  - v xHTML nelze používat bezhodnotové atributy, zapisujeme je stylem *atribut="atribut"*, tj. například ```selected="selected"```
 
 ### Formulářové prvky, které HTML nepodporuje
 
@@ -143,10 +150,19 @@
 - na server jsou odesílány prvky patřící do konkrétního formuláře, které
   - mají definovaný atribut **name**
   - **nejsou disabled**
-- u formuláře je nutné zadat
+- u formuláře je vhodné zadat atributy *action* a *method*
+  - pokud není definována metoda odeslání, použije se automaticky metoda GET
+  - pokud není zadána action, pošle stránka data "sama době" (tj. dojde k jejich odeslání na aktuální URL)
 
 ### Zpracování formulářů v JavaScriptu
+- jednotlivé formulářové prvky jsou normálně součástí DOM stromu, tj. lze s nimi pracovat jak čistým javascriptem, tak pomocí jQuery
+- v jQuery máme k dispozici funkci **val**, kterou lze přistupovat k hodnotám formulářových prvků
 
+```javascript
+  var hodnota1 = $('#input1').val();
+  var hodnota2 = $('#input2').val();
+  $('#inputVysledek).val(hodnota1+hodnota2);
+```
 
 ## Validace formulářů
 - je nutné kontrolovat každý vstup získaný od uživatele!
