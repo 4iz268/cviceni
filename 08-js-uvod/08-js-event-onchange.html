@@ -4,27 +4,28 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>CSS</title>
+	<title>JS onchange</title>
 </head>
 
 
 <body>
 		
-	<h1 id="demo">Another title</h1>
+	<h1 id="demo">JS onchange</h1>
 	
 	<form>
 		
-		<label for='myInput'>Check this!</label>
+		<label for='myInput'>Write something here and then click outside:</label>
 		<input type="input" id="myInput" onchange="myFunction(this)">
 		
 	</form>
 	
 	
 		
-	<h2 id='result'></h2>
+	<h2 id='result'>Here will be your text</h2>
 		
-		
+
 	<script>
+	
 	function myFunction(x) {
 		document.getElementById('result').innerHTML = x.value
 	}

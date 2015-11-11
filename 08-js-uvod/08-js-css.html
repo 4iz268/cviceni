@@ -4,11 +4,13 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>CSS</title>
+	<title>JS &amp; CSS</title>
 	
 	<script>
 	
-	function switchPar() {
+	// jak pomoci JS menit CSS
+	
+	function switchParagraph() {
 		
 		par = document.getElementById('p1')
 		
@@ -32,15 +34,17 @@
 
 <body>
 	
-	<input type="button" value="Hide text" onclick="switchPar();">
-
-	<input type="button" value="Show text" onclick="switchPar();">
+	<h1>JS &amp; CSS</h1>
 	
-		<p id="p1">
-		The Ford Mustang is an American automobile manufactured by the Ford Motor Company. It was initially based on the platform of the second generation North American Ford Falcon, a compact car.[1] Introduced early on April 17, 1964,[2] and thus dubbed as a "1964½" model by Mustang fans, the 1965 Mustang was the automaker's most successful launch since the Model A.[3] The Mustang has undergone several transformations to its current sixth generation.
-		The Mustang created the "pony car" class of American automobiles—sports-car like coupes with long hoods and short rear decks[4]—and gave rise to competitors such as the Chevrolet Camaro,[5] and Pontiac Firebird, AMC Javelin,[6] as well as Chrysler's revamped Plymouth Barracuda and the first generation Dodge Challenger.[7] The Mustang is also credited for inspiring the designs of coupés such as the Toyota Celica and Ford Capri, which were imported to the United States.
-		</p>
-		source: <a href="http://en.wikipedia.org/wiki/Ford_Mustang">http://en.wikipedia.org/wiki/Ford_Mustang</a>
+	<input type="button" value="Show/Hide paragraph" onclick="switchParagraph()">
+	
+	<p id="p1">
+		<q cite="https://en.wikipedia.org/wiki/Ford_Mustang">
+			The Ford Mustang is an American automobile manufactured by the Ford Motor Company. It was initially based on the platform of the second generation North American Ford Falcon, a compact car.[1] Introduced early on April 17, 1964,[2] and thus dubbed as a "1964½" model by Mustang fans, the 1965 Mustang was the automaker's most successful launch since the Model A.[3] The Mustang has undergone several transformations to its current sixth generation.
+			The Mustang created the "pony car" class of American automobiles—sports-car like coupes with long hoods and short rear decks[4]—and gave rise to competitors such as the Chevrolet Camaro,[5] and Pontiac Firebird, AMC Javelin,[6] as well as Chrysler's revamped Plymouth Barracuda and the first generation Dodge Challenger.[7] The Mustang is also credited for inspiring the designs of coupés such as the Toyota Celica and Ford Capri, which were imported to the United States.
+		</q>
+	</p>
+		
 		
 </body>
 
