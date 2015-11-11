@@ -18,8 +18,12 @@
 ```
 
 ## Formulářové prvky
-### Formulářové prvky v xHTML / HTML 5
 - ukázky naleznete v souborech [form-prvky.html](./form-prvky.html) a [form-nove-prvky-html5.html](./form-nove-prvky-html5.html)
+- další zdroje:
+  - [HTML Form Elements](http://www.w3schools.com/html/html_form_elements.asp)
+  - [HTML Input Types](http://www.w3schools.com/html/html_form_input_types.asp)
+
+### Formulářové prvky v xHTML / HTML 5
 - **input**
   - velmi univerzální prvek, konkrétní podobu vybíráme pomocí atributu **type**
     - v závislosti na zvoleném typu má smysl zadávat další atributy
@@ -182,9 +186,3 @@ TODO
 
 TODO
 
----
-
-## TODO:
-- čtení a zápis dat do formulářových polí
-- validace hodnot ve formuláři (pomoci JS i HTML 5)
-- odeslání formuláře hotovému skriptu
