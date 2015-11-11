@@ -19,6 +19,7 @@
 
 ## Formulářové prvky
 ### Formulářové prvky v xHTML / HTML 5
+- ukázky naleznete v souborech [form-prvky.html](./form-prvky.html) a [form-nove-prvky-html5.html](./form-nove-prvky-html5.html)
 - **input**
   - velmi univerzální prvek, konkrétní podobu vybíráme pomocí atributu **type**
     - v závislosti na zvoleném typu má smysl zadávat další atributy
@@ -143,7 +144,7 @@
   - v xHTML nelze používat bezhodnotové atributy, zapisujeme je stylem *atribut="atribut"*, tj. například ```selected="selected"```
 
 ### Formulářové prvky, které HTML nepodporuje
-
+TODO
 
 ## Zpracování formulářů
 ### Na serveru
@@ -153,6 +154,8 @@
 - u formuláře je vhodné zadat atributy *action* a *method*
   - pokud není definována metoda odeslání, použije se automaticky metoda GET
   - pokud není zadána action, pošle stránka data "sama době" (tj. dojde k jejich odeslání na aktuální URL)
+- zkuste si na server nahrát soubor [vypis-formulare.php](./vypis-formulare.php)
+  - skript vypíše data, která získal metodou GET i POST
 
 ### Zpracování formulářů v JavaScriptu
 - jednotlivé formulářové prvky jsou normálně součástí DOM stromu, tj. lze s nimi pracovat jak čistým javascriptem, tak pomocí jQuery
@@ -161,8 +164,10 @@
 ```javascript
   var hodnota1 = $('#input1').val();
   var hodnota2 = $('#input2').val();
-  $('#inputVysledek).val(hodnota1+hodnota2);
+  $('#inputVysledek').val(hodnota1+hodnota2);
 ```
+
+TODO
 
 ## Validace formulářů
 - je nutné kontrolovat každý vstup získaný od uživatele!
@@ -171,10 +176,11 @@
 
 ### Validace v HTML 5
 
-
+TODO
 
 ### Validace pomocí JavaScriptu
 
+TODO
 
 ---
 
