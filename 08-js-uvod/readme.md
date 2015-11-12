@@ -193,8 +193,12 @@
 
 
 
-### Comments (komentáře)
+### Komentáře (comments)
 
+* text, nebo kousky kódu, které programovací jazyk nemá vyhodnocovat. Pro vývojáře.
+* kód, který potřebuje často komentáře, není dobře napsaný. Ze syntaxe by mělo být vidět, co se dělá.
+* **obecné pravidlo: nekomentujeme CO A JAK kód dělá (to má být vidět z čistého zápisu), komentujeme PROČ to dělá**
+* **[práce s komentáři](./08-js-comments.html)**
 
 
 
