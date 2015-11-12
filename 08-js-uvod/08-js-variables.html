@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>JS variables</title>
+</head>
+
+
+<body>
+	
+	<h1>JS variables</h1>
+
+
+	<script>
+	
+	// klicovym slovem var
+	var nazev = 20;
+	
+	//rovnou
+	dalsi = 'ahoj';
+	
+	var jina = 40;
+	
+	// klicovym slovem let (obor platnosti v bloku)
+	function nejaka_funkce() {
+	
+	 // pokud pouzijeme var uvnitr bloku (funkce), tak obor platnosti promenne je pouze v teto funkci
+	 // zvenci (mimo funkci) promenna uz neexistuje
+	 var jina = 50;
+	 
+	 //pokud bychom dali jenom jina = 50, pak prepiseme puvodni hodnotu promenne 40, kterou jsme deklarovali venku
+	
+	}
+	
+	//volani funkce
+	nejaka_funkce();
+	
+	console.log(nazev);
+	
+	console.log(dalsi);
+	
+	console.log(jina); //nebude 50, protoze var jina = 50 uvnitr funkce je JINA promenna (protoze jsme ji deklarovali pres var)
+	
+	
+	</script>
+
+
+
+	<h2>See the results in javascript console in your browser</h2>
+
+</body>
+
+</html>

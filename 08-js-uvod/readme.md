@@ -30,6 +30,13 @@
 * compatibility table: **https://kangax.github.io/compat-table/es6/**
 * ECMAScript 6 features: **http://es6-features.org/**
 
+
+## JS konzole
+
+* [využití JS konzole v browseru](./08-js-console.html)
+* pro ladění výstupů JS
+
+
 ## Základy syntaxe JS
 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
@@ -48,15 +55,14 @@
 * **String**. Řetězec. "Ahoj světe."
 * **Symbol** (nově v ECMAScript 6). Datový typ, jehož instance jsou unikátní a nemění se.
 
-
-
-#### Objekty
+#### Objekty (objects)
 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 * objekt = něco, s čím můžu v aplikaci "hýbat"
 * pararela s objekty v reálném světě
 * objekt má typicky nějaké vlastnosti (hodnoty, atributy) a funkce (v některých programovacích jazycích jsou to "metody"), pomocí kterých s objektem můžu pracovat
-* analogie s autem: auto je objekt
+* analogie s autem: auto je objekt, jeho vlastosti jsou např. "barva, typ, SPZ". Funkce jsou "nastartuj, zrychli, brzdi, blikej".
+* **[práce s objekty](./08-js-objects.html)**
 
 ### Proměnné (variables)
 
@@ -67,10 +73,8 @@
 * název by měl být krátký (jsme líní psát dlouhé texty a děláme pak chyby), ale zase ne příliš krátký
 * vhodné názvy proměnných: `current_date`, `total_revenue`, `user_name`
 * nevhodné názvy proměnných: `tohle_je_ale_opravdu_moc_dlouhy_nazev_kdo_to_ma_furt_psat`, `a`, `b`, `xxx`
+* proměnná musí začínat písmenem `nazev`, podtržítkem: `_nazev`, nebo dolarem: `$nazev`. Druhý a další znak můžou být i číslice 0-9, ale ne jako první znak, např.  `nazev1` je OK.
 * **[práce s proměnnými](./08-js-variables.html)**
-
-
-
 
 
 ### Values (hodnoty)
@@ -132,6 +136,7 @@
 * [form password, potvrzení hesla](./08-js-form-password.html)
 * http://www.w3schools.com/jsref/dom_obj_form.asp
 * http://www.w3schools.com/jsref/coll_form_elements.asp
+
 
 
 ## Debug  (chytání chyb)
