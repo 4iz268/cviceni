@@ -61,7 +61,7 @@
 
 ### Funkce
 
-* funkce = zapouzdřená posloupnost příkazů
+* **funkce = zapouzdřená posloupnost příkazů**
 * funkce může přijímat vstupy (argumenty či parametry funkce) a pracovat s nimi
 * smysl funkce je pro opakované použití stejného kódu (nechceme duplicitu) či stejného kódu s různými parametry
 * klasické vs anonymní funkce
@@ -71,8 +71,8 @@
 
 ### Objekty (objects)
 
+* **objekt = něco, s čím můžu v aplikaci "hýbat"**
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
-* objekt = něco, s čím můžu v aplikaci "hýbat"
 * pararela s objekty v reálném světě
 * objekt má typicky nějaké vlastnosti (hodnoty, atributy) a funkce (v některých programovacích jazycích jsou to "metody"), pomocí kterých s objektem můžu pracovat
 * analogie s autem: auto je objekt, jeho vlastosti jsou např. "barva, typ, SPZ". Funkce jsou "nastartuj, zrychli, brzdi, blikej".
@@ -93,7 +93,7 @@
 
 ### Konstanty (constants)
 
-* konstanta = proměnná, která se nastaví jen jednou a pak je dál jen pro čtení
+* **konstanta = proměnná, která se nastaví jen jednou a pak je dál jen pro čtení**
 * pokus o opětovné přenastavení vyhodí výjimku
 * stejná pravidla pro název jako u proměnných
 * **[práce s konstantami](./08-js-constants.html)**
@@ -101,7 +101,7 @@
 
 ### Pole (arrays)
 
-* pole = seznam více hodnot (neplést s seznamem List v Javě!)
+* **pole = seznam více hodnot (neplést s seznamem List v Javě!)**
 * přístup k poli přes index (pořadové číslo prvku v poli)
 * **pole jsou číslovaná od 0**
 * stejná pravidla pro název jako u proměnných
@@ -111,7 +111,7 @@
 
 ###  Řídící struktury (control flow)
 
-* řídí tok programu
+* **řídící struktura = řídí tok programu, usměrňuje ho, dává směr toku**
 * typicky podmínka "když něco, tak udělej tohle, nebo tohle"
 * **if else**
 * **switch case**
@@ -121,8 +121,8 @@
 
 ### Cykly a iterace
 
-* cyklus = opakuje určitou část kódu
-* iterátor = objekt je iterátorem, pokud umí procházet nějakou kolekci dat a ví, na které pozici se zrovna nachází (resp. ví alespoň, jaký bude příští prvek). Zná tedy pořadí procházení.
+* **cyklus = opakuje určitou část kódu**
+* **iterátor = objekt je iterátorem, pokud umí procházet nějakou kolekci dat a ví, na které pozici se zrovna nachází (resp. ví alespoň, jaký bude příští prvek)**. Zná tedy pořadí procházení.
 * **for**
 * **do .. while**
 * **while**
@@ -132,7 +132,17 @@
 
 ### Operátory (operators)
 
-
+* **operátor = provádí nějakou operaci nad daty (typicky přirazení, porovnání, atd.)**
+* přirazení - assignment
+* porovnání - comparison
+* aritmetické - arithmetic
+* logické - logical
+* řetězcové - string
+* podmínečné (ternární) - conditional (ternary)
+* relační - relational (nebudeme ukazovat)
+* unární - unary (nebudeme ukazovat)
+* bitové - bitwise (nebudeme ukazovat)
+* **[práce s operátory](./08-js-operators.html)**
 
 
 
