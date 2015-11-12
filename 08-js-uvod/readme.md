@@ -98,13 +98,24 @@
 * **[práce s konstantami](./08-js-constants.html)**
 
 
-### Literály
+### Pole (arrays)
 
-* literál = fixní (natvrdo) hodnoty
-* nejsou to proměnné
+* pole = seznam více hodnot (neplést s seznamem List v Javě!)
+* přístup k poli přes index (pořadové číslo prvku v poli)
+* **pole jsou číslovaná od 0**
 * stejná pravidla pro název jako u proměnných
+* pole jsou v JS dynamicky typovaná, jdou tedy za běhu rozšiřovat, měnit, atd. (narozdíl od Javy, kde se pole inicializuje s velikostí a pak už jeho velikost měnit nejde)
+* **[práce s polem](./08-js-array.html)**
 
 
+###  Řídící struktury (control flow)
+
+* řídí tok programu
+* typicky podmínka "když něco, tak udělej tohle, nebo tohle"
+* **if else**
+* **switch case**
+* **try catch finally**
+* **[práce s řídícími strukturami](./08-js-control-flows.html)**
 
 ### Values (hodnoty)
 
