@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>JS control flows</title>
+</head>
+
+
+<body>
+	
+	<h1>JS control flows</h1>
+
+
+	<script>
+	
+	//IF ELSE
+	
+	// boolean
+	var yesno = true;
+	
+	
+	//IF ELSE
+	if (yesno) {
+		console.log('yes');
+	} else {
+		console.log('yes');
+	}
+	
+	//IF ELSE
+	// string
+	var love = "i felt in love with...";
+	
+	if (love) {
+		console.log('heaven');
+	} else {
+		console.log('hell');
+	}
+	
+	
+	// IF - ELSE IF - ELSE
+		// number
+	var magic = 7;
+	
+	if (magic==7) {
+		console.log('seven');
+	} else if (magic==5) {
+		console.log('hell');
+	}
+	
+	
+	
+	// SWITCH - CASE
+	// pokud se nepouzije break, vyraz se vyhodnocuje vicekrat
+	// samozrejme jde nahradit if-else if-else
+	switch (magic) {
+	case 7:
+		console.log('switch case 7')
+		//break;
+	case (magic > 1):
+		console.log('switch case magic>1')
+		//break;
+	default:
+		console.log('default')
+	}
+	
+	
+	
+	// TRY - CATCH - FINALLY
+	// zachytavani vyjimek
+	try {
+		
+		throw "bogus"; // vyhodi se vyjimka (at uz to udelame my, nebo nase aplikace)
+		
+	} catch(e) { // zachytime vyjimku
+		
+		console.log('exception catched'); //neco udelame
+		
+	} finally {
+		
+		// finally se provede VZDY, at uz nastala nejaka vyjimka, nebo ne
+		// pouziva se typicky  na uzavirani socketu, spojeni do databaze, uzavreni pointeru na soubor, apod.
+		// zkuste zakomentovat throw v radku nahore, uvidite, ze se tohle provede vzdy
+		console.log('finally'); 
+		
+	}
+	
+	
+	
+
+	</script>
+
+	<h2>See the results in JS console in your browser</h2>
+
+</body>
+
+</html>

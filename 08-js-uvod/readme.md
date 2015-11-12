@@ -12,6 +12,7 @@
 * programovací jazyk, který může být spuštěn přímo v browseru
 * case-sensitive (citlivý na malá VS velká písmena)
 * používá Unicode znakovou sadu
+* dynamicky typovaný = typ proměnné se může měnit a vyhodnocuje se za běhu (protiklad je staticky typovaný jazyk, např. Java)
 * JS podporují všechny moderní prohlížeče
 * JS má přístup k HTML elementům, DOMu, CSS, může měnit dynamicky stránku
 * existují bezpečnostní omezení, JS třeba nemá standardně přístup k lokálnímu filesystému (aby autor stránky nemohl třeba brát soubory uživatele)
@@ -55,7 +56,7 @@
 * **Number**. Číslo. 42 nebo 3.14159.
 * **String**. Řetězec. "Ahoj světe."
 * **Symbol** (nově v ECMAScript 6). Datový typ, jehož instance jsou unikátní a nemění se.
-
+* **[práce s datovými typy](./08-js-datatypes.html)**
 
 
 ### Funkce
@@ -68,7 +69,7 @@
 * **[práce s funkcemi](./08-js-functions.html)**
 
 
-#### Objekty (objects)
+### Objekty (objects)
 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 * objekt = něco, s čím můžu v aplikaci "hýbat"
@@ -89,6 +90,33 @@
 * proměnná musí začínat písmenem `nazev`, podtržítkem: `_nazev`, nebo dolarem: `$nazev`. Druhý a další znak můžou být i číslice 0-9, ale ne jako první znak, např.  `nazev1` je OK.
 * **[práce s proměnnými](./08-js-variables.html)**
 
+
+### Konstanty (constants)
+
+* konstanta = proměnná, která se nastaví jen jednou a pak je dál jen pro čtení
+* pokus o opětovné přenastavení vyhodí výjimku
+* stejná pravidla pro název jako u proměnných
+* **[práce s konstantami](./08-js-constants.html)**
+
+
+### Pole (arrays)
+
+* pole = seznam více hodnot (neplést s seznamem List v Javě!)
+* přístup k poli přes index (pořadové číslo prvku v poli)
+* **pole jsou číslovaná od 0**
+* stejná pravidla pro název jako u proměnných
+* pole jsou v JS dynamicky typovaná, jdou tedy za běhu rozšiřovat, měnit, atd. (narozdíl od Javy, kde se pole inicializuje s velikostí a pak už jeho velikost měnit nejde)
+* **[práce s polem](./08-js-arrays.html)**
+
+
+###  Řídící struktury (control flow)
+
+* řídí tok programu
+* typicky podmínka "když něco, tak udělej tohle, nebo tohle"
+* **if else**
+* **switch case**
+* **try catch finally**
+* **[práce s řídícími strukturami](./08-js-control-flows.html)**
 
 ### Values (hodnoty)
 
