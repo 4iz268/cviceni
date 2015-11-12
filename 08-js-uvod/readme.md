@@ -19,6 +19,7 @@
 * **[JavaScript není Java](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction#JavaScript_and_Java)**. Na začátku se JavaScript jmenoval LiveScript a autoři ho přejmenovali, aby se svezli na popularitě Javy od Sunu (teď Oracle)
 * JS jde v prohlížeči zakázat, pak se ale připravme, že přestane fungovat většina moderních stránek
 * pokud používáme JS, *teoreticky* by naše stránka měla fungovat i pokud je JS zakázaný. V praxi bych to vůbec neřešil.
+  * pokud je stránka na JS závislá, je vhodné uvést aspoň info o omezení funkčnosti: ```<noscript>Bez javascriptu to nepůjde...</noscript>```
 
 
 ### JS a ECMAScript 6
