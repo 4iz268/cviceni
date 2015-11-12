@@ -62,7 +62,8 @@ $('p#mujOdstavec').hide(); //skrytí odstavce s ID "mujOdstavec"
   - **.remove()** - funkce pro odebrání prvku
   - **.empty()** - funkce pro vyprázdnění obsahu daného prvku
   - u všech funkcí pracujících s HTML obsahem lze využít buď HTML zápis, nebo jQuery objekty
-  - nový jQuery objekt, který není v DOM stromu, lze vytvořit např.: ```var divObj = $('<div></div>').text(content);```
+  - nový jQuery objekt, který není v DOM stromu, lze vytvořit např.:
+    ```var divObj = $('<div></div>').text(content);```
   - **.appendTo** - připojení jQuery objektu k jinému objektu zadanému selektorem
 - funkce pro práci s atributy
   - **.attr("attributeName")** - funkce pro zjištění hodnoty daného atributu
@@ -90,10 +91,6 @@ $(function() {
 - po připravení stránky zavoláme inicializační řást javascriptu, v rámci které připojíme k vybraným elementům příslušné události
 - lze připojit víc funkcí (handlerů) k jedné události
 
-TODO
-
-
-### Ajax
 TODO
 
 
