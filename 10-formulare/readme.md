@@ -142,13 +142,20 @@
   - **autocomplete** - atribut obvykle využívaný k vypnutí automatického doplňování v prohlížeči; zápis: ``` autocomplete="off" ```
   - **autofocus** - pokud uvedete u zvoleného prvku tento atribut, bude daný prvek aktivní (bude v něm kurzor) již při načtení stránky
   - **required** - atribut vynucující vyplnění daného pole
+  - **readonly** - formulářový prvek je jen pro čtení, nejde upravovat, ale bude odeslán na server
+  - **disabled** - formulářový prvek je neaktivní, nebude odeslán na server
 
 - rozdíly xHTML vs. HTML 5:
   - nové značky... (ale prohlížeče je zobrazují, i když máte doctype xHTML)
   - v xHTML nelze používat bezhodnotové atributy, zapisujeme je stylem *atribut="atribut"*, tj. například ```selected="selected"```
 
 ### Formulářové prvky, které HTML nepodporuje
-TODO
+- jsou vygenerovány javascriptem
+- kalendář pro výběr data v prohlížečích, které neznají input type="date"
+  - [jQuery Datepicker](https://jqueryui.com/datepicker/)
+- WYSIWYG editory
+  - [TinyMCE](http://www.tinymce.com/)
+  - [CKEditor](http://ckeditor.com/)
 
 ## Zpracování formulářů
 ### Na serveru
@@ -175,12 +182,51 @@ TODO
 
 ## Validace formulářů
 - je nutné kontrolovat každý vstup získaný od uživatele!
+  - pokud je daný vstup volitelný, stejně ho musíme zkontrolovat (uživatel má možnost nechat dané pole prázdné, nebo jej vyplnit správně)
 - je vhodná kontrola na straně klienta (pomocí HTML 5 či JavaScriptu)
 - pokud jsou data odesílána na serveru, je nutné provádět kontrolu dat i na serveru (anketní dotaz: *Proč?*)
+- Jak by mělo vypadat hlášení chyb?
+  - upozorňujeme na konkrétní chyby, rozhodně ne hláška *"Ve formuláři je chyba."*
+  - umístění chyb buď u konkrétních formulářových prvků, nebo souhrnné hlášení za celý formulář
+  - pozor na využití funkce ```alert('hláška');``` - při jejím opakovaném využití nabízejí prohlížeče možnost zakázání všech skriptů!
+  - uživateli vždy řekneme, v jakém tvaru data požadujeme!
 
 ### Validace v HTML 5
-
-TODO
+- ukázky:
+  - [form-validace-html5.html](./form-validace-html5.html)
+- další zdroje:
+  - [HTML &lt;input&gt; pattern Attribute](http://www.w3schools.com/tags/att_input_pattern.asp)
+  - [JavaScript regular expressions](http://www.w3schools.com/js/js_regexp.asp)
+- prohlížeč provádí jen ty kontroly, které zná! (například starší IE nezná žádné...)
+- základní typy kontrol:
+  - **povinně vyplněné pole** - atribut *required*
+    - vyžadovaná pole by měla být na první pohled odlišitelná od polí volitelných
+    ```html
+    <input type="text" name="text" required />
+    ```
+  - **omezení maximální délky textu**
+    - omezení atributem *maxlength*
+    - nejde o kontrolu, uživatel toho prostě nemůže víc napsat
+  - **kontrola maximální a minimální hodnoty**
+    - podporováno u číselných hodnot a například též u datumů
+    - lze kontrolovat i jen jednu hranici
+    ```html
+    <input type="number" name="cislo" min="1000" max="2000" />
+    ```
+  - **kontrola regulárním výrazem**
+    - v atributu *title* je vhodné napovědět, jak má daný vstup vypadat (např. Chrome či FF zobrazuje danou nápovědu při chybě)
+    ```html
+    <input
+      type="text" name="country_code"
+      pattern="[A-Za-z]{3}" />
+    ```
+- možnost odeslání bez validace:
+  - k formuláři (do značky form) lze doplnit atribut *novalidate*
+    - umožňuje vypnout validace
+    - hodnoty *on* | *off* (pokud je uveden bez hodnoty, je předpokládána hodnota on)
+  - ke zvolenému submitu lze doplnit atribut *formnovalidate*
+    - umožní odeslat formulář daným tlačítkem bez validací
+    - vhodné například pro tlačítko "storno"
 
 ### Validace pomocí JavaScriptu
 

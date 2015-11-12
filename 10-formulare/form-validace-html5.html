@@ -5,6 +5,51 @@
     <title>Validace formuláře v HTML 5</title>
 </head>
 <body>
+    <h1>Validace formulářů v HTML 5</h1>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label for="regular1">Heslo o minimální délce, required</label>
+                </td>
+                <td>
+                    <input type="text" id="regular1" pattern=".{6,}" title="Minimálně 6 znaků..." required />
+                    <!--atribut required zajistí, že dané pole musí být vyplněno-->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="regular2">3-6 písmen</label>
+                </td>
+                <td>
+                    <input type="text" id="regular2" pattern="[a-z]{3,6}" title="3 až 6 písmen..." />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="number1">Číslo z daného rozmezí</label>
+                </td>
+                <td>
+                    <input type="number" id="number1" min="100" max="200" title="Číslo z intervalu 100-200." />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date1">Datum z daného rozmezí</label>
+                </td>
+                <td>
+                    <input type="date" id="date1" min="2012-01-01" max="2014-12-31" title="Datum z let 2012-2015" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="odeslat" />
+                    <input type="submit" value="odeslat bez validace" formnovalidate /><!--formnovalidate zajistí, že prohlížeč nebude vyžadovat správné vyplnění formuláře-->
+                </td>
+
+            </tr>
+        </table>
+    </form>
 
 </body>
 </html>
