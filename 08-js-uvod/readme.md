@@ -122,7 +122,7 @@
 ### Cykly a iterace
 
 * **cyklus = opakuje určitou část kódu**
-* **iterátor = objekt je iterátorem, pokud umí procházet nějakou kolekci dat a ví, na které pozici se zrovna nachází (resp. ví alespoň, jaký bude příští prvek)**. Zná tedy pořadí procházení.
+* iterátor = objekt je iterátorem, pokud umí procházet nějakou kolekci dat a ví, na které pozici se zrovna nachází (resp. ví alespoň, jaký bude příští prvek). Zná tedy pořadí procházení.
 * **for**
 * **do .. while**
 * **while**
@@ -146,7 +146,51 @@
 
 
 
-### Keywords (klíčová slova)
+### Rezervovaná klíčová slova (keywords)
+
+* **tato slova nelze v ECMAScript 6 použít jako názvy proměnných nebo funkcí:**
+  * break
+  * case
+  * class
+  * catch
+  * const
+  * continue
+  * debugger
+  * default
+  * delete
+  * do
+  * else
+  * export
+  * extends
+  * finally
+  * for
+  * function
+  * if
+  * import
+  * in
+  * instanceof
+  * let
+  * new
+  * return
+  * super
+  * switch
+  * this
+  * throw
+  * try
+  * typeof
+  * var
+  * void
+  * while
+  * with
+  * yield
+  * enum (budoucí rezervované slovo)
+  * await (budoucí rezervované slovo)
+  * implements (budoucí rezervované slovo)
+  * package (budoucí rezervované slovo)
+  * protected (budoucí rezervované slovo)
+
+
+
 
 
 ### Comments (komentáře)
