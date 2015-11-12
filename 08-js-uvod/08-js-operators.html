@@ -15,12 +15,13 @@
 
 	<script>
 	
-	//prirazeni
+	// PRIRAZOVACI OPERATORY (assignment)
+	
 	x = 10;
 	y = x;
 	console.log(y); //10
 	
-		// prirazeni se scitanim
+	// prirazeni se scitanim
 	x = x + 20;
 	//nebo x += 20
 	console.log(x); //30
@@ -52,7 +53,94 @@
 	//nebo x **= 3
 	//console.log(x); //27
 	
-	 
+	
+	
+	// SROVNAVACI OPERATORY (comparison)
+	
+	// equal, operandy jsou stejne
+	console.log("7" == 7); //true
+	
+	//not equal, operandy nejsou stejne
+	console.log(3 != 7); //true
+	
+	// strict equal, operandy jsou stejne a navic stejneho typu
+	console.log("7" === 7); //false, NENI STEJNY DATOVY TYP
+	
+	// strict equal, operandy jsou stejne a navic stejneho typu
+	console.log(3 !== 7); //true
+	
+	// greater than, vetsi nez
+	console.log(7 > 3); //true
+	
+	// greater or equal, vetsi nebo rovno nez
+	console.log(7 >= 3); //true
+	
+	// less than, mensi nez
+	console.log(7 < 7); //false
+	
+	// less or equal than, mensi nebo rovno nez
+	console.log(7 <= 7); //true
+	
+	
+	
+	// ARITMETICKE OPERATORY
+	
+	console.log( 3 + 4 );
+	console.log( 7 - 4 );
+	console.log( 3 * 4 );
+	console.log( 3 / 4 );
+	console.log( 5 % 2 ); //1, modulo, posledni zbytek po celociselnem deleni
+	
+	x = 5;
+	console.log (x++); //increment, 5, VYPIS 5 A TEPRVE POTOM ZVEDNI HODNOTU O JEDNICKU
+	
+	x = 5;
+	console.log (++x); //increment, 6, ZVEDNI HODNOTU O JEDNICKU A PAK VYPIS
+	
+	x = 5;
+	console.log (x--); //decrement, 5, VYPIS 5 A TEPRVE POTOM ZMENSI HODNOTU O JEDNICKU
+	
+	x = 5;
+	console.log (--x); //decrement, 4, ZMENSI HODNOTU O JEDNICKU A PAK VYPIS
+	
+	
+	// LOGICKE OPERATORY
+	yes = true;
+	no = false
+
+	// AND
+	console.log( yes && yes ); //true, and, plati zaroven oba operandy? ANO
+	console.log( yes && no ); //false, and, plati zaroven oba operandy? NE
+	console.log( no && no ); //false, and, plati zaroven oba operandy? NE
+	
+	// OR
+	console.log( yes || yes ); //true, or, plati alespon jeden operand? ANO
+	console.log( yes || no ); //true, or, plati alespon jeden operand? ANO
+	console.log( no || no ); //false, or, plati alespon jeden operand? NE
+	
+	// NOT
+	console.log( !no ); //true, not, neplati? ANO, neplati
+	console.log( !yes ); //false, not, neplati? NE, neplati
+	console.log( !no && yes ); //true, not and, otoci hodnotu no a vysledek je stejny jako yes && yes
+	console.log( !no && !no ); //true, not and, otoci hodnotu no a vysledek je stejny jako yes && yes
+	console.log( !yes && !yes ); //false, not and, otoci hodnotu yes a vysledek je stejny jako no && no
+	console.log( !yes || yes || !no || no ); //true, plati alespon 1 operand, je jedno, jak je to dlouhe, vyhodnocovani se zastavi u prvniho true
+	
+	
+	//RETEZCOVE OPERATORY
+	a = "ahoj"
+	console.log(a + 'svete' ); //ahojsvete, a = ahoj
+	console.log(a += 'svete' ); //ahojsvete, a = ahojsvete
+	
+	
+	// TERNARNI OPERATORY
+	// podminka ? hodnota1 : hodnota2
+	// v praxi se docela pouzivaji
+	// podminka operandu
+	a = 10
+	console.log(a == 10 ? 'oh yes!!!' : 'nooo!'); //vrat oh yes!!!, pokud je a == 10, jinak vrat nooo!
+	
+	
 	
 	</script>
 

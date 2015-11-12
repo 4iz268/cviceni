@@ -132,9 +132,9 @@
 
 ### Operátory (operators)
 
-* **operátor = provádí nějakou operaci nad daty (typicky přirazení, porovnání, atd.)**
-* přirazení - assignment
-* porovnání - comparison
+* **operátor = provádí nějakou operaci nad daty (typicky přirazení, porovnání, matematika, podmínka, atd.)**
+* přiřazovací - assignment
+* srovnávací - comparison
 * aritmetické - arithmetic
 * logické - logical
 * řetězcové - string
