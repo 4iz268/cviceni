@@ -12,6 +12,7 @@
 * programovací jazyk, který může být spuštěn přímo v browseru
 * case-sensitive (citlivý na malá VS velká písmena)
 * používá Unicode znakovou sadu
+* dynamicky typovaný = typ proměnné se může měnit a vyhodnocuje se za běhu (protiklad je staticky typovaný jazyk, např. Java)
 * JS podporují všechny moderní prohlížeče
 * JS má přístup k HTML elementům, DOMu, CSS, může měnit dynamicky stránku
 * existují bezpečnostní omezení, JS třeba nemá standardně přístup k lokálnímu filesystému (aby autor stránky nemohl třeba brát soubory uživatele)
@@ -54,7 +55,7 @@
 * **Number**. Číslo. 42 nebo 3.14159.
 * **String**. Řetězec. "Ahoj světe."
 * **Symbol** (nově v ECMAScript 6). Datový typ, jehož instance jsou unikátní a nemění se.
-
+* **[práce s datovými typy](./08-js-datatypes.html)**
 
 
 ### Funkce
