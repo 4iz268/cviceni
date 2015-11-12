@@ -67,7 +67,7 @@
 * **[práce s funkcemi](./08-js-functions.html)**
 
 
-#### Objekty (objects)
+### Objekty (objects)
 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 * objekt = něco, s čím můžu v aplikaci "hýbat"
@@ -87,6 +87,22 @@
 * nevhodné názvy proměnných: `tohle_je_ale_opravdu_moc_dlouhy_nazev_kdo_to_ma_furt_psat`, `a`, `b`, `xxx`
 * proměnná musí začínat písmenem `nazev`, podtržítkem: `_nazev`, nebo dolarem: `$nazev`. Druhý a další znak můžou být i číslice 0-9, ale ne jako první znak, např.  `nazev1` je OK.
 * **[práce s proměnnými](./08-js-variables.html)**
+
+
+### Konstanty (constants)
+
+* konstanta = proměnná, která se nastaví jen jednou a pak je dál jen pro čtení
+* pokus o opětovné přenastavení vyhodí výjimku
+* stejná pravidla pro název jako u proměnných
+* **[práce s konstantami](./08-js-constants.html)**
+
+
+### Literály
+
+* literál = fixní (natvrdo) hodnoty
+* nejsou to proměnné
+* stejná pravidla pro název jako u proměnných
+
 
 
 ### Values (hodnoty)
