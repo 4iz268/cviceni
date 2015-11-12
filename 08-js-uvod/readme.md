@@ -27,7 +27,7 @@
 
 * JS je jedna z implementací ECMAScript, scriptovacího programovacího jazyka (ECMA-262 and ISO/IEC 16262).
 * Aktuálně používaná verze: ECMAScript 6 (2015), viz **http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf**
-* různé prohlížeče mají různou implementaci ECMAScript, základní a používané věci však většinou fungují už v moderních prohlížečích fungují dobře
+* různé prohlížeče mají různou implementaci ECMAScript, základní a používané věci však většinou fungují ve všech moderních prohlížečích dobře
 * pokud napíšete JS, který funguje jen v některém prohlížeči, pak bude zřejmě problém ve vás :)
 * compatibility table: **https://kangax.github.io/compat-table/es6/**
 * ECMAScript 6 features: **http://es6-features.org/**
