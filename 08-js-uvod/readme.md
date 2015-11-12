@@ -6,9 +6,59 @@
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript
 * http://www.w3schools.com/js/
 
-## Syntaxe JS
 
+## Co je JavaScript (JS)?
+
+* programovací jazyk, který může být spuštěn přímo v browseru
+* case-sensitive (citlivý na malá VS velká písmena)
+* používá Unicode znakovou sadu
+* JS podporují všechny moderní prohlížeče
+* JS má přístup k HTML elementům, DOMu, CSS, může měnit dynamicky stránku
+* existují bezpečnostní omezení, JS třeba nemá standardně přístup k lokálnímu filesystému (aby autor stránky nemohl třeba brát soubory uživatele)
+* nemá nic společného z Javou (jen kousek názvu)
+* **[JavaScript není Java](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction#JavaScript_and_Java)**. Na začátku se JavaScript jmenoval LiveScript a autoři ho přejmenovali, aby se svezli na popularitě Javy od Sunu (teď Oracle)
+* JS jde v prohlížeči zakázat, pak se ale připravme, že přestane fungovat většina moderních stránek
+* pokud používáme JS, *teoreticky* by naše stránka měla fungovat i pokud je JS zakázaný. V praxi bych to vůbec neřešil.
+
+
+## Základy syntaxe JS
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
 * http://www.w3schools.com/js/js_syntax.asp
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+
+### Datové typy
+
+#### Primitivní datové typy (primitivní = není to objekt a nemá metody)
+
+* Boolean. true a false. Ano/ne
+* null. Prázdná hodnota. Není to prázdný řetězec! Protože je JS case-sensitive, tak Null, NULL, atd. není to samé jako null.
+* undefined. Nedefinovaná hodnota. A top-level property whose value is undefined.
+* Number. Číslo. 42 nebo 3.14159.
+* String. Řetězec. "Ahoj světe."
+* Symbol. Datový typ, jehož instance jsou unikátní a nemění se.
+
+
+#### Objekty
+
+
+
+### Values (hodnoty)
+
+
+### Operators (operátory)
+
+
+### Expressions (výrazy)
+
+
+### Keywords (klíčová slova)
+
+
+### Comments (komentáře)
+
+
 
 
 ## Vložení skriptu do stránky
