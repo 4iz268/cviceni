@@ -105,7 +105,7 @@
 * **pole jsou číslovaná od 0**
 * stejná pravidla pro název jako u proměnných
 * pole jsou v JS dynamicky typovaná, jdou tedy za běhu rozšiřovat, měnit, atd. (narozdíl od Javy, kde se pole inicializuje s velikostí a pak už jeho velikost měnit nejde)
-* **[práce s polem](./08-js-array.html)**
+* **[práce s polem](./08-js-arrays.html)**
 
 
 ###  Řídící struktury (control flow)
