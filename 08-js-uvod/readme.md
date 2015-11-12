@@ -32,12 +32,12 @@
 
 #### Primitivní datové typy (primitivní = není to objekt a nemá metody)
 
-* Boolean. true a false. Ano/ne
-* null. Prázdná hodnota. Není to prázdný řetězec! Protože je JS case-sensitive, tak Null, NULL, atd. není to samé jako null.
-* undefined. Nedefinovaná hodnota. A top-level property whose value is undefined.
-* Number. Číslo. 42 nebo 3.14159.
-* String. Řetězec. "Ahoj světe."
-* Symbol. Datový typ, jehož instance jsou unikátní a nemění se.
+* **Boolean**. true a false. Ano/ne
+* **null**. Prázdná hodnota. Není to prázdný řetězec! Protože je JS case-sensitive, tak Null, NULL, atd. není to samé jako null.
+* **undefined**. Nedefinovaná hodnota. A top-level property whose value is undefined.
+* **Number**. Číslo. 42 nebo 3.14159.
+* **String**. Řetězec. "Ahoj světe."
+* **Symbol**. Datový typ, jehož instance jsou unikátní a nemění se.
 
 
 ### Proměnné (variables)
