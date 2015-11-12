@@ -21,6 +21,15 @@
 * pokud používáme JS, *teoreticky* by naše stránka měla fungovat i pokud je JS zakázaný. V praxi bych to vůbec neřešil.
 
 
+### JS a ECMAScript 6
+
+* JS je jedna z implementací ECMAScript, scriptovacího programovacího jazyka (ECMA-262 and ISO/IEC 16262).
+* Aktuálně používaná verze: ECMAScript 6 (2015), viz http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf
+* různé prohlížeče mají různou implementaci ECMAScript, základní a používané věci však většinou fungují už v moderních prohlížečích fungují dobře
+* pokud napíšete JS, který funguje jen v některém prohlížeči, pak bude zřejmě problém ve vás :)
+* compatibility table: **viz https://kangax.github.io/compat-table/es6/**
+
+
 ## Základy syntaxe JS
 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
@@ -37,8 +46,17 @@
 * **undefined**. Nedefinovaná hodnota. A top-level property whose value is undefined.
 * **Number**. Číslo. 42 nebo 3.14159.
 * **String**. Řetězec. "Ahoj světe."
-* **Symbol**. Datový typ, jehož instance jsou unikátní a nemění se.
+* **Symbol** (nově v ECMAScript 6). Datový typ, jehož instance jsou unikátní a nemění se.
 
+
+
+#### Objekty
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+* objekt = něco, s čím můžu v aplikaci "hýbat"
+* pararela s objekty v reálném světě
+* objekt má typicky nějaké vlastnosti (hodnoty, atributy) a funkce (v některých programovacích jazycích jsou to "metody"), pomocí kterých s objektem můžu pracovat
+* analogie s autem: auto je objekt
 
 ### Proměnné (variables)
 
@@ -52,7 +70,6 @@
 * **[práce s proměnnými](./08-js-variables.html)**
 
 
-#### Objekty
 
 
 
