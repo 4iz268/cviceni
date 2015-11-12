@@ -40,6 +40,18 @@
 * Symbol. Datový typ, jehož instance jsou unikátní a nemění se.
 
 
+### Proměnné (variables)
+
+* **proměnná = symbolický název pro nějakou hodnotu v aplikaci (aby se nám na něco dobře odkazovalo)**
+* název proměnné určuje programátor
+* doporučuji nepoužívat v názvech proměnných diakritiku (nutno přepínat CS/EN klávesnici, myslete na cizince, atd.)
+* používat v názvech proměnných EN, nebo max. češtinu bez diakritiky
+* název by měl být krátký (jsme líní psát dlouhé texty a děláme pak chyby), ale zase ne příliš krátký
+* vhodné názvy proměnných: *current_date*, *total_revenue*, *user_name*
+* nevhodné názvy proměnných: tohle_je_ale_opravdu_moc_dlouhy_nazev_kdo_to_ma_furt_psat, a, b, xxx
+* **[práce s proměnnými](./08-js-variables.html)**
+
+
 #### Objekty
 
 
