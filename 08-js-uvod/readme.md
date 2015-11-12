@@ -123,9 +123,9 @@
 
 * cyklus = opakuje určitou část kódu
 * iterátor = objekt je iterátorem, pokud umí procházet nějakou kolekci dat a ví, na které pozici se zrovna nachází (resp. ví alespoň, jaký bude příští prvek). Zná tedy pořadí procházení.
-* for
-* do .. while
-* while
+* **for**
+* **do .. while**
+* **while**
 * **[práce s cykly](./08-js-loops.html)**
 
 
