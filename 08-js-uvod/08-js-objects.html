@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>JS objects</title>
+</head>
+
+
+<body>
+	
+	<h1>JS objects</h1>
+
+
+	<script>
+	
+	// externi funkce, ze ktere za chvili udelame metodu objektu
+	function nasob(a, b){
+		return a * b; //klicovym slovem return vyskocime z funkce s nejakym vysledkem
+	}
+	
+	// VYTVORENI OBJEKTU POMOCI KONSTRUKTORU
+	// objekty v JS deklarujeme jako funkce
+	// konstruktor
+	function Employee(param_name, param_surname) {
+	  //atributy objektu deklarujeme v runtime (za behu, nepotrebuje gettery a settery jako treba v Jave)
+		this.name = param_name;
+	  this.surname = param_surname;
+		this.nasob = nasob; //z funkce udelame METODU objektu
+		
+	}
+	
+	// vytvoreni objektu
+	jimmy = new Employee('Jimmy', 'Hendrix');
+	
+	
+	// zobrazeni atributu objektu
+	console.log(jimmy.name);
+	console.log(jimmy.surname);
+	console.log(jimmy.nasob(4, 5));
+	
+	
+	//VYTVORENI OBJEKTU POMOCI INICIALIZATORU 
+	var ford = { name: 'Ford', year: 1903}
+	
+	
+	// zobrazeni atributu objektu
+	console.log(ford.name);
+	console.log(ford.year);
+	
+	
+	</script>
+
+
+
+	<h2>See the results in JS console in your browser</h2>
+
+</body>
+
+</html>

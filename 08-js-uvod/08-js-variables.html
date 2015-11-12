@@ -23,11 +23,12 @@
 	
 	var jina = 40;
 	
-	// klicovym slovem let (obor platnosti v bloku)
+	
+	// deklarace funkce, jen pro ukazku oboru platnosti promenne
 	function nejaka_funkce() {
 	
-	 // pokud pouzijeme var uvnitr bloku (funkce), tak obor platnosti promenne je pouze v teto funkci
-	 // zvenci (mimo funkci) promenna uz neexistuje
+	 // pokud pouzijeme var uvnitr bloku (funkce), tak obor platnosti promenne (scope) je pouze v teto funkci
+	 // zvenci (mimo funkci) promenna uz neexistuje a zacne platit puvodni var jina = 40
 	 var jina = 50;
 	 
 	 //pokud bychom dali jenom jina = 50, pak prepiseme puvodni hodnotu promenne 40, kterou jsme deklarovali venku
@@ -37,18 +38,23 @@
 	//volani funkce
 	nejaka_funkce();
 	
-	console.log(nazev);
+	console.log(nazev); //20
 	
-	console.log(dalsi);
+	console.log(dalsi); //ahoj
 	
-	console.log(jina); //nebude 50, protoze var jina = 50 uvnitr funkce je JINA promenna (protoze jsme ji deklarovali pres var)
+	console.log(jina); //40, NEBUDE 50, var jina = 50 uvnitr nejaka_funkce je JINA promenna (protoze jsme ji deklarovali pres var)
+	
+	
+	// promenna jde deklarovat take klicovym slovem let (obor platnosti v bloku)
+	// TODO samostudium
+	// let pozdrav = 'howdy';
 	
 	
 	</script>
 
 
 
-	<h2>See the results in javascript console in your browser</h2>
+	<h2>See the results in JS console in your browser</h2>
 
 </body>
 

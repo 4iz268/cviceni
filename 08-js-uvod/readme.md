@@ -55,6 +55,18 @@
 * **String**. Řetězec. "Ahoj světe."
 * **Symbol** (nově v ECMAScript 6). Datový typ, jehož instance jsou unikátní a nemění se.
 
+
+
+### Funkce
+
+* funkce = zapouzdřená posloupnost příkazů
+* funkce může přijímat vstupy (argumenty či parametry funkce) a pracovat s nimi
+* smysl funkce je pro opakované použití stejného kódu (nechceme duplicitu) či stejného kódu s různými parametry
+* klasické vs anonymní funkce
+* klíčové slovo return vyskakuje z funkce, může mít nějakou hodnotu
+* **[práce s funkcemi](./08-js-functions.html)**
+
+
 #### Objekty (objects)
 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
