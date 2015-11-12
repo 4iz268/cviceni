@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>JS loops</title>
+</head>
+
+
+<body>
+	
+	<h1>JS loops</h1>
+
+
+	<script>
+
+
+	// FOR
+	// inicializuj promenne; delej tak dlouho, dokud plati podminka; zvys hodnotu promenne (pokud je treba)
+	for (var i = 1; i <= 10; i++) { //nastav i na 1; opakuj tak dlouho, dokud i neni rovno 10; zvys i o 1
+		console.log("i: " + i)
+	}
+
+
+	// WHILE
+	// opakuj cast kodu, dokud plati nejaka podminka
+	var y = 1;
+	while(y <= 10){ //delej tak dlouho, dokud je y mensi nebo rovno 10
+		console.log("y: " + y);
+		y++; //zvys hodnotu y o jedna, pokud neudelame, byl by nekonecny cyklus
+	}
+	
+	
+	// DO .. WHILE
+	// opakuj cast kodu, dokud plati nejaka podminka
+	// rozdil oproti while: vzdy probehne alespon jednou (protoze while se vyhodnoti az na konci)
+	var z = 0;
+	do {
+		z += 1; //zkratka, stejny jako z = z + 1
+		console.log("z: " + z);
+	} while (z < 10);
+	
+	
+	
+	// BREAK
+	// prerus cyklus 
+	while(true){
+		console.log("nabeh na nekonecny cyklus");
+		break; // nastesti prerusime
+	}
+	
+	
+	// CONTINUE
+	// prerus provadeni tohoto cyklu a skoc na dalsi (pokud je kam)
+	a = 0;
+	while(a < 10){
+		a++;
+		if (a==5){
+			console.log("preskakuju 5: ");
+			continue; //jdu na dalsi cyklus
+		}
+		console.log("a: " + a); //tohle se u 5 neprovede
+	}
+	
+
+	</script>
+
+	<h2>See the results in JS console in your browser</h2>
+
+</body>
+
+</html>

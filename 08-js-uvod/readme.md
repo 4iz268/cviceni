@@ -51,7 +51,7 @@
 
 * **Boolean**. true a false. Ano/ne
 * **null**. Prázdná hodnota. Není to prázdný řetězec! Protože je JS case-sensitive, tak Null, NULL, atd. není to samé jako null.
-* **undefined**. Nedefinovaná hodnota. A top-level property whose value is undefined.
+* **undefined**. Nedefinovaná hodnota.
 * **Number**. Číslo. 42 nebo 3.14159.
 * **String**. Řetězec. "Ahoj světe."
 * **Symbol** (nově v ECMAScript 6). Datový typ, jehož instance jsou unikátní a nemění se.
@@ -117,13 +117,22 @@
 * **try catch finally**
 * **[práce s řídícími strukturami](./08-js-control-flows.html)**
 
-### Values (hodnoty)
+
+### Cykly a iterace
+
+* cyklus = opakuje určitou část kódu
+* iterátor = objekt je iterátorem, pokud umí procházet nějakou kolekci dat a ví, na které pozici se zrovna nachází (resp. ví alespoň, jaký bude příští prvek). Zná tedy pořadí procházení.
+* for
+* do .. while
+* while
+* **[práce s cykly](./08-js-loops.html)**
 
 
-### Operators (operátory)
+
+### Operátory (operators)
 
 
-### Expressions (výrazy)
+
 
 
 ### Keywords (klíčová slova)
