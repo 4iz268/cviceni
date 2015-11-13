@@ -12,18 +12,20 @@
 	
 	<h1>JS onmouseover &amp; onmouseout</h1>
 	
-	<img onmouseover="big(this)" onmouseout="normal(this)" border="0" src="images/vse.png" alt="Smiley" width="223" height="226">
+	<img onmouseover="big(this)"
+             onmouseout="normal(this)"
+             border="0" src="images/vse.png" alt="Smiley" width="223" height="226">
 
 
 	<script>
-	function big(x) {
-	    x.style.height = "446px";
-	    x.style.width = "452px";
+	function big(element) {
+	    element.style.height = "446px";
+	    element.style.width = "452px";
 	}
 
-	function normal(x) {
-	    x.style.height = "223px";
-	    x.style.width = "226px";
+	function normal(element) {
+	    element.style.height = "223px";
+	    element.style.width = "226px";
 	}
 	</script>
 	
