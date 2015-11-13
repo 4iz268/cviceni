@@ -103,10 +103,17 @@
 
 * **pole = seznam více hodnot (neplést s seznamem List v Javě!)**
 * přístup k poli přes index (pořadové číslo prvku v poli)
-* **pole jsou číslovaná od 0**
+* **pole jsou číslovaná od 0** - **javascript neumí pole s jinými, než číselnými indexy**
 * stejná pravidla pro název jako u proměnných
 * pole jsou v JS dynamicky typovaná, jdou tedy za běhu rozšiřovat, měnit, atd. (narozdíl od Javy, kde se pole inicializuje s velikostí a pak už jeho velikost měnit nejde)
 * **[práce s polem](./08-js-arrays.html)**
+* metody pro práci s polem:
+  * **.pop()** - odebrání posledního prvku
+  * **.push(xxx)** - přidání prvku na konec
+  * **.shift()** - odebrání prvního prvku
+  * **.unshift()** - přidání prvku na začátek
+  * **.splice(index,počet)** - odebrání prvků z pole
+  * viz [JavaScript Array Methods](http://www.w3schools.com/js/js_array_methods.asp)
 
 
 ###  Řídící struktury (control flow)
