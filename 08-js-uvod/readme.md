@@ -33,6 +33,22 @@
 * ECMAScript 6 features: **http://es6-features.org/**
 
 
+## Vložení skriptu do stránky
+
+* [inline](./08-js-insert-inline.html)
+* [head](./08-js-insert-head.html)
+* [body](./08-js-insert-body.html)
+* [external](./08-js-insert-external.html)
+
+
+## Otravná okýnka, aneb hello world!
+
+```javascript
+<script type="text/javascript">
+  alert('Tak takhle to prográmko vždycky začíná! :)');
+</script>
+```
+
 ## JS konzole
 
 * [využití JS konzole v browseru](./08-js-console.html)
@@ -59,25 +75,6 @@
 * **[práce s datovými typy](./08-js-datatypes.html)**
 
 
-### Funkce
-
-* **funkce = zapouzdřená posloupnost příkazů**
-* funkce může přijímat vstupy (argumenty či parametry funkce) a pracovat s nimi
-* smysl funkce je pro opakované použití stejného kódu (nechceme duplicitu) či stejného kódu s různými parametry
-* klasické vs anonymní funkce
-* klíčové slovo return vyskakuje z funkce, může mít nějakou hodnotu
-* **[práce s funkcemi](./08-js-functions.html)**
-
-
-### Objekty (objects)
-
-* **objekt = něco, s čím můžu v aplikaci "hýbat"**
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
-* pararela s objekty v reálném světě
-* objekt má typicky nějaké vlastnosti (hodnoty, atributy) a funkce (v některých programovacích jazycích jsou to "metody"), pomocí kterých s objektem můžu pracovat
-* analogie s autem: auto je objekt, jeho vlastosti jsou např. "barva, typ, SPZ". Funkce jsou "nastartuj, zrychli, brzdi, blikej".
-* **[práce s objekty](./08-js-objects.html)**
-
 ### Proměnné (variables)
 
 * **proměnná = symbolický název pro nějakou hodnotu v aplikaci (aby se nám na něco dobře odkazovalo)**
@@ -99,6 +96,16 @@
 * **[práce s konstantami](./08-js-constants.html)**
 
 
+### Funkce
+
+* **funkce = zapouzdřená posloupnost příkazů**
+* funkce může přijímat vstupy (argumenty či parametry funkce) a pracovat s nimi
+* smysl funkce je pro opakované použití stejného kódu (nechceme duplicitu) či stejného kódu s různými parametry
+* klasické vs anonymní funkce
+* klíčové slovo return vyskakuje z funkce, může mít nějakou hodnotu
+* **[práce s funkcemi](./08-js-functions.html)**
+
+
 ### Pole (arrays)
 
 * **pole = seznam více hodnot (neplést s seznamem List v Javě!)**
@@ -114,6 +121,21 @@
   * **.unshift()** - přidání prvku na začátek
   * **.splice(index,počet)** - odebrání prvků z pole
   * viz [JavaScript Array Methods](http://www.w3schools.com/js/js_array_methods.asp)
+
+
+### Operátory (operators)
+
+* **operátor = provádí nějakou operaci nad daty (typicky přirazení, porovnání, matematika, podmínka, atd.)**
+* přiřazovací - assignment
+* srovnávací - comparison
+* aritmetické - arithmetic
+* logické - logical
+* řetězcové - string
+* podmínečné (ternární) - conditional (ternary)
+* relační - relational (nebudeme ukazovat)
+* unární - unary (nebudeme ukazovat)
+* bitové - bitwise (nebudeme ukazovat)
+* **[práce s operátory](./08-js-operators.html)**
 
 
 ###  Řídící struktury (control flow)
@@ -134,23 +156,6 @@
 * **do .. while**
 * **while**
 * **[práce s cykly](./08-js-loops.html)**
-
-
-
-### Operátory (operators)
-
-* **operátor = provádí nějakou operaci nad daty (typicky přirazení, porovnání, matematika, podmínka, atd.)**
-* přiřazovací - assignment
-* srovnávací - comparison
-* aritmetické - arithmetic
-* logické - logical
-* řetězcové - string
-* podmínečné (ternární) - conditional (ternary)
-* relační - relational (nebudeme ukazovat)
-* unární - unary (nebudeme ukazovat)
-* bitové - bitwise (nebudeme ukazovat)
-* **[práce s operátory](./08-js-operators.html)**
-
 
 
 ### Rezervovaná klíčová slova (keywords)
@@ -197,9 +202,6 @@
   * protected (budoucí rezervované slovo)
 
 
-
-
-
 ### Komentáře (comments)
 
 * text, nebo kousky kódu, které programovací jazyk nemá vyhodnocovat. Pro vývojáře.
@@ -208,24 +210,17 @@
 * **[práce s komentáři](./08-js-comments.html)**
 
 
-
-## Vložení skriptu do stránky
-
-* [inline](./08-js-insert-inline.html)
-* [head](./08-js-insert-head.html)
-* [body](./08-js-insert-body.html)
-* [external](./08-js-insert-external.html)
-
-
 ## Změna CSS pomocí JS
 
 * objekt style
 * [css a js](./08-js-css.html)
 
 
+##
+
 ## Obsluha událostí
 
-* události je něco, co se může přihodit HTML elementům
+* události je něco, co se může přihodit HTML elementům (někam klikneme, na něco najedem myší atp.)
 * JavaScript může na tyto události reagovat
 * http://www.w3schools.com/js/js_events.asp
 
@@ -245,14 +240,25 @@
 * [onmouseover onmouseout](./08-js-event-mouse.html)
 
 
+---
+
+
+### Objekty (objects)
+
+* **objekt = něco, s čím můžu v aplikaci "hýbat"**
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+* pararela s objekty v reálném světě
+* objekt má typicky nějaké vlastnosti (hodnoty, atributy) a funkce (v některých programovacích jazycích jsou to "metody"), pomocí kterých s objektem můžu pracovat
+* analogie s autem: auto je objekt, jeho vlastosti jsou např. "barva, typ, SPZ". Funkce jsou "nastartuj, zrychli, brzdi, blikej".
+* **[práce s objekty](./08-js-objects.html)**
+
+
 ## Čtení a zápis do formulářových polí 
 
 * [form input, form checkbox, form confirm](./08-js-form-fields.html)
 * [form password, potvrzení hesla](./08-js-form-password.html)
 * http://www.w3schools.com/jsref/dom_obj_form.asp
 * http://www.w3schools.com/jsref/coll_form_elements.asp
-
-
 
 ## Debug  (chytání chyb)
 
