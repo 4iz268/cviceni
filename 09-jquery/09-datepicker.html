@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Datepicker</title>
+	<!--připojení nezbytných stylů a skriptů (z jQuery UI by bylo možné použít také jen příslušnou část!)-->
+	<link href="external/jquery-ui/jquery-ui.css" rel="stylesheet">
+	<script type="text/javascript" src="external/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="external/jquery-ui/jquery-ui.js"></script>
+	<script type="text/javascript">
+		//události připojujeme až po vytvoření elementů v DOM stromu
+		$(document).ready(function(){
+			$('#datepickerSimple').datepicker();//nejjednodušší možná inicializace datepickeru
+
+			$('#datepickerMinMax').datepicker({//připojujeme jednotlivé konfigurační parametry
+				dateFormat: "d. m. yy",//určení formátu data a času
+				minDate: '-2Y', //poslední 2 roky
+				maxDate: 0, //jen data z minulosti
+				changeMonth: true, // výběr měsíců
+				changeYear: true //výběr let
+			});
+
+			$("#datepickerDiv").datepicker({//pořád viditelný datepicker
+				altField: "#datepickerDivTarget" //výsledek budeme plnit do vybraného inputu
+			});
+		});
+
+	</script>
+</head>
+<body>
+
+<h1>Datepicker</h1>
+
+<label for="datepickerSimple">Nejjednodušší varianta datepickeru:</label><input type="text" id="datepickerSimple" />
+<br /><br />
+<label for="datepickerMinMax">Datepicker s českým formátem data a omezením rozsahu hodnot:</label><input type="text" id="datepickerMinMax" />
+<br /><br />
+<div id="datepickerDiv"></div><input id="datepickerDivTarget">
+
+
+
+</body>
+</html>

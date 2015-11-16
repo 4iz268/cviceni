@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>TinyMCE</title>
+	<!--připojení nezbytných stylů a skriptů-->
+	<script type="text/javascript" src="external/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="external/tinymce-4.2.8jquery/tinymce.min.js"></script>
+	<script type="text/javascript">
+		tinymce.init({//inicializace se zadáním vzhledu...
+			selector: "textarea",
+			theme: "modern",
+			plugins: [
+				"advlist autolink lists link image charmap print preview hr anchor pagebreak",
+				"searchreplace wordcount visualblocks visualchars code fullscreen",
+				"insertdatetime media nonbreaking save table contextmenu directionality",
+				"emoticons template paste textcolor colorpicker textpattern imagetools"
+			],
+			toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+			toolbar2: "print preview media | forecolor backcolor emoticons",
+			image_advtab: true,
+			templates: [
+				{title: 'Test template 1', content: 'Test 1'},
+				{title: 'Test template 2', content: 'Test 2'}
+			]
+		});
+	</script>
+</head>
+<body>
+
+<h1>TinyMCE</h1>
+
+<textarea >example...</textarea>
+
+
+</body>
+</html>

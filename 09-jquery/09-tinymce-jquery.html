@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>TinyMCE</title>
+	<!--připojení nezbytných stylů a skriptů-->
+	<script type="text/javascript" src="external/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="external/tinymce-4.2.8jquery/jquery.tinymce.min.js"></script>
+	<script type="text/javascript">
+		//události připojujeme až po vytvoření elementů v DOM stromu
+		$(document).ready(function(){
+			$('textarea.tinymce').tinymce({
+				// Location of TinyMCE script
+				script_url : 'external/tinymce-4.2.8jquery/tinymce.min.js',
+				//content_css : "css/content.css", //pomocí content_css je možné připojit styly pro obsah
+			});//nejjednodušší možná inicializace tinymce
+
+			$('#showEditor').click(function(){
+				$('#tinymce2').tinymce().show();
+			});
+			$('#hideEditor').click(function(){
+				$('#tinymce2').tinymce().hide();
+			});
+			$('#updateDiv').click(function(){
+				var content=$('#tinymce2').tinymce().getContent();
+				$('#contentDiv').html(content);
+			});
+		});
+
+	</script>
+</head>
+<body>
+
+<h1>TinyMCE - inicializace pomocí jQuery</h1>
+
+<label for="tinymce1">TinyMCE</label><br />
+<textarea id="tinymce1" class="tinymce">example...</textarea>
+
+<br /><br />
+
+<label for="tinymce2">TinyMCE - zapínatelný nad obsahem</label><br />
+<textarea id="tinymce2" class="tinymce">Ukázkový obsah v DIVu...</textarea>
+<a href="#tinymce2" id="showEditor">[Show]</a>
+<a href="#tinymce2" id="hideEditor">[Hide]</a>
+<a href="#contentDiv" id="updateDiv">[Update DIV]</a>
+
+<br /><br />
+
+<div id="contentDiv" style="border: 1px solid red;"></div>
+
+
+</body>
+</html>

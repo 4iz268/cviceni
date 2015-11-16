@@ -87,15 +87,47 @@ $(function() {
 ```
 
 ### Připojování událostí pomocí jQuery
-- nepoužíváme atributy pro připojení událostí
+- **Co jsou to události?** - viz [minulé cvičení](../08-js-uvod)
+- při použití jQuery obvykle nepoužíváme atributy pro připojení událostí
 - po připravení stránky zavoláme inicializační řást javascriptu, v rámci které připojíme k vybraným elementům příslušné události
-- lze připojit víc funkcí (handlerů) k jedné události
+- lze připojit víc funkcí (handlerů) k jedné události, zároveň lze připojit jednu událost k většímu množství prvků najednou
+- pro události máme k dispozici buď pojmenované funkce pro připojení události (**.click(handler)**, **.dblclick(handler)**, **.focus(handler)**,...), nebo univerzální funkci **.on('event',handler)**
+- pro odebrání události lze využít funkci **.off('event')**, pokud má být reakce na událost spuštěna pouze jednou a poté odebrána, lze využít připojení pomocí funkce **.one('event',handler)**
+```javascript
+  $('#klikac').click(function(){
+    //kód spouštěný při události onclick
+  });
+```
 
-TODO
+- ukázkové příklady:
+  - xxx
+- přehled eventů a souvisejících funkcí: [jQuery Event Methods](http://www.w3schools.com/jquery/jquery_ref_events.asp)
 
 
 ---
 
+### jQuery &amp; DOM strom
+- **Co je to DOM strom?**
+- procházení DOM stromu: [jQuery Traversing](http://www.w3schools.com/jquery/jquery_traversing.asp)
+- přidávání a odebírání prvků již umíte... (viz funkce pro modifikaci obsahu)
+
+
+### jQuery UI, komponenty postavené na jQuery
+- jQuery UI
+  - https://jqueryui.com/
+    - doporučuji custom download, v rámci kterého si vyberete jen zvolené komponenty
+  - sada vizuálních komponent a interakcí postavených na jQuery
+  - příklady:
+    - [komplexní demonstrace komponent v jQuery UI](./09-jquery-ui.html)
+    - [ukázka konfigurace datepickeru](./09-datepicker.html)
+    - [datepicker v češtině](./09-datepicker-cz.html)
+- [jQuery je využíváno také v Bootstrapu](http://getbootstrap.com/javascript/)
+  - modální okna, alerty, tooltipy
+  - Dropdowns (rozbalovací menu)
+  - ScrollSpy (skrolování v rámci obsahu)
+  - Tooltip
+  - Carousel ("listování" fotkami či upoutávkami)
+  - Affix (inteligentní zafixování viditelných prvků při skrolování)
 
 ## Existující javascriptové aplikace
 - pro většinu běžných "hejblátek" existují k dispozici již hotové a odladěné skripty
@@ -103,8 +135,17 @@ TODO
   - je prostě zbytečné psát si vlastní WYSIWYG editor nebo lightbox
 - při připojování externích skriptů je nutné dbát na pořadí jejich načtení
 - příklady:
-  - TODO
-
+  - TinyMCE (http://www.tinymce.com)
+    - [výchozí inicializace](./09-tinymce.html)
+    - [inicializace pomocí jQuery](./09-tinymce-jquery.html)
+  - Lightbox 2 (http://lokeshdhakar.com/projects/lightbox2/)
+    - [ukázkový příklad](./09-lightbox.html)
+  - fancyBox (http://fancyapps.com/fancybox/)
+    - nejen obrázky, ale také iframe, youtube atd.
+    - [ukázkový příklad](./09-fancybox.html)
+  - Chart.js (http://www.chartjs.org/)
+    - kreslení (interaktivních) grafů v HTML5
+    - [ukázkové příklady](./09-chart.js)
 
 ### jQuery compatibility mode
 - pokud máme na stránkách použitou kromě jQuery např. také knihovnu Mootools (nebo jakoukoliv jinou), která využívá znak ```$``` pro vlastní funkčnost, máme možnost tento identifikátor v rámci jQuery změnit na jiný
@@ -142,6 +183,4 @@ TODO
 ## TODO:
 - průchod a manipulace s DOM
 - využití querySelectAll()
-- jQuery
-- použití existujících JS aplikací a komponent (kalendáře, WYSIWYG editory atp.)
 - Bootstrap a jQuery
