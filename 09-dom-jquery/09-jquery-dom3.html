@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery - DOM - 3. část</title>
+	<script type="text/javascript" src="external/jquery-2.1.4.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#button1').click(function(){
+				//najdi všechny značky P, které jsou ve značce DIV
+				$('div').find('p').each(function(){
+					console.log($(this));
+				})
+			});
+
+			$('#button2').click(function(){
+				//skrytí předchozího sourozence
+				$(this).prev().hide();
+			});
+
+			$('#button3').click(function(){
+				//najdi nejbližší nadřízenou značku
+				$(this).parent().css('background','blue');
+
+				//najdi nejbližší nadřízenou značku DIV
+				$(this).closest('div').css('background','red');
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<h1>jQuery - DOM - 3. část - pohyb v DOM stromu</h1>
+
+	<div>
+		<span>
+			<button type="button" id="button1">postupný selektor</button>
+			<button type="button" id="button2">skryj předchozí element</button>
+			<button type="button" id="button3">background rodiče</button>
+		</span>
+	</div>
+
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis no...</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis no...</p>
+	</div>
+
+</body>
+</html>
