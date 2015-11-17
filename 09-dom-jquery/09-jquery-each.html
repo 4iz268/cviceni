@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery .each()</title>
+	<script type="text/javascript" src="external/jquery-2.1.4.js"></script>
+	<script type="text/javascript">
+		//události připojujeme až po vytvoření elementů v DOM stromu
+		$(document).ready(function(){
+			$('ul').click(function(){
+				$(this).children().each(function(){//projdeme všechny potomky a zpracujeme je...
+					console.log($(this).text());//v rámci funkce each se pomocí $(this) odkazujeme na aktuální položku (pokud bychom chtěli mít přístup k původci události, musíme si jeho referenci uložit před použitím funkce each do jiné proměnné)
+				});
+			});
+			$('div').each(function(){//funkci each používáme v případě, že chceme s danými prvky dělat něco víc, než jen zavolat jednu jQuery funkci...
+				console.log($(this));
+				$(this).prepend('processed: ');
+			});
+		});
+
+	</script>
+</head>
+<body>
+
+<h1>jQuery .each()</h1>
+<p>zobraz si JS konzoli a klikni na následující seznam...</p>
+
+<ul>
+	<li>item 1</li>
+	<li>item 2</li>
+	<li>item 3</li>
+	<li>item 4</li>
+</ul>
+
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+
+</body>
+</html>

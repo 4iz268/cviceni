@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery - DOM - 1. část</title>
+	<style type="text/css">
+		div{
+			border: 1px solid gray;
+			margin: 10px;
+			padding: 10px;
+		}
+		#div1{
+			background: yellow;
+		}
+	</style>
+	<script type="text/javascript" src="external/jquery-2.1.4.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#button1').click(function(){
+				//připojení HTML obsahu na začátek vybraných prvků
+				$('div').prepend(' <strong>test</strong> ');
+			});
+			$('#button2').click(function(){
+				//připojení HTML na konec vybraných prvků
+				$('#div1').append(' <strong>test</strong> ');
+			});
+			$('#button3').click(function(){
+				//vložení HTML před vybrané prvky
+				$('#div1').before(' <strong>test</strong> ');
+			});
+			$('#button4').click(function(){
+				//smazání celého obsahu vybraných prvků (=ekvivalent k .html(""))
+				$('#div1').empty();
+			});
+			$('#button5').click(function(){
+				//odebrání vybraných prvků
+				$('#div1').remove();
+			});
+		});
+	</script>
+</head>
+<body>
+
+<h1>jQuery - DOM - 1. část</h1>
+
+<button type="button" id="button1">přidat obsah na začátek všech divů</button>
+<button type="button" id="button2">přidat obsah na konec #div1</button>
+<button type="button" id="button3">přidat obsah před prvek #div1</button>
+<button type="button" id="button4">empty #div1</button>
+<button type="button" id="button5">remove #div1</button>
+
+<div id="div1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery - DOM - 2. část</title>
+	<style type="text/css">
+		div{
+			border: 1px solid gray;
+			margin: 10px;
+			padding: 10px;
+		}
+		#div1{
+			background: yellow;
+		}
+	</style>
+	<script type="text/javascript" src="external/jquery-2.1.4.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#button1').click(function(){
+				//vytvoření nového prvku (mimo DOM strom)
+				var element1=$('<strong>element1</strong>');
+
+				//vytvoření prvku s definicí jednotlivých vlastností a událostí
+				var element2=$('<strong></strong>');
+				element2.text('element2');
+				element2.css({"border":"1px solid red"}).click(function(){
+					$(this).remove();
+				});
+
+				//připojení prvku k obsahu - 2 varianty
+				$('div').append(element1);
+				element2.prependTo($('#div1'));
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<h1>jQuery - DOM - 2. část</h1>
+
+	<button type="button" id="button1">přidat elementy...</button>
+
+	<div id="div1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+	<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+	<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+
+
+</body>
+</html>

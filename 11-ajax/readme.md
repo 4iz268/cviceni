@@ -29,3 +29,6 @@ TODO
 
 ### Math
 TODO
+
+## Časování
+TODO timer

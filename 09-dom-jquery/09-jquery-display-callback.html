@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery display callback</title>
+	<style type="text/css">
+		#p1{
+			background: yellow;
+		}
+	</style>
+	<script type="text/javascript" src="external/jquery-2.1.4.js"></script>
+	<script type="text/javascript">
+		//události připojujeme až po vytvoření elementů v DOM stromu
+		$(document).ready(function(){
+			$('#button1').click(function(){
+				$('#p1').toggle(0,function(){//pokud má být zapojen callback, je nutné uvést čas animace
+					console.log('#p1 je přepnutý...');
+				});
+			});
+
+			$('#button2').click(function(){
+				//pokud uvedeme animace za sebou na stejné úrovni, spustí se současně...
+				$('#p1').toggle(6000,function(){//při neuvedení času animace je čas
+					console.log('#p1 je přepnutý...');
+				});
+				$('#p2').toggle(0,function(){//pokud by nebyl uveden čas animace, je nahrazen výchozí hodnotou (tj. animace je zapnuta)
+					console.log('#p2 je přepnutý...');
+				});
+			});
+
+			$('#button3').click(function(){
+				//postupné zobrazení jednotlivých odstavců
+				$('#p1').toggle(3000,function(){
+					$('#p2').toggle(3000);
+				});
+			});
+		});
+
+	</script>
+</head>
+<body>
+
+<h1 style="display: none">jQuery display</h1>
+
+<button type="button" id="button1">tooggle #p1</button>
+<button type="button" id="button2">tooggle #p1,#p2 animated</button>
+<button type="button" id="button3">postupné zobrazení</button>
+
+<p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ut augue ut convallis. Vestibulum mollis feugiat ullamcorper. Ut eget eros vitae augue vehicula lobortis non at justo. Nunc euismod venenatis molestie. Fusce nisl enim, dignissim vel ex non, hendrerit dictum neque.</p>
+<p id="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ut augue ut convallis. Vestibulum mollis feugiat ullamcorper. Ut eget eros vitae augue vehicula lobortis non at justo. Nunc euismod venenatis molestie. Fusce nisl enim, dignissim vel ex non, hendrerit dictum neque.</p>
+
+
+</body>
+</html>

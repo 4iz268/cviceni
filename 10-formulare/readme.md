@@ -152,10 +152,12 @@
 ### Formulářové prvky, které HTML nepodporuje
 - jsou vygenerovány javascriptem
 - kalendář pro výběr data v prohlížečích, které neznají input type="date"
-  - [jQuery Datepicker](https://jqueryui.com/datepicker/)
+  - jQuery Datepicker (https://jqueryui.com/datepicker/)
+    - [ukázka](../09-datepicker-cz.html)
 - WYSIWYG editory
-  - [TinyMCE](http://www.tinymce.com/)
-  - [CKEditor](http://ckeditor.com/)
+  - TinyMCE (http://www.tinymce.com/)
+    - [ukázka](../09-tinymce.html)
+  - CKEditor (http://ckeditor.com/)
 
 ## Zpracování formulářů
 ### Na serveru
@@ -229,6 +231,15 @@ TODO
     - vhodné například pro tlačítko "storno"
 
 ### Validace pomocí JavaScriptu
+TODO
+
+#### JS objekt String
+- [přehled metod](http://www.w3schools.com/jsref/jsref_obj_string.asp)
 
 TODO
+
+---
+
+## Získávání vstupů od uživatele pomocí JavaScriptu
+- v některých situacích je vhodnější nevkládat do stránek klasický formulář, ale požadovat od uživatele pouze jednu konkrétní hodnotu či např. souhlas
 

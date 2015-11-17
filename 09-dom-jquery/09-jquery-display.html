@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery display</title>
+	<style type="text/css">
+		#p1{
+			background: yellow;
+		}
+		#p2{
+			background: red;
+		}
+		#p3{
+			background: greenyellow;
+		}
+	</style>
+	<script type="text/javascript" src="external/jquery-2.1.4.js"></script>
+	<script type="text/javascript">
+		//události připojujeme až po vytvoření elementů v DOM stromu
+		$(document).ready(function(){
+			$('#button1').click(function(){
+				$('p').show();//funkce show zobrazí zvolené prvky (i pokud byly skryté pomocí CSS, ne pomocí JS)
+			});
+			$('#button2').click(function(){
+				$('#p1').toggle();//přepínání zobrazení prvku
+			});
+			$('#button3').click(function(){
+				var p2=$('#p2');
+				if (p2.is(':visible')){//kontrola, jestli je prvek viditelný
+					$('#p1').show(2000);//zobrazení s animací
+					$('#p2').hide(2000);
+				}else{
+					$('#p1').hide(2000);
+					$('#p2').show(2000);
+				}
+			});
+			$('h1').fadeIn(10000);//animované zobrazení nadpisu po zobrazení stránky
+		});
+
+	</script>
+</head>
+<body>
+
+<h1 style="display: none">jQuery display</h1>
+
+<button type="button" id="button1">show all paragraphs</button>
+<button type="button" id="button2">tooggle #p1</button>
+<button type="button" id="button3">show/hide #p1, #p2 animated</button>
+
+<p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ut augue ut convallis. Vestibulum mollis feugiat ullamcorper. Ut eget eros vitae augue vehicula lobortis non at justo. Nunc euismod venenatis molestie. Fusce nisl enim, dignissim vel ex non, hendrerit dictum neque.</p>
+<p id="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ut augue ut convallis. Vestibulum mollis feugiat ullamcorper. Ut eget eros vitae augue vehicula lobortis non at justo. Nunc euismod venenatis molestie. Fusce nisl enim, dignissim vel ex non, hendrerit dictum neque.</p>
+<p id="p3" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ut augue ut convallis. Vestibulum mollis feugiat ullamcorper. Ut eget eros vitae augue vehicula lobortis non at justo. Nunc euismod venenatis molestie. Fusce nisl enim, dignissim vel ex non, hendrerit dictum neque.</p>
+
+
+
+</body>
+</html>

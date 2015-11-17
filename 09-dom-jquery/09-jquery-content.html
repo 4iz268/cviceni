@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery - manipulace s obsahem</title>
+	<style type="text/css">
+		div{
+			float: left;
+			width: 200px;
+			padding: 20px;
+			margin: 20px;
+		}
+		#div1{
+			background: yellow;
+		}
+		#div2{
+			background: blue;
+		}
+		#div3{
+			background: red;
+		}
+	</style>
+	<script type="text/javascript" src="external/jquery-2.1.4.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#button1').click(function(){
+				//naplnění vybraného prvku předdefinovaným obsahem
+				$('#div3').text('Nějaký předdefinovaný obsah...');
+			});
+
+			$('#button2').click(function(){
+				//získáme obsah z vybraného prvku, následně jej vložíme do jiného vybraného prvku
+				var content=$('#div1').html();
+				$('#div2').html(content);
+			});
+			$('#button3').click(function(){
+				var contentHtml=$('#div1').html();
+				var contentText=$('#div1').text();
+				$('#div2').text(contentHtml);//vkládáme HTML obsah jako text
+				$('#div3').text(contentText);//vkládáme textový obsah
+			});
+		});
+	</script>
+</head>
+<body>
+
+<h1>jQuery - manipulace s obsahem</h1>
+
+<button type="button" id="button1">předdefinovaný obsah v JS</button>
+<button type="button" id="button2">kopie obsahu z jiného prvku</button>
+<button type="button" id="button3">kopie obsahu z jiného prvku - prostý text</button>
+
+<br />
+
+<div id="div1">
+	<h2>Nadpis</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+<div id="div2">Maecenas at blandit mi, consectetur cursus tellus.</div>
+<div id="div3"></div>
+
+</body>
+</html>

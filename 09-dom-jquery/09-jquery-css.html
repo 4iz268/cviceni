@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery CSS</title>
+	<style type="text/css">
+		div#ukazka{
+			border: 2px solid gray;
+			color: gray;
+			background: yellow;
+			margin: 10px;
+			padding: 10px;
+		}
+		.aktivni{
+			font-weight: bold;
+		}
+	</style>
+	<script type="text/javascript" src="external/jquery-2.1.4.js"></script>
+	<script type="text/javascript">
+		//události připojujeme až po vytvoření elementů v DOM stromu
+		$(document).ready(function(){
+			$('#test1').click(function(){
+				//ukázka změny jedné vlastnosti stylů
+				$('div#ukazka').css({border:'4px solid blue'});
+			});
+			$('#test2').click(function(){
+				//ukázka změny více vlastností najednou
+				$('div#ukazka').css({border:'1px solid red',background:'white'});
+			});
+			$('#test3').click(function(){
+				//přidání třídy
+				$('div#ukazka').addClass('aktivni');
+			});
+			$('#test4').click(function(){
+				//odebrání třídy
+				$('div#ukazka').removeClass('aktivni');
+			});
+		});
+
+	</script>
+</head>
+<body>
+
+<h1>jQuery CSS</h1>
+<button type="button" id="test1">Test 1 - CSS border</button>
+<button type="button" id="test2">Test 2 - více CSS vlastností</button>
+<button type="button" id="test3">Test 2 - přidání třídy</button>
+<button type="button" id="test4">Test 2 - odebrání třídy</button>
+
+<div id="ukazka">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ut augue ut convallis. Vestibulum mollis feugiat ullamcorper. Ut eget eros vitae augue vehicula lobortis non at justo. Nunc euismod venenatis molestie. Fusce nisl enim, dignissim vel ex non, hendrerit dictum neque. Suspendisse nisl urna, commodo a purus id, lacinia ultricies elit. Vestibulum rutrum leo sed mauris molestie consectetur. Nulla et lectus non ex consectetur auctor ac quis nunc. Maecenas congue tellus ac mattis pulvinar. Integer varius, nulla a aliquam laoreet, quam eros porttitor nibh, aliquam dapibus nisl libero at dolor. Sed sed nunc sodales, bibendum turpis sed, vulputate nibh. Nulla accumsan, tortor quis scelerisque imperdiet, urna massa pellentesque metus, nec feugiat justo sem vitae metus. Praesent eu mollis diam. Suspendisse sed nibh turpis. Donec posuere metus vitae fringilla placerat. Morbi posuere libero ut metus commodo semper.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Events</title>
+	<style type="text/css">
+		div.exampleAction{
+			width: 200px;
+			color: red;
+			border: 1px solid red;
+			float: left;
+			margin: 20px;
+			padding: 20px;
+		}
+		div.exampleAction2{
+			width: 200px;
+			color: blue;
+			border: 1px solid blue;
+			float: left;
+			margin: 20px;
+			padding: 20px;
+		}
+	</style>
+	<script type="text/javascript" src="external/jquery-2.1.4.js"></script>
+	<script type="text/javascript">
+		//události připojujeme až po vytvoření elementů v DOM stromu
+		$(document).ready(function(){
+			//připojení jednoduchého handleru události vybraným prvkům (může jich být najednou vybráno i více)
+			$('.exampleAction').click(function(){
+				alert('Došlo ke kliknutí na některý z prvků s třídou exampleAction');
+			});
+
+			//připojení handleru, v rámci kterého je pracováno s původcem události
+			$('.exampleAction2').click(function(){
+				alert('Došlo ke kliknutí na některý z prvků s třídou exampleAction2');
+				console.log($(this));
+				$(this).hide();//pomocí zavolání $(this) je možné pracovat s elementem, na kterém byla vyvolána událost
+			});
+
+			//připojení více handlerů k jednomu objektu
+			var nadpis=$('h1');//pokud chceme vícekrát pracovat se stejným prvkem, je vhodné jej opakovaně nevyhledávat, ale uložit jeho referenci do proměnné
+			nadpis.click(function(){
+				console.log('h1: click');
+			});
+			nadpis.click(function(){
+				console.log('h1: click - 2. handler');
+			});
+			nadpis.dblclick(function(){//TODO: podívejte se do konsole, jak jsou jednotlivé události postupně aktivovány
+				console.log('h1: dblclick');
+			});
+			nadpis.mouseover(function(){
+				console.log('h1: mouseover');
+			});
+
+			//připojení události pomocí funkce on
+			$('#exampleAction3').on('focus',function(){
+				console.log('button focused');
+			});
+
+			//připojení existující funkce jako handleru
+			var mojeFunkce=function(){
+				console.log('mojeFunkce...');
+			};
+			$('#exampleAction3').click(mojeFunkce);
+		});
+
+	</script>
+</head>
+<body>
+
+	<h1>jQuery events</h1>
+
+	<div class="exampleAction">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ut augue ut convallis. </div>
+	<div class="exampleAction">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ut augue ut convallis. </div>
+
+	<div class="exampleAction2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ut augue ut convallis. </div>
+	<div class="exampleAction2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ut augue ut convallis. </div>
+
+	<div style="clear: both">
+		<button type="button" id="exampleAction3">test</button>
+	</div>
+
+</body>
+</html>
