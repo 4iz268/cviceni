@@ -249,6 +249,7 @@ TODO
   - [javascript - validace zadání hesla](./10-js-form-password.html)
   - [jquery - validace formuláře](./10-jquery-validace.html)
   - [jquery - interaktivní zobrazení formuláře](./10-jquery-form-display.html)
+  - [jquery - dynamické přidávání prvků](./10-jquery-dynamicke-prvky.html)
   - [jquery - wizard](./10-jquery-wizard.html)
 
 #### JS objekt String

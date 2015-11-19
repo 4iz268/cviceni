@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ukázka s formulářem s dynamickým přidáváním prvků</title>
+    <style type="text/css">
+        .error{
+            border: 1px solid red;
+            background: rgb(255,200,200);
+        }
+    </style>
+    <script type="text/javascript" src="../09-dom-jquery/external/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        var checkInput = function(){
+            var input=$(this);
+            var hodnota=input.val();//získáme hodnotu z aktuálního vstupního pole
+            hodnota=hodnota.trim();//ořežeme prázdné znaky ze začátku a konce řetězce
+            if (!hodnota.contains('\ ') || hodnota.length<3){
+                input.addClass('error');
+            }else{
+                input.removeClass('error');
+            }
+        };
+        var removePerson=function(){
+            $(this).closest('tr').remove();
+        };
+        var personsCount=0;
+        var addPerson=function(){
+            personsCount++;
+            //prvky vytváříme dynamicky pomocí jquery; kód je vkládán po částech z důvodu připojení reakcí na události
+            var newTr=$('<tr></tr>');
+            newTr.html('<td><label for="osoba'+personsCount+'">'+personsCount+'. osoba</td>');
+            var newInput=$('<input type="text" name="osoba[]" id="osoba'+personsCount+'" />');
+            newInput.change(checkInput);
+            newInput.blur(checkInput);
+            newTr.append($('<td></td>').html(newInput));
+            newTr.append($('<td><button type="button">odstranit</button></td>').click(removePerson));
+            //připojení vytvořeného kódu na příslušné místo v tabulce
+            $(this).closest('tr').before(newTr);
+
+            newInput.focus();//funkce focus zaměří daný prvek (umístí do něj kurzor)
+        };
+        var validateForm=function(){
+            var form=$(this);
+            //projdeme všechny textové vstupy
+            form.children('input[name="osoba[]"]').each(function(){
+                //na každém prvku spustíme validaci (respektive vyvoláme událost change, ke které máme validaci připojenou)
+                $(this).change();
+            });
+        };
+        $(document).ready(function(){
+            //připojení funkcí událostí k prvkům
+            $('#addPerson').click(addPerson);
+            $('#myForm').submit(function(event){
+                if (true||validateForm()){
+                    var persons=[];
+                    $(this).find('input[name="osoba[]"]').each(function(){
+                        persons.push($(this).val());
+                    });
+                    alert('Data jsou připravena k odeslání: '+persons.join(', '));
+                }else{
+                    alert('Je nutné vyplnit jméno u všech osob!');
+                    $(this).find('input.error').first().focus();//zaměříme první prvek, u kterého je přiřazena třída error
+                    event.preventDefault();//zrušíme výchozí reakci událost (= něco jako "return false")
+                }
+            });
+            //výchozí přidání první osoby
+            $('#addPerson').click();//TODO dotaz: proč vyvoláváme příslušnou událost místo toho, abychom jednoduše napsali addPerson()?
+        });
+
+        //]]>
+    </script>
+
+</head>
+<body>
+
+    <h1>Formulář s dynamickým přidáváním/odebíráním prvků</h1>
+    <form id="myForm">
+        <table>
+            <tr>
+                <td colspan="2">
+                    <button type="button" id="addPerson">Přidat osobu</button>
+                    <button type="submit">Odeslat seznam...</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
