@@ -273,3 +273,6 @@ TODO
   <a href='...' onclick="return confirm('Opravdu smazat?');">smazat</a>
 ```
 
+---
+## Úkol na procvičení
+- pro procvičení si základních javascriptových konstrukcí a reakcí na události v jquery zkuste dopracovat příklad: [10-ukol-kalkulacka.html](./10-ukol-kalkulacka.html)

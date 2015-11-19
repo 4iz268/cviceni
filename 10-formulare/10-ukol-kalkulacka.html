@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Úkol k procvičení javascriptu - kalkulačka</title>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        div#buttons{
+            overflow: auto;
+            width: 330px;
+        }
+        div#buttons button{
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+            width: 80px;
+            float: left;
+            margin: 0;
+            border: 1px solid white;
+            background: #f8f8f8;
+            cursor: pointer;
+        }
+        div#buttons button:hover{
+            background: maroon;
+            color: white;
+        }
+        div#buttons button#button0{
+            width: 160px;
+        }
+        div#buttons button#buttonRovnase{
+            width: 240px;
+        }
+        input#cislo{
+            padding: 20px;
+            width: 320px;
+            border: 1px solid #f8f8f8;
+            font-size: 18px;
+            text-align: right;
+        }
+    </style>
+    <script type="text/javascript" src="../09-dom-jquery/external/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+        var probihajiciVypocet=false;//proměnná pro uložení info, jestli bylo aktuálně stisknuto nějaké tlačítko s operací...
+        function spocitat(){
+            //TODO výpočet zadaného příkladu
+            alert('tahle kalkulačka zatím umí jen zapisovat čísla...');
+        }
+        $(document).ready(function(){
+            var numberInput=$('#cislo');
+            //reakce na stisknutí tlačítka s číslem...
+            $('.numberButton').click(function(){
+                var aktualniCislo=$(this).text();
+                var numberInputVal=numberInput.val();
+                if (probihajiciVypocet){
+                    spocitat();
+                    numberInputVal=0;
+                }
+                if (numberInputVal==0 && aktualniCislo>0){
+                    numberInputVal=aktualniCislo;
+                }else if(numberInputVal>0){
+                    numberInputVal+=aktualniCislo;
+                }
+                numberInput.val(numberInputVal);
+            });
+            $('#buttonFaktorial').click(function(){
+                //TODO spočítání faktoriálu u čísla, které je aktuálně zobrazené na displeji
+            });
+            //TODO doplnění reakcí na tlačítka, která představují jednotlivé matematické operace (pozor na prioritu násobení před sčítáním!)
+            $('#buttonRovnase').click(function(){
+                spocitat();
+            });
+            $('#buttonCe').click(function(){
+                numberInput.val(0);
+                probihajiciVypocet=false;
+            });
+        });
+    </script>
+</head>
+<body>
+    <input id="cislo" value="0" readonly />
+    <div id="buttons">
+        <button type="button" class="numberButton" id="button7">7</button>
+        <button type="button" class="numberButton" id="button8">8</button>
+        <button type="button" class="numberButton" id="button9">9</button>
+        <button type="button" id="buttonPlus">+</button>
+
+        <button type="button" class="numberButton" id="button4">4</button>
+        <button type="button" class="numberButton" id="button5">5</button>
+        <button type="button" class="numberButton" id="button6">6</button>
+        <button type="button" id="buttonMinus">-</button>
+
+        <button type="button" class="numberButton" id="button1">1</button>
+        <button type="button" class="numberButton" id="button2">2</button>
+        <button type="button" class="numberButton" id="button3">3</button>
+        <button type="button" id="buttonKrat">*</button>
+
+        <button type="button" class="numberButton" id="button0">0</button>
+        <button type="button" id="buttonFaktorial" title="faktoriál">!</button>
+        <button type="button" id="buttonDeleno">/</button>
+
+        <button type="button" id="buttonCe">CE</button>
+        <button type="button" id="buttonRovnase">=</button>
+    </div>
+</body>
+</html>
