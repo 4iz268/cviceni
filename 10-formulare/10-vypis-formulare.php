@@ -1,16 +1,16 @@
 <?php
 /**
- * Jednoduch˝ skript pro v˝pis hodnot zaslan˝ch metodou GET a POST
+ * Jednoduch√Ω skript pro v√Ωpis hodnot zaslan√Ωch metodou GET a POST
  */
 echo '<!DOCTYPE html>
         <html>
             <head>
-                <title>Uk·zka zÌskan˝ch dat</title>
+                <title>Uk√°zka z√≠skan√Ωch dat</title>
                 <meta charset="utf-8"/>
             </head>
             <body>';
 
-echo '<h1>Uk·zka zÌskan˝ch dat</h1>';
+echo '<h1>Uk√°zka z√≠skan√Ωch dat</h1>';
 
 echo '<h2>Metoda GET</h2>';
 if (!empty($_GET)){
@@ -21,7 +21,7 @@ if (!empty($_GET)){
     }
     echo '</table>';
 }else{
-    echo '<p>Nebyla zÌsk·na û·dn· data metodou GET</p>';
+    echo '<p>Nebyla z√≠sk√°na ≈æ√°dn√° data metodou GET</p>';
 }
 
 echo '<h2>Metoda POST</h2>';
@@ -33,7 +33,7 @@ if (!empty($_POST)){
     }
     echo '</table>';
 }else{
-    echo '<p>Nebyla zÌsk·na û·dn· data metodou POST</p>';
+    echo '<p>Nebyla z√≠sk√°na ≈æ√°dn√° data metodou POST</p>';
 }
 
 echo '      </body>

@@ -180,6 +180,7 @@
   - pokud není zadána action, pošle stránka data "sama době" (tj. dojde k jejich odeslání na aktuální URL)
 - zkuste si na server nahrát soubor [10-vypis-formulare.php](./10-vypis-formulare.php)
   - skript vypíše data, která získal metodou GET i POST
+  - aktuálně běží i na adrese: http://eso.vse.cz/~xvojs03/4iz268/10-vypis-formulare.php
 
 ### Zpracování formulářů v JavaScriptu
 - jednotlivé formulářové prvky jsou normálně součástí DOM stromu, tj. lze s nimi pracovat jak čistým javascriptem, tak pomocí jQuery
