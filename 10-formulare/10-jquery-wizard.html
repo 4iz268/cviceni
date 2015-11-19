@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ukázka formuláře v podobě průvodce</title>
+    <script type="text/javascript" src="../09-dom-jquery/external/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).ready(function(){
+            //připojení událostí
+            $('#vyberProduktu button').click(function(){
+                if ($('#typZaluzie').prop('checked')){
+                    $('#vyberProduktu').hide();
+                    $('#detailZaluzie').show();
+                }else if ($('#typRoleta').prop('checked')){
+                    $('#vyberProduktu').hide();
+                    $('#detailRoleta').show();
+                }else{
+                    alert('Musíte vybrat typ produktu!');
+                    return false;
+                }
+            });
+            $('#detailZaluzie button').click(function(){
+                if ($('#detailZaluzieMaterial').val()==''){
+                    alert('Musíte vybrat materiál!');
+                    $('#detailZaluzieMaterial').focus();
+                    return false;
+                }
+                if ($('#detailZaluzieTyp').val()==''){
+                    alert('Musíte vybrat typ!');
+                    $('#detailZaluzieTyp').focus();
+                    return false;
+                }else if ($('#detailZaluzieTyp').val()=='horizontalni' && $('#detailZaluzieMaterial').val()=='látka'){
+                        alert('Nelze vyrobit horizontální látkové žaluzie!');
+                        $('#detailZaluzieMaterial').focus();
+                        return false;
+                }
+                if ($('#detailZaluzieBarva').val()==''){
+                    alert('Musíte vybrat barvu!');
+                    $('#detailZaluzieBarva').focus();
+                    return false;
+                }
+                $('#detailZaluzie').hide();
+                $('#rozmery').show();
+            });
+            $('#detailRoleta button').click(function(){
+                if ($('#detailRoletaTyp').val()==''){
+                    alert('Musíte vybrat typ!');
+                    $('#detailRoletaTyp').focus();
+                    return false;
+                }
+                if ($('#detailRoletaBarva').val()==''){
+                    alert('Musíte vybrat barvu!');
+                    $('#detailRoletaBarva').focus();
+                    return false;
+                }
+                $('#detailRoleta').hide();
+                $('#rozmery').show();
+            });
+            $('#rozmery button').click(function(){
+                var oknoSirkaVal=$('#oknoSirka').val();
+                if (oknoSirkaVal<300 || oknoSirkaVal>10000){
+                    alert('Šířka okna může být jen v interval 300-10000 mm!');
+                    return false;
+                }
+                var oknoVyskaVal=$('#oknoVyska').val();
+                if (oknoVyskaVal<300 || oknoVyskaVal>10000){
+                    alert('Výška okna může být jen v interval 300-10000 mm!');
+                    return false;
+                }
+                alert('odeslání...');
+            });
+            //výchozí skrytí prvků
+            $('form > div').hide();
+            $('#vyberProduktu').show();
+        });
+        //]]>
+    </script>
+</head>
+<body>
+    <h1>Ukázka objednávkového formuláře v podobě wizardu</h1>
+    <form>
+        <div id="vyberProduktu">
+            <h2>Vyberte zboží, o které máte zájem</h2>
+            <label for="typZaluzie"><input type="radio" name="typ" id="typZaluzie"> Žaluzie</label><br />
+            <label for="typRoleta"><input type="radio" name="typ" id="typRoleta"> Roleta</label>
+            <button type="button">Pokračovat</button>
+        </div>
+        <div id="detailZaluzie">
+            <h2>Parametry žaluzií</h2>
+            <table>
+                <tr>
+                    <td><label for="detailZaluzieMaterial">Materiál</label></td>
+                    <td>
+                        <select name="zaluzieMaterial" id="detailZaluzieMaterial">
+                            <option value="">---</option>
+                            <option value="látka">látka</option>
+                            <option value="hliník">hliník</option>
+                            <option value="plast">plast</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="detailZaluzieTyp">Typ</label></td>
+                    <td>
+                        <select name="zaluzieTyp" id="detailZaluzieTyp">
+                            <option value="">---</option>
+                            <option value="horizontalni">horizontální</option>
+                            <option value="vertikalni">vertikální</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="detailZaluzieBarva">Barva</label></td>
+                    <td>
+                        <input type="color" name="zaluzieBarva" id="detailZaluzieBarva" />
+                    </td>
+                </tr>
+            </table>
+            <button type="button">Pokračovat</button>
+        </div>
+        <div id="detailRoleta">
+            <h2>Parametry rolety</h2>
+            <table>
+                <tr>
+                    <td><label for="detailRoletaTyp">Roleta</label></td>
+                    <td>
+                        <select name="roletaTyp" id="detailRoletaTyp">
+                            <option value="">---</option>
+                            <option value="normalni">normální</option>
+                            <option value="zatemnovaci">zatemňovací</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="detailRoletaBarva">Barva</label></td>
+                    <td>
+                        <input type="color" name="roletaBarva" id="detailRoletaBarva" />
+                    </td>
+                </tr>
+            </table>
+            <button type="button">Pokračovat</button>
+        </div>
+        <div id="rozmery">
+            <h2>Parametry rolety</h2>
+            <table>
+                <tr>
+                    <td><label for="oknoSirka">Šířka okna (mm)</label></td>
+                    <td>
+                        <input type="number" name="oknoSirka" id="oknoSirka" min="300" max="10000"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="oknoVyska">Výška okna (mm)</label></td>
+                    <td>
+                        <input type="number" name="oknoVyska" id="oknoVyska" min="300" max="10000"/>
+                    </td>
+                </tr>
+            </table>
+            <button type="button">Pokračovat</button>
+        </div>
+    </form>
+</body>
+</html>
