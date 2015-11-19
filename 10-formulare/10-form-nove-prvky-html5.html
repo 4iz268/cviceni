@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nové formulářové prvky v HTML 5</title>
+    <style type="text/css">/*styly pro přehlednější zobrazení*/
+        /* <![CDATA[ */
+        table.listTable td{
+            padding: 5px 10px;
+        }
+        table.listTable tr:nth-child(odd){
+            background: rgb(228, 238, 240);
+        }
+        /* ]]>*/
+    </style>
+</head>
+<body>
+    <h1>Formuláře - novinky v HTML 5</h1>
+    <p>Schválně si zkuste tuto stránku zobrazit v různých prohlížečích...</p>
+
+    <form>
+        <table class="listTable">
+            <tr>
+                <td>
+                    <label for="number">Input type="number", s krokováním po 10</label>
+                </td>
+                <td>
+                    <!--atributy id a name mohou mít rozdílné hodnoty! Vazba s labelem se realizuje pomocí id, na serveru jsou data identifikována pomocí name.-->
+                    <input type="number" id="number" name="points" min="0" max="100" step="10" value="30" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Input type="date"</label>
+                </td>
+                <td>
+                    <input type="date" id="date" name="date"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="datetime">Input type="datetime-local"</label>
+                </td>
+                <td>
+                    <input type="datetime-local" id="datetime" name="datetime"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="color">Input type="color"</label>
+                </td>
+                <td>
+                    <input type="color" id="color" name="color" value="#ff0000"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="range">Input type="range"</label>
+                </td>
+                <td>
+                    <input type="range" id="range" name="range" min="0" max="100" value="20"/><!--pokud neuvedete hodnotu, je zvolena v prostředku intervalu-->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="month">Input type="month"</label>
+                </td>
+                <td>
+                    <input type="month" id="month" name="month"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="week">Input type="week"</label>
+                </td>
+                <td>
+                    <input type="week" id="week" name="week"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="time">Input type="time"</label>
+                </td>
+                <td>
+                    <input type="time" id="time" name="time"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Input type="email"</label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="url">Input type="url"</label>
+                </td>
+                <td>
+                    <input type="url" id="url" name="url"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tel">Input type="tel"</label>
+                </td>
+                <td>
+                    <input type="tel" id="tel" name="tel"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="search">Input type="search"</label>
+                </td>
+                <td>
+                    <input type="search" id="search" name="search"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="browsers">Datalist</label>
+                </td>
+                <td>
+                    <input list="browsersList" id="browsers" name="browsers">
+                    <datalist id="browsersList">
+                        <option value="Internet Explorer">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+
+</body>
+</html>

@@ -18,7 +18,10 @@
 ```
 
 ## Formulářové prvky
-- ukázky naleznete v souborech [form-prvky.html](./form-prvky.html) a [form-nove-prvky-html5.html](./form-nove-prvky-html5.html)
+- ukázkové příklady:
+  - [Základní formulářové prvky](./10-form-prvky.html)
+  - [Nové formulářové prvky v HTML 5](./10-form-nove-prvky-html5.html)
+  - [Vhodné využití atributu tabindex](./10-form-tabindex.html)
 - další zdroje:
   - [HTML Form Elements](http://www.w3schools.com/html/html_form_elements.asp)
   - [HTML Input Types](http://www.w3schools.com/html/html_form_input_types.asp)
@@ -122,6 +125,13 @@
        ...
      </fieldset>
   ```
+- **button**
+  - element pro zápis tlačítka
+  - může mít i jiný obsah, než jen text
+  - atribut type = *button*|*submit*|*reset*
+  ```html
+  <button type="button">Moje tlačítko</button>
+  ```
 - **datalist**
   - "něco jako select", ale jde do něj psát
   ```html
@@ -144,6 +154,7 @@
   - **required** - atribut vynucující vyplnění daného pole
   - **readonly** - formulářový prvek je jen pro čtení, nejde upravovat, ale bude odeslán na server
   - **disabled** - formulářový prvek je neaktivní, nebude odeslán na server
+  - **tabindex** - atribut obsahující celá čísla, dle jeho hodnot dochází k přepínání mezi jednotlivými poli (při využití klávesy tab či tlačítka další v mobilních prohlížečích)
 
 - rozdíly xHTML vs. HTML 5:
   - nové značky... (ale prohlížeče je zobrazují, i když máte doctype xHTML)
@@ -167,7 +178,7 @@
 - u formuláře je vhodné zadat atributy *action* a *method*
   - pokud není definována metoda odeslání, použije se automaticky metoda GET
   - pokud není zadána action, pošle stránka data "sama době" (tj. dojde k jejich odeslání na aktuální URL)
-- zkuste si na server nahrát soubor [vypis-formulare.php](./vypis-formulare.php)
+- zkuste si na server nahrát soubor [10-vypis-formulare.php](./10-vypis-formulare.php)
   - skript vypíše data, která získal metodou GET i POST
 
 ### Zpracování formulářů v JavaScriptu
@@ -179,22 +190,24 @@
   var hodnota2 = $('#input2').val();
   $('#inputVysledek').val(hodnota1+hodnota2);
 ```
-
+- další zdroje:
+  - http://www.w3schools.com/jsref/dom_obj_form.asp
+  - http://www.w3schools.com/jsref/coll_form_elements.asp
 TODO
 
 ## Validace formulářů
 - je nutné kontrolovat každý vstup získaný od uživatele!
   - pokud je daný vstup volitelný, stejně ho musíme zkontrolovat (uživatel má možnost nechat dané pole prázdné, nebo jej vyplnit správně)
 - je vhodná kontrola na straně klienta (pomocí HTML 5 či JavaScriptu)
-- pokud jsou data odesílána na serveru, je nutné provádět kontrolu dat i na serveru (anketní dotaz: *Proč?*)
+- pokud jsou data odesílána na serveru, je nutné provádět kontrolu dat i na serveru (anketní dotaz: *Proč? Když budu data kontrolovat v JavaScriptu...*)
 - Jak by mělo vypadat hlášení chyb?
-  - upozorňujeme na konkrétní chyby, rozhodně ne hláška *"Ve formuláři je chyba."*
-  - umístění chyb buď u konkrétních formulářových prvků, nebo souhrnné hlášení za celý formulář
+  - upozorňujeme na konkrétní chyby, rozhodně ne "univerzální" hláška *"Ve formuláři je chyba."* ani hláška *Nejsou vyplněna všechna povinná pole.*
+  - umístění chyb buď u konkrétních formulářových prvků, nebo souhrnné hlášení za celý formulář (obvykle na začátku formuláře)
   - pozor na využití funkce ```alert('hláška');``` - při jejím opakovaném využití nabízejí prohlížeče možnost zakázání všech skriptů!
   - uživateli vždy řekneme, v jakém tvaru data požadujeme!
 
 ### Validace v HTML 5
-- ukázky:
+- ukázkové příklady:
   - [form-validace-html5.html](./form-validace-html5.html)
 - další zdroje:
   - [HTML &lt;input&gt; pattern Attribute](http://www.w3schools.com/tags/att_input_pattern.asp)
@@ -230,11 +243,17 @@ TODO
     - umožní odeslat formulář daným tlačítkem bez validací
     - vhodné například pro tlačítko "storno"
 
-### Validace pomocí JavaScriptu
-TODO
+### Validace a přístup k datům pomocí JavaScriptu
+- ukázkové příklady:
+  - [javascript - přístup k formulářovým prvkům](./10-js-form-fields.html)
+  - [javascript - validace zadání hesla](./10-js-form-password.html)
+  - [jquery - validace formuláře](./10-jquery-validace.html)
+  - [jquery - interaktivní zobrazení formuláře](./10-jquery-form-display.html)
+  - [jquery - wizard](./10-jquery-wizard.html)
 
 #### JS objekt String
 - [přehled metod](http://www.w3schools.com/jsref/jsref_obj_string.asp)
+
 
 TODO
 
@@ -242,4 +261,14 @@ TODO
 
 ## Získávání vstupů od uživatele pomocí JavaScriptu
 - v některých situacích je vhodnější nevkládat do stránek klasický formulář, ale požadovat od uživatele pouze jednu konkrétní hodnotu či např. souhlas
+- ukázkové příklady:
+  - [prompt, confirm](./10-js-prompt.html)
+
+```js
+  var hodnotaVstupu = prompt('Nadpis okna', 'default hodnota');
+  var hodnotaPotvrzeni = confirm('Dotaz');
+
+  //ukázka použití u linku
+  <a href='...' onclick="return confirm('Opravdu smazat?');">smazat</a>
+```
 

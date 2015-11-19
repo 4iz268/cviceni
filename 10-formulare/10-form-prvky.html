@@ -66,15 +66,17 @@
     <form>
         <table class="listTable">
             <tr>
-                <td>Input type="text"</td>
                 <td>
-                    <input type="text" name="input1" value="hodnota" />
+                    <label for="input1">Input type="text"</label>
+                </td>
+                <td>
+                    <input type="text" name="input1" id="input1" value="hodnota" />
                 </td>
             </tr>
             <tr>
-                <td>Input type="password"</td>
+                <td><label for="input2">Input type="password"</label></td>
                 <td>
-                    <input type="password" name="input2" value="hodnota" />
+                    <input type="password" id="input2" name="input2" value="hodnota" />
                 </td>
             </tr>
             <tr>
@@ -133,9 +135,11 @@
                 </td>
             </tr>
             <tr>
-                <td>Textarea</td>
                 <td>
-                    <textarea name="textarea1" rows="5" cols="40">Obsah velkého textového pole</textarea>
+                    <label for="textarea1">Textarea</label>
+                </td>
+                <td>
+                    <textarea name="textarea1" id="textarea1" rows="5" cols="40">Obsah velkého textového pole</textarea>
                 </td>
             </tr>
             <tr>

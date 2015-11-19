@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ukázka vhodné využití atributu tabindex</title>
+</head>
+<body>
+    <h1>Ukázka tabindex</h1>
+    <h2>S tabindexem</h2>
+    <form>
+        <table>
+            <tr>
+                <td><label for="jmeno">Jméno a příjmení:</label></td>
+                <td><input type="text" tabindex="1" id="jmeno" value="" />
+                <td><label for="pocetA">Počet kusů - výrobek A:</label></td>
+                <td><input type="number" tabindex="5" min="0" id="pocetA"/></td>
+            </tr>
+            <tr>
+                <td><label for="ulice">Ulice:</label></td>
+                <td><input type="text" tabindex="2" id="ulice" value="" />
+                <td><label for="pocetB">Počet kusů - výrobek B:</label></td>
+                <td><input type="number"  tabindex="6" min="0" id="pocetB"/></td>
+            </tr>
+            <tr>
+                <td><label for="mesto">Město:</label></td>
+                <td><input type="text" tabindex="3" id="mesto" value="" />
+                <td><label for="pocetC">Počet kusů - výrobek C:</label></td>
+                <td><input type="number" tabindex="7" min="0" id="pocetC"/></td>
+            </tr>
+            <tr>
+                <td><label for="psc">PSČ:</label></td>
+                <td><input type="text" tabindex="4" id="psc" value="" />
+            </tr>
+        </table>
+    </form>
+    <h2>Bez tabindexu</h2>
+    <form>
+        <table>
+            <tr>
+                <td><label for="jmeno2">Jméno a příjmení:</label></td>
+                <td><input type="text" id="jmeno2" value="" />
+                <td><label for="pocetA2">Počet kusů - výrobek A:</label></td>
+                <td><input type="number" min="0" id="pocetA2"/></td>
+            </tr>
+            <tr>
+                <td><label for="ulice2">Ulice:</label></td>
+                <td><input type="text" id="ulice2" value="" />
+                <td><label for="pocetB2">Počet kusů - výrobek B:</label></td>
+                <td><input type="number" min="0" id="pocetB2"/></td>
+            </tr>
+            <tr>
+                <td><label for="mesto2">Město:</label></td>
+                <td><input type="text" id="mesto2" value="" />
+                <td><label for="pocetC2">Počet kusů - výrobek C:</label></td>
+                <td><input type="number" min="0" id="pocetC2"/></td>
+            </tr>
+            <tr>
+                <td><label for="psc2">PSČ:</label></td>
+                <td><input type="text" id="psc2" value="" />
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

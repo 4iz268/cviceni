@@ -252,14 +252,6 @@
 * analogie s autem: auto je objekt, jeho vlastosti jsou např. "barva, typ, SPZ". Funkce jsou "nastartuj, zrychli, brzdi, blikej".
 * **[práce s objekty](./08-js-objects.html)**
 
-
-## Čtení a zápis do formulářových polí 
-
-* [form input, form checkbox, form confirm](./08-js-form-fields.html)
-* [form password, potvrzení hesla](./08-js-form-password.html)
-* http://www.w3schools.com/jsref/dom_obj_form.asp
-* http://www.w3schools.com/jsref/coll_form_elements.asp
-
 ## Debug  (chytání chyb)
 
 * Chrome: View/Developer/JavaScript Console
