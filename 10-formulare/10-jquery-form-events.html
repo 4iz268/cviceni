@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validace formulářových prvků pomocí HTML 5</title>
+    <script type="text/javascript" src="../09-dom-jquery/external/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+        $(document).ready(function() {
+            $('#textInput')
+                    .focus(function () {
+                        console.log('textInput: focus');
+                    })
+                    .blur(function(){
+                        console.log('textInput: blur')
+                    })
+                    .change(function(){
+                        console.log('textInput: change')
+                    })
+                    .keydown(function(event){
+                        console.log('textInput: keydown '+event.keyCode)
+                    })
+                    .keypress(function(){
+                        console.log('textInput: keypress')
+                    })
+                    .keyup(function(event){
+                        console.log('textInput: keyup '+event.keyCode);
+                    })
+                    .click(function(){
+                        console.log('textInput: click')
+                    });
+            $('#checkbox')
+                    .focus(function () {
+                        console.log('checkbox: focus');
+                    })
+                    .blur(function(){
+                        console.log('checkbox: blur')
+                    })
+                    .click(function(){
+                        console.log('checkbox: click');
+                    })
+                    .change(function(){
+                        console.log('checkbox: change');
+                    });
+            $('select')
+                    .focus(function () {
+                        console.log('select: focus');
+                    })
+                    .blur(function(){
+                        console.log('select: blur')
+                    })
+                    .change(function(){
+                        console.log('select: change');
+                    });
+            $('form')
+                    .focus(function(){
+                        console.log('form: focus');
+                    })
+                    .blur(function(){
+                        console.log('form: blur');
+                    })
+                    .click(function(){
+                        console.log('form: click');
+                        //události jsou propagované i na nadřazené prvky, tj. pokud kliknete na některý z prvků formuláře, je kliknutí aktivováno i u formuláře jako celku!
+                        //pokud budete chtít propagaci zabránit, můžete ji zastavit pomocí event.stopPropagation();
+                    })
+                    .submit(function(event){
+                        console.log('form: submit');
+                        event.preventDefault();//možnost zabránění provedení výchozí akce...
+                    });
+        });
+
+    //]]>
+    </script>
+</head>
+<body>
+    <h1>Ukázka javascriptových událostí napojených pomocí jQuery</h1>
+    <p>Zobrazte si javascriptovou konzoli a vyzkoušejte interakci s následujícími formulářovými prvky. Například událost click je aktivována i při jiných příležitostech, než jen při kliknutí...</p>
+    <p>Ke kterým událostem je vhodné doplnit validační kontrolu?</p>
+
+    <form>
+        <label for="textInput">Textové vstupní pole</label>
+        <input type="text" id="textInput" />
+        <br /><br />
+        <label for="checkbox">Checkbox</label>
+        <input type="checkbox" id="checkbox"/>
+        <br /><br />
+        <label for="select">Select</label>
+        <select id="select">
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+        </select>
+        <br /><br />
+        <input type="submit" />
+    </form>
+
+</body>
+</html>
