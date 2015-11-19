@@ -248,7 +248,7 @@ TODO
   - [javascript - přístup k formulářovým prvkům](./10-js-form-fields.html)
   - [javascript - validace zadání hesla](./10-js-form-password.html)
   - [jquery - validace formuláře](./10-jquery-validace.html)
-  - [jquery - interaktivní zobrazení formuláře](./10-jquery-form-display.html)
+  - [jquery - volitelné zobrazení části formuláře](./10-jquery-form-display.html)
   - [jquery - dynamické přidávání prvků](./10-jquery-dynamicke-prvky.html)
   - [jquery - wizard](./10-jquery-wizard.html)
 

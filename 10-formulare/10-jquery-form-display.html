@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulář se skrýváním částí</title>
+    <script type="text/javascript" src="../09-dom-jquery/external/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).ready(function(){
+           $('#jinaDodaciAdresa').change(function(){
+               var isChecked=$(this).prop('checked');
+               if(isChecked){
+                   $('#dodaciAdresa').show();
+               }else{
+                   $('#dodaciAdresa').hide();
+               }
+           });
+            $('#jinaDodaciAdresa').change();
+        });
+        //]]>
+    </script>
+</head>
+<body>
+    <h1>Formulář se skrýváním částí</h1>
+
+    <form>
+        <fieldset id="fakturacniAdresa">
+            <legend>Fakturační adresa</legend>
+            <dl>
+                <dt><label for="jmeno">Jméno:</label></dt>
+                <dd><input type="text" id="jmeno"></dd>
+                <dt><label for="ulice">Ulice:</label></dt>
+                <dd><input type="text" id="ulice"></dd>
+                <dt><label for="mesto">Město:</label></dt>
+                <dd><input type="text" id="mesto"></dd>
+                <dt><label for="psc">PSČ:</label></dt>
+                <dd><input type="text" id="psc"></dd>
+            </dl>
+        </fieldset>
+        <label for="jinaDodaciAdresa"><input type="checkbox" id="jinaDodaciAdresa"> Jiná dodací adresa</label>
+        <fieldset id="dodaciAdresa">
+            <legend>Fakturační adresa</legend>
+            <dl>
+                <dt><label for="jmenoDodaci">Jméno:</label></dt>
+                <dd><input type="text" id="jmenoDodaci"></dd>
+                <dt><label for="uliceDodaci">Ulice:</label></dt>
+                <dd><input type="text" id="uliceDodaci"></dd>
+                <dt><label for="mestoDodaci">Město:</label></dt>
+                <dd><input type="text" id="mestoDodaci"></dd>
+                <dt><label for="pscDodaci">PSČ:</label></dt>
+                <dd><input type="text" id="pscDodaci"></dd>
+            </dl>
+        </fieldset>
+    </form>
+
+</body>
+</html>
