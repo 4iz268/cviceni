@@ -104,7 +104,7 @@ $(function() {
 - **.text('xxx')** - nastavení textového obsahu prvku
 - **.html()** - získání HTML obsahu daného prvku
 - **.html('xxx')** - nastavení HTML obsahu daného prvku
-- [ukázkové příklady](./09-content.html)
+- [ukázkové příklady](./09-jquery-content.html)
 
 #### Funkce pro manipulaci s DOM stromem
 - *Co je to DOM strom?*
