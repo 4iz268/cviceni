@@ -164,10 +164,10 @@
 - jsou vygenerovány javascriptem
 - kalendář pro výběr data v prohlížečích, které neznají input type="date"
   - jQuery Datepicker (https://jqueryui.com/datepicker/)
-    - [ukázka](../09-datepicker-cz.html)
+    - [ukázka](../09-dom-jquery/09-datepicker-cz.html)
 - WYSIWYG editory
   - TinyMCE (http://www.tinymce.com/)
-    - [ukázka](../09-tinymce.html)
+    - [ukázka](../09-dom-jquery/09-tinymce.html)
   - CKEditor (http://ckeditor.com/)
 
 ## Zpracování formulářů
