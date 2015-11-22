@@ -125,7 +125,7 @@ $(function() {
 #### Funkce pro práci s atributy
   - **.attr("attributeName")** - funkce pro zjištění hodnoty daného atributu
   - **.attr("attributeName","value")** - funkce pro nastavení hodnoty daného atributu
-  - **.removeAttr("attributeName") - funkce pro odebrání atributu
+  - **.removeAttr("attributeName")** - funkce pro odebrání atributu
   - **.prop("propertyName")**, **.prop("propertyName","value")**, **.removeProp("propertyName")**
     - properties != atributy (rozdílné hodnoty...)
 
