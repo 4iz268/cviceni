@@ -184,6 +184,12 @@
 
 ### Zpracování formulářů v JavaScriptu
 - jednotlivé formulářové prvky jsou normálně součástí DOM stromu, tj. lze s nimi pracovat jak čistým javascriptem, tak pomocí jQuery
+- pomocí čistého JS jde přistupovat k položkám formuláře pomocí funkce *namedItem*
+```javascript
+  var form = document.getElementById('myForm').elements;
+	form.namedItem('city').value = 'Prague';
+```
+
 - v jQuery máme k dispozici funkci **val**, kterou lze přistupovat k hodnotám formulářových prvků
 
 ```javascript
@@ -191,10 +197,8 @@
   var hodnota2 = $('#input2').val();
   $('#inputVysledek').val(hodnota1+hodnota2);
 ```
-- další zdroje:
-  - http://www.w3schools.com/jsref/dom_obj_form.asp
-  - http://www.w3schools.com/jsref/coll_form_elements.asp
-TODO
+
+- [přejít na příklady...](#validace-a-p%C5%99%C3%ADstup-k-dat%C5%AFm-pomoc%C3%AD-javascriptu)
 
 ## Validace formulářů
 - je nutné kontrolovat každý vstup získaný od uživatele!
@@ -253,12 +257,51 @@ TODO
   - [jquery - volitelné zobrazení části formuláře](./10-jquery-form-display.html)
   - [jquery - dynamické přidávání prvků](./10-jquery-dynamicke-prvky.html)
   - [jquery - wizard](./10-jquery-wizard.html)
+- k validaci pomocí JavaScriptu potřebujeme řetězcové funkce a regulární výrazy
+  - podnět k zamyšlení - ne všechny textové kontroly je nutné psát ve formě regulárního výrazu...
 
 #### JS objekt String
-- [přehled metod](http://www.w3schools.com/jsref/jsref_obj_string.asp)
+- [přehled metod - JavaScript String Reference](http://www.w3schools.com/jsref/jsref_obj_string.asp)
+- nejdůležitější metody:
+  - **.charAt(index)** - znak na pozici s daným indexem (indexováno od 0)
+  - **.indexOf(substring, start)** - zjištění pozice podřetězce; parametr start je volitelný, označuje, od jakého znaku se má začít hledat, výchozí hodnota je 0
+  - **.match(regexp)** - kontrola shody regulárního výrazu, vrací shodující se řetězec (řetězce)
+  - **.replace(search, replace)** - funkce pro nahrazení podřetězce jiným podřetězcem
+  - **.split(separator)** - rozdělení řetězce do pole, dle zvoleného oddělovače
+  - **.substr(start, length)** - vrací podřetězec od daného indexu, o zvolené délce
+  - **.substring(start, end)** - vrací podřetězec mezi zadanými indexy
+  - **.toLowerCase()**
+  - **.toUpperCase()**
+  - **.length** - vlastnost obsahující informaci o počtu znaků v řetězci
 
+```javascript
+  var str = 'ukázkový textový řetězec';
+  console.log(str.length);
+  alert(str.substr(9,4).toUpperCase());
+```
 
-TODO
+#### JS objekt RegExp
+- regulární výrazy nezapisujeme v JavaScriptu do řetězců! (narozdíl např. od PHP)
+  - zápis buď pomocí lomítek, nebo pomocí využití konstruktoru
+  - obecný zápis: ```/regexp/modifikátory```
+- metody:
+  - **.test(string)** - kontrola řetězce regulárním výrazem, vrací boolean
+  - **.exec(string)** - funkce vracející první podřetězec odpovídající danému výrazu
+- podrobný seznam výklad zápisu výrazů je k dispozici na stránce [JavaScript RegExp Reference](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
+
+```javascript
+  var str = "Hello world!";
+  var regexp = /hello/i;
+  console.log(regexp.test(str));
+```
+
+#### Převod řetězce na číslo
+- pro převod jsou k dispozici globální funkce **parseInt(str)** a **parseFloat(str)**
+  - funkce jsou vhodné také pro převod čísel v různých číselných soustavách (jako druhý parametr jim jde zadat soustava, ve které dané číslo je)
+
+```javascript
+  var cislo=parseInt('123');
+```
 
 ---
 
