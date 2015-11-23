@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validace formulářových prvků pomocí javascriptu/jQuery</title>
+    <style type="text/css">
+        /*styly pro zobrazení formuláře (ukázka možného nastylování, pro validaci nejsou podstatné...)*/
+        *{
+            font-family: Calibri, sans-serif;
+        }
+        label{
+            display: block;
+            color: #808080;
+            font-size: 0.85em;
+            margin: 10px 0 2px 0;
+        }
+        label.required{
+            font-weight: bold;
+        }
+        input[type='text'],input[type='email'],textarea,select{
+            box-sizing: border-box;
+            padding: 10px;
+            width: 400px;
+            max-width: 400px;
+            min-width: 400px;
+            border: 1px solid rgb(203, 202, 210);
+        }
+        input[type="submit"]{
+            padding: 10px;
+            width: 200px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        input[type='text']:focus,input[type='email']:focus,select:focus,textarea:focus{
+            border: 1px solid rgb(216, 215, 235);
+            background: rgb(246, 244, 255);
+        }
+        input.error,textarea.error,select.error{
+            border: 1px solid red;
+            background: #ffedf2;
+            color: red;
+        }
+        input.error:focus,input.error:focus,select.error:focus,textarea.error:focus{
+            border: 1px solid red;
+        }
+        span.error{
+            display: block;
+            color: red;
+            padding: 2px 0 2px 10px;
+        }
+        section{
+            width: 500px;
+            float: left;
+            margin: 0 30px;
+        }
+    </style>
+    <script type="text/javascript" src="../09-dom-jquery/external/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).ready(function(){
+            //po načtení stránky připojíme události k formulářům
+            //region kontrola pro formulář s kontrolami při odeslání
+            $('#registracniForm1').submit(function(event){
+                var error=false;
+                var form=$(this);
+                //odebereme všechna hlášení chyb
+                form.find('span.error').remove();
+                form.find('.error').removeClass('error');
+
+                ////projdeme jednotlivé prvky a zkontrolujeme je...
+
+                //jmeno
+                var jmeno = $('#jmeno1');
+                var jmenoStr=jmeno.val();
+                jmenoStr=jmenoStr.trim();
+                if (jmenoStr.indexOf(' ')==-1){
+                    error=true;
+                    jmeno.addClass('error');
+                    jmeno.after('<span class="error">Musíte zadat jméno a příjmení!</span>');
+                }
+
+                //email
+                var email=$('#email');
+                var emailStr=email.val();
+                var emailRegExp=/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+                if (emailStr!="" && !emailRegExp.test(emailStr)){
+                    error=true;
+                    email.addClass('error');
+                    email.after("<span class='error'>Musíte zadat platný e-mail, nebo ponechat dané pole prázdné!</span>");
+                }
+
+                //duvod
+                var duvod=$('#duvod1');
+                if (duvod.val()==''){
+                    error=true;
+                    duvod.addClass('error');
+                    duvod.after('<span class="error">Musíte vybrat důvod registrace!</span>');
+                }
+
+                //souhlas
+                var souhlas=$('#souhlas1');
+                if (!(souhlas.is(':checked'))){
+                    error=true;
+                    souhlas.addClass('error');
+                    souhlas.parent().after('<span class="error">Musíte souhlasit s podmínkami!</span>');
+                }
+
+                if (error){
+                    event.preventDefault();//zabráníme výchozí akci
+                    form.find('input.error, textarea.error, select.error').first().focus();//najdeme první prvek, který obsahuje chybu a zaměříme ho
+                    return false;//alternativně funguje návratová boolean hodnota
+                }
+                return true;
+            });
+            //endregion kontrola pro formulář s kontrolami při odeslání
+
+            //region kontrola pro formulář s průběžnými kontrolami
+            $('#registracniForm2').submit(function(event){
+                //při odeslání formuláře spustíme kontroly na všech formulářových prvcích
+                var form=$(this);
+                form.find('input, select, textarea').blur();//kontroly máme napojené na událost blur, tak ji vyvoláme na všech prvcích
+                if(form.find('.error').length>0){//pokud je počet prvků s třídou "error" větší než 0, je ve formuláři chyba...
+                    event.preventDefault();
+                    return false;
+                }
+            });
+
+            /**
+             * Funkce pro odebrání hlášení chyb z daného formulářového prvku
+             * @param element
+             */
+            var removeInputErrors=function(element){
+                element.removeClass('error');
+                //odebereme všechny bezprostředně následující hlášení chyby
+                var nextElement=element.next();
+                while (nextElement.is('span.error')){
+                    nextElement.remove();
+                    nextElement=element.next()
+                }
+            };
+
+            //jmeno
+            $('#jmeno2').blur(function(){
+                var val=$(this).val().trim();
+                removeInputErrors($(this));
+                if (val.indexOf(' ')==-1){
+                    $(this).addClass('error');
+                    $(this).after('<span class="error">Musíte zadat jméno a příjmení!</span>');
+                }
+            });
+
+            //email
+            $('#email2').blur(function(){
+                var val=$(this).val();
+                removeInputErrors($(this));
+                var emailRegExp=/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+                if (val!="" && !emailRegExp.test(val)){
+                    $(this).addClass('error');
+                    $(this).after("<span class='error'>Musíte zadat platný e-mail, nebo ponechat dané pole prázdné!</span>");
+                }
+            });
+
+            //duvod
+            var checkDuvod=function(){
+                removeInputErrors($(this));
+                if ($(this).val()=='') {
+                    $(this).addClass('error');
+                    $(this).after('<span class="error">Musíte vybrat důvod registrace!</span>');
+                }
+            };
+            $('#duvod2').blur(checkDuvod).change(checkDuvod);
+
+            //souhlas
+            var checkSouhlas=function(){
+                removeInputErrors($(this));
+                var nextElement=$(this).parent().next();
+                if (nextElement.is('span.error')){nextElement.remove();}
+                if (!($(this).is(':checked'))){
+                    $(this).addClass('error');
+                    $(this).parent().after('<span class="error">Musíte souhlasit s podmínkami!</span>');
+                }
+            };
+            $('#souhlas2').blur(checkSouhlas).change(checkSouhlas);
+
+            //endregion kontrola pro formulář s průběžnými kontrolami
+        });
+        //]]>
+    </script>
+</head>
+<body>
+    <h1>Validace pomocí javascriptu/jQuery</h1>
+    <p>Tato stránka obsahuje ukázkový formulář, v rámci kterého jsou realizovány kontroly JavaScriptem. Záměrně není pro povinná pole využito kontroly pomocí HTML 5.</p>
+
+    <section>
+        <h2>Registrační formulář - kontrola až při odeslání</h2>
+        <p>Povinná pole jsou vyznačena tučně.</p>
+        <form id="registracniForm1" method="post" action="http://eso.vse.cz/%7Exvojs03/4iz268/10-vypis-formulare.php">
+            <!--hidden pole se nezobrazuje - neměli bychom u něj zobrazovat žádné chyby, ale pokud formulář odešlete, jeho hodnota bude též odeslána-->
+            <input type="hidden" name="hiddenField" value="test" />
+
+            <label for="jmeno1" class="required">Jméno a příjmení</label>
+            <input type="text" name="jmeno" id="jmeno1" />
+
+            <label for="email1">E-mail</label>
+            <input type="text" name="email" id="email1" value="@" />
+
+            <label for="adresa1">Poštovní adresa</label>
+            <textarea id="adresa1" name="adresa" cols="40" rows="3"></textarea>
+
+            <label for="duvod1" class="required">Důvod registrace</label>
+            <select id="duvod1" name="duvod">
+                <option value="">--vyberte--</option>
+                <option value="a">Důvod A</option>
+                <option value="b">Důvod B</option>
+                <option value="c">Důvod C</option>
+            </select>
+
+            <!--pokud vyžadujeme souhlas, neměli bychom ho dávat jako disabled ani readonly, ale měli bychom doplnit kontrolu zaškrtnutí...-->
+            <label for="souhlas1"><input type="checkbox" name="souhlas" id="souhlas1" checked="checked" value="ok" /> Souhlasím s obchodními podmínkami</label>
+
+            <input type="submit" value="Odeslat formulář..." />
+        </form>
+    </section>
+
+    <section>
+        <h2>Registrační formulář - průběžná kontrola</h2>
+        <p>Povinná pole jsou vyznačena tučně.</p>
+        <form id="registracniForm2" method="post" action="http://eso.vse.cz/%7Exvojs03/4iz268/10-vypis-formulare.php">
+            <!--hidden pole se nezobrazuje - neměli bychom u něj zobrazovat žádné chyby, ale pokud formulář odešlete, jeho hodnota bude též odeslána-->
+            <input type="hidden" name="hiddenField" value="test" />
+
+            <label for="jmeno2" class="required error">Jméno a příjmení</label>
+            <input type="text" name="jmeno" id="jmeno2" />
+
+            <label for="email2" class="required">E-mail</label>
+            <input type="text" name="email" id="email2" value="@" />
+
+            <label for="adresa2">Poštovní adresa</label>
+            <textarea id="adresa2" name="adresa" cols="40" rows="3"></textarea>
+
+            <label for="duvod2" class="required">Důvod registrace</label>
+            <select id="duvod2" name="duvod">
+                <option value="">--vyberte--</option>
+                <option value="a">Důvod A</option>
+                <option value="b">Důvod B</option>
+                <option value="c">Důvod C</option>
+            </select>
+
+            <!--pokud vyžadujeme souhlas, neměli bychom ho dávat jako disabled ani readonly, ale měli bychom doplnit kontrolu zaškrtnutí...-->
+            <label for="souhlas2"><input type="checkbox" name="souhlas" id="souhlas2" checked="checked" value="ok" /> Souhlasím s obchodními podmínkami</label>
+
+            <input type="submit" value="Odeslat formulář..." />
+        </form>
+    </section>
+</body>
+</html>
