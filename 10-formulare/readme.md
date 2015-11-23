@@ -272,6 +272,7 @@
   - **.substring(start, end)** - vrací podřetězec mezi zadanými indexy
   - **.toLowerCase()**
   - **.toUpperCase()**
+  - **.trim()** - funkce pro odtranění prázdných znaků ze začátku a konce řetězce
   - **.length** - vlastnost obsahující informaci o počtu znaků v řetězci
 
 ```javascript
