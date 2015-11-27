@@ -33,7 +33,7 @@
 
 ## Prototypes
 
-* **prototype: rozšíření funkce o další vlastnosti (atributy, funkce) pro všechna další volání**
+* **prototype = rozšíření funkce o další vlastnosti (atributy, funkce) pro všechna další volání**
 * **POZOR: rozšiřujeme pouze vlastní funkce, nikoli cizí, mohlo by to vést k chybám. Nikdy nerozšiřujeme standardní JavaScript objekty!**
 * paralela s rozšířením třídy (Class) v Javě. Každá nová instance z této rozšířené třídy bude mít tyto nové vlastnosti.
 * **[práce s prototypy](./11-js-prototypes.html)**
