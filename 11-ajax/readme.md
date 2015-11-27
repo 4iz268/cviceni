@@ -35,7 +35,7 @@
 
 * **prototype: rozšíření funkce o další vlastnosti (atributy, funkce) pro všechna další volání**
 * **POZOR: rozšiřujeme pouze vlastní funkce, nikoli cizí, mohlo by to vést k chybám. Nikdy nerozšiřujeme standardní JavaScript objekty!**
-* pararela s rozšířením třídy (Class) v Javě. Každá nová instance z této rozšířené třídy bude mít tyto nové vlastnosti.
+* paralela s rozšířením třídy (Class) v Javě. Každá nová instance z této rozšířené třídy bude mít tyto nové vlastnosti.
 * **[práce s prototypy](./11-js-prototypes.html)**
 * http://www.w3schools.com/js/js_object_prototypes.asp
 
