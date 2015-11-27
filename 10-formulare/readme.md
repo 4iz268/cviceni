@@ -213,7 +213,7 @@
 
 ### Validace v HTML 5
 - ukázkové příklady:
-  - [form-validace-html5.html](./form-validace-html5.html)
+  - [10-form-validace-html5.html](./10-form-validace-html5.html)
 - další zdroje:
   - [HTML &lt;input&gt; pattern Attribute](http://www.w3schools.com/tags/att_input_pattern.asp)
   - [JavaScript regular expressions](http://www.w3schools.com/js/js_regexp.asp)
