@@ -27,7 +27,7 @@
 * ve světě jsou objekty, proto programujeme tak, že tvoříme objekty a říkáme, co mají dělat (umět) a jak se mají chovat (reagovat na vstupy, události)
 * objekt má typicky nějaké vlastnosti (hodnoty, atributy) a funkce (v některých programovacích jazycích jsou to "metody"), pomocí kterých s objektem můžu pracovat
 * analogie s autem: auto je objekt, jeho vlastosti jsou např. "barva, typ, SPZ". Funkce jsou "nastartuj, zrychli, brzdi, blikej".
-* **[práce s objekty - konstruktory, inicializátory](./08-js-objects.html)**
+* **[práce s objekty - konstruktory, inicializátory](./11-js-objects.html)**
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 
 
@@ -36,7 +36,7 @@
 * **prototype: rozšíření funkce o další vlastnosti (atributy, funkce) pro všechna další volání**
 * **POZOR: rozšiřujeme pouze vlastní funkce, nikoli cizí, mohlo by to vést k chybám. Nikdy nerozšiřujeme standardní JavaScript objekty!**
 * pararela s rozšířením třídy (Class) v Javě. Každá nová instance z této rozšířené třídy bude mít tyto nové vlastnosti.
-* **[práce s prototypy](./08-js-prototypes.html)**
+* **[práce s prototypy](./11-js-prototypes.html)**
 * http://www.w3schools.com/js/js_object_prototypes.asp
 
 
