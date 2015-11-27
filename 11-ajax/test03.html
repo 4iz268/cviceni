@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+
+<button id="btn">Pozdrav</button>
+
+<div id="result" style="border: solid 2px red;"></div>
+
+<script>
+
+window.onload = function() {
+  var button = document.getElementById("btn");
+  btn.onclick = function() {
+    xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+      console.log("State: " + xhr.readyState);
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+          var osoba = xhr.responseXML;
+          var result = document.getElementById("result");
+          result.innerHTML = "Jméno je " + osoba.getElementsByTagName("jmeno").item(0).textContent
+                             + " a věk je " + osoba.getElementsByTagName("jmeno").item(0).textContent;
+        } else {
+          alert("Server error: " + xhr.status);
+        }
+      }
+    }
+    xhr.open("GET", "http://localhost:8000/data.xml");
+    xhr.send();
+  };
+}
+
+</script>
