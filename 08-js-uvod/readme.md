@@ -245,12 +245,8 @@
 
 ### Objekty (objects)
 
-* **objekt = něco, s čím můžu v aplikaci "hýbat"**
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
-* pararela s objekty v reálném světě
-* objekt má typicky nějaké vlastnosti (hodnoty, atributy) a funkce (v některých programovacích jazycích jsou to "metody"), pomocí kterých s objektem můžu pracovat
-* analogie s autem: auto je objekt, jeho vlastosti jsou např. "barva, typ, SPZ". Funkce jsou "nastartuj, zrychli, brzdi, blikej".
-* **[práce s objekty](./08-js-objects.html)**
+* [viz objects v kapitole 11](./11-ajax/11-js-objects.html)
+* [viz prototypes v kapitole 11](./11-ajax/11-js-prototype.html)
 
 ## Debug  (chytání chyb)
 

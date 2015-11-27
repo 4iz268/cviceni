@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>JS prototypes</title>
+</head>
+
+
+<body>
+	
+	<h1>JS prototypes</h1>
+
+
+	<script>
+	
+	// rozsireni jiz jednou zavolane funkce, umistene do promenne (zmeny plati jen pro tuto 1 promennou)
+	// objekt (v JS jsou objekty funkce)
+	// pararela s rozsirenim 1 instance objektu
+	function Player(first, last, band) {
+		this.firstName = first;
+		this.lastName = last;
+		this.bandName = band
+	}
+	
+	// instance objektu
+	john = new Player('John', 'Frusciante', 'RHCP');
+	
+	// pridani atributu (vlastnosti) do jiz existujiciho objektu
+	john.bornPlace = 'New York';
+	
+	// zobrazeni atributu objektu
+	console.log(john.bandName);
+	
+	
+	// prototypes
+	
+	// prototyp: pridani atributu samotne funkce, ze ktere jeste nebyl vytvoren objekt
+	// jedna se o rozsireni jiz existujici funkce, bude platit pro vsechny dalsi volani funkce
+	// pararela s rozsirenim tridy (class) v Jave, kdy vsechny instance z teto tridy budou mit tyto vlastnosti
+	Player.prototype.genre = 'Rock';
+	
+	// pridani nove metody pomoci prototype
+	Player.prototype.first_and_last = function() {
+		return this.firstName + " " + this.lastName;
+	};
+	
+	eric = new Player('Eric', 'Clapton', 'himself');
+	
+	//eric (i vsichni ostatni po nem) maji automaticky genre i first_and_last
+	console.log(eric.genre);
+	console.log(eric.first_and_last());
+		
+	
+	</script>
+
+	<h2>See the results in JS console in your browser</h2>
+
+</body>
+
+</html>
