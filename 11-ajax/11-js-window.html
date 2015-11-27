@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>JS window object</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	
+	<style type="text/css">
+	
+	input {
+		margin: 10px;
+	}
+	</style>
+	
+</head>
+
+
+<script>
+	
+// **alert()** - zobrazí upozornění. Browser může potlačit volání, pokud si to uživatel přeje, na zobrazení tedy nelze spoléhat.
+// 	* **confirm()** - dialogové okno OK/Cancel. Používáme např. pro potvrzení odeslání nebo smazání formuláře.
+// 	* **blur()** - zruší zaměření okna (udělá ho neaktivní)
+// 	* **focus()** - zaměří okno (udělá ho aktivní)
+//   * **getSelectionText()** - získá text, který uživatel na stránce označil
+// 	* **open()** - otevře nové okno, parametr je URL
+// 	* **close()** - zavře aktivní okno, pokud jsme okno neotevřeli my (nebylo otevřeno ze stejné stránky), prohlížeč se pro jistotu zeptá, jestli uživatel chce skutečně okno zavřít
+// 	* **print()** - pošle stránku na tiskárnu (jako kdybychom zvolili Print z menu nebo stiskli CTRL+P)
+// 	* **prompt()** - zeptá se uživatele na vstup - nejde kontrolovat, doporučuji využít normální formulář
+// 	* **resizeTo()** - změní velik
+	
+function myResize(){
+	my=open('', '', 'width=100, height=100'); 
+	my.resizeTo(400, 400);
+	my.focus();
+}
+
+	
+
+</script>
+
+<body>
+
+
+	<div class="container">
+		
+			
+		<h1>JS window object</h1>
+
+		<input type="button" onclick="alert('Aloha')" value="alert()" class="btn btn-lg btn-primary">
+		
+		<input type="button" onclick="confirm('Should I do that?')" value="confirm()" class="btn btn-lg btn-success">
+	 
+	 		<input type="button" onclick="open('http://www.vse.cz', '', 'width=200, height=200')" value="open()" class="btn btn-lg btn-info">
+	
+			<input type="button" onclick="window.close()" value="close()" class="btn btn-lg btn-danger">
+			
+						<input type="button" onclick="print()" value="print()" class="btn btn-lg btn-warning">
+						
+											<input type="button" onclick="myResize()" value="resize()" class="btn btn-lg btn-info">
+	
+	</div>
+	
+
+</body>
+
+</html>

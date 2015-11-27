@@ -43,7 +43,21 @@
 ## Výchozí JavaScriptové objekty
 
 ### Window
-TODO
+* reprezentuje otevřené okno prohlížeče
+* default objekt, funkce jako alert(), confirm() apod. bez určení objektu jsou funkce objektu window
+* http://www.w3schools.com/jsref/obj_window.asp
+* některé z funkcí objektu window:
+  * **alert()** - zobrazí upozornění. Browser může potlačit volání, pokud si to uživatel přeje, na zobrazení tedy nelze spoléhat.
+	* **confirm()** - dialogové okno OK/Cancel. Používáme např. pro potvrzení odeslání nebo smazání formuláře.
+	* **blur()** - zruší zaměření okna (udělá ho neaktivní)
+	* **focus()** - zaměří okno (udělá ho aktivní)
+  * **getSelectionText()** - získá text, který uživatel na stránce označil
+	* **open()** - otevře nové okno, parametr je URL
+	* **close()** - zavře aktivní okno
+	* **print()** - pošle stránku na tiskárnu (jako kdybychom zvolili Print z menu nebo stiskli CTRL+P)
+	* **prompt()** - zeptá se uživatele na vstup - nejde kontrolovat, doporučuji využít normální formulář
+	* **resizeTo()** - změní velikost okna na zadaný počet pixelů (výška, šířka)
+	* **[práce s window objektem](./11-js-window.html)**
 
 ### History
 TODO
