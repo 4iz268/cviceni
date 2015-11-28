@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	
+	<title>Ajax get</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	
+	<script>
+	
+	$(document).ready(function(){
+	
+		// posli HTTP GET request na server, ale ignoruj vysledek
+		$.get( "./data.txt" );
+		
+		// posli HTTP GET request na server, pridej vlastni data, ale ignoruj vysledek
+		$.get( "./data.txt", { name: "John", surname: "Frusciante" } );
+
+		// posli HTTP GET request na server, zpracuj ziskana data v callbacku
+		$.get( "./data.txt", function( data ) {
+			$("#result").text(data) //pridej ziskana data do elementu
+		});
+		
+		// posli HTTP GET request na server, TXT, zpracuj ziskana data v callbacku
+		$.get( "./data.txt", function( data ) {
+			$("#result").text(data) //pridej ziskana data do elementu
+		});
+		
+		// posli HTTP GET request na server, HTML, zpracuj ziskana data v konkretnim callbacku
+		$.get( "./data.html" )
+		.done(function( data ) { //callback, pokud vse dopadlo OK
+			$("#result2").html(data) //pridej ziskana data do elementu
+		});
+
+	});
+	
+	</script>
+	
+</head>
+
+<body>
+
+
+	<div class="container">
+		
+			
+		<h1>Ajax get</h1>
+		
+		<h4 style="color: red">Pozor, z bezpečnostních důvodů nelze načíst soubor z jiné domény, než na kterém běží tato stránka (hlavička 'Access-Control-Allow-Origin'), proto je třeba tento soubor spustit na serveru. Lokální spuštění také nebude fungovat, protože load nefunguje s file://</h4>
+		
+		<a href="http://eso.vse.cz/~xhraj18/11-ajax-get.html">Spustit tento soubor z eso.vse.cz</a>
+		
+		<h2>Následující text jsme získali Ajaxem ze serveru</h2>
+		
+		<p id="result"></p>
+		
+		<h2>Následující html jsme získali Ajaxem ze serveru</h2>
+		<p id="result2"></p>
+
+	</div>
+	
+
+</body>
+
+</html>
