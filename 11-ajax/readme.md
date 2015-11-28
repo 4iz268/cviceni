@@ -88,7 +88,7 @@
   * http://api.jquery.com/jQuery.getJSON/
 
 #### XML
-  * použijeme **jQuery.get()**, jen přidáme do dataType explicitně xml
+  * použijeme **jQuery.get()**, typ dat je inteligentně rozpoznán
   * vrácená data jsou rovnou ve formátu XML, nemusíme je tedy převádět z textu do XML, apod.
   * **[práce s Ajax a XML](./11-ajax-xml.html)**
   * https://api.jquery.com/jQuery.parseXML/
