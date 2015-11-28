@@ -28,10 +28,10 @@
 * **$.ajax()** - základní funkce pro vytvoření, odeslání a zpracování XHR objektu
 * zpracování odezvy:
   * **jqXHR.done(function( data, textStatus, jqXHR ) {})** - callback funkce, zavolá se v případě úspěšného requestu (všechno dopadlo dobře :). *Nahrazuje metodu jqXHR.success(), která je od jQuery 1.8 deprecated.*
-	* **jqXHR.fail(function( jqXHR, textStatus, errorThrown ) {})** - callback funkce, zavolá se v případě neúspěšného requestu (někde nastala chyba). *Nahrazuje metodu jqXHR.error(), která je od jQuery 1.8 deprecated.*
-	* **jqXHR.always(function( data|jqXHR, textStatus, jqXHR|errorThrown ) { });** - callback funkce, zavolá se vždy (ať už nastala nebo nenastala chyba). *Nahrazuje metodu jqXHR.complete(), která je od jQuery 1.8 deprecated.*
-	
-	
+  * **jqXHR.fail(function( jqXHR, textStatus, errorThrown ) {})** - callback funkce, zavolá se v případě neúspěšného requestu (někde nastala chyba). *Nahrazuje metodu jqXHR.error(), která je od jQuery 1.8 deprecated.*
+  * **jqXHR.always(function( data|jqXHR, textStatus, jqXHR|errorThrown ) { });** - callback funkce, zavolá se vždy (ať už nastala nebo nenastala chyba). *Nahrazuje metodu jqXHR.complete(), která je od jQuery 1.8 deprecated.*
+
+
 
 ---
 
