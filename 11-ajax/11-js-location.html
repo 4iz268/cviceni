@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>JS location object</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	
+	<style type="text/css">
+	
+	input, p {
+		margin: 10px;
+	}
+	</style>
+	
+</head>
+
+<body onload="location.replace('./11-js-location.html?jmeno=John&prijmeni=Frusciante#kotva')">
+
+
+	<div class="container">
+		
+			
+		<h1>JS location object</h1>
+		
+		<p>
+			location.href - <script>document.write(location.href)</script>
+		</p>
+		
+		<p>
+			location.search - <script>document.write(location.search)</script>
+		</p>
+	
+		<p>
+			location.hash - <script>document.write(location.hash)</script>
+		</p>
+		
+		<input type="button" onclick="location.reload()" value="location.reload()" class="btn btn-lg btn-primary">
+		
+		<input type="button" onclick="location.assign('http://www.wired.com')" value="location.assign('http://www.wired.com')" class="btn btn-lg btn-warning">
+	 
+		<input type="button" onclick="location.replace('http://www.wired.com')" value="location.replace('http://www.wired.com')" class="btn btn-lg btn-danger">
+
+	</div>
+	
+
+</body>
+
+</html>

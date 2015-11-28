@@ -44,8 +44,8 @@
 
 ### Window
 * reprezentuje otevřené okno prohlížeče
-* default objekt, funkce jako alert(), confirm() apod. bez určení objektu jsou funkce objektu window
-* některé z funkcí objektu window:
+* **default objekt, funkce jako alert(), confirm() apod. bez určení objektu jsou metody objektu window, ve skutečnosti voláme window.alert(), atd.**
+* některé z meotd objektu window:
   * **document()** - odkaz na DOM objekt, reprezentující celý HTML DOM stránky
   * **alert()** - zobrazí upozornění. Browser může potlačit volání, pokud si to uživatel přeje, na zobrazení tedy nelze spoléhat.
   * **confirm()** - dialogové okno OK/Cancel. Používáme např. pro potvrzení odeslání nebo smazání formuláře.
@@ -65,7 +65,7 @@
 * z bezpečnostních důvodů nejde získat seznam stránek, pouze se mezi nimi pohybovat dopředu/zpět
 * atributy:
   * length - počet položek v historii
-* funkce:
+* metody:
   * **back()** - jdi zpět o 1 krok. Stejně jako by uživatel kliknul na "Zpět" v browseru.
   * **forward()** - jdi dopředu o 1 krok. Stejně jako by uživatel kliknul na "Vpřed" v browseru.
   * **go()** - jdi na stránku z historie. Kladné číslo - počet kroků vpřed, záporné číslo = počet kroků zpět. Akceptuje i URL.
@@ -74,10 +74,44 @@
 
 
 ### Location
-- http://www.w3schools.com/jsref/obj_location.asp
+* reprezentuje aktuální URL
+* atributy:
+  * **hash** - nastaví nebo vrátí odkaz v rámci stránky v URL (část za #)
+  * **host** - nastaví nebo vrátí hostname (název serveru) a port v URL
+  * **hostname** - nastaví nebo vrátí hostname (název serveru) v URL
+  * **href** - nastaví nebo vrátí celou URL
+  * **origin** - vrátí protokol, hostname a port URL
+  * **pathname** - nastaví nebo vrátí cesta v URL (část za serverem a portem)
+  * **port** - nastaví nebo vrátí port v URL
+  * **protocol** - - nastaví nebo vrátí protokol v URL (http, https, ftp, apod.)
+  * **search** - nastaví nebo vrátí querystring (proměnné v URL, např. jmeno=Frusciante)	
+* metody:
+  * **assign()** - přejde na jinou URL, aktuální URL **bude** v historii
+  * **reload()** - znovu nahraje aktuální URL
+  * **replace()** - přepíše aktuální URL novou URL, stará URL **nebude** v historii
+* **[práce s location objektem](./11-js-location.html)**
+* http://www.w3schools.com/jsref/obj_location.asp
+
 
 ### Math
-TODO
+* matematické operace v JS
+* konstanty (jen část):
+  * **Math.PI**
+  * **Math.E** 
+* metody (jen část):
+  * **random()** - náhodné číslo v intervalu &lt;0;1)
+  * **ceil()** - zaokrouhlení nahoru na celé číslo
+  * **floor()** - zaokrouhlení dolů na celé číslo
+  * **round()** - zaokrouhlení dolů nebo nahoru na celé číslo (podle toho, co je blíž, od 5 zaokrouhluje nahoru)
+  * **sqrt()** - druhá odmocnina
+  * **pow()** - umocnění, 3^3=27
+  * **sin()**
+  * **cos()**
+  * **tan()**
+  * **na cotg přímo metoda není, počítá se jako 1/tan(x)**
+* **[práce s Math objektem](./11-js-math.html)**
+* http://www.w3schools.com/js/js_math.asp
+* http://www.w3schools.com/jsref/jsref_obj_math.asp
 
 ## Časování
 TODO timer
