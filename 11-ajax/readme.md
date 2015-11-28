@@ -59,8 +59,7 @@
     * **[práce s Ajax post](./11-ajax-post.html)**
     * http://api.jquery.com/jQuery.post/
   
-
-* callback funkce (jde je napojit např. na metody .ajax(), get()):
+* callback funkce (jde je napojit např. na metody .ajax(), get(), post()):
 
   * **jqXHR.done()** - callback funkce, zavolá se v případě úspěšného requestu (všechno dopadlo dobře :). *Nahrazuje metodu jqXHR.success(), která je od jQuery 1.8 deprecated.*
 
