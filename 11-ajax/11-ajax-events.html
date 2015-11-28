@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+
+	<title>Ajax events</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<script>
+
+	$(document).ready(function(){
+
+		$( document ).ajaxStart(function() {
+			$("#log").append( "ajaxStart<br>" );
+		});
+	
+		$( document ).ajaxSuccess(function() {
+			$("#log").append( "ajaxSuccess<br>" );
+		});
+	
+		$( document ).ajaxComplete(function() {
+			$("#log").append( "ajaxComplete<br>" );
+		});
+	
+		$( document ).ajaxStop(function() {
+			$("#log").append( "ajaxStop<br>" );
+		});
+		
+		// posli HTTP GET request na server, ale ignoruj vysledek
+		// jen odchytime udalosti
+		$.get( "./data.txt" );
+
+	});
+
+	</script>
+
+</head>
+
+<body>
+
+
+	<div class="container">
+	
+		
+		<h1>Ajax events</h1>
+	
+		<h4 style="color: red">Pozor, z bezpečnostních důvodů nelze načíst soubor z jiné domény, než na kterém běží tato stránka (hlavička 'Access-Control-Allow-Origin'), proto je třeba tento soubor spustit na serveru. Lokální spuštění také nebude fungovat, protože load nefunguje s file://</h4>
+	
+		<a href="http://eso.vse.cz/~xhraj18/11-ajax-events.html">Spustit tento soubor z eso.vse.cz</a>
+	
+		<hr>
+	
+		<h2>Log, tady se budou přilepovat Ajax events</h2>
+	
+		<p id="log"></p>
+	
+	</div>
+
+
+</body>
+
+</html>

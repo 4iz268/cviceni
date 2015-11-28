@@ -67,7 +67,20 @@
 
   * **jqXHR.always()** - callback funkce, zavolá se vždy (ať už nastala nebo nenastala chyba). *Nahrazuje metodu jqXHR.complete(), která je od jQuery 1.8 deprecated.*
 
-  * **[základy práce s Ajaxem](./11-ajax-basics.html)**
+### Ajax events (události)
+
+* lze registrovat události, které Ajax za běhu vyvolává a nějak na ně reagovat
+* třeba při odeslání velkého souboru jde zobrazit rotující kolečko, aby uživatel věděl, že má čekat
+* události se typicky napojují přímo na JS document objekt
+  * **.ajaxStart()** - spustí se, pokud odstartuje první Ajax request na stránce
+  * **.ajaxStop()** - spustí se, pokud se doběhnou **všechny** Ajax requesty na stránce
+  * **.ajaxComplete()** - spustí se, pokud doběhne **jakýkoli** Ajax request
+  * **.ajaxSuccess()** - spustí se, pokud **jakýkoli** Ajax request doběhne správně
+  * **.ajaxError()** - spustí se, pokud **jakýkoli** Ajax request skončí s chybou
+  * **.ajaxSend()** - spustí se před odesláním **jakékoli** Ajax requestu
+* **[práce s Ajax events](./11-ajax-events.html)**
+* http://api.jquery.com/category/ajax/global-ajax-event-handlers/
+
 
 
 ---
