@@ -44,8 +44,8 @@
 
 ### Window
 * reprezentuje otevřené okno prohlížeče
-* **default objekt, funkce jako alert(), confirm() apod. bez určení objektu jsou metody objektu window, ve skutečnosti voláme window.alert(), atd.**
-* některé z meotd objektu window:
+* **default objekt, funkce jako alert(), confirm() apod. bez určení objektu jsou metody objektu window, ve skutečnosti se volá window.alert(), atd.**
+* některé z metod objektu window:
   * **document()** - odkaz na DOM objekt, reprezentující celý HTML DOM stránky
   * **alert()** - zobrazí upozornění. Browser může potlačit volání, pokud si to uživatel přeje, na zobrazení tedy nelze spoléhat.
   * **confirm()** - dialogové okno OK/Cancel. Používáme např. pro potvrzení odeslání nebo smazání formuláře.
