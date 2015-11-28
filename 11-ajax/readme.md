@@ -46,6 +46,7 @@
 * reprezentuje otevřené okno prohlížeče
 * default objekt, funkce jako alert(), confirm() apod. bez určení objektu jsou funkce objektu window
 * některé z funkcí objektu window:
+  * **document()** - odkaz na DOM objekt, reprezentující celý HTML DOM stránky
   * **alert()** - zobrazí upozornění. Browser může potlačit volání, pokud si to uživatel přeje, na zobrazení tedy nelze spoléhat.
   * **confirm()** - dialogové okno OK/Cancel. Používáme např. pro potvrzení odeslání nebo smazání formuláře.
   * **blur()** - zruší zaměření okna (udělá ho neaktivní)
@@ -60,7 +61,17 @@
   * http://www.w3schools.com/jsref/obj_window.asp
 
 ### History
-TODO
+* reprezentuje historii stránek, na kterých uživatel byl
+* z bezpečnostních důvodů nejde získat seznam stránek, pouze se mezi nimi pohybovat dopředu/zpět
+* atributy:
+  * length - počet položek v historii
+* funkce:
+  * **back()** - jdi zpět o 1 krok. Stejně jako by uživatel kliknul na "Zpět" v browseru.
+  * **forward()** - jdi dopředu o 1 krok. Stejně jako by uživatel kliknul na "Vpřed" v browseru.
+  * **go()** - jdi na stránku z historie. Kladné číslo - počet kroků vpřed, záporné číslo = počet kroků zpět. Akceptuje i URL.
+* **[práce s history objektem](./11-js-history.html)**
+* http://www.w3schools.com/jsref/obj_history.asp
+
 
 ### Location
 - http://www.w3schools.com/jsref/obj_location.asp

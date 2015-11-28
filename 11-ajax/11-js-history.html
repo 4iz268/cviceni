@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>JS history object</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	
+	<style type="text/css">
+	
+	input {
+		margin: 10px;
+	}
+	</style>
+	
+</head>
+
+<body>
+
+
+	<div class="container">
+		
+			
+		<h1>JS history object</h1>
+		
+		History items length: <script>document.write(history.length)</script>
+
+		<input type="button" onclick="history.back()" value="back()" class="btn btn-lg btn-primary">
+		
+		<input type="button" onclick="history.forward()" value="forward()" class="btn btn-lg btn-success">
+	 
+		<input type="button" onclick="history.go(-2)" value="go(-2)" class="btn btn-lg btn-info">
+		
+		<input type="button" onclick="history.go(2)" value="go(2)" class="btn btn-lg btn-warning">
+
+	
+	</div>
+	
+
+</body>
+
+</html>
