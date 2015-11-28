@@ -4,10 +4,34 @@
 
 * asynchronous JavaScript and XML
 * technologie, která umožňuje tvorbu asynchronních aplikací
-* asynchronní = v pozadí
+* asynchronní = aplikace něco sama dělá v pozadí, aniž by to uživatel musel rozhodovat. Akce uživatele jsou nezávislé na akcích aplikace (kdyby byly závislé, pak by to bylo synchronní=sladěné).
+* Ajax je standard při tvorbě moderních webových aplikací
+* Ajax je všude
+* z pohledu uživatele se na stránce něco samo děje bez toho, aby se stránka musela znovu načítat nebo aby bylo nutné přecházet mezi stránkami
+* webové aplikace se chováním podobají desktopovým aplikacím
+* příklady použití:
+ * prohlížím Facebook a přijde upozornění, že mi zrovna teď někdo poslal zprávu
+ * v Gmailu se zobrazí nový došlý mail, zatímco píšu mail někomu jinému
+ * v Google Maps hýbu myší a postupně se donačítají mapové podklady
+ * v Google Earth kolečkem přibližuju/oddaluji zemi a mapy se aktualizují
+* **Pro zjednodušení budeme používat Ajax pomocí knihovny jQuery. Prohlížeče mají v čistém JS pro Ajax rozdílnou syntaxi a implementaci, jQuery zapouzdří kompatibilitu napříč různými browsery.**
+* http://api.jquery.com/jquery.ajax/
+* http://www.w3schools.com/ajax/
+* http://www.w3schools.com/jquery/jquery_ajax_intro.asp
 
 
+### Odeslání a zpracování XHR požadavku pomocí jQuery
 
+* XHR = XMLHttpRequest objekt
+* AJAX vytvoří XHR objekt, někam ho v pozadí (asynchronně) pošle a vrátí se mu výsledek, který nějak zpracujeme
+* v jQuery se objekt jmenuje jQuery XMLHttpRequest (jqXHR)
+* **$.ajax()** - základní funkce pro vytvoření, odeslání a zpracování XHR objektu
+* zpracování odezvy:
+  * **jqXHR.done(function( data, textStatus, jqXHR ) {})** - callback funkce, zavolá se v případě úspěšného requestu (všechno dopadlo dobře :). *Nahrazuje metodu jqXHR.success(), která je od jQuery 1.8 deprecated.*
+	* **jqXHR.fail(function( jqXHR, textStatus, errorThrown ) {})** - callback funkce, zavolá se v případě neúspěšného requestu (někde nastala chyba). *Nahrazuje metodu jqXHR.error(), která je od jQuery 1.8 deprecated.*
+	* **jqXHR.always(function( data|jqXHR, textStatus, jqXHR|errorThrown ) { });** - callback funkce, zavolá se vždy (ať už nastala nebo nenastala chyba). *Nahrazuje metodu jqXHR.complete(), která je od jQuery 1.8 deprecated.*
+	
+	
 
 ---
 
