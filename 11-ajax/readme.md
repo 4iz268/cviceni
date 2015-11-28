@@ -32,13 +32,13 @@
 
   * **jQuery.ajax()** - provede asynchronní HTTP request, základní low-level funkce, jednodušší je používat load() nebo get()
 
-  * **.load()** - nahraje HTML data ze serveru a výsledek umístí do elementu, který jsme na load napojili
+  * **.load()** - pošle HTTP request na serveru a získaná data umístí dovnitř elementu, ze kterého jsme load() zavolali. Předpokládá, že se vrátí HTML data.
     * lze napojit anonymní callback metodu, která se provede nakonec
     * z HTML dat na serveru jde vybrat selectorem jen část a tu umístit
     * **[práce s Ajax load](./11-ajax-load.html)**
     * http://api.jquery.com/load/
 
-  * **jQuery.get()** - pošle data na server pomocí HTTP GET
+  * **jQuery.get()** - pošle HTTP GET request na server
     * lze přidat vlastní data
     * lze napojit callback funkce done, fail, always (viz dole)
     * **[práce s Ajax get](./11-ajax-get.html)**
