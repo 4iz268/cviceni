@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	
+	<title>Ajax load</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	
+	<script>
+	
+	$(document).ready(function(){
+	
+		$( "#result" ).load( "./data.html" );
+		
+		// jde pridat i callback, pokud bychom ho potrebovali
+		// $( "#result" ).load( "./data.html", function() {
+		//   alert( "Load OK" );
+		// });
+
+	});
+	
+	
+	
+	</script>
+	
+</head>
+
+<body>
+
+
+	<div class="container">
+		
+			
+		<h1>Ajax load</h1>
+		
+		<h4 style="color: red">Pozor, z bezpečnostních důvodů nelze načíst soubor z jiné domény, než na kterém běží tato stránka (hlavička 'Access-Control-Allow-Origin'), proto je třeba tento soubor spustit na serveru. Lokální spuštění také nebude fungovat, protože load nefunguje s file://</h4>
+		
+		<a href="http://eso.vse.cz/~xhraj18/11-ajax-load.html">Spustit tento soubor z eso.vse.cz</a>
+		
+		<h2>Pokud je vše správně, zobrazí se tady HTML, které jsme získali voláním Ajax load</h2>
+		
+		<p id="result"></p>
+
+	</div>
+	
+
+</body>
+
+</html>

@@ -7,6 +7,7 @@
 * asynchronní = aplikace něco sama dělá v pozadí, aniž by to uživatel musel rozhodovat. Akce uživatele jsou nezávislé na akcích aplikace (kdyby byly závislé, pak by to bylo synchronní=sladěné).
 * Ajax je standard při tvorbě moderních webových aplikací
 * Ajax je všude
+* Ajax jsou jen další funkce do JS. Prohlížeč "neumí Ajax", ve finále je to všechno zase jenom JS.
 * z pohledu uživatele se na stránce něco samo děje bez toho, aby se stránka musela znovu načítat nebo aby bylo nutné přecházet mezi stránkami
 * webové aplikace se chováním podobají desktopovým aplikacím
 * příklady použití:
@@ -15,6 +16,7 @@
  * v Google Maps hýbu myší a postupně se donačítají mapové podklady
  * v Google Earth kolečkem přibližuju/oddaluji zemi a mapy se aktualizují
 * **Pro zjednodušení budeme používat Ajax pomocí knihovny jQuery. Prohlížeče mají v čistém JS pro Ajax rozdílnou syntaxi a implementaci, jQuery zapouzdří kompatibilitu napříč různými browsery.**
+* http://api.jquery.com/category/ajax/
 * http://api.jquery.com/jquery.ajax/
 * http://www.w3schools.com/ajax/
 * http://www.w3schools.com/jquery/jquery_ajax_intro.asp
@@ -25,12 +27,19 @@
 * XHR = XMLHttpRequest objekt
 * AJAX vytvoří XHR objekt, někam ho v pozadí (asynchronně) pošle a vrátí se mu výsledek, který nějak zpracujeme
 * v jQuery se objekt jmenuje jQuery XMLHttpRequest (jqXHR)
-* **$.ajax()** - základní funkce pro vytvoření, odeslání a zpracování XHR objektu
+* na objekt, ze kterého jsme zavolali nějakou Ajax funkci lze napojit tzv. callback metody, které se zavolají, když Ajax akce skončí
+* základní funkce:
+  * **$.ajax()** - provede asynchronní HTTP request, základní low-level funkce, jednodušší je používat load() nebo get()
+  * **.load( url [, data ] [, complete ] )** - nahraje HTML data ze serveru a výsledek umístí do elementu, který jsme na load napojili
+    * lze napojit anonymní callback metodu, která se provede nakonec 
+    * **[Ajax load](./11-ajax-load.html)**
+
+
 * zpracování odezvy:
   * **jqXHR.done(function( data, textStatus, jqXHR ) {})** - callback funkce, zavolá se v případě úspěšného requestu (všechno dopadlo dobře :). *Nahrazuje metodu jqXHR.success(), která je od jQuery 1.8 deprecated.*
   * **jqXHR.fail(function( jqXHR, textStatus, errorThrown ) {})** - callback funkce, zavolá se v případě neúspěšného requestu (někde nastala chyba). *Nahrazuje metodu jqXHR.error(), která je od jQuery 1.8 deprecated.*
   * **jqXHR.always(function( data|jqXHR, textStatus, jqXHR|errorThrown ) { });** - callback funkce, zavolá se vždy (ať už nastala nebo nenastala chyba). *Nahrazuje metodu jqXHR.complete(), která je od jQuery 1.8 deprecated.*
-
+  * **[základy práce s Ajaxem](./11-ajax-basics.html)**
 
 
 ---
