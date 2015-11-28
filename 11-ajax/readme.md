@@ -113,5 +113,7 @@
 * http://www.w3schools.com/js/js_math.asp
 * http://www.w3schools.com/jsref/jsref_obj_math.asp
 
+
 ## Časování
-TODO timer
+* https://developer.mozilla.org/en-US/Add-ons/Code_snippets/Timers
+* http://www.w3schools.com/js/js_timing.asp
