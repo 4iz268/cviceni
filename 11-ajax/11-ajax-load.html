@@ -21,6 +21,9 @@
 		// $( "#result" ).load( "./data.html", function() {
 		//   alert( "Load OK" );
 		// });
+		
+		// nahraje cely soubor, ale pouzije z nej jen kousek dat
+		$( "#result2" ).load( "./data.html #vek" );
 
 	});
 	
@@ -45,6 +48,9 @@
 		<h2>Pokud je vše správně, zobrazí se tady HTML, které jsme získali voláním Ajax load</h2>
 		
 		<p id="result"></p>
+		
+		<h2>Jen kousek dat ze serveru</h2>
+		<p id="result2"></p>
 
 	</div>
 	

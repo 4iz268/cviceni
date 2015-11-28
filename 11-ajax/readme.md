@@ -29,16 +29,27 @@
 * v jQuery se objekt jmenuje jQuery XMLHttpRequest (jqXHR)
 * na objekt, ze kterého jsme zavolali nějakou Ajax funkci lze napojit tzv. callback metody, které se zavolají, když Ajax akce skončí
 * základní funkce:
-  * **$.ajax()** - provede asynchronní HTTP request, základní low-level funkce, jednodušší je používat load() nebo get()
-  * **.load( url [, data ] [, complete ] )** - nahraje HTML data ze serveru a výsledek umístí do elementu, který jsme na load napojili
-    * lze napojit anonymní callback metodu, která se provede nakonec 
-    * **[Ajax load](./11-ajax-load.html)**
+
+  * **jQuery.ajax()** - provede asynchronní HTTP request, základní low-level funkce, jednodušší je používat load() nebo get()
+
+  * **.load()** - nahraje HTML data ze serveru a výsledek umístí do elementu, který jsme na load napojili
+    * lze napojit anonymní callback metodu, která se provede nakonec
+    * z HTML dat na serveru jde vybrat selectorem jen část a tu umístit
+    * **[práce s Ajax load](./11-ajax-load.html)**
+    * http://api.jquery.com/load/
+
+  * **jQuery.get()** - nahraje data ze serveru pomocí HTTP GET
+     * lze poslat vlastní data společně s requestem 
+     * lze napojit callback funkce done, fail, always (viz dole)
+     * **[práce s Ajax get](./11-ajax-load.html)**
+		 * http://api.jquery.com/jQuery.get/
 
 
-* zpracování odezvy:
-  * **jqXHR.done(function( data, textStatus, jqXHR ) {})** - callback funkce, zavolá se v případě úspěšného requestu (všechno dopadlo dobře :). *Nahrazuje metodu jqXHR.success(), která je od jQuery 1.8 deprecated.*
-  * **jqXHR.fail(function( jqXHR, textStatus, errorThrown ) {})** - callback funkce, zavolá se v případě neúspěšného requestu (někde nastala chyba). *Nahrazuje metodu jqXHR.error(), která je od jQuery 1.8 deprecated.*
-  * **jqXHR.always(function( data|jqXHR, textStatus, jqXHR|errorThrown ) { });** - callback funkce, zavolá se vždy (ať už nastala nebo nenastala chyba). *Nahrazuje metodu jqXHR.complete(), která je od jQuery 1.8 deprecated.*
+* callback funkce (jde je napojit na volání .ajax, get):
+  * **jqXHR.done()** - callback funkce, zavolá se v případě úspěšného requestu (všechno dopadlo dobře :). *Nahrazuje metodu jqXHR.success(), která je od jQuery 1.8 deprecated.*
+  * **jqXHR.fail()** - callback funkce, zavolá se v případě neúspěšného requestu (někde nastala chyba). 
+    *Nahrazuje metodu jqXHR.error(), která je od jQuery 1.8 deprecated.*
+  * **jqXHR.always()** - callback funkce, zavolá se vždy (ať už nastala nebo nenastala chyba). *Nahrazuje metodu jqXHR.complete(), která je od jQuery 1.8 deprecated.*
   * **[základy práce s Ajaxem](./11-ajax-basics.html)**
 
 
