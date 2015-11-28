@@ -95,15 +95,12 @@
   * http://api.jquery.com/jQuery.get/
 
 
+### Aktualizace části stránky na základě odpovědi XHR
+
+  * viz minulé příklady, např. **[práce s Ajax getJSON](./11-ajax-get-json.html)** nebo **[práce s Ajax a XML](./11-ajax-xml.html)**
+
+
 ---
-
-### TODO:
-- odeslání a zpracování XHR požadavku
-- držení stavu a historie
-- zpracování odpovědi ve formátech XML a JSON
-- aktualizace části stránky na základě odpovědi XHR
-
-
 
 
 ## Objekty v JavaScriptu
