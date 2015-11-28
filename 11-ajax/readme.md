@@ -38,17 +38,26 @@
     * **[práce s Ajax load](./11-ajax-load.html)**
     * http://api.jquery.com/load/
 
-  * **jQuery.get()** - pošle HTTP GET request na server, automaticky určen typ vrácených dat
-    * lze přidat vlastní data
-    * lze napojit callback funkce done, fail, always (viz dole)
+  * **jQuery.get()** - pošle HTTP GET request na server
+    * zkrácená notace funkce jQuery.ajax()
+		* lze přidat vlastní data
     * mime typ dat, které server poslal zpátky je odhadnut automaticky (typicky xml, json, html)
     * **[práce s Ajax get](./11-ajax-get.html)**
+    * lze napojit callback funkce done, fail, always (viz dole)
     * http://api.jquery.com/jQuery.get/
 
   * **jQuery.getJSON()** - pošle HTTP GET request na server, chce vrátit JSON (JavaScript Object Notation, data ve formátu kratším než XML ;)
-	* tato funkce je jen modifikací jQuery.get(), kde je atribut dataType nastaven na JSON
+  * zkrácená notace funkce jQuery.get(), atribut dataType nastaven explicitně na JSON (říkáme serveru, ať nám vrátí typ dat JSON)
+  * lze napojit callback funkce done, fail, always (viz dole)
   * **[práce s Ajax getJSON](./11-ajax-get-json.html)**
   * http://api.jquery.com/jQuery.getJSON/
+
+  * **jQuery.post()** - pošle HTTP POST request na server
+    * zkrácená notace funkce jQuery.ajax(), typ HTTP metody nastaven explicitně na POST
+    * lze napojit callback funkce done, fail, always (viz dole)
+    * pokud odesíláme data z formuláře, je třeba je serializovat funkcí **.serialize()**, kterou pustíme rovnou na celý formulář
+    * **[práce s Ajax post](./11-ajax-post.html)**
+    * http://api.jquery.com/jQuery.post/
   
 
 * callback funkce (jde je napojit např. na metody .ajax(), get()):

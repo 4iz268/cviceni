@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	
+	<title>Ajax post</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	
+	<script>
+	
+	$(document).ready(function(){
+	
+		$("#sendMe").click(function(){
+			
+			//posleme formular na nejakou URL, ktera s daty neco udela
+			//ted posilame POST na PHP soubor, ktery nam ziskana data vrati jako JSON data
+			$.post( "./data.php", $( "#myForm" ).serialize() ).done(function( data ) {
+				alert(data);
+			});
+		});
+	
+	});
+	
+	</script>
+	
+</head>
+
+<body>
+
+
+	<div class="container">
+		
+			
+		<h1>Ajax post</h1>
+		
+		<h4 style="color: red">Pozor, z bezpečnostních důvodů nelze načíst soubor z jiné domény, než na kterém běží tato stránka (hlavička 'Access-Control-Allow-Origin'), proto je třeba tento soubor spustit na serveru. Lokální spuštění také nebude fungovat, protože load nefunguje s file://</h4>
+		
+		<a href="http://eso.vse.cz/~xhraj18/11-ajax-post.html">Spustit tento soubor z eso.vse.cz</a>
+		
+		<hr>
+		
+		<h2>Add a band</h2>
+		
+		<form id="myForm">
+			<label>Band Name</label><br>
+			<input type="input" name="first"><br>
+			<label>Year</label><br>
+			<input type="input" name="last">
+			<br>
+			<br>
+			<input id="sendMe" type="button" value="Send with Ajax!" class="btn btn-success btn-lg">
+		</form>
+		
+		<h2 id="result"></h2>
+		
+	</div>
+	
+
+</body>
+
+</html>
