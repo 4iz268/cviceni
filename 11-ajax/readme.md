@@ -40,7 +40,7 @@
 
   * **jQuery.get()** - pošle HTTP GET request na server
     * zkrácená notace funkce jQuery.ajax()
-		* lze přidat vlastní data
+    * lze přidat vlastní data
     * mime typ dat, které server poslal zpátky je odhadnut automaticky (typicky xml, json, html)
     * **[práce s Ajax get](./11-ajax-get.html)**
     * lze napojit callback funkce done, fail, always (viz dole)
