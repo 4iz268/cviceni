@@ -38,14 +38,20 @@
     * **[práce s Ajax load](./11-ajax-load.html)**
     * http://api.jquery.com/load/
 
-  * **jQuery.get()** - pošle HTTP GET request na server
+  * **jQuery.get()** - pošle HTTP GET request na server, automaticky určen typ vrácených dat
     * lze přidat vlastní data
     * lze napojit callback funkce done, fail, always (viz dole)
+    * mime typ dat, které server poslal zpátky je odhadnut automaticky (typicky xml, json, html)
     * **[práce s Ajax get](./11-ajax-get.html)**
     * http://api.jquery.com/jQuery.get/
 
+  * **jQuery.getJSON()** - pošle HTTP GET request na server, chce vrátit JSON (JavaScript Object Notation, data ve formátu kratším než XML ;)
+	* tato funkce je jen modifikací jQuery.get(), kde je atribut dataType nastaven na JSON
+  * **[práce s Ajax getJSON](./11-ajax-get-json.html)**
+  * http://api.jquery.com/jQuery.getJSON/
+  
 
-* callback funkce (jde je napojit napr. na metody .ajax(), get()):
+* callback funkce (jde je napojit např. na metody .ajax(), get()):
 
   * **jqXHR.done()** - callback funkce, zavolá se v případě úspěšného requestu (všechno dopadlo dobře :). *Nahrazuje metodu jqXHR.success(), která je od jQuery 1.8 deprecated.*
 
