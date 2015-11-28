@@ -47,11 +47,10 @@
 
 * callback funkce (jde je napojit na volání .ajax, get):
 
-  * **jqXHR.done()** - callback funkce, zavolá se v případě úspěšného requestu (všechno dopadlo dobře :).
-   * *Nahrazuje metodu jqXHR.success(), která je od jQuery 1.8 deprecated.*
+  * **jqXHR.done()** - callback funkce, zavolá se v případě úspěšného requestu (všechno dopadlo dobře :). *Nahrazuje metodu jqXHR.success(), která je od jQuery 1.8 deprecated.*
 		
   * **jqXHR.fail()** - callback funkce, zavolá se v případě neúspěšného requestu (někde nastala chyba).
-    * *Nahrazuje metodu jqXHR.error(), která je od jQuery 1.8 deprecated.*
+   *Nahrazuje metodu jqXHR.error(), která je od jQuery 1.8 deprecated.*
 
   * **jqXHR.always()** - callback funkce, zavolá se vždy (ať už nastala nebo nenastala chyba).
     * *Nahrazuje metodu jqXHR.complete(), která je od jQuery 1.8 deprecated.*
