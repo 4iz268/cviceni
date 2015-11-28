@@ -46,11 +46,7 @@
     * lze napojit callback funkce done, fail, always (viz dole)
     * http://api.jquery.com/jQuery.get/
 
-  * **jQuery.getJSON()** - pošle HTTP GET request na server, chce vrátit JSON (JavaScript Object Notation, data ve formátu kratším než XML ;)
-  * zkrácená notace funkce jQuery.get(), atribut dataType nastaven explicitně na JSON (říkáme serveru, ať nám vrátí typ dat JSON)
-  * lze napojit callback funkce done, fail, always (viz dole)
-  * **[práce s Ajax getJSON](./11-ajax-get-json.html)**
-  * http://api.jquery.com/jQuery.getJSON/
+  * **jQuery.getJSON()** - viz zpracování odpovědi ve formátu JSON
 
   * **jQuery.post()** - pošle HTTP POST request na server
     * zkrácená notace funkce jQuery.ajax(), typ HTTP metody nastaven explicitně na POST
@@ -81,6 +77,22 @@
 * **[práce s Ajax events](./11-ajax-events.html)**
 * http://api.jquery.com/category/ajax/global-ajax-event-handlers/
 
+
+### Zpracování odpovědi ve formátu JSON a XML
+
+#### JSON
+  * **jQuery.getJSON()** - pošle HTTP GET request na server, chce vrátit JSON (JavaScript Object Notation, data ve formátu kratším než XML ;)
+  * zkrácená notace funkce jQuery.get(), atribut dataType nastaven explicitně na JSON (říkáme serveru, ať nám vrátí typ dat JSON)
+  * lze napojit callback funkce done, fail, always (viz dole)
+  * **[práce s Ajax getJSON](./11-ajax-get-json.html)**
+  * http://api.jquery.com/jQuery.getJSON/
+
+#### XML
+  * použijeme **jQuery.get()**, jen přidáme do dataType explicitně xml
+  * vrácená data jsou rovnou ve formátu XML, nemusíme je tedy převádět z textu do XML, apod.
+  * **[práce s Ajax a XML](./11-ajax-xml.html)**
+  * https://api.jquery.com/jQuery.parseXML/
+  * http://api.jquery.com/jQuery.get/
 
 
 ---
