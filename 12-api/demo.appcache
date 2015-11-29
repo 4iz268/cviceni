@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# pokud zmenime cokoli v tomto souboru, browser cache bude aktualizovana
+# pouzivame tady datum a cas, ale soubor jde zmenit jakkoli jinak
+# 2015-11-29 12:58
+# tyto soubory se budou cachovat
+bootstrap.min.css
+jquery-1.11.3.min.js
+
+FALLBACK:
+# pokud neni pripojeni k siti, zobraz jiny obrazek (jde pouzit i jine URI, treba stranky, apod.)
+img/hd.jpg img/kolo.jpg
+
+NETWORK:
+# tady jde vypsat soubory, ktere se NIKDY NEBUDOU cachovat (vyzadujeme pripojeni k siti)

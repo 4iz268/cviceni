@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html manifest="demo.appcache">
+
+<head>
+	<meta charset="utf-8" />
+
+	<title>API application cache</title>
+
+	<link rel="stylesheet" href="./bootstrap.min.css">
+
+	<script src="./jquery-1.11.3.min.js"></script>
+
+	<script>
+	
+	$(document).ready(function(){
+	
+		$("#message").text("jQuery funguje!")
+		
+	});
+	
+	</script>
+
+</head>
+
+<body>
+
+
+	<div class="container">
+	
+		
+		<h1>API application cache</h1>
+		
+		<p>I když se odpojíme od Internetu, měly by pořád fungovat Bootstrap CSS a jQuery, protože jsou v cache.</p>
+		
+	
+		<h2 id="name">Harley Davidson Road King</h2>
+
+		<h3 id="message"></h3>
+	
+		HD se zobrazí, když jsme online. Kolo, když jsme offline.
+		
+		<br/>
+		
+		<img src="img/hd.jpg">
+	
+	
+	</div>
+
+
+</body>
+
+</html>
