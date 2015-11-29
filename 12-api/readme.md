@@ -143,9 +143,9 @@ NETWORK:
 * 2 formy uložení:
   * **sessionStorage** - data jsou platná jen pro aktuální session (než uživatel zavře okno nebo záložku s aplikací)
   * **localStorage** - data budou uchována i po zavření okna, nemají expiraci, jsou tam "pořád"
-* pozor na incognito mode v browserech - pak se může stát, že browser smaže data, i když jsme je měli uložena jako localStorage
+* pozor na incognito mode v browserech - pak se může stát, že browser smaže data, i když byla uložena v localStorage
 * jde používat i jako jQuery plugin: https://github.com/julien-maurel/jQuery-Storage-API
-* **POZOR: prohlížeče si mezi sebou web store nesdílí, každý má svou vlastní databázi Pokud něco uložíte v Chrome, tak to ve Firefoxu na stejném počítači nepřečtete!**
+* **POZOR: prohlížeče si mezi sebou web store nesdílí, každý má svou vlastní databázi. Pokud např. něco uložíte v Chrome, tak to ve Firefoxu na stejném počítači nepřečtete!**
 * http://www.w3.org/TR/webstorage/
 * https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
 * https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
