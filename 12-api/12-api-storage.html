@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8" />
+
+	<title>API web storage</title>
+
+	<link rel="stylesheet" href="./bootstrap.min.css">
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquerygeo.com/jquery.geo-1.0.0-b3.min.js"></script>
+
+	<script>
+	
+	
+	$(document).ready(function(){
+		if (!localStorage.clicks) { // pokud nemame ulozen zadny klik, jen inicializuj
+			localStorage.clicks = 0;
+		}
+		$("#clicks").text(localStorage.clicks)
+	});
+	
+	
+	function addClick(){
+		
+		if(typeof(Storage) !== "undefined") {
+	  
+			// browser podporuje storage api
+			localStorage.clicks = Number(localStorage.clicks) + 1;
+		
+			$("#clicks").text(localStorage.clicks)
+			
+		} else {
+			//browser nepodporuje storage api, nejak to setrne oznam ;)
+		}
+		
+	}
+		
+
+	</script>
+
+</head>
+
+<body>
+
+
+	<div class="container">
+		
+		<h1>API web storage</h1>
+		
+		<p>Toto počítadlo si bude pamatovat stav, i když zavřete okno a zkusíte to třeba za týden.</p>
+		
+		<input type="button" onclick="addClick()" value="Click me if U dare!" class="btn btn-warning btn-lg">
+		
+		<br>
+		
+		<h2 id="clicks" style="color: dodgerblue"></h2>
+	
+	</div>
+
+
+</body>
+
+</html>
+
+

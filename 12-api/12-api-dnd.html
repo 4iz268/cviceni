@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 
+<html>
+
 <head>
+
 	<meta charset="utf-8" />
 
 	<title>API drag and drop</title>
@@ -18,15 +21,15 @@
 	}
 
 	function drag(ev) {
-	    ev.dataTransfer.setData("text", ev.target.id);
-			document.getElementById('kosik').style.border='3px dashed red';
+		ev.dataTransfer.setData("text", ev.target.id);
+		document.getElementById('kosik').style.border='3px dashed red';
 	}
 
 	function drop(ev) {
-	    ev.preventDefault();
-	    var data = ev.dataTransfer.getData("text");
-	    ev.target.appendChild(document.getElementById(data));
-			document.getElementById('kosik').style.border='3px solid dodgerblue';
+		ev.preventDefault();
+		var data = ev.dataTransfer.getData("text");
+		ev.target.appendChild(document.getElementById(data));
+		document.getElementById('kosik').style.border='3px solid dodgerblue';
 	}
 	
 	</script>
@@ -43,7 +46,7 @@
 		
 		
 		<img src="img/hd-small.jpg" width="221" height="176" alt="HD Road King" draggable="true"
-ondragstart="drag(event)" id="motorka">
+		ondragstart="drag(event)" id="motorka">
 		
 		<br>
 		<br>

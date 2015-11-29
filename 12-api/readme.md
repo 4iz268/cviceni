@@ -130,7 +130,23 @@ NETWORK:
 * http://www.html5rocks.com/en/tutorials/file/dndfiles/
 * http://blog.teamtreehouse.com/reading-files-using-the-html5-filereader-api
 
-## Local Storage, Application Cache, Service Worker
-- http://www.w3schools.com/html/html5_webstorage.asp
-- http://www.w3schools.com/html/html5_app_cache.asp
-- http://www.w3schools.com/html/html5_webworkers.asp
+## Web storage
+* web storage - malá lokální databáze
+* používá se také název DOM storage, session storage (neplést s klasickými sessions!) nebo local storage
+* uchovává data jako klíč:hodnota = key/value store
+* datové typy: klíč je string, hodnota taky string
+* jakýkoli jiný typ dat musíme převést na string, lze tak ukládat třeba JSON
+* maximální velikost 5MB (Chrome, Opera, Firefox), 10 MB MSIE (klasické cookies max 4 KB)
+* chápat jako rozšíření cookies, nikoli jako plnohodnotnou databázi
+* dočasné úložiště, neukládat tam ostrá data!
+* pozor na podporu mezi browsery, starší nepodporují, kód by měl mít fallback pro tyto případy
+* 2 formy uložení:
+  * **sessionStorage** - data jsou platná jen pro aktuální session (než uživatel zavře okno nebo záložku s aplikací)
+  * **localStorage** - data budou uchována i po zavření okna, nemají expiraci, jsou tam "pořád"
+* pozor na incognito mode v browserech - pak se může stát, že browser smaže data, i když jsme je měli uložena jako localStorage
+* jde používat i jako jQuery plugin: https://github.com/julien-maurel/jQuery-Storage-API
+* **POZOR: prohlížeče si mezi sebou web store nesdílí, každý má svou vlastní databázi Pokud něco uložíte v Chrome, tak to ve Firefoxu na stejném počítači nepřečtete!**
+* http://www.w3.org/TR/webstorage/
+* https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
+* https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
+* http://www.w3schools.com/html/html5_webstorage.asp
