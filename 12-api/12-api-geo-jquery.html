@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8" />
+
+	<title>API jQuery geo</title>
+
+	<link rel="stylesheet" href="./bootstrap.min.css">
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquerygeo.com/jquery.geo-1.0.0-b3.min.js"></script>
+
+	<script>
+	
+	$(document).ready(function(){
+		$("#map").geomap();
+	});
+	
+	</script>
+
+</head>
+
+<body>
+
+
+	<div class="container">
+	
+		
+		<h1>API jQuery geo</h1>
+		
+		<h4 style="color: red">Pro vyzkoušení je třeba zobrazit tuto stránku ze serveru eso. Knihovna jQuery geo používá relativní odkazování na protokol a lokálně je to file://, proto funguje jen z netu.</h4>
+		
+		<a href="http://eso.vse.cz/~xhraj18/12-api-geo-jquery.html">Spustit tento soubor z eso.vse.cz</a>
+		
+	
+		<div id="map" style="width: 800px; height: 600px;"></div>
+	
+	</div>
+
+
+</body>
+
+</html>

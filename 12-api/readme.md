@@ -53,12 +53,11 @@ NETWORK:
     * **Nikdy necachujte manifest, protože pak se i změněný manifest tahá z cache a změny se nikdy neprojeví**
     * Pokud cachujeme stránku, která používá další zdroje (třeba CSS, JS soubory) a tyto zdroje nebudou explicitně uvedeny v manifestu, nebudou cachovány.
   * ke cache jde přistupovat i přes JS, viz http://www.html5rocks.com/en/tutorials/appcache/beginner/#toc-updating-cache
-  * **[práce s application cache](./12-api-appcache.html)**
   * http://www.w3.org/TR/2011/WD-html5-20110525/offline.html
   * https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache
   * http://alistapart.com/article/application-cache-is-a-douchebag
   * http://www.html5rocks.com/en/tutorials/appcache/beginner/
-
+  * **[práce s application cache](./12-api-appcache.html)**
 
 ## Service workers
 
@@ -76,7 +75,28 @@ NETWORK:
 
 ## Geolokace
 
-- http://www.w3schools.com/html/html5_geolocation.asp
+* geolokace = zjištění, kde se na Zemi uživatel nachází, typicky souřadnice
+* jak to funguje?
+  * každý browser pošle request na nějakou službu, kterou má v implementaci pro GEO zadanou a pošle službě svou IP, MAC, seznam WiFi pointů, a vše, k čemu má přístup a co jde nějak použít pro zjištění pozice
+* z důvodu soukromí musí uživatel se zaměřením souhlasit, nejde zjistit lokaci bez vědomí uživatele (jedině třeba podle IP adresy, ale to už není HTML 5 Geo API)
+* ne všechny prohlížeče geo podporují, je vhodné vyjímkovat script
+* přístup ke geo api je přes JS (jak jinak :)
+* existují i knihovny pro jQuery: http://jquerygeo.com
+* příklady použití:
+  * zobrazení na mapě
+  * spočítání vzdálenost k cílovému místu včetně naplánování ideální cesty (např. pomocí Google Maps)
+  * hledat služby jen ve městě, ve kterém uživatel je
+  * nejbližší restaurace, hotely, obchody, kina, nemocnice, čerpací stanice...
+  * kombinace: nejbližší italské restaurace s nejvyšším hodnocením a nejnižší cenou
+  * identifikovat zemi uživatele a podle ní přizpůsobit obsah (statistika, jazyková verze aplikace, výchozí měna, formátování data a času, apod.)
+* desktop pozná lokaci jen podle IP, WiFi, zaměření nebude tak přesné jako u mobilů
+* na mobilech je typicky k dispozici GPS a vzdálenost od BTS stanic, zaměření je přesnější, ale kvůli GPS může být pomalejší
+* 
+* https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation
+* http://www.w3schools.com/html/html5_geolocation.asp
+* **[práce s geolocation](./12-api-geo.html)**
+* **[práce s geolocation přes jQuery plugin](./12-api-geo-jquery.html)**
+
 
 ## Drag & Drop
 - http://www.w3schools.com/html/html5_draganddrop.asp
