@@ -100,29 +100,29 @@ NETWORK:
 
 ## Drag & Drop
 
-  * přetahování objektů myší (chytnu, potáhnu, pustím)
-  * např. přesunutí položky do košíku, šachy (táhnutí figurek), apod.
-  * browsery default podporují:
-    * přetahování označeného textu
-    * obrázky (třeba na desktop, do adresního řádku)
-    * soubory do input file elementu
-    * pokud chceme něco víc, musíme si to napsat sami :)
-  * při přetahování musíme určit:
+* přetahování objektů myší (chytnu, potáhnu, pustím)
+* např. přesunutí položky do košíku, šachy (táhnutí figurek), apod.
+* browsery default podporují:
+  * přetahování označeného textu
+  * obrázky (třeba na desktop, do adresního řádku)
+  * soubory do input file elementu
+  * pokud chceme něco víc, musíme si to napsat sami 
+* při přetahování musíme určit:
   * zdroj - co budeme přetahovat, za co půjde chytit (source)
   * typ dat, která se přetahují (data payload)
   * cíl - kam budeme přetahovat, kam to půjde pustit (target)
-  * události, které lze zachytit při drag and drop:
-    * **dragstart** - začali jsme přetahovat
-    * **drag** - přetahujeme
-    * **dragenter** - přetahujeme a právě jsme vstoupili do komponenty, která čeká na drop
-    * **dragleave** - přetahujeme a právě jsme opustili komponentu, která čeká na drop
-    * **dragover** - jsme v komponentě, která čeká na drop (bude voláno opakovaně v řádu milisekund)
-    * **drop** - upustili jsme, co jsme přetahovali
-    * **dragend** - ukončili jsme přetahování
-  * https://developer.mozilla.org/en-US/docs/Web/Events/dragenter
-  * http://www.html5rocks.com/en/tutorials/dnd/basics/
-  * http://www.w3schools.com/html/html5_draganddrop.asp
-  * **[práce s drag and drop](./12-api-dnd.html)**
+* události, které lze zachytit při drag and drop:
+  * **dragstart** - začali jsme přetahovat
+  * **drag** - přetahujeme
+  * **dragenter** - přetahujeme a právě jsme vstoupili do komponenty, která čeká na drop
+  * **dragleave** - přetahujeme a právě jsme opustili komponentu, která čeká na drop
+  * **dragover** - jsme v komponentě, která čeká na drop (bude voláno opakovaně v řádu milisekund)
+  * **drop** - upustili jsme, co jsme přetahovali
+  * **dragend** - ukončili jsme přetahování
+* http://www.html5rocks.com/en/tutorials/dnd/basics/
+* http://www.w3schools.com/html/html5_draganddrop.asp
+* https://developer.mozilla.org/en-US/docs/Web/Events/dragenter
+* **[práce s drag and drop](./12-api-dnd.html)**
 
 ## Práce se soubory
 - http://blog.teamtreehouse.com/reading-files-using-the-html5-filereader-api
