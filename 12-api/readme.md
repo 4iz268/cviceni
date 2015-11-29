@@ -16,14 +16,14 @@ TODO:
   * HTML 5 application cache - uložení stránek na disk, abychom se na ně mohli podívat, i když nejsme připojení k Internetu
   * funguje dobře u statických stránek či zdrojů (CSS, JS, obrázky)
   * z podstaty věci nemůže fungovat v případě server-side jazyků (PHP, Rails, Java), protože tam logiku provádí jazyk na serveru
-  * proč nepoužívat cache?
-    * nevýhody převáží výhody (viz dole, na co si dát pozor)
-    * většina aplikací je dynamických a uživatel nevidí aktuální data
-    * **je to celé složité, doporučuji shlédnout, pochopit a nepoužívat**
   * proč používat cache?
     * offline zobrazení stránek (uživatel zadá URL v Internetu a zobrazí se mu naše stránky, i když není připojen)
     * rychlost - zdroje se můžou načíst z lokálního disku, kam se uložily, když jsme byli online. Cache se používá, i když jsme online.
     * web je dostupný i v případě chyby - uživatelům se zobrazí web, i když nám nejede server
+  * proč nepoužívat cache?
+    * nevýhody převáží výhody (viz dole, na co si dát pozor)
+    * většina aplikací je dynamických a uživatel nevidí aktuální data
+    * **application cache je zbytečně složitá, doporučuji shlédnout, pochopit a nepoužívat**
   * cache začnem používat přidáním odkazu na manifest soubor do HTML elementu:
 
 ```html
