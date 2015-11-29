@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8" />
+
+	<title>API GEO</title>
+
+	<link rel="stylesheet" href="./bootstrap.min.css">
+
+	<script src="./jquery-1.11.3.min.js"></script>
+
+	<script>
+	<script>
+	var x = document.getElementById("demo");
+	function getLocation() {
+	    if (navigator.geolocation) {
+	        navigator.geolocation.getCurrentPosition(showPosition);
+	    } else {
+	        x.innerHTML = "Geolocation is not supported by this browser.";
+	    }
+	}
+	function showPosition(position) {
+	    x.innerHTML = "Latitude: " + position.coords.latitude + 
+	    "<br>Longitude: " + position.coords.longitude; 
+	}
+	</script>
+	
+	</script>
+
+</head>
+
+<body>
+
+
+	<div class="container">
+	
+		
+		<h1>API application cache</h1>
+		
+		<h4 style="color: red">Pro vyzkoušení offline přístupu zkuste tuto stránku načíst ze serveru eso, odpojte se od Internetu a dejte reload stránky.</h4>
+		
+		<a href="http://eso.vse.cz/~xhraj18/12-api-appcache.html">Spustit tento soubor z eso.vse.cz</a>
+		
+		<br><br>
+		
+		<p>I když se odpojíme od Internetu, měly by pořád fungovat Bootstrap CSS a jQuery, protože jsou v cache.</p>
+		
+	
+		<h2 id="name">Harley Davidson Road King</h2>
+
+		<h3 id="message"></h3>
+	
+		HD se zobrazí, když jsme online. Kolo, když jsme offline.
+		
+		<br/>
+		
+		<img src="img/hd.jpg">
+	
+	
+	</div>
+
+
+</body>
+
+</html>
+
+
+
