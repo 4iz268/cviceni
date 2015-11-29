@@ -82,6 +82,7 @@ NETWORK:
 * ne všechny prohlížeče geo podporují, je vhodné vyjímkovat script
 * přístup ke geo api je přes JS (jak jinak :)
 * existují i knihovny pro jQuery: http://jquerygeo.com
+* v budoucnu bude nutné používat https server kvůli insecure origin, viz https://sites.google.com/a/chromium.org/dev/Home/chromium-security/deprecating-powerful-features-on-insecure-origins
 * příklady použití:
   * zobrazení na mapě
   * spočítání vzdálenost k cílovému místu včetně naplánování ideální cesty (např. pomocí Google Maps)
@@ -98,7 +99,22 @@ NETWORK:
 
 
 ## Drag & Drop
-- http://www.w3schools.com/html/html5_draganddrop.asp
+
+* přetahování objektů myší (chytnu, potáhnu, pustím)
+* např. přesunutí položky do košíku, šachy (táhnutí figurek), apod.
+
+* browsery default podporují:
+  * přetahování označeného textu
+  * obrázky (třeba na desktop, do adresního řádku)
+  * soubory do input file elementu
+
+* při přetahování musíme určit:
+  * zdroj - co budeme přetahovat, za co půjde chytit (source)
+  * typ dat, která se přetahují (data payload)
+  * cíl - kam budeme přetahovat, kam to půjde pustit (target)
+
+* http://www.html5rocks.com/en/tutorials/dnd/basics/
+* http://www.w3schools.com/html/html5_draganddrop.asp
 
 ## Práce se soubory
 - http://blog.teamtreehouse.com/reading-files-using-the-html5-filereader-api

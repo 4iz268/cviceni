@@ -3,27 +3,29 @@
 <head>
 	<meta charset="utf-8" />
 
-	<title>API GEO</title>
+	<title>API geo</title>
 
 	<link rel="stylesheet" href="./bootstrap.min.css">
-
-	<script src="./jquery-1.11.3.min.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 	<script>
-	<script>
-	var x = document.getElementById("demo");
-	function getLocation() {
-	    if (navigator.geolocation) {
-	        navigator.geolocation.getCurrentPosition(showPosition);
-	    } else {
-	        x.innerHTML = "Geolocation is not supported by this browser.";
-	    }
+	
+	if ("geolocation" in navigator) {
+	  
+		/* geolocation is available */
+		
+		navigator.geolocation.getCurrentPosition(function(position) {
+			$("#latitude").text(position.coords.latitude);
+			$("#longitude").text(position.coords.longitude);
+		});
+		
+	} else {
+	  
+		/* geolocation IS NOT available */
+		
 	}
-	function showPosition(position) {
-	    x.innerHTML = "Latitude: " + position.coords.latitude + 
-	    "<br>Longitude: " + position.coords.longitude; 
-	}
-	</script>
+
 	
 	</script>
 
@@ -35,34 +37,22 @@
 	<div class="container">
 	
 		
-		<h1>API application cache</h1>
+		<h1>API geo</h1>
 		
-		<h4 style="color: red">Pro vyzkoušení offline přístupu zkuste tuto stránku načíst ze serveru eso, odpojte se od Internetu a dejte reload stránky.</h4>
+		<h4 style="color: red">Pro vyzkoušení je třeba zobrazit tuto stránku ze serveru eso. Pro komunikaci se vzdáleným serverem, určující lokaci používá stejný protokol jako aktuální URL a na lokále je to file://</h4>
 		
-		<a href="http://eso.vse.cz/~xhraj18/12-api-appcache.html">Spustit tento soubor z eso.vse.cz</a>
+		<a href="http://eso.vse.cz/~xhraj18/12-api-geo.html">Spustit tento soubor z eso.vse.cz</a>
+			
+		<br>
+		<br>
 		
-		<br><br>
+		<p id="latitude">Loading...</p>
 		
-		<p>I když se odpojíme od Internetu, měly by pořád fungovat Bootstrap CSS a jQuery, protože jsou v cache.</p>
+		<p id="longitude"></p>
 		
-	
-		<h2 id="name">Harley Davidson Road King</h2>
-
-		<h3 id="message"></h3>
-	
-		HD se zobrazí, když jsme online. Kolo, když jsme offline.
-		
-		<br/>
-		
-		<img src="img/hd.jpg">
-	
-	
 	</div>
 
 
 </body>
 
 </html>
-
-
-
