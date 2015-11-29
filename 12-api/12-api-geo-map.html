@@ -13,7 +13,23 @@
 	<script>
 	
 	$(document).ready(function(){
-		$("#map").geomap();
+
+		navigator.geolocation.getCurrentPosition(function(position) {
+			
+			longitude = position.coords.longitude;	
+			latitude = position.coords.latitude;
+			
+			$("#map").geomap({
+				center: [ longitude, latitude ],
+				zoom: 15
+			});
+			
+		});
+		
+		
+
+
+
 	});
 	
 	</script>
@@ -30,10 +46,11 @@
 		
 		<h4 style="color: red">Pro vyzkoušení je třeba zobrazit tuto stránku ze serveru eso. Knihovna jQuery geo používá relativní odkazování na protokol a lokálně je to file://, proto funguje jen z netu.</h4>
 		
-		<a href="http://eso.vse.cz/~xhraj18/12-api-geo-jquery.html">Spustit tento soubor z eso.vse.cz</a>
+		<a href="http://eso.vse.cz/~xhraj18/12-api-geo-map.html">Spustit tento soubor z eso.vse.cz</a>
 		
+		<h2>Tady někde jsme</h2>
 	
-		<div id="map" style="width: 800px; height: 600px;"></div>
+		<div id="map" style="width: 800px; height: 600px;">Loading...</div>
 	
 	</div>
 

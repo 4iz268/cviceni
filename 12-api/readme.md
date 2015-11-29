@@ -91,11 +91,10 @@ NETWORK:
   * identifikovat zemi uživatele a podle ní přizpůsobit obsah (statistika, jazyková verze aplikace, výchozí měna, formátování data a času, apod.)
 * desktop pozná lokaci jen podle IP, WiFi, zaměření nebude tak přesné jako u mobilů
 * na mobilech je typicky k dispozici GPS a vzdálenost od BTS stanic, zaměření je přesnější, ale kvůli GPS může být pomalejší
-* 
 * https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation
 * http://www.w3schools.com/html/html5_geolocation.asp
 * **[práce s geolocation](./12-api-geo.html)**
-* **[práce s geolocation přes jQuery plugin](./12-api-geo-jquery.html)**
+* **[práce s geolocation a zobrazení v mapě](./12-api-geo-map.html)**
 
 
 ## Drag & Drop
