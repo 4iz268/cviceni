@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8" />
+
+	<title>API drag and drop</title>
+
+	<link rel="stylesheet" href="./bootstrap.min.css">
+	
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<script>
+	
+	function allowDrop(ev) {
+		// potlac vychozi chovani browseru, ktere neumoznuje pustit pretahovany obrazek
+		// pak se na kosiku bude ukazovat plus, ktere uzivateli napovida, ze tady muze obrazek pustit
+		ev.preventDefault();
+	}
+
+	function drag(ev) {
+	    ev.dataTransfer.setData("text", ev.target.id);
+			document.getElementById('kosik').style.border='3px dashed red';
+	}
+
+	function drop(ev) {
+	    ev.preventDefault();
+	    var data = ev.dataTransfer.getData("text");
+	    ev.target.appendChild(document.getElementById(data));
+			document.getElementById('kosik').style.border='3px solid dodgerblue';
+	}
+	
+	</script>
+
+</head>
+
+<body>
+
+
+	<div class="container">
+	
+		
+		<h1>API geo</h1>
+		
+		
+		<img src="img/hd-small.jpg" width="221" height="176" alt="HD Road King" draggable="true"
+ondragstart="drag(event)" id="motorka">
+		
+		<br>
+		<br>
+		
+		<div id='kosik' style="width: 227px; height: 182px; border: 3px solid dodgerblue;" ondragover="allowDrop(event)" ondrop="drop(event)">
+		</div>
+		
+		
+		
+	</div>
+
+
+</body>
+
+</html>
