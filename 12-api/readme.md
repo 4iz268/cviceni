@@ -59,6 +59,17 @@ NETWORK:
   * http://www.html5rocks.com/en/tutorials/appcache/beginner/
   * **[práce s application cache](./12-api-appcache.html)**
 
+
+## Detekce offline/online stavu
+
+  * aplikace může reagovat na přepnutí online/offline stavu
+  * způsoby:
+    * registrujeme **addEventListener** na objekt **window**, **document** nebo **document.body**
+    * přiřadíme vlastnosti  **.ononline** nebo **.onoffline** objektu **document** nebo **document.body** na JS funkci
+    * přidáme JS do atributů **ononline="..."** nebo **onoffline="..."** do elementu **body**
+  * https://developer.mozilla.org/en/docs/Online_and_offline_events
+  * **[práce s detekcí online/offline stavu](./12-api-online-offline-detection.html)**
+
 ## Service workers
 
   * **W3C Working Draft, není finální verze, poslední update 25 June 2015, http://www.w3.org/TR/service-workers/**
