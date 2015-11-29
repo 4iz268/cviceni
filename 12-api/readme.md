@@ -106,6 +106,7 @@ NETWORK:
   * přetahování označeného textu
   * obrázky (třeba na desktop, do adresního řádku)
   * soubory do input file elementu
+  * pokud chceme něco víc, musíme si to napsat sami :)
 * při přetahování musíme určit:
   * zdroj - co budeme přetahovat, za co půjde chytit (source)
   * typ dat, která se přetahují (data payload)
