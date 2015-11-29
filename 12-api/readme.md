@@ -63,7 +63,7 @@ NETWORK:
   * náhrada application cache
   * protože pracuje se sítí, vyžaduje HTTPS (kvůli man-in-the-middle útokům)
   * novinka, pozor na kompatibilitu mezi browsery: https://jakearchibald.github.io/isserviceworkerready/
-  * JS, nemá přístup přímo k DOMu, registrujeme pro stránku události, které se pak volají jako callback
+  * je to zase jenom JS, ale z bezpečnostních důvodů nemá přístup přímo k DOMu, registrujeme pro stránku události, které se pak volají jako callback
   * https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Social_API/Service_worker_API_reference
   * http://www.html5rocks.com/en/tutorials/service-worker/introduction/
   * https://jakearchibald.com/2014/service-worker-first-draft/
