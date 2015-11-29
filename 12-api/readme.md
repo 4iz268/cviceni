@@ -1,16 +1,6 @@
 # 12. HTML 5 API
 
-TODO:
-- práce s lokálním úložištěm
-- detekce offline/online stavu
-- offline aplikace (appcache, service worker)
-- geolokace
-- další HTML5 API
-
-
-
-
-### Application cache (offline aplikace)
+### Offline aplikace (application cache)
 
   * cachování = uchování a použití lokální kopie dat, abychom nemuseli načít soubor "zdaleka"
   * HTML 5 application cache - uložení stránek na disk, abychom se na ně mohli podívat, i když nejsme připojení k Internetu
