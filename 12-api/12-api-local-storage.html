@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8" />
+
+	<title>API localStorage</title>
+
+	<link rel="stylesheet" href="./bootstrap.min.css">
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquerygeo.com/jquery.geo-1.0.0-b3.min.js"></script>
+
+	<script>
+	
+	
+	$(document).ready(function(){
+				
+		if (localStorage.bands) {
+			
+			refreshBands(); // mame kapely, dej je do vypisu
+			
+		} else { 
+			
+			// jeste jsme neulozili zadnou kapelu
+			
+			$("#list").text("no bands yet");
+			
+		}
+		
+	});
+	
+	//uloz novou kapelu do localStorage
+	function saveBand(){
+	
+		//nazev a rok kapely bereme z formu
+		var bandName = $("#bandName").val();
+		var bandYear = $("#bandYear").val();
+
+		//vezmi aktualni seznam kapel a preved ho ze stringu do JSON
+		bands = JSON.parse(localStorage.getItem('bands'));
+		
+		if (!bands){ //jestli jeste nejsou zadny kapely, vytvor prazdne pole
+			bands = JSON.parse('[]');
+		}
+		
+		//vytvor novou kapelu
+		newBand = {bandName: bandName, bandYear: bandYear}
+		
+		//a pridej ji do na konec seznam kapel
+		bands.push(newBand);
+
+		//uloz seznam kapel
+		localStorage.setItem("bands", JSON.stringify(bands));
+
+		//smaz form
+		$("#form")[0].reset();
+		
+		refreshBands();
+		
+	}
+	
+	
+	//aktualizuj seznam kapel
+	function refreshBands(){
+		var bandsAsText = ""
+		
+		$.each(JSON.parse(localStorage.getItem('bands')), function(i, val) {
+		  bandsAsText = bandsAsText + "name: "+val.bandName+", year: "+val.bandYear+"<br>";
+		});
+		
+		//aktualizujeme seznam kapel
+		$("#list").html(bandsAsText);		
+	}
+
+	</script>
+
+</head>
+
+<body>
+
+
+	<div class="container">
+		
+		<h1>API localStorage</h1>
+		
+		<p>Odeslaná data z formuláře ukládáme jako JSON do localStorage. Budou tedy zachována i po zavření okna a dostupná z tohoto počítače a browser třeba i za rok.</p>
+		
+		
+		<h2>Add New Band</h2>
+		
+		<form id="form">
+			<label>Band Name</label><br>
+			<input type="input" name="name" id="bandName" value=""><br>
+			<label>Year of origin</label><br>
+			<input type="input" name="year" id="bandYear" value="">
+			<br>
+			<br>
+			<input type="button" value="Save Band!" class="btn btn-success btn-lg" onclick="saveBand()">
+		</form>
+			
+		<br>
+		
+		
+		<h2>Band List</h2>
+		
+		<div id="list"></div>
+		
+	</div>
+
+
+</body>
+
+</html>
+
+

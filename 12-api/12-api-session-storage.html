@@ -6,7 +6,7 @@
 	
 	<meta charset="utf-8" />
 
-	<title>API web storage</title>
+	<title>API sessionStorage</title>
 
 	<link rel="stylesheet" href="./bootstrap.min.css">
 
@@ -17,10 +17,10 @@
 	
 	
 	$(document).ready(function(){
-		if (!localStorage.clicks) { // pokud nemame ulozen zadny klik, jen inicializuj
-			localStorage.clicks = 0;
+		if (!sessionStorage.clicks) { // pokud nemame ulozen zadny klik, jen inicializuj
+			sessionStorage.clicks = 0;
 		}
-		$("#clicks").text(localStorage.clicks)
+		$("#clicks").text(sessionStorage.clicks)
 	});
 	
 	
@@ -29,9 +29,9 @@
 		if(typeof(Storage) !== "undefined") {
 	  
 			// browser podporuje storage api
-			localStorage.clicks = Number(localStorage.clicks) + 1;
+			sessionStorage.clicks = Number(sessionStorage.clicks) + 1;
 		
-			$("#clicks").text(localStorage.clicks)
+			$("#clicks").text(sessionStorage.clicks)
 			
 		} else {
 			//browser nepodporuje storage api, nejak to setrne oznam ;)
@@ -49,11 +49,11 @@
 
 	<div class="container">
 		
-		<h1>API web storage</h1>
+		<h1>API sessionStorage</h1>
 		
-		<p>Toto počítadlo si bude pamatovat stav, i když zavřete okno a zkusíte to třeba za týden.</p>
+		<p>Toto počítadlo si bude pamatovat stav jen v této session. Po zavření okna se počítadlo vynuluje.</p>
 		
-		<input type="button" onclick="addClick()" value="Click me if U dare!" class="btn btn-warning btn-lg">
+		<input type="button" onclick="addClick()" value="Click me if U dare!" class="btn btn-info btn-lg">
 		
 		<br>
 		
