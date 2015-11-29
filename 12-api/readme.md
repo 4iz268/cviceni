@@ -111,13 +111,13 @@ NETWORK:
   * typ dat, která se přetahují (data payload)
   * cíl - kam budeme přetahovat, kam to půjde pustit (target)
 * události, které lze zachytit při drag and drop:
-  * dragstart - začali jsme přetahovat
-  * drag - přetahujeme
-  * dragenter - přetahujeme a právě jsme vstoupili do komponenty, která čeká na drop
-  * dragleave - přetahujeme a právě jsme opustili komponentu, která čeká na drop
-  * dragover - jsme v komponentě, která čeká na drop (bude voláno opakovaně v řádu milisekund)
-  * drop - upustili jsme, co jsme přetahovali
-  * dragend - ukončili jsme přetahování
+  * **dragstart** - začali jsme přetahovat
+  * **drag** - přetahujeme
+  * **dragenter** - přetahujeme a právě jsme vstoupili do komponenty, která čeká na drop
+  * **dragleave** - přetahujeme a právě jsme opustili komponentu, která čeká na drop
+  * **dragover** - jsme v komponentě, která čeká na drop (bude voláno opakovaně v řádu milisekund)
+  * **drop** - upustili jsme, co jsme přetahovali
+  * **dragend** - ukončili jsme přetahování
   * https://developer.mozilla.org/en-US/docs/Web/Events/dragenter
 * http://www.html5rocks.com/en/tutorials/dnd/basics/
 * http://www.w3schools.com/html/html5_draganddrop.asp
