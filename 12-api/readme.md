@@ -61,7 +61,7 @@ NETWORK:
 
 ## Service workers
 
-  * **DRAFT - není finální specifikace**: http://www.w3.org/TR/service-workers/
+  * **W3C Working Draft, není finální verze, poslední update 25 June 2015, http://www.w3.org/TR/service-workers/**
   * poslední verze (nightly build): https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html
   * service worker - kód, který běží v pozadí stránky a něco dělá
   * náhrada application cache
@@ -125,7 +125,10 @@ NETWORK:
 * **[práce s drag and drop](./12-api-dnd.html)**
 
 ## Práce se soubory
-- http://blog.teamtreehouse.com/reading-files-using-the-html5-filereader-api
+* **W3C Working Draft, není finální verze, poslední update 21 April 2015, http://www.w3.org/TR/FileAPI/** 
+* https://developer.mozilla.org/en/docs/Web/API/FileReader
+* http://www.html5rocks.com/en/tutorials/file/dndfiles/
+* http://blog.teamtreehouse.com/reading-files-using-the-html5-filereader-api
 
 ## Local Storage, Application Cache, Service Worker
 - http://www.w3schools.com/html/html5_webstorage.asp
