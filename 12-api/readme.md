@@ -55,14 +55,14 @@ NETWORK:
   * http://www.html5rocks.com/en/tutorials/appcache/beginner/
 
 
-## Service worker
+## Service workers
 
   * **DRAFT - není finální specifikace**: http://www.w3.org/TR/service-workers/
-	* poslední verze (nightly build): https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html
+  * poslední verze (nightly build): https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html
   * service worker - kód, který běží v pozadí stránky a něco dělá
-	* náhrada application cache
-	* protože pracuje se sítí, vyžaduje HTTPS (kvůli man-in-the-middle útokům)
-	* novinka, pozor na kompatibilitu mezi browsery: https://jakearchibald.github.io/isserviceworkerready/
+  * náhrada application cache
+  * protože pracuje se sítí, vyžaduje HTTPS (kvůli man-in-the-middle útokům)
+  * novinka, pozor na kompatibilitu mezi browsery: https://jakearchibald.github.io/isserviceworkerready/
   * JS, nemá přístup přímo k DOMu, registrujeme pro stránku události, které se pak volají jako callback
   * https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Social_API/Service_worker_API_reference
   * http://www.html5rocks.com/en/tutorials/service-worker/introduction/
