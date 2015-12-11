@@ -1,5 +1,16 @@
 # 12. HTML 5 API
 
+### Manipulace s historií prohlížeče
+  * vhodné pro umožnění navigace uživatele do konkrétního stavu AJAXové aplikace (např. v adresáři na konkrétní záznam)
+  * základní přesuny v historii již byly na minulém cvičení
+  * https://developer.mozilla.org/en-US/docs/Web/API/History_API#The_pushState%28%29_method
+  * funguje to jen na stejné doméně (ne na localhostu)
+  ```javascript
+  var stateObj = { foo: "bar" };
+  history.pushState(stateObj, "page 2", "bar.html");//přidání stránky do historie
+  history.replaceState(stateObj, "page 2", "bar.html");//změna záznamu aktuálního stavu v historii
+  ```
+
 ### Offline aplikace (application cache)
 
   * cachování = uchování a použití lokální kopie dat, abychom nemuseli načít soubor "zdaleka"
