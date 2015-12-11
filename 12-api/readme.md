@@ -5,6 +5,7 @@
   * základní přesuny v historii již byly na minulém cvičení
   * https://developer.mozilla.org/en-US/docs/Web/API/History_API#The_pushState%28%29_method
   * funguje to jen na stejné doméně (ne na localhostu)
+  
   ```javascript
   var stateObj = { foo: "bar" };
   history.pushState(stateObj, "page 2", "bar.html");//přidání stránky do historie
