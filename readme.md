@@ -65,8 +65,8 @@ Web předmětu: **http://4iz268.github.io**
   * offline aplikace (appcache, service worker)
   * geolokace
   * další HTML5 API
-13. [Autentizace](./13-autentizace)
-  * OAuth a využití existujících služeb pro přihlášení (pokud se stihne)
+13. [Aplikace](./13-aplikace)
+  * Vypracování ukázkové aplikace
   * Obsah jednotlivých cvičení se může lišit v závisloti na rychlosti jednotlivých skupin a harmonogramu aktuálního semestru.
 
 
