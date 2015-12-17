@@ -107,10 +107,9 @@ curl -H "Content-Type: application/json" -X DELETE https://hradil.vse.cz/api/cli
 
 Nevrací nic.
 
-
----
-**Úkol pro studenty: vytvořte klientskou JS aplikaci (CRUD), komunikující přes JSON na toto API.**
----
+```
+Úkol pro studenty: vytvořte klientskou JS aplikaci (CRUD), komunikující přes JSON na toto API.
+```
 
 ### Poznámky pro vývojáře API (serverové části)
 
