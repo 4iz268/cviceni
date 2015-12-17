@@ -1,5 +1,7 @@
 # Závěrečné cvičení, vypracování ukázkové JS aplikace
 
+**Úkol pro studenty: vytvořte klientskou JS aplikaci (CRUD), komunikující přes JSON na toto API.**
+
 ## Adresář klientů
 
 ## URL aplikace
@@ -107,9 +109,6 @@ curl -H "Content-Type: application/json" -X DELETE https://hradil.vse.cz/api/cli
 
 Nevrací nic.
 
-```
-Úkol pro studenty: vytvořte klientskou JS aplikaci (CRUD), komunikující přes JSON na toto API.
-```
 
 ### Poznámky pro vývojáře API (serverové části)
 
