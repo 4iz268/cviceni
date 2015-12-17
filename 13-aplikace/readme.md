@@ -1,6 +1,6 @@
 # Závěrečné cvičení, vypracování ukázkové JS aplikace
 
-**Úkol pro studenty: vytvořte klientskou JS aplikaci (CRUD), komunikující přes JSON na toto API.**
+**Úkol pro studenty: vytvořte klientskou JS aplikaci (CRUD), komunikující přes JSON na následující API.**
 
 ## Adresář klientů
 
