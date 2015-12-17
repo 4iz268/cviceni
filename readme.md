@@ -96,4 +96,4 @@ Web předmětu: **http://4iz268.github.io**
  * http://www.w3schools.com/tags/
  * W3C validátor: http://validator.w3.org/
  * další validátor (používá ho i W3C): http://validator.nu/
- * **plus zdroje uvedené v [sylabu předmětu](./sylabus.pdf)
+ * **plus zdroje uvedené v [sylabu předmětu](./sylabus.pdf)**
