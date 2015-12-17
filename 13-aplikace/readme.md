@@ -12,19 +12,19 @@
 
 ## Adresář klientů
 
-## URL aplikace
+### URL aplikace
 
 https://hradil.vse.cz/api/clients
 
 Aplikace má i HTML rozhraní, ve kterém lze provádět všechny popsané akce.
 
-## Zabezpečení
+### Zabezpečení
 
 **Aplikace nemá autentizaci ani autorizaci. Všichni mají přístup ke všemu a data lze sdílet mezi sebou.**
 
 **Pro filtrování dat lze použít parametr xname.**
 
-## Příklady
+### Příklady
 
 ```bash
 curl -H "Content-Type: application/json" -X GET https://hradil.vse.cz/api/clients.json?xname=xhraj18
@@ -38,7 +38,7 @@ curl -H "Content-Type: application/json" -X PUT -d '{"first_name":"Jimmy","last_
 curl -H "Content-Type: application/json" -X DELETE https://hradil.vse.cz/api/clients/1.json
 ```
 
-## Formát JSON dat
+### Formát JSON dat
 
 * id - String, generuje se automaticky při uložení
 * xname - String, nepovinné, identifikace studenta
@@ -49,7 +49,7 @@ curl -H "Content-Type: application/json" -X DELETE https://hradil.vse.cz/api/cli
 * town - String, nepovinné, město klienta
 
 
-## GET index, výpis všech klientů
+### GET index, výpis všech klientů
 
 Pro filtrování záznamů pro konkrétního uživatele (studenta) lze použít parametr xname.
 
@@ -65,7 +65,7 @@ Vrací pole:
 [{"first_name":"Jimmy","id":1,"last_name":"Hendrix","street":"Heaven Gate 1","town":"LA","xname":"xhraj18","zip":"10000"}]
 ````
 
-## GET show, detail klienta
+### GET show, detail klienta
 
 Vyžaduje id klienta.
 
@@ -80,7 +80,7 @@ Vrací 1 záznam:
 {"first_name":"Jimmy","id":1,"last_name":"Hendrix","street":"Heaven Gate 1","town":"LA","xname":"xhraj18","zip":"10000"}
 ```
 
-## POST create, uložení nového klienta
+### POST create, uložení nového klienta
 
 Id klienta se generuje automaticky při uložení, neposíláme.
 
@@ -96,7 +96,7 @@ Vrací 1 záznam včetně právě vygenerovaného id:
 {"first_name":"Jimmy","id":1,"last_name":"Hendrix","street":"Heaven Gate 1","town":"LA","xname":"xhraj18","zip":"10000"}
 ```
 
-## PUT update, aktualizace klienta
+### PUT update, aktualizace klienta
 
 Vyžaduje id klienta.
 
@@ -107,7 +107,7 @@ curl -H "Content-Type: application/json" -X PUT -d '{"first_name":"Jimmy","last_
 Nevrací nic.
 
 
-## DELETE, smazání klienta
+### DELETE, smazání klienta
 
 Vyžaduje id klienta.
 
@@ -118,7 +118,7 @@ curl -H "Content-Type: application/json" -X DELETE https://hradil.vse.cz/api/cli
 Nevrací nic.
 
 
-### Poznámky pro vývojáře API (serverové části)
+### Poznámky pro vývojáře API (serverová část)
 
 Server musí do response přidávat hlavičku:
 
