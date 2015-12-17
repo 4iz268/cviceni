@@ -56,7 +56,7 @@ Jinak browser vyhodí bezpečnostní chybu:
 Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://hradil.vse.cz/api/clients.json?xname=xhraj18. (Reason: CORS header 'Access-Control-Allow-Origin' missing).
 ```
 
-V Apache se hlavička přidá do souboru **.htaccess**, v Nginx pod location, např.
+V Apache se hlavička přidá do souboru **.htaccess**, v Nginx pod location v souboru **nginx.conf**, např.
 
 ```
 location ~ ^/api(/.*|$) {
@@ -66,7 +66,7 @@ location ~ ^/api(/.*|$) {
     passenger_document_root /home/xhraj18/api/current/public;
     passenger_enabled on;
     add_header 'Access-Control-Allow-Origin' '*';
-        }
+}
 ```
 
 
