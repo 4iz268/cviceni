@@ -2,6 +2,14 @@
 
 **Úkol pro studenty: vytvořte klientskou JS aplikaci (CRUD), komunikující přes JSON na následující API.**
 
+## Užitečné zdroje :)
+
+* curl pro Windows: http://curl.haxx.se/dlwiz/?type=bin
+* **[10. cvičení - Formuláře](../10-formulare)**
+* **[11. cvičení - Ajax](../11-ajax)**
+* **[12. cvičení - API](../12-api)**
+* http://api.jquery.com/jquery.ajax/
+
 ## Adresář klientů
 
 ## URL aplikace
