@@ -2,45 +2,115 @@
 
 ## Adresář klientů
 
-### Popis API
-
-https://github.com/jirihradil/4iz268-api
-
-### Klient v HTML
+## URL aplikace
 
 https://hradil.vse.cz/api/clients
 
-### Klient z příkazového řádku
+Aplikace má i HTML rozhraní, ve kterém lze provádět všechny popsané akce.
+
+## Zabezpečení
+
+**Aplikace nemá autentizaci ani autorizaci. Všichni mají přístup ke všemu a data lze sdílet mezi sebou.**
+
+**Pro filtrování dat lze použít parametr xname.**
+
+## Příklady
 
 ```bash
 curl -H "Content-Type: application/json" -X GET https://hradil.vse.cz/api/clients.json?xname=xhraj18
 
 curl -H "Content-Type: application/json" -X GET https://hradil.vse.cz/api/clients/1.json
 
-curl -H "Content-Type: application/json" -X POST -d '{"first_name":"Jimmy","last_name":"Hendrix", "street":"Heaven Gate 1","town":"LA","xname":"xhraj18","zip":"10000"}' https://hradil.vse.cz/api/clienyts.json
+curl -H "Content-Type: application/json" -X POST -d '{"first_name":"Jimmy","last_name":"Hendrix", "street":"Heaven Gate 1","town":"LA","xname":"xhraj18","zip":"10000"}' https://hradil.vse.cz/api/clients.json
 
 curl -H "Content-Type: application/json" -X PUT -d '{"first_name":"Jimmy","last_name":"Page", "street":"3651 Lindell Rd. Suite D1024","town":"Las Vegas","xname":"xhraj18","zip":"89103"}' https://hradil.vse.cz/api/clients/1.json
 
 curl -H "Content-Type: application/json" -X DELETE https://hradil.vse.cz/api/clients/1.json
 ```
 
-Pozor: příkaz curl může vracet chybu:
+## Formát JSON dat
+
+* id - String, generuje se automaticky při uložení
+* xname - String, nepovinné, identifikace studenta
+* first_name - String, nepovinné, jméno klienta
+* last_name - String, nepovinné, příjmení klienta
+* street - String, nepovinné, ulice klienta
+* zip - String, nepovinné, PSČ klienta
+* town - String, nepovinné, město klienta
+
+
+## GET index, výpis všech klientů
+
+Pro filtrování záznamů pro konkrétního uživatele (studenta) lze použít parametr xname.
+
+V příkladu jsme jako xname použili xhraj18, student použije svoje vlastní.
+
+```bash
+curl -H "Content-Type: application/json" -X GET https://hradil.vse.cz/api/clients.json?xname=xhraj18
+```
+
+Vrací pole:
+
+```json
+[{"first_name":"Jimmy","id":1,"last_name":"Hendrix","street":"Heaven Gate 1","town":"LA","xname":"xhraj18","zip":"10000"}]
+````
+
+## GET show, detail klienta
+
+Vyžaduje id klienta.
+
+
+```bash
+curl -H "Content-Type: application/json" -X GET https://hradil.vse.cz/api/clients/1.json
+```
+
+Vrací 1 záznam:
+
+```json
+{"first_name":"Jimmy","id":1,"last_name":"Hendrix","street":"Heaven Gate 1","town":"LA","xname":"xhraj18","zip":"10000"}
+```
+
+## POST create, uložení nového klienta
+
+Id klienta se generuje automaticky při uložení, neposíláme.
+
+Jako xname použije student svoje xname, v příkladu používáme xhraj18.
+
+```bash
+curl -H "Content-Type: application/json" -X POST -d '{"first_name":"Jimmy","last_name":"Hendrix", "street":"Heaven Gate 1","town":"LA","xname":"xhraj18","zip":"10000"}' https://hradil.vse.cz/api/clients.json
+```
+
+Vrací 1 záznam včetně právě vygenerovaného id:
+
+```json
+{"first_name":"Jimmy","id":1,"last_name":"Hendrix","street":"Heaven Gate 1","town":"LA","xname":"xhraj18","zip":"10000"}
+```
+
+## PUT update, aktualizace klienta
+
+Vyžaduje id klienta.
 
 ```
-curl: (60) SSL certificate problem: Invalid certificate chain
+curl -H "Content-Type: application/json" -X PUT -d '{"first_name":"Jimmy","last_name":"Page", "street":"3651 Lindell Rd. Suite D1024","town":"Las Vegas","xname":"xhraj18","zip":"89103"}' https://hradil.vse.cz/api/clients/1.json
 ```
 
-Chyba znamená, že SSL certifikát na serveru nebyl vytvořen certifikovanou autoritou. Pak je třeba použít 
-přepínač -k, např.:
+Nevrací nic.
+
+
+## DELETE, smazání klienta
+
+Vyžaduje id klienta.
 
 ```
-curl -k -H "Content-Type: application/json" -X GET https://hradil.vse.cz/api/clients.json?xname=xhraj18
+curl -H "Content-Type: application/json" -X DELETE https://hradil.vse.cz/api/clients/1.json
 ```
 
-### Klient v HTML a JS
+Nevrací nic.
 
-**Pro studenty: vytvořte klientskou JS aplikaci (CRUD), komunikující přes JSON na toto API.**
 
+---
+**Úkol pro studenty: vytvořte klientskou JS aplikaci (CRUD), komunikující přes JSON na toto API.**
+---
 
 ### Poznámky pro vývojáře API (serverové části)
 
