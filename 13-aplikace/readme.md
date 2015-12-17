@@ -44,7 +44,7 @@ curl -k -H "Content-Type: application/json" -X GET https://hradil.vse.cz/api/cli
 
 ### Poznámky pro vývojáře API (serverové části)
 
-API musí mít do response přidávat hlavičku:
+Server musí do response přidávat hlavičku:
 
 ```
 Access-Control-Allow-Origin: *
