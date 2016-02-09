@@ -86,7 +86,7 @@ Web předmětu: **http://4iz268.github.io**
  * z každé hlavní části hodnocení (test, web, aplikace) je nutné získat minimálně polovinu možných bodů
 
 ### Zdroje informací
- * [Prezentace z přednáček](http://4iz268.github.io/prednasky/)
+ * [Prezentace z přednášek](http://4iz268.github.io/prednasky/)
  * [Plán cvičení](http://4iz268.github.io/cviceni/)
  * [HTML 5 primární zdroj, final verze specifikace z 28.10.2014](http://www.w3.org/TR/html5/)
  * Twitter: https://twitter.com/4iz268
