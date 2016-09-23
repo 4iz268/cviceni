@@ -82,7 +82,7 @@ Web předmětu: **http://4iz268.github.io**
     * [javascriptová aplikace](./00-zakladni-info/aplikace.md) (max. 25 bodů)
     * závěrečný test (max. 40 bodů)
     * body za aktivitu na cvičeních a při plnění domácích úkolů (10 bodů)
- * je použita standartní bodová škála, tj. je nutné celkem získat minimálně 60 bodů
+ * je použita standardní bodová škála, tj. je nutné celkem získat minimálně 60 bodů
  * z každé hlavní části hodnocení (test, web, aplikace) je nutné získat minimálně polovinu možných bodů
 
 ### Zdroje informací
