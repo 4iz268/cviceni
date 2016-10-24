@@ -78,8 +78,8 @@ Web předmětu: **http://4iz268.github.io**
 
 ## Požadavky na absolvování
  * hodnocení se skládá ze čtyřech částí:
-    * [statická prezentace](./00-zakladni-info/staticka-prezentace.md) (max. 25 bodů)
-    * [javascriptová aplikace](./00-zakladni-info/aplikace.md) (max. 25 bodů)
+    * [statická prezentace](http://4iz268.github.io/zakonceni/stranky/) (max. 25 bodů)
+    * [javascriptová aplikace](http://4iz268.github.io/zakonceni/aplikace/) (max. 25 bodů)
     * závěrečný test (max. 40 bodů)
     * body za aktivitu na cvičeních a při plnění domácích úkolů (10 bodů)
  * je použita standardní bodová škála, tj. je nutné celkem získat minimálně 60 bodů
