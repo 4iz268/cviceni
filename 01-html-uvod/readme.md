@@ -182,10 +182,14 @@ XHTML 1.1
 * párová značka
 * uvnitř může být text, obrázek
 * hypertextový odkaz
-* src = odkaz kam, pokud je na začátku #, pak je to odkaz na místo v tom samém dokumentu
+* href = odkaz kam, pokud je na začátku #, pak je to odkaz na místo v tom samém dokumentu
 * target _blank, _top, _parent, _self (default)
 * v HTML 4 také name pro quote v documentu, ale v HTML 5 je používáno už jen id
 * default je odkaz podtržený a barevný (modrý), rozlišuje se barva navštíveného a nenavštíveného odkazu, lze změnit pomocí CSS
+
+```html
+<a href="http://google.com" target="_blank">Google</a>
+```
 
 ### img
 
