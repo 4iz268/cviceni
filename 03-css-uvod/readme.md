@@ -24,7 +24,7 @@
     * možnost definice atributu *media*
     ```html
 
-    <link rel="stylesheet" type="text/css" href="/URL adresa" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="/URL adresa" media="screen,print" />
 
     ```
 
