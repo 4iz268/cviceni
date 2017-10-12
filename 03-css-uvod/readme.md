@@ -229,7 +229,7 @@ Pozadí určujeme pomocí CSS vlastnosti **background**, instrukce lze zapsat bu
 
 ```
 
-#Nové elementy v HTML5
+# Nové elementy v HTML5
  * v HTML5 je k dispozici celá řada nových elementů, kterými můžeme článku rozlišit na jednotlivé významové celky
  * pozor, ne všechny elementy jsou podporovány ve všech prohlížečích!
  * kromě nových elementů je povolena také zjednodušená syntaxe a jsou podporována nová javascriptová API
