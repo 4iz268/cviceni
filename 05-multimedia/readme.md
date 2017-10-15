@@ -117,6 +117,19 @@ div {
     <figcaption>Popisek obrázku</figcaption>
   </figure>
   ```
+
+  
+### Picture
+ * HTML5 element pro definici více variant obrázku v závidlosti na rozlišení/typu média
+ * https://www.w3schools.com/tags/tag_picture.asp
+
+  ```html
+  <picture>
+    <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+    <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+    <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+  </picture> 
+ ```
   
 ### Img - srcset
  * obdobně, jako lze vložit více variant obrázku pro různá rozlišení pomocí elementu **picture**, lze je nově definovat v přímo v rámci značky **img**
@@ -144,19 +157,6 @@ div {
  * hezký manuál najdete na:
    * https://www.vzhurudolu.cz/prirucka/srcset-sizes
    * https://www.vzhurudolu.cz/prirucka/responzivni-obrazky
-
-### Picture
- * HTML5 element pro definici více variant obrázku v závidlosti na rozlišení/typu média
- * hodí se pro složitější případy, než které lze pokrýt pomocí atributu *srcset*
- * https://www.w3schools.com/tags/tag_picture.asp
-
-  ```html
-  <picture>
-    <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
-    <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
-    <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
-  </picture> 
- ```
 
 ## Definice vzhledu obrázku pomocí CSS
  * **width**, **height**
