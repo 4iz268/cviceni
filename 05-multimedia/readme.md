@@ -14,6 +14,7 @@
  * Základní úpravy obrázků v grafických editorech (ořez, změna rozlišení, optimalizace kvality)
     * Photoshop, Gimp
  * **Prvky, které je možné vyřešit textem či pomocí CSS (pozadí, rámečky), neřešíme obrázkem!**
+ * v HTML5 lze kromě obrázků zadaných jednoduše značkou IMG použít také složitější konstrukce s více možnostmi - viz [dále]() 
 
 ### Tvorba webu na základě šablony
  * podklady dodány obvykle ve formě PSD (připadně AI či CDR) souboru
@@ -102,7 +103,8 @@ div {
  * Co, k čemu, jak použít?
  * Korektní vložení flashového obsahu do stránky - viz [05-flash.html](./05-flash.html)
 
-## Figure
+## Nové možnosti obrázků v HTML 5
+### Figure
  * HTML5 element pro definici obrázku s popiskem (jako např. obrázky v odborném textu)
 
  ```html
