@@ -26,34 +26,34 @@
 
 ## Zdroje
 
-* **W3C - primární zdroj: http://www.w3.org/TR/SVG11/**
+* **[W3C - primární zdroj](http://www.w3.org/TR/SVG11/)**
 * https://developer.mozilla.org/en-US/docs/Web/SVG
-* http://www.w3schools.com/svg/
+* [SVG tutorial na webu w3schools.com](https://www.w3schools.com/graphics/svg_intro.asp)
 * http://www.adobe.com/devnet/svg.html
 
 ## Kruh
 
 * [**Ukázka circle.html**](./circle.html)
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle
-* http://www.w3schools.com/svg/svg_inhtml.asp
+* https://www.w3schools.com/graphics/svg_inhtml.asp
 
 
 ## Elipsa
 
 * [**Ukázka ellipse.html**](./ellipse.html)
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse
-* http://www.w3schools.com/svg/svg_ellipse.asp
+* https://www.w3schools.com/graphics/svg_ellipse.asp
 
 ## Cesta
 
 * [**Ukázka path.html**](./path.html)
-* http://www.w3schools.com/svg/svg_path.asp
+* https://www.w3schools.com/graphics/svg_path.asp
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path
 		
 ## Polygon
 
 * [**Ukázka polygon.html**](./polygon.html)
-* http://www.w3schools.com/svg/svg_polygon.asp
+* https://www.w3schools.com/graphics/svg_polygon.asp
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polygon
 
 
@@ -61,19 +61,19 @@
 
 * [**Ukázka line.html**](./line.html)
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/line
-* http://www.w3schools.com/svg/svg_line.asp
+* https://www.w3schools.com/graphics/svg_line.asp
 
 ## Více linek
 
 * [**Ukázka polyline.html**](./polyline.html)
-* http://www.w3schools.com/svg/svg_polyline.asp
+* https://www.w3schools.com/graphics/svg_polyline.asp
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polyline
 
 ## Obdélník
 
 * [**Ukázka rectangle.html**](./rectangle.html)
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect
-* http://www.w3schools.com/svg/svg_rect.asp
+* https://www.w3schools.com/graphics/svg_rect.asp
 
 ## Vložení bitmapového obrázku
 
@@ -83,7 +83,7 @@
 
 * [**Ukázka text.html**](./text.html)
 * https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text
-* http://www.w3schools.com/svg/svg_text.asp
+* https://www.w3schools.com/graphics/svg_text.asp
 * https://developer.mozilla.org/en/docs/Web/SVG/Attribute/transform
 
 ## Externí SVG
@@ -95,7 +95,7 @@
 ## Filtry
 
 * [**Ukázka filters.html**](./filters.html)
-* http://www.w3schools.com/svg/svg_filters_intro.asp
+* https://www.w3schools.com/graphics/svg_filters_intro.asp
 
 ## Animace
 
