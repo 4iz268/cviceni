@@ -22,7 +22,7 @@
     * možnost postupného vypínání vrstev
     * pokud jsou použity speciální fonty, jsou obvykle přiloženy k souboru s obrázkem (pro možnost "vypreparování" potřebných částí textu)
  * na netu lze nalézt také volně dostupné šablony
- * Jakým způsobem by šlo vytvořit web z šablon [1](./psd-examples/template1) a [2](./psd-examples/template2) umístěných v tomto úložišti?
+ * Jakým způsobem by šlo vytvořit web z šablon [1](./05-psd-examples/template1) a [2](./05-psd-examples/template2) umístěných v tomto úložišti?
  
 ## Ikony a fonty
 
