@@ -188,13 +188,13 @@ $(function() {
   jQuery( "div p" ).hide();
 
   ```
-  - zavolání skriptů využívajících *$* ve vlastním elementu script
+  - zavolání skriptů využívajících *$* v jednom společném scriptu - patrně nejvhodnější varianta
   ```javascript
 
   <script>
-    jQuery.noConflict();
-    (function( $ ) {
-      $(function() {
+    jQuery.noConflict(); //volitelné, zruší výchozí asociaci $ s jQuery
+    (function($){
+      $(document).ready(function() {
         // More code using $ as alias to jQuery
       });
     })(jQuery);
