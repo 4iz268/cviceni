@@ -16,7 +16,10 @@
 - pro vizuální prvky postavené na jQuery je potřeba připojit také **jQuery UI** s příslušnými styly
 
 ```html
-<script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js" ></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js" ></script>
+```
+```html
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
 ```
 
 ### Další zdroje
@@ -185,13 +188,13 @@ $(function() {
   jQuery( "div p" ).hide();
 
   ```
-  - zavolání skriptů využívajících *$* ve vlastním elementu script
+  - zavolání skriptů využívajících *$* v jednom společném scriptu - patrně nejvhodnější varianta
   ```javascript
 
   <script>
-    jQuery.noConflict();
-    (function( $ ) {
-      $(function() {
+    jQuery.noConflict(); //volitelné, zruší výchozí asociaci $ s jQuery
+    (function($){
+      $(document).ready(function() {
         // More code using $ as alias to jQuery
       });
     })(jQuery);

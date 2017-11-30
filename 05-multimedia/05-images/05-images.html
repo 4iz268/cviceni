@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML5 obrázky</title>
+</head>
+<body>
+
+  <h1>Ukázky možností obrázků v HTML5</h1>
+
+  <h2>Figure</h2>
+  <figure>
+    <img src="img-big.jpg" alt="Porsche" width="1000" height="667" style="max-width: 100%;" />
+    <figcaption>Porsche</figcaption>
+  </figure>
+
+  <h2>IMG srcset</h2>
+  <h3>Obrázek pro displeje s větší hustotou pixelů</h3>
+  <img
+    srcset="img-big@2x.jpg 2x"
+    src="img-big.jpg" alt="Porsche" width="1000" height="667" />
+
+  <h3>Změna obrázku podle rozlišení</h3>
+  <picture>
+    <source media="(max-width: 400px)" srcset="img-300.jpg" >
+    <source media="(max-width: 800px)" srcset="img-800.jpg">
+    <source media="(min-width: 1000px)" srcset="img-big.jpg, img-big@2x.jpg 2x">
+    <img src="img-big.jpg" alt="Porsche" style="width:auto;">
+  </picture>
+
+  <img
+    srcset="img-300.jpg 300w,
+            img-800.jpg 800w,
+            img-big.jpg 1000w,
+            img-big@2x.jpg 1000w 2x"
+    sizes="80vw"
+    src="img-big.jpg" alt="Porsche" />
+
+  <img srcset="img-300.jpg 300w,
+            img-800.jpg 800w,
+            img-big.jpg 1000w,
+            img-big@2x.jpg 1000w 2x"
+       sizes="(max-width: 400px) 300px,
+            (max-width: 999px) 100vw,
+            1000px"
+       src="img-800w.jpg" alt="Example image" />
+
+  <a href="https://codepen.io/machal/full/azBmaX?editors=110">Příklad velikosti určené výpočtem</a>
+
+</body>
+</html>

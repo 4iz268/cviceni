@@ -13,12 +13,12 @@ Web předmětu: **http://4iz268.github.io**
   * přístupnost stránek pro různé typy zařízení, typy prohlížečů
 2. [Pokračování HTML](./02-html-pokracovani/)
   * tabulky, seznamy, vložení obrázku
-  * strukturování stránky a sémantické značkování
   * kontrola stránky pomocí validátoru
 3. [Kaskádové styly](./03-css-uvod)
   * základy syntaxe, připojení stylu ke stránce
   * formátování textu, odstavců
   * box model, rámečky, okraje
+  * nové tagy v HTML5
 4. [Kaskádové styly a layout](./04-css-layout)
   * možnosti pozicování (float, flex box, grid)
   * typické layouty a rozmístění prvků na stránce
@@ -78,11 +78,11 @@ Web předmětu: **http://4iz268.github.io**
 
 ## Požadavky na absolvování
  * hodnocení se skládá ze čtyřech částí:
-    * [statická prezentace](./00-zakladni-info/staticka-prezentace.md) (max. 25 bodů)
-    * [javascriptová aplikace](./00-zakladni-info/aplikace.md) (max. 25 bodů)
+    * [statická prezentace](http://4iz268.github.io/zakonceni/stranky/) (max. 25 bodů)
+    * [javascriptová aplikace](http://4iz268.github.io/zakonceni/aplikace/) (max. 25 bodů)
     * závěrečný test (max. 40 bodů)
     * body za aktivitu na cvičeních a při plnění domácích úkolů (10 bodů)
- * je použita standartní bodová škála, tj. je nutné celkem získat minimálně 60 bodů
+ * je použita standardní bodová škála, tj. je nutné celkem získat minimálně 60 bodů
  * z každé hlavní části hodnocení (test, web, aplikace) je nutné získat minimálně polovinu možných bodů
 
 ### Zdroje informací
