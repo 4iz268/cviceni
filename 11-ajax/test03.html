@@ -17,7 +17,7 @@ window.onload = function() {
           var osoba = xhr.responseXML;
           var result = document.getElementById("result");
           result.innerHTML = "Jméno je " + osoba.getElementsByTagName("jmeno").item(0).textContent
-                             + " a věk je " + osoba.getElementsByTagName("jmeno").item(0).textContent;
+                             + " a věk je " + osoba.getElementsByTagName("vek").item(0).textContent;
         } else {
           alert("Server error: " + xhr.status);
         }

@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+
+<button id="btn">Pozdrav</button>
+
+<div id="result" style="border: solid 2px red;"></div>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+$(document).ready(function() {
+  $("#btn").click(function() {
+    $.getJSON("http://localhost:8000/data.json", function(osoba) {
+      $("#result").html("Jméno je " + osoba.jmeno + " a věk je " + osoba.vek);
+    });
+  });
+})
+</script>
