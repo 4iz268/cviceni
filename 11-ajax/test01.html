@@ -8,8 +8,8 @@
 
 window.onload = function() {
   var button = document.getElementById("btn");
-  btn.onclick = function() {
-    xhr = new XMLHttpRequest();
+  button.onclick = function() {
+    var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
       console.log("State: " + xhr.readyState);
       if (xhr.readyState === XMLHttpRequest.DONE) {
