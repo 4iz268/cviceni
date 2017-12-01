@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Validace formulářů v HTML 5</h1>
-    <form>
+    <form action="http://eso.vse.cz/~xvojs03/4iz268/10-vypis-formulare.php">
         <!--ukázka "naskládání" formuláře do tabulky-->
         <table>
             <tr>
@@ -14,7 +14,7 @@
                     <label for="regular1">Heslo o minimální délce, required</label>
                 </td>
                 <td>
-                    <input type="text" id="regular1" pattern=".{6,}" title="Minimálně 6 znaků..." required />
+                    <input type="text" name="regular1" pattern=".{6,}" title="Minimálně 6 znaků..." required />
                     <!--
                         atribut required zajistí, že dané pole musí být vyplněno
                         atribut pattern obsahuje definici regulárního výrazu pro kontrolu
@@ -27,7 +27,7 @@
                     <label for="regular2">3-6 písmen</label>
                 </td>
                 <td>
-                    <input type="text" id="regular2" pattern="[a-z]{3,6}" title="3 až 6 písmen..." />
+                    <input type="text" name="regular2" pattern="[a-z]{3,6}" title="3 až 6 písmen..." />
                 </td>
             </tr>
             <tr>
@@ -35,7 +35,7 @@
                     <label for="number1">Číslo z daného rozmezí</label>
                 </td>
                 <td>
-                    <input type="number" id="number1" min="100" max="200" title="Číslo z intervalu 100-200." />
+                    <input type="number" name="number1" min="100" max="200" title="Číslo z intervalu 100-200." />
                 </td>
             </tr>
             <tr>
@@ -43,7 +43,7 @@
                     <label for="text1">Input s omezenou délkou vstupu</label>
                 </td>
                 <td>
-                    <input type="text" id="text1" maxlength="3"/>
+                    <input type="text" name="text1" maxlength="3"/>
                 </td>
             </tr>
             <tr>
@@ -51,7 +51,7 @@
                     <label for="date1">Datum z daného rozmezí</label>
                 </td>
                 <td>
-                    <input type="date" id="date1" min="2012-01-01" max="2014-12-31" title="Datum z let 2012-2015" />
+                    <input type="date" name="date1" min="2012-01-01" max="2014-12-31" title="Datum z let 2012-2015" />
                 </td>
             </tr>
             <tr>
