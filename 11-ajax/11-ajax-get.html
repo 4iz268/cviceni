@@ -26,11 +26,6 @@
 			$("#result").text(data) //pridej ziskana data do elementu
 		});
 		
-		// posli HTTP GET request na server, TXT, zpracuj ziskana data v callbacku
-		$.get( "./data.txt", function( data ) {
-			$("#result").text(data) //pridej ziskana data do elementu
-		});
-		
 		// posli HTTP GET request na server, HTML, zpracuj ziskana data v konkretnim callbacku
 		$.get( "./data.html" )
 		.done(function( data ) { //callback, pokud vse dopadlo OK
