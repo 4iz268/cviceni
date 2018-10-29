@@ -5,6 +5,7 @@
  * doplňují funkce pro výpočty, konstanty, předpřipravené části stylů, cykly, podmínky atd.
  * rozšířenými zástupci jsou **SASS**, **LESS** a **STYLUS**
  * [Sass Guide](http://sass-lang.com/guide)
+ * [Sass online compiler](http://beautifytools.com/scss-compiler.php)
  * [Stylus documentation](https://learnboost.github.io/stylus/)
  * [Stylus - online ukázky](https://learnboost.github.io/stylus/try.html)
  * [Less - český manuál](http://www.lesscss.cz/)
