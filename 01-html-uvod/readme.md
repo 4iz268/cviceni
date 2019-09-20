@@ -2,10 +2,12 @@
 
 ## Editory
 
+* VS Code
 * PSPad
 * Notepad++
 * Textmate (OSX)
 * Sublime Text
+* WebStorm
 * nebo jakýkoli jiný, který máte rádi
 
 ## Prohlížeče
