@@ -14,19 +14,17 @@
 
 Stačí, když vaše stránky budou podporovat tyto hlavní prohlížeče:
 
-* Internet Explorer
-  * verze 10 a 11
 * Mozilla Firefox 
   * budeme používat na cvičeních, má firebug plugin (něco podobného má chrome rovnou v sobě)
   * aktuální verze
 * Google Chrome 
   * doporučuji kvůli rychlosti
   * aktuální verze
-* Edge
-  * dostupný pouze v MS Windows 10, nové zobrazovací jádro
 
 Ostatní (minoritní, nebudu kontrolovat funkčnost):
 
+* Internet Explorer
+  * verze 10 a 11
 * Opera 
   * malý podíl na trhu, stejné zobrazovací jádro jako Chrome
 * Safari 
