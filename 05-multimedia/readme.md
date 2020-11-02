@@ -60,12 +60,12 @@ div {
  * načítejte jen nezbytně nutné části písem (řezy písma, znaky lokálních abeced)
  * **vyzkoušejte si české znaky** (zejména *ř* a *ž*) - je nutné je otestovat i v jiném prohlížeči, než jen v Google Chrome
  
+### IcoMoon
+ * https://icomoon.io/app/
+ * intuitivní aplikace umožňující si sestavit vlastní obrázkové písmo, do kterého je možné přidat i další obrázky v SVG
+
 ### Font Awesome - ikonkový font
  * http://fortawesome.github.io/Font-Awesome/icons/
-
-### Obrázky obsahující ikony - sprite icons
- * shromáždění "více obrázků" do jednoho souboru (ikon) - výhody vs. nevýhody
- * umístění obrázku na pozadí dle absolutních souřadnic 
 
 ### Zdroje obrázkových ikon
  * http://www.iconarchive.com/
@@ -102,10 +102,6 @@ div {
 ```
  
  * http://www.w3schools.com/tags/ref_av_dom.asp
-
-## Flash
- * Co, k čemu, jak použít?
- * Korektní vložení flashového obsahu do stránky - viz [05-flash.html](./05-flash.html)
 
 ## Nové možnosti obrázků v HTML 5
 ### Figure
