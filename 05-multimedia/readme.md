@@ -35,6 +35,7 @@
 <link rel="icon" href="demo_icon.ico" type="image/x-icon" sizes="16x16" /> 
 ```
 
+ * https://realfavicongenerator.net/
  * http://www.favicon-generator.org/
  * http://www.favicon.cc/
 
