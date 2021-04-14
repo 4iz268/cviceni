@@ -15,7 +15,7 @@ Uvedená aplikace je určena k cvičným a výukovým účelům, přičemž nevy
 
 
 ## Doporučený postup řešení
-1. podívejte se na [dokumentaci API](http://eso.vse.cz/~xvojs03/ukoly/www/api/swagger)
+1. podívejte se na [dokumentaci API](http://vojir.net/ukoly/www/api/swagger)
 2. zkuste si spustit nějaké operace přes swagger UI či pomocí curl
 3. začněte se zobrazením seznamu osob
 4. doplňte formuláře pro úpravu dat 
