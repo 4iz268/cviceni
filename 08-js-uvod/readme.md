@@ -82,7 +82,7 @@
 * doporučuji nepoužívat v názvech proměnných diakritiku (nutno přepínat CS/EN klávesnici, myslete na cizince, atd.)
 * používat v názvech proměnných EN, nebo max. češtinu bez diakritiky
 * název by měl být krátký (jsme líní psát dlouhé texty a děláme pak chyby), ale zase ne příliš krátký
-* vhodné názvy proměnných: `current_date`, `total_revenue`, `user_name`
+* vhodné názvy proměnných: `currentDate`, `totalRevenue`, `userName`
 * nevhodné názvy proměnných: `tohle_je_ale_opravdu_moc_dlouhy_nazev_kdo_to_ma_furt_psat`, `a`, `b`, `xxx`
 * proměnná musí začínat písmenem `nazev`, podtržítkem: `_nazev`, nebo dolarem: `$nazev`. Druhý a další znak můžou být i číslice 0-9, ale ne jako první znak, např.  `nazev1` je OK.
 * **[práce s proměnnými](./08-js-variables.html)**
