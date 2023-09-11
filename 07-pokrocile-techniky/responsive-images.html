@@ -1,51 +1,37 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Responsive images</title>
 
-<html>
+    <style>
+      img.w100 {
+        width: 100%;
+        height: auto;
+      }
 
-<head>
-	<meta charset="utf-8" />
-	<title>Responsive images</title>
-	
-	<style>
-	
-	img.w100 {
-		width: 100%;
-		height: auto;
-	}
-	
-	img.max {
-		max-width: 100%;
-		height: auto;
-	}
-	
-	
-	</style>
-	
-</head>
+      img.max {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
 
+    <h1>Responsive images</h1>
 
+    <h2>Original image</h2>
 
+    <img src="mustang-1967.jpg" alt="Ford Mustang 1967" width="1807" height="1200"/>
 
-<body>
+    <h2>width: 100%</h2>
 
-	<h1>Responsive images</h1>
+    <img class="w100" src="mustang-1967.jpg" alt="Ford Mustang 1967" width="1807" height="1200"/>
 
+    <h2>max-width: 100%</h2>
 
-	<h2>Original image</h2>
-	
-	<img src="mustang-1967.jpg" alt="Ford Mustang 1967" width="1807" height="1200"/>
-	
-	
-	<h2>width: 100%</h2>
-	
-	<img class="w100" src="mustang-1967.jpg" alt="Ford Mustang 1967" width="1807" height="1200"/>
-	
-	
-	<h2>max-width: 100%</h2>
-	
-	<img class="max" src="mustang-gt350-small.jpg" alt="Ford Mustang GT350" width="440" height="330"/>
-	
-	
-</body>
-	
+    <img class="max" src="mustang-gt350-small.jpg" alt="Ford Mustang GT350" width="440" height="330"/>
+
+  </body>
 </html>
