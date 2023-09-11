@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Ukázková stránka s použitím flexboxu</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ukázková stránka s použitím flexboxu</title>
 
-    <style>
-        .wrapper {
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-flow: row wrap;
-            flex-flow: row wrap;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .wrapper > * {
-            padding: 10px;
-            flex: 1 100%; /*stejny jako flex-grow: 1; flex-shrink: 1; flex-basis: 100%;*/
-        }
-
-        header {
-            background: tomato;
-        }
-
-        footer {
-            background: lightgreen;
-        }
-
-        #main {
-            text-align: left;
-            background: deepskyblue;
-        }
-
-        #aside1 {
-            background: gold;
-        }
-
-        #aside2 {
-            background: hotpink;
-        }
-
-        @media all and (min-width: 600px) {
-            .aside {
-                flex: 1; /* prepise flex: 1 100% z wrapperu, proto nema sirku 100% */
+        <style>
+            .wrapper {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-flow: row wrap;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
             }
-        }
-        @media all and (min-width: 800px) {
+
+            .wrapper > * {
+                padding: 10px;
+                flex: 1 100%; /*stejny jako flex-grow: 1; flex-shrink: 1; flex-basis: 100%;*/
+            }
+
+            header {
+                background: tomato;
+            }
+
+            footer {
+                background: lightgreen;
+            }
+
             #main {
-                flex: 2; /* zabira 2x vic mista, nez ostatni elementy na stejnem radku */
-                order: 2;
+                text-align: left;
+                background: deepskyblue;
             }
 
             #aside1 {
-                order: 1; /* dedi flex: 1 z aside */
+                background: gold;
             }
 
             #aside2 {
-                order: 3; /* dedi flex: 1 z aside */
+                background: hotpink;
             }
 
-            #footer {
-                order: 4; /* dedi flex: 1 100% z wrapper, proto je na samostatnem radku */
+            @media all and (min-width: 600px) {
+                .aside {
+                    flex: 1; /* prepise flex: 1 100% z wrapperu, proto nema sirku 100% */
+                }
             }
-        }
-        body {
-            padding: 2em;
-        }
+            @media all and (min-width: 800px) {
+                #main {
+                    flex: 2; /* zabira 2x vic mista, nez ostatni elementy na stejnem radku */
+                    order: 2;
+                }
 
-    </style>
-</head>
-<body>
+                #aside1 {
+                    order: 1; /* dedi flex: 1 z aside */
+                }
 
-<div class="wrapper">
-    <header>Header</header>
-    <article id="main">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla, arcu congue iaculis laoreet, felis dui lacinia ex, quis semper elit libero sit amet felis. Quisque sit amet lacus vitae lectus cursus elementum aliquam in nulla. Suspendisse rhoncus condimentum mi, nec suscipit risus sodales id. Duis at interdum lorem. Praesent iaculis enim at sapien pharetra viverra. Nullam condimentum accumsan auctor. Etiam sit amet felis sed eros fringilla aliquet. Donec semper purus a mi blandit iaculis. Proin facilisis nisl ligula, porta porttitor nunc elementum a. Sed luctus nisi neque, sit amet fringilla augue tincidunt sed. Fusce sed risus scelerisque, semper elit vel, aliquam arcu. Donec tempus volutpat justo, vel congue nisi placerat ac. Etiam luctus sapien ipsum, at vestibulum libero volutpat at.</p>
-    </article>
-    <aside id="aside1" class="aside">Aside 1</aside>
-    <aside id="aside2" class="aside">Aside 2</aside>
-    <footer id="footer">Footer</footer>
-</div>
+                #aside2 {
+                    order: 3; /* dedi flex: 1 z aside */
+                }
 
-</body>
+                #footer {
+                    order: 4; /* dedi flex: 1 100% z wrapper, proto je na samostatnem radku */
+                }
+            }
+            body {
+                padding: 2em;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <header>Header</header>
+            <article id="main">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla, arcu congue iaculis laoreet, felis dui lacinia ex, quis semper elit libero sit amet felis. Quisque sit amet lacus vitae lectus cursus elementum aliquam in nulla. Suspendisse rhoncus condimentum mi, nec suscipit risus sodales id. Duis at interdum lorem. Praesent iaculis enim at sapien pharetra viverra. Nullam condimentum accumsan auctor. Etiam sit amet felis sed eros fringilla aliquet. Donec semper purus a mi blandit iaculis. Proin facilisis nisl ligula, porta porttitor nunc elementum a. Sed luctus nisi neque, sit amet fringilla augue tincidunt sed. Fusce sed risus scelerisque, semper elit vel, aliquam arcu. Donec tempus volutpat justo, vel congue nisi placerat ac. Etiam luctus sapien ipsum, at vestibulum libero volutpat at.</p>
+            </article>
+            <aside id="aside1" class="aside">Aside 1</aside>
+            <aside id="aside2" class="aside">Aside 2</aside>
+            <footer id="footer">Footer</footer>
+        </div>
+
+    </body>
 </html>

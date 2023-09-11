@@ -27,10 +27,16 @@
  <meta http-equiv="refresh" content="120" />
 ```
 
-Pro vynucení poslední verze Internet Exploreru na stránkách v xHTML:
+### OpenGraph meta tagy
+ * doplňkové meta tagy používané např. při sdílení stránky přes sociální sítě
+ * obvykle se uvádí název stránky, popis, obrázek
+ * podrobně popsáno na https://ogp.me/
 
 ```html
-<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+ <meta property="og:title" content="Ukázková stránka">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content=""><!--volitelná kanonická URL-->
+ <meta property="og:image" content="">
 ```
 
 ### Doplňkové zdroje
@@ -38,7 +44,7 @@ Pro vynucení poslední verze Internet Exploreru na stránkách v xHTML:
  * RSS, ATOM
  * "navigace" na webu
  * určení kanonické verze URL
- * favicon - viz 5. cvičení
+ * favicon - viz [cvičení k multimédiím](../05-multimedia)
 
  ```html
  <link rel="alternate" type="application/rss+xml" title="RSS" href="/updates.rdf" />
@@ -168,7 +174,7 @@ Pro vynucení poslední verze Internet Exploreru na stránkách v xHTML:
 
 ## Vybrané vlastnosti CSS3
  * http://css3generator.com/
- * animace - viz 7. cvičení
+ * animace - viz [7. cvičení](../07-pokrocile-techniky)
  * to, že jde prvky otáčet a mohou mít stín, ještě neznamená, že ho vždycky mít musí!
 
 

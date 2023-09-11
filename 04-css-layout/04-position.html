@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Ukázková stránka s použitým pozicováním prvků</title>
-    <style>
-        body{
-            min-height: 2000px;
-        }
-        div#vlevoNahore{
-            position: absolute;
-            left: 20px;
-            top: 20px;
-            min-width: 200px;
-            min-height: 200px;
-            background: yellow;
-            /*overflow: hidden;*/
-        }
-        div#vlevoNahore > div#vlevoNahoreSub1{
-            position: absolute;
-            right: 20px;
-            top: 50px;
-            background: red;
-        }
-        div#vlevoNahore > div#vlevoNahoreSub2{
-            position: absolute;
-            left: 20px;
-            top: 220px;
-            background: orange;
-        }
-        div#vpravoDole{
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: green;
-            width: 150px;
-            height: 150px;
-            overflow: auto; /* text bude scrollovat uvnitr */
-        }
-        p#relativeExample{
-            position: relative; /* relativni vuci svemu puvodnimu umisteni */
-            top: -20px;
-            left: 20px;
-            border: 2px solid red;
-        }
-    </style>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ukázková stránka s použitým pozicováním prvků</title>
+        <style>
+            body{
+                min-height: 2000px;
+            }
+            div#vlevoNahore{
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                min-width: 200px;
+                min-height: 200px;
+                background: yellow;
+                /*overflow: hidden;*/
+            }
+            div#vlevoNahore > div#vlevoNahoreSub1{
+                position: absolute;
+                right: 20px;
+                top: 50px;
+                background: red;
+            }
+            div#vlevoNahore > div#vlevoNahoreSub2{
+                position: absolute;
+                left: 20px;
+                top: 220px;
+                background: orange;
+            }
+            div#vpravoDole{
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: green;
+                width: 150px;
+                height: 150px;
+                overflow: auto; /* text bude scrollovat uvnitr */
+            }
+            p#relativeExample{
+                position: relative; /* relativni vuci svemu puvodnimu umisteni */
+                top: -20px;
+                left: 20px;
+                border: 2px solid red;
+            }
+        </style>
+    </head>
+    <body>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in facilisis tellus. Ut ullamcorper purus augue, nec convallis elit elementum a. Duis ut placerat arcu. Vestibulum dignissim, tortor id accumsan iaculis, metus risus bibendum est, sit amet placerat urna metus non turpis. Quisque tincidunt rutrum magna, ut ullamcorper neque accumsan tristique. Quisque iaculis neque quis bibendum rutrum. Fusce semper rhoncus quam id ultricies. Nullam at scelerisque justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vulputate semper vestibulum. Phasellus malesuada ligula ex, sed consectetur dui tempus sed.</p>
-<p>Mauris egestas sapien sed odio gravida, venenatis interdum metus viverra. Curabitur vulputate tellus a tincidunt scelerisque. Sed vitae luctus dui. Donec bibendum hendrerit augue, quis imperdiet tortor rhoncus in. Vestibulum rhoncus, augue vitae viverra finibus, diam ante rutrum magna, eget pulvinar sapien ipsum nec massa. Nulla vitae blandit turpis, laoreet rutrum erat. Mauris semper et metus vel ultricies. Praesent dictum ligula fermentum enim tempus venenatis. Pellentesque dapibus convallis ante, vitae posuere enim efficitur sit amet. Suspendisse massa est, gravida et eros non, interdum fringilla sem. Vestibulum vel scelerisque augue. Maecenas fermentum, ex ut elementum vehicula, massa arcu lobortis ex, id laoreet lorem felis at dolor. Vivamus venenatis tristique nisi ut viverra. Suspendisse aliquet nisl in vestibulum vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in facilisis tellus. Ut ullamcorper purus augue, nec convallis elit elementum a. Duis ut placerat arcu. Vestibulum dignissim, tortor id accumsan iaculis, metus risus bibendum est, sit amet placerat urna metus non turpis. Quisque tincidunt rutrum magna, ut ullamcorper neque accumsan tristique. Quisque iaculis neque quis bibendum rutrum. Fusce semper rhoncus quam id ultricies. Nullam at scelerisque justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vulputate semper vestibulum. Phasellus malesuada ligula ex, sed consectetur dui tempus sed.</p>
-<p>Mauris egestas sapien sed odio gravida, venenatis interdum metus viverra. Curabitur vulputate tellus a tincidunt scelerisque. Sed vitae luctus dui. Donec bibendum hendrerit augue, quis imperdiet tortor rhoncus in. Vestibulum rhoncus, augue vitae viverra finibus, diam ante rutrum magna, eget pulvinar sapien ipsum nec massa. Nulla vitae blandit turpis, laoreet rutrum erat. Mauris semper et metus vel ultricies. Praesent dictum ligula fermentum enim tempus venenatis. Pellentesque dapibus convallis ante, vitae posuere enim efficitur sit amet. Suspendisse massa est, gravida et eros non, interdum fringilla sem. Vestibulum vel scelerisque augue. Maecenas fermentum, ex ut elementum vehicula, massa arcu lobortis ex, id laoreet lorem felis at dolor. Vivamus venenatis tristique nisi ut viverra. Suspendisse aliquet nisl in vestibulum vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-<p id="relativeExample">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in facilisis tellus. Ut ullamcorper purus augue, nec convallis elit elementum a. Duis ut placerat arcu. Vestibulum dignissim, tortor id accumsan iaculis, metus risus bibendum est, sit amet placerat urna metus non turpis. Quisque tincidunt rutrum magna, ut ullamcorper neque accumsan tristique. Quisque iaculis neque quis bibendum rutrum. Fusce semper rhoncus quam id ultricies. Nullam at scelerisque justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vulputate semper vestibulum. Phasellus malesuada ligula ex, sed consectetur dui tempus sed.</p>
-<p>Mauris egestas sapien sed odio gravida, venenatis interdum metus viverra. Curabitur vulputate tellus a tincidunt scelerisque. Sed vitae luctus dui. Donec bibendum hendrerit augue, quis imperdiet tortor rhoncus in. Vestibulum rhoncus, augue vitae viverra finibus, diam ante rutrum magna, eget pulvinar sapien ipsum nec massa. Nulla vitae blandit turpis, laoreet rutrum erat. Mauris semper et metus vel ultricies. Praesent dictum ligula fermentum enim tempus venenatis. Pellentesque dapibus convallis ante, vitae posuere enim efficitur sit amet. Suspendisse massa est, gravida et eros non, interdum fringilla sem. Vestibulum vel scelerisque augue. Maecenas fermentum, ex ut elementum vehicula, massa arcu lobortis ex, id laoreet lorem felis at dolor. Vivamus venenatis tristique nisi ut viverra. Suspendisse aliquet nisl in vestibulum vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-
-    <div id="vlevoNahore">
-        <div id="vlevoNahoreSub1">xxx</div>
-        <div id="vlevoNahoreSub2">xxx</div>
-    </div>
-
-    <div id="vpravoDole">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in facilisis tellus. Ut ullamcorper purus augue, nec convallis elit elementum a. Duis ut placerat arcu. Vestibulum dignissim, tortor id accumsan iaculis, metus risus bibendum est, sit amet placerat urna metus non turpis. Quisque tincidunt rutrum magna, ut ullamcorper neque accumsan tristique. Quisque iaculis neque quis bibendum rutrum. Fusce semper rhoncus quam id ultricies. Nullam at scelerisque justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vulputate semper vestibulum. Phasellus malesuada ligula ex, sed consectetur dui tempus sed.</p>
         <p>Mauris egestas sapien sed odio gravida, venenatis interdum metus viverra. Curabitur vulputate tellus a tincidunt scelerisque. Sed vitae luctus dui. Donec bibendum hendrerit augue, quis imperdiet tortor rhoncus in. Vestibulum rhoncus, augue vitae viverra finibus, diam ante rutrum magna, eget pulvinar sapien ipsum nec massa. Nulla vitae blandit turpis, laoreet rutrum erat. Mauris semper et metus vel ultricies. Praesent dictum ligula fermentum enim tempus venenatis. Pellentesque dapibus convallis ante, vitae posuere enim efficitur sit amet. Suspendisse massa est, gravida et eros non, interdum fringilla sem. Vestibulum vel scelerisque augue. Maecenas fermentum, ex ut elementum vehicula, massa arcu lobortis ex, id laoreet lorem felis at dolor. Vivamus venenatis tristique nisi ut viverra. Suspendisse aliquet nisl in vestibulum vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-    </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in facilisis tellus. Ut ullamcorper purus augue, nec convallis elit elementum a. Duis ut placerat arcu. Vestibulum dignissim, tortor id accumsan iaculis, metus risus bibendum est, sit amet placerat urna metus non turpis. Quisque tincidunt rutrum magna, ut ullamcorper neque accumsan tristique. Quisque iaculis neque quis bibendum rutrum. Fusce semper rhoncus quam id ultricies. Nullam at scelerisque justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vulputate semper vestibulum. Phasellus malesuada ligula ex, sed consectetur dui tempus sed.</p>
+        <p>Mauris egestas sapien sed odio gravida, venenatis interdum metus viverra. Curabitur vulputate tellus a tincidunt scelerisque. Sed vitae luctus dui. Donec bibendum hendrerit augue, quis imperdiet tortor rhoncus in. Vestibulum rhoncus, augue vitae viverra finibus, diam ante rutrum magna, eget pulvinar sapien ipsum nec massa. Nulla vitae blandit turpis, laoreet rutrum erat. Mauris semper et metus vel ultricies. Praesent dictum ligula fermentum enim tempus venenatis. Pellentesque dapibus convallis ante, vitae posuere enim efficitur sit amet. Suspendisse massa est, gravida et eros non, interdum fringilla sem. Vestibulum vel scelerisque augue. Maecenas fermentum, ex ut elementum vehicula, massa arcu lobortis ex, id laoreet lorem felis at dolor. Vivamus venenatis tristique nisi ut viverra. Suspendisse aliquet nisl in vestibulum vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p id="relativeExample">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in facilisis tellus. Ut ullamcorper purus augue, nec convallis elit elementum a. Duis ut placerat arcu. Vestibulum dignissim, tortor id accumsan iaculis, metus risus bibendum est, sit amet placerat urna metus non turpis. Quisque tincidunt rutrum magna, ut ullamcorper neque accumsan tristique. Quisque iaculis neque quis bibendum rutrum. Fusce semper rhoncus quam id ultricies. Nullam at scelerisque justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vulputate semper vestibulum. Phasellus malesuada ligula ex, sed consectetur dui tempus sed.</p>
+        <p>Mauris egestas sapien sed odio gravida, venenatis interdum metus viverra. Curabitur vulputate tellus a tincidunt scelerisque. Sed vitae luctus dui. Donec bibendum hendrerit augue, quis imperdiet tortor rhoncus in. Vestibulum rhoncus, augue vitae viverra finibus, diam ante rutrum magna, eget pulvinar sapien ipsum nec massa. Nulla vitae blandit turpis, laoreet rutrum erat. Mauris semper et metus vel ultricies. Praesent dictum ligula fermentum enim tempus venenatis. Pellentesque dapibus convallis ante, vitae posuere enim efficitur sit amet. Suspendisse massa est, gravida et eros non, interdum fringilla sem. Vestibulum vel scelerisque augue. Maecenas fermentum, ex ut elementum vehicula, massa arcu lobortis ex, id laoreet lorem felis at dolor. Vivamus venenatis tristique nisi ut viverra. Suspendisse aliquet nisl in vestibulum vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 
-</body>
+        <div id="vlevoNahore">
+            <div id="vlevoNahoreSub1">xxx</div>
+            <div id="vlevoNahoreSub2">xxx</div>
+        </div>
+
+        <div id="vpravoDole">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in facilisis tellus. Ut ullamcorper purus augue, nec convallis elit elementum a. Duis ut placerat arcu. Vestibulum dignissim, tortor id accumsan iaculis, metus risus bibendum est, sit amet placerat urna metus non turpis. Quisque tincidunt rutrum magna, ut ullamcorper neque accumsan tristique. Quisque iaculis neque quis bibendum rutrum. Fusce semper rhoncus quam id ultricies. Nullam at scelerisque justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vulputate semper vestibulum. Phasellus malesuada ligula ex, sed consectetur dui tempus sed.</p>
+            <p>Mauris egestas sapien sed odio gravida, venenatis interdum metus viverra. Curabitur vulputate tellus a tincidunt scelerisque. Sed vitae luctus dui. Donec bibendum hendrerit augue, quis imperdiet tortor rhoncus in. Vestibulum rhoncus, augue vitae viverra finibus, diam ante rutrum magna, eget pulvinar sapien ipsum nec massa. Nulla vitae blandit turpis, laoreet rutrum erat. Mauris semper et metus vel ultricies. Praesent dictum ligula fermentum enim tempus venenatis. Pellentesque dapibus convallis ante, vitae posuere enim efficitur sit amet. Suspendisse massa est, gravida et eros non, interdum fringilla sem. Vestibulum vel scelerisque augue. Maecenas fermentum, ex ut elementum vehicula, massa arcu lobortis ex, id laoreet lorem felis at dolor. Vivamus venenatis tristique nisi ut viverra. Suspendisse aliquet nisl in vestibulum vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+
+    </body>
 </html>

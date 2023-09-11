@@ -1,141 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <title>Ukázka layoutu za využití floatu</title>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ukázka layoutu za využití floatu</title>
 
-    <style>
-        body{
-            background: floralwhite;
-            padding: 0;
-            margin: 0;
-        }
-        div#wrapper{
-            width: 1000px;
-            margin: 0 auto;
-            border: 2px solid red;
-            position: relative;
-        }
-        header{
-            background: red;
-            color: white;
-            position: relative;
-        }
-        header h1{
-            margin: 0;
-            padding: 50px;
-        }
-        header #login{
-            position: absolute;
-            right: 20px;
-            bottom: 10px;
-        }
-        footer{
-            clear: both;
-        }
-        nav{
-            position: relative;
-            border-bottom: 2px solid red;
-            margin-bottom: 10px;
-            padding: 5px 0;
-        }
-        nav ul{
-            padding: 0;
-            margin: 0;
-        }
-        nav li{
-            padding: 5px 10px;
-            border-right: 1px solid gray;
-        }
-        nav li:last-of-type{
-            border-right: none;
-        }
-        /*vytvoření menu pomocí floatu*/
-        nav{
-            overflow: auto;
-        }
-        nav li{
-            display: block;
-            float: left;
-            padding: 5px 10px;
-        }
-        /* alternativní vytvoření menu pomocí inline bloků
-        nav li{
-            display: inline-block;
-        }
-        */
-        main{
-            box-sizing: border-box;
-            float: left;
-            width: 730px;
-            padding: 20px;
-        }
-        aside{
-            box-sizing: border-box;
-            float: right;
-            width: 250px;
-            border-left: 2px solid red;
-            padding-left: 20px;
-            min-height: 300px;
-        }
-        footer{
-            background: red;
-            color: white;
-            padding: 20px;
-            font-size: 0.75em;
-            text-align: center;
-        }
-        a#contactLink{
-            position: fixed;
-            top: 0;
-            right: 20px;
-            display: block;
-            background: black;
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
-        }
-    </style>
-</head>
-<body>
-    <div id="wrapper">
-        <header>
-            <h1>Ukázková stránka</h1>
-            <div id="login">Přihlášení...</div>
-        </header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="xxx">Položka 1</a>
-                </li>
-                <li>
-                    <a href="xxx">Položka 2</a>
-                </li>
-                <li>
-                    <a href="xxx">Položka 3</a>
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <article>
-                <h2>Ukázkový článek 1</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna a tellus semper ornare. Vivamus sollicitudin, mi quis interdum congue, est mauris finibus enim, id faucibus dolor mauris non est. Mauris eleifend magna ligula, eget pellentesque ex placerat nec. Cras a sodales odio. Quisque semper tortor ut libero congue, aliquet suscipit metus consectetur. In sem nisl, iaculis sit amet lectus sit amet, facilisis sodales sapien. Fusce pellentesque vitae mi et consectetur. Phasellus placerat auctor velit vel venenatis. Nulla facilisi. </p>
-            </article>
-            <article>
-                <h2>Ukázkový článek 2</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna a tellus semper ornare. Vivamus sollicitudin, mi quis interdum congue, est mauris finibus enim, id faucibus dolor mauris non est. Mauris eleifend magna ligula, eget pellentesque ex placerat nec. Cras a sodales odio. Quisque semper tortor ut libero congue, aliquet suscipit metus consectetur. In sem nisl, iaculis sit amet lectus sit amet, facilisis sodales sapien. Fusce pellentesque vitae mi et consectetur. Phasellus placerat auctor velit vel venenatis. Nulla facilisi. </p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna a tellus semper ornare. Vivamus sollicitudin, mi quis interdum congue, est mauris finibus enim, id faucibus dolor mauris non est. Mauris eleifend magna ligula, eget pellentesque ex placerat nec. Cras a sodales odio. Quisque semper tortor ut libero congue, aliquet suscipit metus consectetur. In sem nisl, iaculis sit amet lectus sit amet, facilisis sodales sapien. Fusce pellentesque vitae mi et consectetur. Phasellus placerat auctor velit vel venenatis. Nulla facilisi. </p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna a tellus semper ornare. Vivamus sollicitudin, mi quis interdum congue, est mauris finibus enim, id faucibus dolor mauris non est. Mauris eleifend magna ligula, eget pellentesque ex placerat nec. Cras a sodales odio. Quisque semper tortor ut libero congue, aliquet suscipit metus consectetur. In sem nisl, iaculis sit amet lectus sit amet, facilisis sodales sapien. Fusce pellentesque vitae mi et consectetur. Phasellus placerat auctor velit vel venenatis. Nulla facilisi. </p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna a tellus semper ornare. Vivamus sollicitudin, mi quis interdum congue, est mauris finibus enim, id faucibus dolor mauris non est. Mauris eleifend magna ligula, eget pellentesque ex placerat nec. Cras a sodales odio. Quisque semper tortor ut libero congue, aliquet suscipit metus consectetur. In sem nisl, iaculis sit amet lectus sit amet, facilisis sodales sapien. Fusce pellentesque vitae mi et consectetur. Phasellus placerat auctor velit vel venenatis. Nulla facilisi. </p>
-            </article>
-        </main>
-        <aside>
-            doplňkový obsah
-        </aside>
-        <footer>
-            Copyright...
-        </footer>
-    </div>
-    <a href="xxx" id="contactLink">Kontaktujte nás...</a>
-</body>
+        <style>
+            body{
+                background: floralwhite;
+                padding: 0;
+                margin: 0;
+            }
+            div#wrapper{
+                width: 1000px;
+                margin: 0 auto;
+                border: 2px solid red;
+                position: relative;
+            }
+            header{
+                background: red;
+                color: white;
+                position: relative;
+            }
+            header h1{
+                margin: 0;
+                padding: 50px;
+            }
+            header #login{
+                position: absolute;
+                right: 20px;
+                bottom: 10px;
+            }
+            footer{
+                clear: both;
+            }
+            nav{
+                position: relative;
+                border-bottom: 2px solid red;
+                margin-bottom: 10px;
+                padding: 5px 0;
+            }
+            nav ul{
+                padding: 0;
+                margin: 0;
+            }
+            nav li{
+                padding: 5px 10px;
+                border-right: 1px solid gray;
+            }
+            nav li:last-of-type{
+                border-right: none;
+            }
+            /*vytvoření menu pomocí floatu*/
+            nav{
+                overflow: auto;
+            }
+            nav li{
+                display: block;
+                float: left;
+                padding: 5px 10px;
+            }
+            /* alternativní vytvoření menu pomocí inline bloků
+            nav li{
+                display: inline-block;
+            }
+            */
+            main{
+                box-sizing: border-box;
+                float: left;
+                width: 730px;
+                padding: 20px;
+            }
+            aside{
+                box-sizing: border-box;
+                float: right;
+                width: 250px;
+                border-left: 2px solid red;
+                padding-left: 20px;
+                min-height: 300px;
+            }
+            footer{
+                background: red;
+                color: white;
+                padding: 20px;
+                font-size: 0.75em;
+                text-align: center;
+            }
+            a#contactLink{
+                position: fixed;
+                top: 0;
+                right: 20px;
+                display: block;
+                background: black;
+                color: white;
+                text-decoration: none;
+                padding: 5px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Ukázková stránka</h1>
+                <div id="login">Přihlášení...</div>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="xxx">Položka 1</a>
+                    </li>
+                    <li>
+                        <a href="xxx">Položka 2</a>
+                    </li>
+                    <li>
+                        <a href="xxx">Položka 3</a>
+                    </li>
+                </ul>
+            </nav>
+            <main>
+                <article>
+                    <h2>Ukázkový článek 1</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna a tellus semper ornare. Vivamus sollicitudin, mi quis interdum congue, est mauris finibus enim, id faucibus dolor mauris non est. Mauris eleifend magna ligula, eget pellentesque ex placerat nec. Cras a sodales odio. Quisque semper tortor ut libero congue, aliquet suscipit metus consectetur. In sem nisl, iaculis sit amet lectus sit amet, facilisis sodales sapien. Fusce pellentesque vitae mi et consectetur. Phasellus placerat auctor velit vel venenatis. Nulla facilisi. </p>
+                </article>
+                <article>
+                    <h2>Ukázkový článek 2</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna a tellus semper ornare. Vivamus sollicitudin, mi quis interdum congue, est mauris finibus enim, id faucibus dolor mauris non est. Mauris eleifend magna ligula, eget pellentesque ex placerat nec. Cras a sodales odio. Quisque semper tortor ut libero congue, aliquet suscipit metus consectetur. In sem nisl, iaculis sit amet lectus sit amet, facilisis sodales sapien. Fusce pellentesque vitae mi et consectetur. Phasellus placerat auctor velit vel venenatis. Nulla facilisi. </p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna a tellus semper ornare. Vivamus sollicitudin, mi quis interdum congue, est mauris finibus enim, id faucibus dolor mauris non est. Mauris eleifend magna ligula, eget pellentesque ex placerat nec. Cras a sodales odio. Quisque semper tortor ut libero congue, aliquet suscipit metus consectetur. In sem nisl, iaculis sit amet lectus sit amet, facilisis sodales sapien. Fusce pellentesque vitae mi et consectetur. Phasellus placerat auctor velit vel venenatis. Nulla facilisi. </p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna a tellus semper ornare. Vivamus sollicitudin, mi quis interdum congue, est mauris finibus enim, id faucibus dolor mauris non est. Mauris eleifend magna ligula, eget pellentesque ex placerat nec. Cras a sodales odio. Quisque semper tortor ut libero congue, aliquet suscipit metus consectetur. In sem nisl, iaculis sit amet lectus sit amet, facilisis sodales sapien. Fusce pellentesque vitae mi et consectetur. Phasellus placerat auctor velit vel venenatis. Nulla facilisi. </p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna a tellus semper ornare. Vivamus sollicitudin, mi quis interdum congue, est mauris finibus enim, id faucibus dolor mauris non est. Mauris eleifend magna ligula, eget pellentesque ex placerat nec. Cras a sodales odio. Quisque semper tortor ut libero congue, aliquet suscipit metus consectetur. In sem nisl, iaculis sit amet lectus sit amet, facilisis sodales sapien. Fusce pellentesque vitae mi et consectetur. Phasellus placerat auctor velit vel venenatis. Nulla facilisi. </p>
+                </article>
+            </main>
+            <aside>
+                doplňkový obsah
+            </aside>
+            <footer>
+                Copyright...
+            </footer>
+        </div>
+        <a href="xxx" id="contactLink">Kontaktujte nás...</a>
+    </body>
 </html>
