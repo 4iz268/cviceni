@@ -56,12 +56,14 @@
  <link rel="Next"  href="/solar-system/mars/" />
  ```
 
+ * prázdnou HTML stránku se základními meta tagy najdete [např. zde](https://github.com/h5bp/html5-boilerplate-template/blob/main/index.html)
 
 ## Vhodné rozložení a struktura stránek
  * Jaká jsou "tradiční" rozložení webových stránek?
     * prvky je vhodné umisťovat na místa, kde je budou uživatelé hledat
     * navigace, logo, přihlašování, reklamy...
  * One Page vs. klasická struktura
+ * pro více informací doporučujeme e-book [CSS: moderní layout](https://katalog.vse.cz/Record/000695160) (ke stažení v [Katalogu knihovny](https://katalog.vse.cz/Record/000695160))
 
 ## Základní umístění prvků pomocí CSS
 
