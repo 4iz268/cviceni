@@ -12,22 +12,28 @@
 
 Ukázka kódu ve Stylusu:
 
-```stylus
- textColor = #2D83BE
+```scss
+$linkColor: #00b3ff;
 
- body
-    color textColor
- ul
-    a
-        color textColor
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
- border-radius()
-    -webkit-border-radius arguments
-    -moz-border-radius arguments
-    border-radius arguments
+  li { display: inline-block; }
 
- a.button
-    border-radius(5px)
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: $linkColor;
+    &:hover {
+      color: darken($linkColor, 20%);    
+    }   
+  }
+}
 ```
 
 ## Responsivní weby
@@ -61,8 +67,7 @@ Ukázka kódu ve Stylusu:
 
 ## Bootstrap
 
-* web framework
-* de-facto standard při vývoji web aplikací
+* web framework, defacto standard při vývoji web aplikací
 * CSS, komponenty, JavaScript přes jQuery
 * responsivní layout, grid model
 * mobile-first přístup
@@ -74,10 +79,10 @@ Ukázka kódu ve Stylusu:
 * http://getbootstrap.com/components/
 * http://getbootstrap.com/javascript/
 * **[bootstrap-grid.html](./bootstrap-grid.html)**
+    * více ukázek gridu a responsivních sloupců [tady](https://getbootstrap.com/docs/5.3/layout/grid/)
 * **[bootstrap-responsive.html](./bootstrap-responsive.html)**
 * **[bootstrap-css.html](./bootstrap-css.html)**
 * **[bootstrap-components.html](./bootstrap-components.html)**
-* **[bootstrap-js.html](./bootstrap-js.html)**
 
 ## Animace pomocí CSS
 

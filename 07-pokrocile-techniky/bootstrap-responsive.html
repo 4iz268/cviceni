@@ -1,76 +1,63 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Bootstrap responsive</title>
 
-<html>
-
-<head>
-	<meta charset="utf-8" />
-	<title>Bootstrap responsive</title>
-	
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-	
-</head>
+		<!-- Bootstrap compiled and minified CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
 
 
-<body>
-	
-	<div class="container">
-		
-		<!-- http://getbootstrap.com/css/	-->
+  <body>
 
-		<h1>Bootstrap responsive layout</h1>
+    <div class="container">
 
-		<div class="row">
-			
-			<div class="visible-xs-block">Visible on <strong>phones</strong></div>
-	
-			<div class="visible-sm-block">Visible on <strong>tablets</strong></div>
-	
-			<div class="visible-md-block">Visible on <strong>desktops</strong></div>
-			
-			<div class="visible-lg-block">Visible on <strong>BIG desktops</strong></div>
-			
-			
-			<div class="hidden-xs">Hidden on <strong>phones</strong></div>
-	
-			<div class="hidden-sm">Hidden on <strong>tablets</strong></div>
-	
-			<div class="hidden-md">Hidden on <strong>desktops</strong></div>
+      <!-- http://getbootstrap.com/css/	-->
 
-			<div class="hidden-lg">Hidden on <strong>BIG desktops</strong></div>
-			
-			
-			<div class="visible-print-block">Visible while printing</div>
-			
-			<div class="hidden-print">Hidden while printing</div>
-			
-			
-		</div>
-		
-		
-		<h2>Responsive images</h2>
-		
-		<img src="mustang-1967.jpg" alt="Ford Mustang 1967" width="1807" height="1200" class="img-responsive"/>
-		
-		
-		<h2>Responsive embed</h2>
-		
-		<!-- 16:9 aspect ratio -->
-		<div class="embed-responsive embed-responsive-16by9">
-		  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8KriRo9OM5s"></iframe>
-		</div>
-		
-		<br>
+      <h1>Bootstrap responsive layout</h1>
 
-		<!-- 4:3 aspect ratio -->
-		<div class="embed-responsive embed-responsive-4by3">
-			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tsO26Pgm6qI"></iframe>
-		</div>
-		
-	</div>
-	
+      <div class="row">
 
-</body>
-	
+        <div class="d-xs-block">Visible on <strong>phones</strong></div>
+
+        <div class="d-sm-block">Visible on <strong>tablets</strong></div>
+
+        <div class="d-md-block">Visible on <strong>desktops</strong></div>
+
+        <div class="d-lg-block">Visible on <strong>BIG desktops</strong></div>
+
+
+        <div class="d-xs-none">Hidden on <strong>phones</strong></div>
+
+        <div class="d-sm-none">Hidden on <strong>tablets</strong></div>
+
+        <div class="d-md-none">Hidden on <strong>desktops</strong></div>
+
+        <div class="d-lg-none">Hidden on <strong>BIG desktops</strong></div>
+
+
+        <div class="d-print-block d-none">Visible while printing</div>
+
+        <div class="d-print-none">Hidden while printing</div>
+      </div>
+
+
+      <h2>Responsive images</h2>
+
+      <img src="mustang-1967.jpg" alt="Ford Mustang 1967" width="1807" height="1200" class="img-fluid"/>
+
+
+      <h2>Responsive embed</h2>
+
+			<div class="ratio ratio-16x9">
+				<iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+			</div>
+
+    </div>
+
+
+  </body>
+
 </html>
 
