@@ -26,13 +26,17 @@
 
 ### formáty web obrázků
 
-* JPG - fotky, ztrátová komprese, opět optimizery
-* GIF - jen 256 barev, v minulosti, používat místo toho PNG
-  * GIF už od roku 2005 nemá licenční omezení
+* JPG - fotky, ztrátová komprese
+* GIF - jen 256 barev, jedna z barev může být průhledná
 * PNG
   * 24 bitů RGB (2^24 = 16 777 216)
   * plus dalších 8 bitů průhlednost = celkem 32 bitů RGBA (Alpha), každý pixel může mít alpha kanál (transparence v hodnotě 0-255)
-* více multimédia v 5. cvičení dle http://4iz268.github.io/cviceni/index.html
+  * má i animovanou variantu APNG
+* SVG
+  * pro vektorové obrázky 
+* WebP  
+
+Více informací ve cvičeních věnovaných [multimédiím](../05-multimedia) a [SVG](../06-svg).
 
 ## tabulky
 
@@ -56,21 +60,55 @@
 * dd - description of a term in a description list
 * dt - identifies a term in a definition list
 
-## rámce (frames)
-
-* nepodporuje je HTML5
-* ale je dobré o nich vědět
-* nepoužívat
-
-### frameset
-
-* nastavení rozložení rámců na stránce
-* **pozor, frameset se dává místo body!**
-* nepoužívat
-
 ### iframe
 
-* stránka vložená do jiné stránky - internal frame
-* podporuje je HTML5
-* lze používat
+* stránka vložená do jiné stránky
+    * historicky se rámce používali pro rozdělení stránky několik zcela samostatných podstránek zobrazovaných vedle sebe
+    * dnes se z rámců používá již jen iframe (má podporu i v HTML5)
 * příklady z praxe: mapy, twitter, facebook, atd.
+* [ukázka](02-inline-frame.html)
+
+
+# Nové elementy v HTML5
+ * v HTML5 je k dispozici celá řada nových elementů, kterými můžeme článku rozlišit na jednotlivé významové celky
+ * pozor, ne všechny elementy jsou podporovány ve všech prohlížečích!
+ * kromě nových elementů je povolena také zjednodušená syntaxe a jsou podporována nová javascriptová API
+ 
+## Elementy pro strukturování stránky
+ * **header** - hlavička stránek, záhlaví článku/sekce
+ * **footer** - patička stránek, 
+ * **nav** - navigace
+ * **main** - hlavní obsah stránek (v podstatě jde o sekci, o které zároveň řekneme, že je hlavní; může být na stránce jen jednou)
+ * **section** - sekce (stránek, článku atp.) - v zásadě určené pro rozdělení obsahů se stejnou důležitostí
+ * **aside** - doplňkový obsah (typicky nějaké další informace, které můžeme vynechat a hlavní obsah pořád dává smysl; nejde o tag jen pro reklamy!)
+ * **article** - článek - ucelený textový obsah (má smysl i v případě, pokud bychom ho vyjmuli ze stránky a četli samostatně)
+ * **address** - zvýraznění pro 
+ * **details** - doplňkové informace, které si může uživatel volitelně zobrazit (viditelný text se umisťuje do vnořené značky **summary**); nepodporováno v IE
+ * **wbr** - nepárový tag, kterým prohlížeči umožníte zalomení velmi dlouhého slova, které se nevejde na jeden řádek
+ * změna v úrovních nadpisů - teoreticky můžeme v každé sekci/článku začínat od úrovně **h1**, v praxi kvůli vyhledávačům začínáme od **h2**
+ * sémantický význam pro elementy **b** a **i**
+ * [ukázka](02-html5.html)
+ 
+## Grafika a multimédia, formuláře
+ * nové značky **figure**, **canvas**, **svg**, **audio**, **video**
+ * nové typy formulářových polí, validace regulárními výrazy atd.
+ * budeme probírat na [5. cvičení - multimédia](../05-multimedia) a na [10. cvičení - formuláře](../10-formulare)...
+ 
+## Kompatibilita se staršími prohlížeči
+ * pokud prohlížeč nezná značky, které chceme použít, pak neví, jak je vykreslit
+ * nejde jen o vyloženě staré prohlížeče, např. *main* či *details* mají problém i v relativně nových IE/Edge
+ * je možné doplnit styly pro značky, které prohlížeče plošně nepodporují
+ 
+ ```html  
+  <style>
+  header, section, footer, aside, nav, main, article, figure {
+      display: block;
+  }
+  </style>
+ ```
+
+# Kontrola stránky pomocí validátoru
+* u stránky bychom měli zkontrolovat správné použití HTML značek pomocí validátoru
+  * https://validator.w3.org/
+* lepší editory vás na nestandardní značky upozorní rovnou, ale ne vždy je to úplně spolehlivé
+* kontrolujte jen HTML, u CSS narazíte např. u některých proprietárních specifikací (ale o tom až příště)

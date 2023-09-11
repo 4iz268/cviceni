@@ -1,3 +1,3 @@
-# Základní informace
+# ZÃ¡kladnÃ­ informace
 
-V rámci této sloky naleznete dokumenty, které se nevztahují k práci na konkrétním cvièení, ale mohou se Vám hodit v prùbìhu celého semestru. Naleznete zde informace o hodnocení, pøístupech k vıukovému serveru atd.
+V rÃ¡mci tÃ©to sloÅ¾ky naleznete dokumenty, kterÃ© se nevztahujÃ­ k prÃ¡ci na konkrÃ©tnÃ­m cviÄenÃ­, ale mohou se VÃ¡m hodit v prÅ¯bÄ›hu celÃ©ho semestru. Naleznete zde informace o hodnocenÃ­, pÅ™Ã­stupech k vÃ½ukovÃ©mu serveru atd.

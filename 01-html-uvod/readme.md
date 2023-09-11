@@ -2,34 +2,30 @@
 
 ## Editory
 
-* VS Code
+* [WebStorm](https://www.jetbrains.com/webstorm/)
+* [PhpStorm](https://www.jetbrains.com/phpstorm/)
+* [Visual Studio Code (VS Code)](https://code.visualstudio.com/)
+* Notepad++ (na učebnách ho najdete v síťových instalacích)
 * PSPad
-* Notepad++
 * Textmate (OSX)
 * Sublime Text
-* WebStorm
 * nebo jakýkoli jiný, který máte rádi
 
 ## Prohlížeče
 
 Stačí, když vaše stránky budou podporovat tyto hlavní prohlížeče:
 
-* Mozilla Firefox 
-  * budeme používat na cvičeních, má firebug plugin (něco podobného má chrome rovnou v sobě)
-  * aktuální verze
-* Google Chrome 
-  * doporučuji kvůli rychlosti
-  * aktuální verze
+* Mozilla Firefox
+* Google Chrome
+* Microsoft Edge 
 
-Ostatní (minoritní, nebudu kontrolovat funkčnost):
+Ostatní (minoritní, nebudeme kontrolovat funkčnost):
 
-* Internet Explorer
-  * verze 10 a 11
-* Opera 
-  * malý podíl na trhu, stejné zobrazovací jádro jako Chrome
-* Safari 
+* Safari
   * na Macu
-* ostatní jsou minor (nedůležité)
+* Opera, Brave Browser, ... 
+
+Internet Explorer už se fakt nepoužívá :)  
 
 
 ## Základy syntaxe
@@ -63,44 +59,17 @@ See also:
 * určuje typ dokumentu, instrukce prohlížeči, jak a co má zobrazit
 * nejedná se o HTML tag
 * musí být jako první v dokumentu
+* dnes již nemá smysl psát do nových stránek cokoliv jiného než HTML5:
+    ```html
+    <!DOCTYPE html>
+    ```
+* při úpravě starších stránek se můžete potkat ještě s DOCTYPE xHTML nebo HTML 4 ([ukázky zde](01-doctypes.html))
 
-XHTML 1.0 Strict
+### Rozdíly XHTML vs. HTM 5
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”>
-
-XHTML 1.0 Transitional
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-XHTML 1.0 Frameset
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN” "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
-
-XHTML 1.1
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN” "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-
-**HTML5**
-
-<!DOCTYPE html>
-
-### XHTML
-
-* tagy jsou ukončené, i jednoduché tagy musí být napsány např. jako &lt;br/&gt;
-* tagy a atributy malými písmeny
-* styly a scripty jsou externí soubory
-* stránka je validní XML
-* nepoužívat, otrava
-
-### HTML5
-
-* sémantika
-* canvas
-* lepší formy 
-* email, colorpicker, search form
-* všechny funkce nepodporují všechny browsery, nutno zkusit
-* kniha Dive Into HTML5
-* http://kniha.html5.cz
+* v xHTML tagy jsou ukončené, i jednoduché tagy musí být napsány např. jako &lt;br/&gt;, všechny atributy musí mít svoji hodnotu (tyto zásady je možné používat i v HTML5)
+* v HTML5 je spousta nových sémantických značek, postupný rozvoj nových funkcí
+* kniha [Dive Into HTML5](http://kniha.html5.cz)
 
 ## Základní struktura dokumentu
 
@@ -279,7 +248,8 @@ XHTML 1.1
 
 #### Math ML
 
-* není podporován Chrome, viz seznam, kdo to podporuje: http://caniuse.com/#feat=mathml
+* [ukázka](https://www.tutorialspoint.com/html5/html5_mathml.htm)
+* http://caniuse.com/#feat=mathml
 
 #### MathJax
 
