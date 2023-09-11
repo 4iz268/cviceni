@@ -17,14 +17,14 @@
     * začlenění stylů přímo do obsahu stránky (na "jednom" místě)
     * možnost využití direktivy *@import*
     ```html
-    <style type="text/css"> @import url("adresa");</style>
+    <style> @import url("adresa");</style>
     ```
  * **element link**
     * připojení externích zdrojů ke stránce (nejen styly, ale také favicon, RSS atd.)
     * možnost definice atributu *media*
     ```html
 
-    <link rel="stylesheet" type="text/css" href="/URL adresa" media="screen,print" />
+    <link rel="stylesheet" href="/URL adresa" media="screen,print" />
 
     ```
 

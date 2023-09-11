@@ -44,7 +44,7 @@
 ## Otravná okýnka, aneb hello world!
 
 ```javascript
-<script type="text/javascript">
+<script>
   alert('Tak takhle to prográmko vždycky začíná! :)');
 </script>
 ```
