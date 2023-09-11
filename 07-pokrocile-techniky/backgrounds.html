@@ -1,67 +1,61 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds</title>
 
-<html>
+    <style>
+      .mustang {
+        background-image: url('mustang-gt350-small.jpg');
+      }
 
-<head>
-	<meta charset="utf-8" />
-	<title>Backgrounds</title>
-	
-	<style>
-	
-	.mustang{
-		background-image: url('mustang-gt350-small.jpg');
-	}
-	
-	.contain {
-		background-size: contain;
-	}
-	
-	.fill {
-		background-size: 100% 100%
-	}
+      .contain {
+        background-size: contain;
+      }
 
-	.no-repeat{
-		background-repeat: no-repeat;
-	}
-	
-	.border{
-		border: 1px solid blue;
-	}
-	
-	.cover{
-		background-size: cover;
-	}
-	
-	</style>
-	
-</head>
+      .fill {
+        background-size: 100% 100%
+      }
+
+      .no-repeat {
+        background-repeat: no-repeat;
+      }
+
+      .border {
+        border: 1px solid blue;
+      }
+
+      .cover {
+        background-size: cover;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <h1>Backgrounds</h1>
+
+    <h2>background-size: contain</h2>
+
+    <div class="mustang contain border no-repeat" style="width: 600px; height: 600px;">
+    </div>
 
 
+    <h2>background-size: 100% 100%</h2>
+
+    <div class="mustang fill border no-repeat" style="width: 600px; height: 600px;">
+    </div>
 
 
-<body>
+    <h2>background-size: cover</h2>
 
-	<h1>Backgrounds</h1>
+    <div class="mustang cover border no-repeat" style="width: 400px; height: 400px;">
+    </div>
 
-	<h2>background-size: contain</h2>
 
-	<div class="mustang contain border no-repeat" style="width: 600px; height: 600px;">
-	</div>
-	
-	
-	<h2>background-size: 100% 100%</h2>
+  </body>
 
-	<div class="mustang fill border no-repeat" style="width: 600px; height: 600px;">
-	</div>
-	
-	
-	<h2>background-size: cover</h2>
-
-	<div class="mustang cover border no-repeat" style="width: 400px; height: 400px;">
-	</div>
-	
-
-</body>
-	
 </html>
 

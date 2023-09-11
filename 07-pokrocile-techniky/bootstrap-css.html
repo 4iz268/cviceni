@@ -1,172 +1,161 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Bootstrap CSS</title>
 
-<html>
+    <!-- Bootstrap compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-<head>
-	<meta charset="utf-8" />
-	<title>Bootstrap CSS</title>
-	
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-	
-	<style>
-	
-	p {
-		padding: 15px;
-	}
-	
-	</style>
-	
-</head>
+    <style>
+      p {
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <!-- http://getbootstrap.com/css/	-->
+
+      <h1>Bootstrap components</h1>
+
+      <h1>h1 heading</h1>
+
+      <h2>h2 heading</h2>
+
+      <h3>h3 heading</h3>
+
+      <h2>Alignments</h2>
+
+      <p class="text-left">Left aligned text.</p>
+
+      <p class="text-center">Center aligned text.</p>
+
+      <p class="text-right">Right aligned text.</p>
 
 
-<body>
-	
-	<div class="container">
-		
-		<!-- http://getbootstrap.com/css/	-->
+      <h2>Text</h2>
 
-		<h1>Bootstrap components</h1>
+      <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+      <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+      <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+      <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
 
-		<h1>h1 heading</h1>
-		
-		<h2>h2 heading</h2>
-		
-		<h3>h3 heading</h3>
-		
-		<h2>Alignments</h2>
-		
-		<p class="text-left">Left aligned text.</p>
-		
-		<p class="text-center">Center aligned text.</p>
-		
-		<p class="text-right">Right aligned text.</p>
-		
-		
-		
-		<h2>Text</h2>
-		
-		<p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-		<p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-		<p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-		<p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-		<p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-		<p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-		
-		
-		<p class="bg-primary">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-		<p class="bg-success">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-		<p class="bg-info">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-		<p class="bg-warning">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-		<p class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-		
-		<h2>Tables</h2>
-		
-		<table class="table table-bordered table-striped">
-			
-			<thead>
-				<tr>
-					<th>one</th>
-					<th>two</th>
-					<th>three</th>
-				</tr>
-			</thead>
-			
-			<tbody>
-				
-				<tr>
-					<td>Slash</td>
-					<td>Hendrix</td>
-					<td>King</td>
-				</tr>
-				
-				<tr>
-					<td>Blackmore</td>
-					<td>Frusciante</td>
-					<td>Richards</td>
-				</tr>
-				
-			</tbody>
-			
-		</table>
-		
-		
-		<h2>Forms</h2>
-		
-		
-		<form>
-			<div class="form-group">
-				<label for="exampleInputEmail1">Email address</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">Password</label>
-				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-			</div>
-			<div class="form-group">
-				<label for="exampleInputFile">File input</label>
-				<input type="file" id="exampleInputFile">
-				<p class="help-block">Example block-level help text here.</p>
-			</div>
-			<div class="checkbox">
-				<label>
-					<input type="checkbox"> Check me out
-				</label>
-			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
-		
-		
-		<h2>Inline forms</h2>
-		
-		<form class="form-inline">
-		  <div class="form-group">
-		    <label for="exampleInputName2">Name</label>
-		    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-		  </div>
-		  <div class="form-group">
-		    <label for="exampleInputEmail2">Email</label>
-		    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-		  </div>
-		  <button type="submit" class="btn btn-success">Send invitation</button>
-		</form>
-		
-		
-		<h2>Buttons</h2>
-		
-		<!-- Standard button -->
-		<button type="button" class="btn btn-default">Default</button>
 
-		<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-		<button type="button" class="btn btn-primary">Primary</button>
+      <p class="bg-primary">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+      <p class="bg-success">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      <p class="bg-info">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+      <p class="bg-warning">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      <p class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
 
-		<!-- Indicates a successful or positive action -->
-		<button type="button" class="btn btn-success">Success</button>
+      <h2>Tables</h2>
 
-		<!-- Contextual button for informational alert messages -->
-		<button type="button" class="btn btn-info">Info</button>
+      <table class="table table-bordered table-striped">
 
-		<!-- Indicates caution should be taken with this action -->
-		<button type="button" class="btn btn-warning">Warning</button>
+        <thead>
+        <tr>
+          <th>one</th>
+          <th>two</th>
+          <th>three</th>
+        </tr>
+        </thead>
 
-		<!-- Indicates a dangerous or potentially negative action -->
-		<button type="button" class="btn btn-danger">Danger</button>
-		
-		
-		<h2>Images</h2>
-		
-		<img class="img-rounded" src="mustang-gt350-small.jpg" alt="Ford Mustang GT350" width="440" height="330"/>
-		<br>
-		<br>
-		<img class="img-circle" src="mustang-gt350-small.jpg" alt="Ford Mustang GT350" width="440" height="330"/>
-		<br>
-		<br>
-		<img class="img-thumbnail" src="mustang-gt350-small.jpg" alt="Ford Mustang GT350" width="440" height="330"/>
-		
-	</div>
-	
+        <tbody>
 
-</body>
-	
+        <tr>
+          <td>Slash</td>
+          <td>Hendrix</td>
+          <td>King</td>
+        </tr>
+
+        <tr>
+          <td>Blackmore</td>
+          <td>Frusciante</td>
+          <td>Richards</td>
+        </tr>
+
+        </tbody>
+
+      </table>
+
+
+      <h2>Forms</h2>
+
+
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <input type="file" id="exampleInputFile">
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Check me out
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+
+      <h2>Inline forms</h2>
+
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="exampleInputName2">Name</label>
+          <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail2">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+        </div>
+        <button type="submit" class="btn btn-success">Send invitation</button>
+      </form>
+
+
+      <h2>Buttons</h2>
+
+      <!-- Standard button -->
+      <button type="button" class="btn btn-default">Default</button>
+
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-primary">Primary</button>
+
+      <!-- Indicates a successful or positive action -->
+      <button type="button" class="btn btn-success">Success</button>
+
+      <!-- Contextual button for informational alert messages -->
+      <button type="button" class="btn btn-info">Info</button>
+
+      <!-- Indicates caution should be taken with this action -->
+      <button type="button" class="btn btn-warning">Warning</button>
+
+      <!-- Indicates a dangerous or potentially negative action -->
+      <button type="button" class="btn btn-danger">Danger</button>
+
+
+      <h2>Images</h2>
+
+      <img class="img-rounded" src="mustang-gt350-small.jpg" alt="Ford Mustang GT350" width="440" height="330"/>
+      <br>
+      <br>
+      <img class="img-circle" src="mustang-gt350-small.jpg" alt="Ford Mustang GT350" width="440" height="330"/>
+      <br>
+      <br>
+      <img class="img-thumbnail" src="mustang-gt350-small.jpg" alt="Ford Mustang GT350" width="440" height="330"/>
+
+    </div>
+  </body>
 </html>
 
