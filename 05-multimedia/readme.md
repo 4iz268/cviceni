@@ -10,14 +10,14 @@
     * bitmapy vs. vektory
     * Které z těchto formátů byste si vybrali a proč?
         * JPEG, PNG, BMP, TIFF, PSD, [WebP](https://cs.wikipedia.org/wiki/WebP)  
-        * SVG, AI, CDR, EPS, PS
+        * SVG, AI, CDR, EPS, PS, APNG
  * Základní úpravy obrázků v grafických editorech (ořez, změna rozlišení, optimalizace kvality)
     * Photoshop, Gimp
  * **Prvky, které je možné vyřešit textem či pomocí CSS (pozadí, rámečky), neřešíme obrázkem!**
  * v HTML5 lze kromě obrázků zadaných jednoduše značkou IMG použít také složitější konstrukce s více možnostmi - viz [dále](#nové-možnosti-obrázků-v-html-5) 
 
 ### Tvorba webu na základě šablony
- * podklady dodány obvykle ve formě PSD (připadně AI či CDR) souboru
+ * v případě čistě grafických podkladů obvykle ve formě PSD (připadně AI či CDR) souboru, nebo v interaktivnější podobě z nástroje [Figma](https://www.figma.com/)
     * neakceptujeme podklady od grafika, který je ochoten je předat jen jako JPEG!
     * možnost postupného vypínání vrstev
     * pokud jsou použity speciální fonty, jsou obvykle přiloženy k souboru s obrázkem (pro možnost "vypreparování" potřebných částí textu)

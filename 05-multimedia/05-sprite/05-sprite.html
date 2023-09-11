@@ -1,44 +1,44 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <style>
-        #home {
-            display: inline-block;
-            width: 46px;
-            height: 44px;
-						
-            background: url(img_navsprites.gif) 0 0; /* (left 0px, top 0px) */
-        }
-				
-				#prev {
-					display: inline-block;
-          width: 43px;
-          height: 44px;
-					
-					/* 47px to the right (#home width 46px + 1px line divider) */
-					/* POZOR: musi byt S MINUSEM, protoze pak to znamena SMEREM DOPRAVA, jinak bez znamenka SMEREM DOLEVA od KONCE SIRKY OBRAZKU */
-          background: url(img_navsprites.gif) -47px 0;
-				}
-				
-        #next {
-            display: inline-block;
-            width: 43px;
-            height: 44px;
-						
-						/* 91px to the right (#home width 46px + 1px line divider + #prev width 43px + 1px line divider )*/
-            background: url(img_navsprites.gif) -91px 0;
-        }
-				
-				/* see http://www.w3schools.com/css/css_image_sprites.asp */
-				
+      #home {
+        display: inline-block;
+        width: 46px;
+        height: 44px;
+
+        background: url(img_navsprites.gif) 0 0; /* (left 0px, top 0px) */
+      }
+
+      #prev {
+        display: inline-block;
+        width: 43px;
+        height: 44px;
+
+        /* 47px to the right (#home width 46px + 1px line divider) */
+        /* POZOR: musi byt S MINUSEM, protoze pak to znamena SMEREM DOPRAVA, jinak bez znamenka SMEREM DOLEVA od KONCE SIRKY OBRAZKU */
+        background: url(img_navsprites.gif) -47px 0;
+      }
+
+      #next {
+        display: inline-block;
+        width: 43px;
+        height: 44px;
+
+        /* 91px to the right (#home width 46px + 1px line divider + #prev width 43px + 1px line divider )*/
+        background: url(img_navsprites.gif) -91px 0;
+      }
+
+      /* see http://www.w3schools.com/css/css_image_sprites.asp */
+
     </style>
     <title>Sprite demo</title>
     <meta charset="utf-8"/>
-</head>
-<body>
+  </head>
+  <body>
 
     <a id="home">&nbsp;</a><br>
 
-    
-</body>
+
+  </body>
 </html>
