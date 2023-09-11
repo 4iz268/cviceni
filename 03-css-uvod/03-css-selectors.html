@@ -1,60 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <style>
       body {
         font-family: Arial, sans-serif;
         font-size: 14px;
       }
+
       p { /*styly pro všechny odstavce*/
         text-align: justify;
         text-align-last: left;
         color: navy;
       }
-      .zvyrazneni{ /*třída bez ohledu na element*/
+
+      .zvyrazneni { /*třída bez ohledu na element*/
         color: #f00;
       }
-      p.zvyrazneni2{
+
+      p.zvyrazneni2 {
         border: 2px dotted red;
       }
-      p.zvyrazneni2::first-letter{
+
+      p.zvyrazneni2::first-letter {
         font-size: 200%;
         color: maroon;
       }
-      p:last-of-type{
+
+      p:last-of-type {
         color: fuchsia;
       }
-      a {/*všechny odkazy*/
+
+      a { /*všechny odkazy*/
         text-decoration: none;
         font-weight: bold;
         color: black !important; /*vlastnost s !important lze překrýt jen další vlastností s !important*/
       }
-      a:hover{/*odkazy při najetí myši*/
+
+      a:hover { /*odkazy při najetí myši*/
         text-decoration: underline;
       }
-      a#vse{
+
+      a#vse {
         color: green;
         text-decoration: underline;
       }
-      p a{/*odkazy umístěné v odstavcích*/
+
+      p a { /*odkazy umístěné v odstavcích*/
         color: red !important;
         text-decoration: underline;
         font-style: italic;
       }
-      p:hover{
-        background: rgba(200,200,200,0.1);
+
+      p:hover {
+        background: rgba(200, 200, 200, 0.1);
         cursor: default;
       }
     </style>
   </head>
   <body>
     <h1>CSS Selectors</h1>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <span class="zvyrazneni">Fusce tellus odio, dapibus id fermentum quis</span>, suscipit id erat. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed convallis magna eu sem. Integer imperdiet lectus quis justo. Integer vulputate sem a nibh rutrum consequat. Aenean placerat. Etiam neque. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam dictum tincidunt diam. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Fusce aliquam vestibulum ipsum. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Aliquam erat volutpat. In convallis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p class="zvyrazneni zvyrazneni2">Integer lacinia. Temporibus autem quibusdam <a href="http://google.com">et aut officiis debitis</a> aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Mauris metus. Vestibulum fermentum tortor id mi. Morbi scelerisque luctus velit. Vivamus luctus egestas leo. Integer lacinia. Ut tempus purus at lorem. Pellentesque pretium lectus id turpis. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam.</p>
-    <p class="zvyrazneni2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Fusce consectetuer risus a nunc. Fusce suscipit libero eget elit. Integer pellentesque quam vel velit. Aliquam erat volutpat. Praesent vitae arcu tempor neque lacinia pretium. Nulla non lectus sed nisl molestie malesuada. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis pulvinar. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Nulla pulvinar eleifend sem. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Maecenas sollicitudin. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est.</p>
-    <p>Nullam dapibus fermentum ipsum. Fusce consectetuer risus a nunc. Donec quis nibh at felis congue commodo. In rutrum. In dapibus augue non sapien. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. In rutrum. Etiam posuere lacus quis dolor. Donec vitae arcu. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Quisque tincidunt scelerisque libero. Cras elementum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Mauris tincidunt sem sed arcu. Mauris dictum facilisis augue. Et harum quidem rerum facilis est et expedita distinctio. Aliquam in lorem sit amet leo accumsan lacinia. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-    <p>Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Duis risus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Aliquam ante. Nam sed tellus id magna elementum tincidunt. Integer pellentesque quam vel velit. Nunc dapibus tortor vel mi dapibus sollicitudin. Nullam faucibus mi quis velit. Curabitur vitae diam non enim vestibulum interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc auctor. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Etiam egestas wisi a erat. Nullam dapibus fermentum ipsum. Fusce tellus. Nulla pulvinar eleifend sem.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <span class="zvyrazneni">Fusce tellus odio, dapibus id fermentum quis</span>,
+      suscipit id erat. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed convallis magna eu sem. Integer
+      imperdiet lectus quis justo. Integer vulputate sem a nibh rutrum consequat. Aenean placerat. Etiam neque. Mauris
+      suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Etiam
+      dictum tincidunt diam. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Fusce aliquam vestibulum ipsum. Nullam
+      lectus justo, vulputate eget mollis sed, tempor sed magna. Aliquam erat volutpat. In convallis. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p class="zvyrazneni zvyrazneni2">Integer lacinia. Temporibus autem quibusdam <a href="http://google.com">et aut
+      officiis debitis</a> aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
+      recusandae. Mauris metus. Vestibulum fermentum tortor id mi. Morbi scelerisque luctus velit. Vivamus luctus
+      egestas leo. Integer lacinia. Ut tempus purus at lorem. Pellentesque pretium lectus id turpis. Sed elit dui,
+      pellentesque a, faucibus vel, interdum nec, diam.</p>
+    <p class="zvyrazneni2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+      anim id est laborum. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Curabitur ligula sapien,
+      pulvinar a vestibulum quis, facilisis vel sapien. Fusce consectetuer risus a nunc. Fusce suscipit libero eget
+      elit. Integer pellentesque quam vel velit. Aliquam erat volutpat. Praesent vitae arcu tempor neque lacinia
+      pretium. Nulla non lectus sed nisl molestie malesuada. Pellentesque habitant morbi tristique senectus et netus et
+      malesuada fames ac turpis egestas. Duis pulvinar. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum
+      in, elit. Nulla pulvinar eleifend sem. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Nullam
+      feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.
+      Maecenas sollicitudin. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est.</p>
+    <p>Nullam dapibus fermentum ipsum. Fusce consectetuer risus a nunc. Donec quis nibh at felis congue commodo. In
+      rutrum. In dapibus augue non sapien. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor
+      suscipit diam nulla vel leo. In rutrum. Etiam posuere lacus quis dolor. Donec vitae arcu. Nullam lectus justo,
+      vulputate eget mollis sed, tempor sed magna. Quisque tincidunt scelerisque libero. Cras elementum. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Mauris tincidunt
+      sem sed arcu. Mauris dictum facilisis augue. Et harum quidem rerum facilis est et expedita distinctio. Aliquam in
+      lorem sit amet leo accumsan lacinia. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <p>Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit
+      amet enim. Duis risus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+      quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Aliquam ante. Nam sed
+      tellus id magna elementum tincidunt. Integer pellentesque quam vel velit. Nunc dapibus tortor vel mi dapibus
+      sollicitudin. Nullam faucibus mi quis velit. Curabitur vitae diam non enim vestibulum interdum. Pellentesque
+      habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc auctor. Itaque earum rerum
+      hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+      doloribus asperiores repellat. Etiam egestas wisi a erat. Nullam dapibus fermentum ipsum. Fusce tellus. Nulla
+      pulvinar eleifend sem.</p>
     <a href="http://vse.cz" id="vse">vse.cz</a> | <a href="http://google.com">google.com</a>
   </body>
 </html>
