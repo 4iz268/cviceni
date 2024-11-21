@@ -16,7 +16,7 @@
 - pro vizuální prvky postavené na jQuery je potřeba připojit také **jQuery UI** s příslušnými styly
 
 ```html
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
 ```
 
 ### Další zdroje
